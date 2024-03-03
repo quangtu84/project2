@@ -8,8 +8,10 @@ module top #(
     output logic [(COLOR_BITS/3)-1 :0] blue_o, green_o, red_o
 );
 
-    map_render #(
+    game_top #(
         .COLOR_BITS(COLOR_BITS)
-    ) top(.*);
+    ) top(
+        .*
+    );
 
 endmodule

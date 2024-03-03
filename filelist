@@ -1,4 +1,5 @@
+src/game_top.sv
 src/hvsync_gen.sv
-src/map_block.sv
-src/map_render.sv
+src/map_rgb.sv
 src/mem_tile.sv
+src/rgb_render.sv

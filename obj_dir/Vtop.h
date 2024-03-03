@@ -33,15 +33,20 @@ VL_MODULE(Vtop) {
     // LOCAL SIGNALS
     // Internals; generally not touched by application code
     CData/*0:0*/ top__DOT__top__DOT__map_enable;
+    CData/*7:0*/ top__DOT__top__DOT__map_blue;
+    CData/*7:0*/ top__DOT__top__DOT__map_green;
+    CData/*7:0*/ top__DOT__top__DOT__map_red;
     CData/*0:0*/ top__DOT__top__DOT__hvsync_gen__DOT__h_maxxed;
     CData/*0:0*/ top__DOT__top__DOT__hvsync_gen__DOT__v_maxxed;
-    IData/*23:0*/ top__DOT__top__DOT__dout;
-    IData/*23:0*/ top__DOT__top__DOT__tile__DOT__mem[8192];
-    QData/*38:0*/ top__DOT__top__DOT__map_block__DOT__map_tiles[13];
+    CData/*3:0*/ top__DOT__top__DOT__map_rgb__DOT__block_state;
+    IData/*23:0*/ top__DOT__top__DOT__map_rgb__DOT__dout;
+    CData/*6:0*/ top__DOT__top__DOT__map_rgb__DOT__map_tiles[13][13];
+    IData/*23:0*/ top__DOT__top__DOT__map_rgb__DOT__tile__DOT__mem[8192];
     
     // LOCAL VARIABLES
     // Internals; generally not touched by application code
-    CData/*2:0*/ top__DOT__top__DOT__map_block__DOT____Vxrand1;
+    CData/*6:0*/ top__DOT__top__DOT__map_rgb__DOT____Vxrand2;
+    CData/*6:0*/ top__DOT__top__DOT__map_rgb__DOT____Vxrand1;
     CData/*0:0*/ __Vclklast__TOP__clk_i;
     
     // INTERNAL VARIABLES
