@@ -23,23 +23,52 @@ VL_MODULE(Vtop) {
     // The application code writes and reads these signals to
     // propagate new values into/out from the Verilated model.
     VL_IN8(clk_i,0,0);
+    VL_IN8(player_1_move_i,3,0);
+    VL_IN8(player_2_move_i,3,0);
     VL_OUT8(display_enable_o,0,0);
     VL_OUT8(blue_o,7,0);
     VL_OUT8(green_o,7,0);
     VL_OUT8(red_o,7,0);
+    VL_OUT8(player_1_collide_with_wall_top_o,0,0);
+    VL_OUT8(player_1_collide_with_wall_bottom_o,0,0);
+    VL_OUT8(player_1_collide_with_wall_left_o,0,0);
+    VL_OUT8(player_1_collide_with_wall_right_o,0,0);
+    VL_IN8(reset_i,0,0);
     VL_OUT16(hpos_o,9,0);
     VL_OUT16(vpos_o,9,0);
+    VL_OUT16(player_1_x_o,9,0);
+    VL_OUT16(player_1_y_o,9,0);
+    VL_OUT16(player_2_x_o,9,0);
+    VL_OUT16(player_2_y_o,9,0);
     
     // LOCAL SIGNALS
     // Internals; generally not touched by application code
+    CData/*0:0*/ top__DOT__top__DOT__clk_slow;
     CData/*0:0*/ top__DOT__top__DOT__map_enable;
+    CData/*0:0*/ top__DOT__top__DOT__cannot_walk_through;
     CData/*7:0*/ top__DOT__top__DOT__map_blue;
     CData/*7:0*/ top__DOT__top__DOT__map_green;
     CData/*7:0*/ top__DOT__top__DOT__map_red;
     CData/*0:0*/ top__DOT__top__DOT__hvsync_gen__DOT__h_maxxed;
     CData/*0:0*/ top__DOT__top__DOT__hvsync_gen__DOT__v_maxxed;
+    CData/*2:0*/ top__DOT__top__DOT__map_rgb__DOT__block_type;
     CData/*3:0*/ top__DOT__top__DOT__map_rgb__DOT__block_state;
+    CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__player_1_box;
+    CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_top;
+    CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_bottom;
+    CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_left;
+    CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_right;
+    CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__player_2_box;
+    CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_top;
+    CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_bottom;
+    CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_left;
+    CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_right;
+    SData/*9:0*/ top__DOT__top__DOT__player_rgb__DOT__player_1_x;
+    SData/*9:0*/ top__DOT__top__DOT__player_rgb__DOT__player_1_y;
+    SData/*9:0*/ top__DOT__top__DOT__player_rgb__DOT__player_2_x;
+    SData/*9:0*/ top__DOT__top__DOT__player_rgb__DOT__player_2_y;
     IData/*23:0*/ top__DOT__top__DOT__map_rgb__DOT__dout;
+    IData/*24:0*/ top__DOT__top__DOT__speed_control__DOT__count;
     CData/*6:0*/ top__DOT__top__DOT__map_rgb__DOT__map_tiles[13][13];
     IData/*23:0*/ top__DOT__top__DOT__map_rgb__DOT__tile__DOT__mem[8192];
     
@@ -47,7 +76,16 @@ VL_MODULE(Vtop) {
     // Internals; generally not touched by application code
     CData/*6:0*/ top__DOT__top__DOT__map_rgb__DOT____Vxrand2;
     CData/*6:0*/ top__DOT__top__DOT__map_rgb__DOT____Vxrand1;
+    CData/*0:0*/ __VinpClk__TOP__top__DOT__top__DOT__clk_slow;
     CData/*0:0*/ __Vclklast__TOP__clk_i;
+    CData/*0:0*/ __Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__clk_slow;
+    CData/*0:0*/ __Vchglast__TOP__top__DOT__top__DOT__clk_slow;
+    SData/*9:0*/ __Vdly__hpos_o;
+    SData/*9:0*/ __Vdly__vpos_o;
+    SData/*9:0*/ __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_y;
+    SData/*9:0*/ __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_x;
+    SData/*9:0*/ __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_x;
+    SData/*9:0*/ __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_y;
     
     // INTERNAL VARIABLES
     // Internals; generally not touched by application code
@@ -88,7 +126,11 @@ VL_MODULE(Vtop) {
     static void _eval_initial(Vtop__Syms* __restrict vlSymsp) VL_ATTR_COLD;
     static void _eval_settle(Vtop__Syms* __restrict vlSymsp) VL_ATTR_COLD;
     static void _initial__TOP__1(Vtop__Syms* __restrict vlSymsp) VL_ATTR_COLD;
+    static void _multiclk__TOP__7(Vtop__Syms* __restrict vlSymsp);
     static void _sequent__TOP__2(Vtop__Syms* __restrict vlSymsp);
+    static void _sequent__TOP__4(Vtop__Syms* __restrict vlSymsp);
+    static void _sequent__TOP__5(Vtop__Syms* __restrict vlSymsp);
+    static void _sequent__TOP__6(Vtop__Syms* __restrict vlSymsp);
     static void _settle__TOP__3(Vtop__Syms* __restrict vlSymsp) VL_ATTR_COLD;
 } VL_ATTR_ALIGNED(VL_CACHE_LINE_BYTES);
 

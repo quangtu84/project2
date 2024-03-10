@@ -37,7 +37,7 @@ int main(int argc, char* argv[]) {
     SDL_Texture*  sdl_texture  = NULL;
 
     sdl_window = SDL_CreateWindow("Square", SDL_WINDOWPOS_CENTERED,
-        SDL_WINDOWPOS_CENTERED, H_RES, V_RES, SDL_WINDOW_SHOWN);
+        SDL_WINDOWPOS_CENTERED, H_RES, V_RES, SDL_WINDOW_SHOWN | SDL_WINDOW_MAXIMIZED);
     if (!sdl_window) {
         printf("Window creation failed: %s\n", SDL_GetError());
         return 1;
@@ -106,7 +106,54 @@ int main(int argc, char* argv[]) {
                 }
             }
 
-            if (keyb_state[SDL_SCANCODE_Q]) break;  // quit if user presses 'Q'
+            if (keyb_state[SDL_SCANCODE_Q]) {
+                break;  // quit if user presses 'Q'
+            }
+            if (keyb_state[SDL_SCANCODE_C]) {
+                std::cout << "x1 "  << top->player_1_x_o;
+                std::cout << " y1 " << top->player_1_y_o;
+                std::cout << " x2 " << top->player_2_x_o;
+                std::cout << " y2 " << top->player_2_y_o;
+                std::cout << "       " ;
+                if (top->player_1_collide_with_wall_top_o){std::cout << " t ";}
+                if (top->player_1_collide_with_wall_bottom_o){std::cout << " b ";}
+                if (top->player_1_collide_with_wall_left_o){std::cout << " l ";}
+                if (top->player_1_collide_with_wall_right_o){std::cout << " r ";}
+                std::cout << std::endl;
+            }
+            top->player_1_move_i = 0;
+            top->player_2_move_i = 0;
+            if (keyb_state[SDL_SCANCODE_R]) {
+                top->reset_i = 1;
+            } else {
+                top->reset_i = 0;
+            }
+            if (keyb_state[SDL_SCANCODE_S]) {
+                top->player_1_move_i = 1;
+            } 
+            if (keyb_state[SDL_SCANCODE_W]) {
+                top->player_1_move_i = 2;
+            } 
+            if (keyb_state[SDL_SCANCODE_D]) {
+                top->player_1_move_i = 4;
+            } 
+            if (keyb_state[SDL_SCANCODE_A]) {
+                top->player_1_move_i = 8;
+            }
+
+            if (keyb_state[SDL_SCANCODE_DOWN]) {
+                top->player_2_move_i = 1;
+            } 
+            if (keyb_state[SDL_SCANCODE_UP]) {
+                top->player_2_move_i = 2;
+            } 
+            if (keyb_state[SDL_SCANCODE_RIGHT]) {
+                top->player_2_move_i = 4;
+            } 
+            if (keyb_state[SDL_SCANCODE_LEFT]) {
+                top->player_2_move_i = 8;
+            }
+            top->eval();
 
             SDL_UpdateTexture(sdl_texture, NULL, screenbuffer, H_RES*sizeof(Pixel));
             SDL_RenderClear(sdl_renderer);

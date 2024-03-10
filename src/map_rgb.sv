@@ -5,6 +5,7 @@ module map_rgb #(
     input logic [9:0] hpos_i,
     input logic [9:0] vpos_i,
     output logic map_enable_o,
+    output logic cannot_walk_through_o,
     output logic [(COLOR_BITS/3)-1 :0] map_blue_o,
     output logic [(COLOR_BITS/3)-1 :0] map_green_o,
     output logic [(COLOR_BITS/3)-1 :0] map_red_o
@@ -24,6 +25,8 @@ module map_rgb #(
     logic [3:0] map_x, map_y;
 
     assign map_enable_o = display_enable_i && (hpos_i >=32) && (hpos_i <= 447) && (vpos_i >=32) && (vpos_i <= 447);
+    assign cannot_walk_through_o = (display_enable_i && !map_enable_o) || block_type == BRICK || block_type == WALL || block_type == WATER;
+
     localparam BRICK    = 3'b000;
     localparam WALL     = 3'b001;
     localparam TREE     = 3'b010;
@@ -83,9 +86,9 @@ module map_rgb #(
         map_tiles[1][2] = {AIR,4'b1111};
         map_tiles[1][3] = {BRICK,4'b1111};
         map_tiles[1][4] = {AIR,4'b1111};
-        map_tiles[1][5] = {BRICK,4'b1111};
+        map_tiles[1][5] = {WALL,4'b1111};
         map_tiles[1][6] = {AIR,4'b1111};
-        map_tiles[1][7] = {BRICK,4'b1111};
+        map_tiles[1][7] = {WALL,4'b1111};
         map_tiles[1][8] = {AIR,4'b1111};
         map_tiles[1][9] = {BRICK,4'b1111};
         map_tiles[1][10] = {AIR,4'b1111};
@@ -143,7 +146,7 @@ module map_rgb #(
         map_tiles[5][10] = {AIR,4'b1111};
         map_tiles[5][11] = {AIR,4'b1111};
         map_tiles[5][12] = {AIR,4'b1111};
-        map_tiles[6][0] = {WALL,4'b0011};
+        map_tiles[6][0] = {WALL,4'b1111};
         map_tiles[6][1] = {AIR,4'b1111};
         map_tiles[6][2] = {BRICK,4'b1111};
         map_tiles[6][3] = {BRICK,4'b1111};
@@ -155,7 +158,7 @@ module map_rgb #(
         map_tiles[6][9] = {BRICK,4'b1111};
         map_tiles[6][10] = {BRICK,4'b1111};
         map_tiles[6][11] = {AIR,4'b1111};
-        map_tiles[6][12] = {WALL,4'b0011};
+        map_tiles[6][12] = {WALL,4'b1111};
         map_tiles[7][0] = {AIR,4'b1111};
         map_tiles[7][1] = {AIR,4'b1111};
         map_tiles[7][2] = {AIR,4'b1111};

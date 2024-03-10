@@ -36,7 +36,7 @@ lint:
 
 .PHONY: build
 build: ./obj_dir/Vtop
-./obj_dir/Vtop: $(FILES) top.sv
+./obj_dir/Vtop: $(FILES) top.sv test/tb_top.cpp
 	@echo "-------------------> BUILD <----------------------"
 	@$(VERILATOR) $(VERILATOR_FLAGS) $(VERILATOR_INPUT) --exe test/tb_top.cpp
 	make -C ./obj_dir -f Vtop.mk

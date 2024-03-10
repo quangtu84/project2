@@ -1,0 +1,27 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Tue Mar  5 17:42:00 2024
+[*]
+[dumpfile] "/home/tuduong/Projects/DoAn2/wave.fst"
+[dumpfile_mtime] "Tue Mar  5 17:41:27 2024"
+[dumpfile_size] 1051306
+[savefile] "/home/tuduong/Projects/DoAn2/wave.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] 253 113
+*-4.000000 17 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] TOP.
+[treeopen] TOP.top.
+[treeopen] TOP.top.top.
+[sst_width] 233
+[signals_width] 150
+[sst_expanded] 1
+[sst_vpaned_height] 144
+@28
+TOP.reset_i
+TOP.top.top.speed_control.update_clk_o
+@22
+TOP.top.top.player_rgb.player_1_x[9:0]
+TOP.top.top.player_rgb.player_1_y[9:0]
+[pattern_trace] 1
+[pattern_trace] 0
