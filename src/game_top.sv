@@ -1,3 +1,4 @@
+/* verilator lint_off UNUSED */
 module game_top #(
     parameter COLOR_BITS = 24
 )(
@@ -21,15 +22,13 @@ module game_top #(
     input logic clk_i,
     input logic reset_i
 );
-    logic map_enable, clk_slow, cannot_walk_through;
+    logic map_enable, clk_slow, cannot_walk_through, hsync, vsync;
     logic [(COLOR_BITS/3)-1 :0] map_blue, map_green, map_red, player_red, player_green, player_blue;
 
     hvsync_gen hvsync_gen(
         .clk_i(clk_i),
-        /* verilator lint_off PINCONNECTEMPTY */
-        .hsync_no(),
-        .vsync_no(),
-        /* verilator lint_off PINCONNECTEMPTY */
+        .hsync_no(hsync),
+        .vsync_no(vsync),
         .display_enable_o(display_enable_o),
         .hpos_o(hpos_o),
         .vpos_o(vpos_o)
@@ -83,6 +82,7 @@ module game_top #(
         .destroyable_block_i(),
         .cannot_walk_through_i(cannot_walk_through),
         .shoot_through_block_i(),
+        .hsync_i(hsync),
         .bullet_collide_o(),
         .player_blue_o(player_blue),
         .player_green_o(player_green),
@@ -101,3 +101,4 @@ module game_top #(
     );
 /* verilator lint_off PINCONNECTEMPTY */
 endmodule
+/* verilator lint_off UNUSED */

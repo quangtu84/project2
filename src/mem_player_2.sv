@@ -1,4 +1,4 @@
-module mem_player #(
+module mem_player_2 #(
   parameter ADDRESS = 11,
   parameter COLOR_BITS = 24
 ) (
@@ -11,7 +11,7 @@ module mem_player #(
   assign dout = mem[addr]; // read memory to dout (async)
   
   initial begin
-    if (COLOR_BITS == 24) $readmemh("24bit_rgb_player.txt",mem);
+    if (COLOR_BITS == 24) $readmemh("24bit_rgb_player_2.txt",mem);
     else if(COLOR_BITS == 12) $readmemh("12bit_rgb_player.txt",mem);
   end
 endmodule
