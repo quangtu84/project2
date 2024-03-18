@@ -7,3 +7,4 @@ src/mem_tile.sv
 src/player_rgb.sv
 src/rgb_render.sv
 src/speed_control.sv
+src/pos_edge_detect.sv

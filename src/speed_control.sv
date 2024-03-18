@@ -6,7 +6,7 @@ module speed_control (
 
   always @(posedge clk_i) begin
     count <= count + 1;
-    if (count == 100000) begin
+    if (count == 75000) begin
       update_clk_o <= ~update_clk_o;
       count  <= 0;
     end

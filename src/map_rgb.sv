@@ -1,14 +1,18 @@
 module map_rgb #(
     parameter COLOR_BITS = 24
 ) (
+    input logic bullet_collide_i,
     input logic display_enable_i,
     input logic [9:0] hpos_i,
     input logic [9:0] vpos_i,
     output logic map_enable_o,
     output logic cannot_walk_through_o,
+    output logic destroyable_block_o,
+    output logic all_hard_block_o,
     output logic [(COLOR_BITS/3)-1 :0] map_blue_o,
     output logic [(COLOR_BITS/3)-1 :0] map_green_o,
-    output logic [(COLOR_BITS/3)-1 :0] map_red_o
+    output logic [(COLOR_BITS/3)-1 :0] map_red_o,
+    input logic clk_i
 );
     
     mem_tile #(
@@ -23,9 +27,12 @@ module map_rgb #(
     logic [COLOR_BITS-1:0] dout;
     logic [3:0] block_state;
     logic [3:0] map_x, map_y;
+    logic bullet_collide;
 
     assign map_enable_o = display_enable_i && (hpos_i >=32) && (hpos_i <= 447) && (vpos_i >=32) && (vpos_i <= 447);
     assign cannot_walk_through_o = (display_enable_i && !map_enable_o) || block_type == BRICK || block_type == WALL || block_type == WATER;
+    assign destroyable_block_o = block_type == BRICK && |block_state;
+    assign all_hard_block_o = block_type == BRICK || block_type == WALL || (display_enable_i && !map_enable_o);
 
     localparam BRICK    = 3'b000;
     localparam WALL     = 3'b001;
@@ -62,6 +69,25 @@ module map_rgb #(
             {map_blue_o, map_green_o, map_red_o} = dout;
         end else begin
             {map_blue_o, map_green_o, map_red_o} = 0;
+        end
+    end
+
+    pos_edge_detect pos_edge_detect_bullet_collide(
+        .sig(bullet_collide_i),           
+        .clk(clk_i),            
+        .pe(bullet_collide)
+    );
+
+    always_ff @(posedge clk_i) begin
+        if(bullet_collide) begin
+            case (map_tiles [map_y][map_x][3:0])
+                4'b1111: map_tiles [map_y][map_x][3:0] <= 4'b1110;
+                4'b1110: map_tiles [map_y][map_x][3:0] <= 4'b1100;
+                4'b1100: map_tiles [map_y][map_x][3:0] <= 4'b1000;
+                4'b1000: map_tiles [map_y][map_x][3:0] <= 4'b0000;
+                4'b0000: map_tiles [map_y][map_x][6:4] <= AIR;
+                default:;
+            endcase
         end
     end
 

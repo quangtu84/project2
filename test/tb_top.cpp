@@ -109,20 +109,11 @@ int main(int argc, char* argv[]) {
             if (keyb_state[SDL_SCANCODE_Q]) {
                 break;  // quit if user presses 'Q'
             }
-            if (keyb_state[SDL_SCANCODE_C]) {
-                std::cout << "x1 "  << top->player_1_x_o;
-                std::cout << " y1 " << top->player_1_y_o;
-                std::cout << " x2 " << top->player_2_x_o;
-                std::cout << " y2 " << top->player_2_y_o;
-                std::cout << "       " ;
-                if (top->player_1_collide_with_wall_top_o){std::cout << " t ";}
-                if (top->player_1_collide_with_wall_bottom_o){std::cout << " b ";}
-                if (top->player_1_collide_with_wall_left_o){std::cout << " l ";}
-                if (top->player_1_collide_with_wall_right_o){std::cout << " r ";}
-                std::cout << std::endl;
-            }
+
             top->player_1_move_i = 0;
             top->player_2_move_i = 0;
+            top->player_1_shoot_i = 0;
+            top->player_2_shoot_i = 0;
             if (keyb_state[SDL_SCANCODE_R]) {
                 top->reset_i = 1;
             } else {
@@ -152,6 +143,13 @@ int main(int argc, char* argv[]) {
             } 
             if (keyb_state[SDL_SCANCODE_LEFT]) {
                 top->player_2_move_i = 8;
+            }
+
+            if (keyb_state[SDL_SCANCODE_SPACE]) {
+                top->player_1_shoot_i = 1;
+            }
+            if (keyb_state[SDL_SCANCODE_KP_ENTER]) {
+                top->player_2_shoot_i = 1;
             }
             top->eval();
 
