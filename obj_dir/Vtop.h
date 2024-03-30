@@ -56,7 +56,10 @@ VL_MODULE(Vtop) {
         CData/*0:0*/ top__DOT__top__DOT__hvsync_gen__DOT__v_maxxed;
         CData/*2:0*/ top__DOT__top__DOT__map_rgb__DOT__block_type;
         CData/*3:0*/ top__DOT__top__DOT__map_rgb__DOT__block_state;
-        CData/*0:0*/ top__DOT__top__DOT__map_rgb__DOT__pos_edge_detect_bullet_collide__DOT__sig_dly;
+        CData/*0:0*/ top__DOT__top__DOT__map_rgb__DOT__UL;
+        CData/*0:0*/ top__DOT__top__DOT__map_rgb__DOT__UR;
+        CData/*0:0*/ top__DOT__top__DOT__map_rgb__DOT__LR;
+        CData/*0:0*/ top__DOT__top__DOT__map_rgb__DOT__LL;
         CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__player_1_box;
         CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_top;
         CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_bottom;
@@ -81,10 +84,12 @@ VL_MODULE(Vtop) {
         CData/*3:0*/ top__DOT__top__DOT__player_rgb__DOT__bullet_1_dir;
         CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__show_bullet_1;
         CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__player_1_bullet;
+        CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__player_1_shoot;
         CData/*1:0*/ top__DOT__top__DOT__player_rgb__DOT__bullet_2_state;
         CData/*3:0*/ top__DOT__top__DOT__player_rgb__DOT__bullet_2_dir;
         CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__show_bullet_2;
         CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__player_2_bullet;
+        CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__player_2_shoot;
         CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__pos_edge_detect_1__DOT__sig_dly;
         CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__pos_edge_detect_2__DOT__sig_dly;
         SData/*9:0*/ top__DOT__top__DOT__player_rgb__DOT__player_1_x;
@@ -98,27 +103,25 @@ VL_MODULE(Vtop) {
         SData/*9:0*/ top__DOT__top__DOT__player_rgb__DOT__player_2_bullet_x;
         SData/*9:0*/ top__DOT__top__DOT__player_rgb__DOT__player_2_bullet_y;
         IData/*23:0*/ top__DOT__top__DOT__map_rgb__DOT__dout;
+    };
+    struct {
         IData/*24:0*/ top__DOT__top__DOT__speed_control__DOT__count;
         IData/*23:0*/ top__DOT__top__DOT__player_rgb__DOT__dout_1;
         IData/*23:0*/ top__DOT__top__DOT__player_rgb__DOT__dout_2;
         CData/*6:0*/ top__DOT__top__DOT__map_rgb__DOT__map_tiles[13][13];
         IData/*23:0*/ top__DOT__top__DOT__map_rgb__DOT__tile__DOT__mem[8192];
-    };
-    struct {
         IData/*23:0*/ top__DOT__top__DOT__player_rgb__DOT__mem_player_1__DOT__mem[2048];
         IData/*23:0*/ top__DOT__top__DOT__player_rgb__DOT__mem_player_2__DOT__mem[2048];
     };
     
     // LOCAL VARIABLES
     // Internals; generally not touched by application code
-    CData/*6:0*/ top__DOT__top__DOT__map_rgb__DOT____Vxrand3;
     CData/*6:0*/ top__DOT__top__DOT__map_rgb__DOT____Vxrand2;
     CData/*6:0*/ top__DOT__top__DOT__map_rgb__DOT____Vxrand1;
-    CData/*3:0*/ top__DOT__top__DOT__map_rgb__DOT____Vlvbound4;
-    CData/*3:0*/ top__DOT__top__DOT__map_rgb__DOT____Vlvbound5;
-    CData/*3:0*/ top__DOT__top__DOT__map_rgb__DOT____Vlvbound6;
-    CData/*3:0*/ top__DOT__top__DOT__map_rgb__DOT____Vlvbound7;
-    CData/*6:0*/ top__DOT__top__DOT__map_rgb__DOT____Vlvbound8;
+    CData/*0:0*/ top__DOT__top__DOT__map_rgb__DOT____Vlvbound3;
+    CData/*0:0*/ top__DOT__top__DOT__map_rgb__DOT____Vlvbound4;
+    CData/*0:0*/ top__DOT__top__DOT__map_rgb__DOT____Vlvbound5;
+    CData/*0:0*/ top__DOT__top__DOT__map_rgb__DOT____Vlvbound6;
     CData/*1:0*/ __Vdly__top__DOT__top__DOT__player_rgb__DOT__bullet_1_state;
     CData/*1:0*/ __Vdly__top__DOT__top__DOT__player_rgb__DOT__bullet_2_state;
     CData/*0:0*/ __VinpClk__TOP__top__DOT__top__DOT__clk_slow;
@@ -161,6 +164,9 @@ VL_MODULE(Vtop) {
     void __Vconfigure(Vtop__Syms* symsp, bool first);
   private:
     static QData _change_request(Vtop__Syms* __restrict vlSymsp);
+  public:
+    static void _combo__TOP__10(Vtop__Syms* __restrict vlSymsp);
+  private:
     void _ctor_var_reset() VL_ATTR_COLD;
   public:
     static void _eval(Vtop__Syms* __restrict vlSymsp);
@@ -172,7 +178,7 @@ VL_MODULE(Vtop) {
     static void _eval_initial(Vtop__Syms* __restrict vlSymsp) VL_ATTR_COLD;
     static void _eval_settle(Vtop__Syms* __restrict vlSymsp) VL_ATTR_COLD;
     static void _initial__TOP__1(Vtop__Syms* __restrict vlSymsp) VL_ATTR_COLD;
-    static void _multiclk__TOP__10(Vtop__Syms* __restrict vlSymsp);
+    static void _multiclk__TOP__11(Vtop__Syms* __restrict vlSymsp);
     static void _sequent__TOP__2(Vtop__Syms* __restrict vlSymsp);
     static void _sequent__TOP__4(Vtop__Syms* __restrict vlSymsp);
     static void _sequent__TOP__5(Vtop__Syms* __restrict vlSymsp);

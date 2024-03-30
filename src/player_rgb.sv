@@ -22,7 +22,7 @@ module player_rgb #(
     input logic map_enable_i,
     input logic destroyable_block_i,
     input logic cannot_walk_through_i,
-    input logic all_hard_block_o,
+    input logic all_hard_block_i,
     input logic hsync_i,
     output logic bullet_collide_o,
 
@@ -112,6 +112,16 @@ module player_rgb #(
             end
             default:;
         endcase
+        if(player_1_shoot || player_2_shoot) begin
+                player_1_collide_with_wall_top     <= 1'b0;
+                player_1_collide_with_wall_bottom     <= 1'b0;
+                player_1_collide_with_wall_right     <= 1'b0;
+                player_1_collide_with_wall_left     <= 1'b0;      
+                player_2_collide_with_wall_top     <= 1'b0;
+                player_2_collide_with_wall_bottom     <= 1'b0;
+                player_2_collide_with_wall_right     <= 1'b0;
+                player_2_collide_with_wall_left     <= 1'b0;    
+        end
         if(cannot_walk_through_i) begin
             if (player_1_top)           player_1_collide_with_wall_top      <= 1'b1;
             if (player_1_bottom)        player_1_collide_with_wall_bottom   <= 1'b1;
@@ -381,7 +391,7 @@ module player_rgb #(
             endcase
         end
     end
-    assign bullet_1_collide = player_1_bullet && all_hard_block_o;
+    assign bullet_1_collide = player_1_bullet && all_hard_block_i;
 
     assign player_1_bullet = show_bullet_1 && ((vpos_i - player_1_bullet_y) <= BULLET_BOUND)  && ((hpos_i - player_1_bullet_x) <= BULLET_BOUND);
 
@@ -468,7 +478,7 @@ module player_rgb #(
             endcase
         end
     end
-    assign bullet_2_collide = player_2_bullet && all_hard_block_o;
+    assign bullet_2_collide = player_2_bullet && all_hard_block_i;
 
     assign player_2_bullet = show_bullet_2 && ((vpos_i - player_2_bullet_y) <= BULLET_BOUND)  && ((hpos_i - player_2_bullet_x) <= BULLET_BOUND);
 

@@ -41,7 +41,8 @@ module game_top #(
         .map_blue_o(map_blue), 
         .map_green_o(map_green), 
         .map_red_o(map_red),
-        .clk_i(clk_i)
+        .clk_i(clk_i),
+        .reset_i(reset_i)
     );
 
     rgb_render  #(
@@ -90,7 +91,7 @@ module game_top #(
         .map_enable_i(map_enable),
         .destroyable_block_i(destroyable_block),
         .cannot_walk_through_i(cannot_walk_through),
-        .all_hard_block_o(all_hard_block),
+        .all_hard_block_i(all_hard_block),
         .hsync_i(hsync),
         .bullet_collide_o(bullet_collide),
 
