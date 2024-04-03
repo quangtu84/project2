@@ -28,7 +28,6 @@ module map_rgb #(
     logic [COLOR_BITS-1:0] dout;
     logic [3:0] block_state;
     logic [3:0] map_x, map_y;
-    logic bullet_collide;
     logic UL, UR, LR, LL;
 
     assign map_enable_o = display_enable_i && (hpos_i >=32) && (hpos_i <= 447) && (vpos_i >=32) && (vpos_i <= 447);
@@ -79,15 +78,9 @@ module map_rgb #(
         end
     end
 
-    pos_edge_detect pos_edge_detect_bullet_collide(
-        .sig(bullet_collide_i),           
-        .clk(clk_i),            
-        .pe(bullet_collide)
-    );
-
     logic [6:0] map_tiles [12:0][12:0];
     //load map & block state
-    always_ff @(posedge clk_i) begin
+    always_ff @(posedge clk_i or posedge reset_i) begin
         if(reset_i) begin
             map_tiles[0][0] <= {AIR,4'b1111};
             map_tiles[0][1] <= {AIR,4'b1111};

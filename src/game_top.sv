@@ -15,7 +15,7 @@ module game_top #(
     input logic clk_i,
     input logic reset_i
 );
-    logic map_enable, clk_slow, cannot_walk_through, hsync, vsync, destroyable_block, all_hard_block, bullet_collide;
+    logic map_enable, clk_slow, cannot_walk_through, hsync, vsync, destroyable_block, all_hard_block, bullet_collide, bullet_collide_player_1, bullet_collide_player_2;
     logic [(COLOR_BITS/3)-1 :0] map_blue, map_green, map_red, player_red, player_green, player_blue, bullet_blue, bullet_green, bullet_red;
 
     hvsync_gen hvsync_gen(
@@ -42,7 +42,7 @@ module game_top #(
         .map_green_o(map_green), 
         .map_red_o(map_red),
         .clk_i(clk_i),
-        .reset_i(reset_i)
+        .reset_i(reset)
     );
 
     rgb_render  #(
@@ -59,6 +59,12 @@ module game_top #(
         .bullet_blue_i(bullet_blue),
         .bullet_green_i(bullet_green),
         .bullet_red_i(bullet_red),
+
+        .is_menu_i(is_menu),
+        .is_playing_i(is_playing),
+        .is_continue_i(is_continue),
+        .is_final_i(is_final),
+
         .blue_o(blue_o),
         .green_o(green_o),
         .red_o(red_o)
@@ -94,10 +100,30 @@ module game_top #(
         .all_hard_block_i(all_hard_block),
         .hsync_i(hsync),
         .bullet_collide_o(bullet_collide),
+        .bullet_collide_player_1_o(bullet_collide_player_1),
+        .bullet_collide_player_2_o(bullet_collide_player_2),
 
         .clk_slow_i(clk_slow),
         .clk_i(clk_i),
-        .reset_i(reset_i)
+        .reset_i(reset)
+    );
+
+    logic is_menu, is_playing, is_continue, is_final, reset;
+    FSM game_FSM (
+        .space_i(player_1_shoot_i),
+        .sellect_up_i(player_1_move_i[1]),
+        .sellect_down_i(player_1_move_i[0]),
+        .bullet_collide_player_1_i(bullet_collide_player_1),
+        .bullet_collide_player_2_i(bullet_collide_player_2),
+
+        .is_menu_o(is_menu),
+        .is_playing_o(is_playing),
+        .is_continue_o(is_continue),
+        .is_final_o(is_final),
+        .reset_o(reset),
+
+        .reset_i(reset_i),
+        .clk_i(clk_i)
     );
 /* verilator lint_off PINCONNECTEMPTY */
 endmodule
