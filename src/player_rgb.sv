@@ -235,7 +235,7 @@ module player_rgb #(
     mem_player_1  #(
         .COLOR_BITS(COLOR_BITS)
     ) mem_player_1 (
-        .addr({1'b0,addr_1}),
+        .addr(addr_1),
         .dout(dout_1)
     );
 
@@ -289,7 +289,7 @@ module player_rgb #(
     mem_player_2  #(
         .COLOR_BITS(COLOR_BITS)
     ) mem_player_2 (
-        .addr({1'b1,addr_2}),
+        .addr(addr_2),
         .dout(dout_2)
     );
 
@@ -506,7 +506,7 @@ module player_rgb #(
     //              Bullet GFX
     ///////////////////////////////////////////////
 
-    assign {bullet_blue_o, bullet_green_o, bullet_red_o} = (player_1_bullet | player_2_bullet) ? 24'hFFFFFF : 24'b0;
+    assign {bullet_blue_o, bullet_green_o, bullet_red_o} = (player_1_bullet | player_2_bullet) ? 24'hFFFFFF : 0;
 
     ///////////////////////////////////////////////
     //   Bullet collide with bricks & players

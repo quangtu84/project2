@@ -83,7 +83,7 @@ module game_top #(
     );
 /* verilator lint_off PINCONNECTEMPTY */
     player_rgb #(
-        .COLOR_BITS(24)
+        .COLOR_BITS(COLOR_BITS)
     ) player_rgb (
         //control tanks
         .player_1_move_i(player_1_move_i),

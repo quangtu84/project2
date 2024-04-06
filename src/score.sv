@@ -50,7 +50,7 @@ module score #(
     );
     number number_player_1_10(
         .enable_i(enable_player_1_10),
-        .number_i(player_1_10[3:0]),
+        .number_i(player_1_10[3:0] == 0 ? 10 : player_1_10[3:0]),
         .x_ofs_i(hpos_i[3:0]),
         .y_ofs_i(vpos_i[3:0]),
         .number_bit_o(data_player_1_10)
@@ -64,7 +64,7 @@ module score #(
     );
     number number_player_2_10(
         .enable_i(enable_player_2_10),
-        .number_i(player_2_10[3:0]),
+        .number_i(player_2_10[3:0] == 0 ? 10 : player_2_10[3:0]),
         .x_ofs_i(hpos_i[3:0]),
         .y_ofs_i(vpos_i[3:0]),
         .number_bit_o(data_player_2_10)

@@ -86,15 +86,16 @@ void Vtop::_initial__TOP__1(Vtop__Syms* __restrict vlSymsp) {
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_initial__TOP__1\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Variables
-    WData/*127:0*/ __Vtemp1[4];
-    WData/*191:0*/ __Vtemp2[6];
-    WData/*191:0*/ __Vtemp3[6];
+    WData/*159:0*/ __Vtemp1[5];
+    WData/*223:0*/ __Vtemp2[7];
+    WData/*223:0*/ __Vtemp3[7];
     // Body
     __Vtemp1[0U] = 0x2e747874U;
     __Vtemp1[1U] = 0x5f726762U;
     __Vtemp1[2U] = 0x34626974U;
-    __Vtemp1[3U] = 0x32U;
-    VL_READMEM_N(true, 24, 8192, 0, VL_CVT_PACK_STR_NW(4, __Vtemp1)
+    __Vtemp1[3U] = 0x656c2f32U;
+    __Vtemp1[4U] = 0x706978U;
+    VL_READMEM_N(true, 24, 8192, 0, VL_CVT_PACK_STR_NW(5, __Vtemp1)
                  , vlTOPp->top__DOT__top__DOT__map_rgb__DOT__tile__DOT__mem
                  , 0, ~VL_ULL(0));
     vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0U][0U] = 0U;
@@ -1126,8 +1127,9 @@ void Vtop::_initial__TOP__1(Vtop__Syms* __restrict vlSymsp) {
     __Vtemp2[2U] = 0x706c6179U;
     __Vtemp2[3U] = 0x7267625fU;
     __Vtemp2[4U] = 0x6269745fU;
-    __Vtemp2[5U] = 0x3234U;
-    VL_READMEM_N(true, 24, 2048, 0, VL_CVT_PACK_STR_NW(6, __Vtemp2)
+    __Vtemp2[5U] = 0x6c2f3234U;
+    __Vtemp2[6U] = 0x70697865U;
+    VL_READMEM_N(true, 24, 1024, 0, VL_CVT_PACK_STR_NW(7, __Vtemp2)
                  , vlTOPp->top__DOT__top__DOT__player_rgb__DOT__mem_player_1__DOT__mem
                  , 0, ~VL_ULL(0));
     __Vtemp3[0U] = 0x2e747874U;
@@ -1135,8 +1137,9 @@ void Vtop::_initial__TOP__1(Vtop__Syms* __restrict vlSymsp) {
     __Vtemp3[2U] = 0x706c6179U;
     __Vtemp3[3U] = 0x7267625fU;
     __Vtemp3[4U] = 0x6269745fU;
-    __Vtemp3[5U] = 0x3234U;
-    VL_READMEM_N(true, 24, 2048, 0, VL_CVT_PACK_STR_NW(6, __Vtemp3)
+    __Vtemp3[5U] = 0x6c2f3234U;
+    __Vtemp3[6U] = 0x70697865U;
+    VL_READMEM_N(true, 24, 1024, 0, VL_CVT_PACK_STR_NW(7, __Vtemp3)
                  , vlTOPp->top__DOT__top__DOT__player_rgb__DOT__mem_player_2__DOT__mem
                  , 0, ~VL_ULL(0));
     vlTOPp->top__DOT__top__DOT__map_rgb__DOT____Vxrand1 
@@ -1208,13 +1211,13 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__2(Vtop__Syms* __restrict vlSymsp) {
                 if (((IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_player_1) 
                      & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__pos_edge_detect_bullet_collide_player_1__DOT__sig_dly)))) {
                     __Vdly__top__DOT__top__DOT__game_FSM__DOT__score_player_2 
-                        = (0x3fU & ((IData)(7U) + (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_2)));
+                        = (0x3fU & ((IData)(1U) + (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_2)));
                     __Vdly__top__DOT__top__DOT__game_FSM__DOT__game_state = 2U;
                 }
                 if (((IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_player_2) 
                      & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__pos_edge_detect_bullet_collide_player_2__DOT__sig_dly)))) {
                     __Vdly__top__DOT__top__DOT__game_FSM__DOT__score_player_1 
-                        = (0x3fU & ((IData)(8U) + (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_1)));
+                        = (0x3fU & ((IData)(1U) + (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_1)));
                     __Vdly__top__DOT__top__DOT__game_FSM__DOT__game_state = 2U;
                 }
             } else {
@@ -1373,7 +1376,7 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__2(Vtop__Syms* __restrict vlSymsp) {
         = __Vdly__top__DOT__top__DOT__speed_control__DOT__count;
     vlTOPp->top__DOT__top__DOT__player_rgb__DOT__dout_2 
         = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__mem_player_2__DOT__mem
-        [(0x400U | (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__addr_2))];
+        [vlTOPp->top__DOT__top__DOT__player_rgb__DOT__addr_2];
     vlTOPp->top__DOT__top__DOT__player_rgb__DOT__dout_1 
         = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__mem_player_1__DOT__mem
         [vlTOPp->top__DOT__top__DOT__player_rgb__DOT__addr_1];
@@ -1781,11 +1784,12 @@ void Vtop::_settle__TOP__4(Vtop__Syms* __restrict vlSymsp) {
         [vlTOPp->top__DOT__top__DOT__player_rgb__DOT__addr_1];
     vlTOPp->top__DOT__top__DOT__player_rgb__DOT__dout_2 
         = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__mem_player_2__DOT__mem
-        [(0x400U | (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__addr_2))];
+        [vlTOPp->top__DOT__top__DOT__player_rgb__DOT__addr_2];
     vlTOPp->top__DOT__top__DOT__score__DOT__data_player_2_10 
         = ((IData)(vlTOPp->top__DOT__top__DOT__score__DOT__enable_player_2_10)
             ? (1U & (vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array
-                     [(0xfU & VL_DIV_III(32, (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_2), (IData)(0xaU)))]
+                     [((0U == (0xfU & VL_DIV_III(32, (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_2), (IData)(0xaU))))
+                        ? 0xaU : (0xfU & VL_DIV_III(32, (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_2), (IData)(0xaU))))]
                      [(0xfU & (IData)(vlTOPp->vpos_o))] 
                      >> (0xfU & (~ (IData)(vlTOPp->hpos_o)))))
             : 0U);
@@ -1806,7 +1810,8 @@ void Vtop::_settle__TOP__4(Vtop__Syms* __restrict vlSymsp) {
     vlTOPp->top__DOT__top__DOT__score__DOT__data_player_1_10 
         = ((IData)(vlTOPp->top__DOT__top__DOT__score__DOT__enable_player_1_10)
             ? (1U & (vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array
-                     [(0xfU & VL_DIV_III(32, (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_1), (IData)(0xaU)))]
+                     [((0U == (0xfU & VL_DIV_III(32, (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_1), (IData)(0xaU))))
+                        ? 0xaU : (0xfU & VL_DIV_III(32, (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_1), (IData)(0xaU))))]
                      [(0xfU & (IData)(vlTOPp->vpos_o))] 
                      >> (0xfU & (~ (IData)(vlTOPp->hpos_o)))))
             : 0U);
@@ -3262,7 +3267,8 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__14(Vtop__Syms* __restrict vlSymsp) {
     vlTOPp->top__DOT__top__DOT__score__DOT__data_player_2_10 
         = ((IData)(vlTOPp->top__DOT__top__DOT__score__DOT__enable_player_2_10)
             ? (1U & (vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array
-                     [(0xfU & VL_DIV_III(32, (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_2), (IData)(0xaU)))]
+                     [((0U == (0xfU & VL_DIV_III(32, (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_2), (IData)(0xaU))))
+                        ? 0xaU : (0xfU & VL_DIV_III(32, (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_2), (IData)(0xaU))))]
                      [(0xfU & (IData)(vlTOPp->vpos_o))] 
                      >> (0xfU & (~ (IData)(vlTOPp->hpos_o)))))
             : 0U);
@@ -3283,7 +3289,8 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__14(Vtop__Syms* __restrict vlSymsp) {
     vlTOPp->top__DOT__top__DOT__score__DOT__data_player_1_10 
         = ((IData)(vlTOPp->top__DOT__top__DOT__score__DOT__enable_player_1_10)
             ? (1U & (vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array
-                     [(0xfU & VL_DIV_III(32, (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_1), (IData)(0xaU)))]
+                     [((0U == (0xfU & VL_DIV_III(32, (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_1), (IData)(0xaU))))
+                        ? 0xaU : (0xfU & VL_DIV_III(32, (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_1), (IData)(0xaU))))]
                      [(0xfU & (IData)(vlTOPp->vpos_o))] 
                      >> (0xfU & (~ (IData)(vlTOPp->hpos_o)))))
             : 0U);
@@ -3848,10 +3855,10 @@ void Vtop::_ctor_var_reset() {
     top__DOT__top__DOT__player_rgb__DOT__show_bullet_2 = VL_RAND_RESET_I(1);
     top__DOT__top__DOT__player_rgb__DOT__player_2_bullet = VL_RAND_RESET_I(1);
     top__DOT__top__DOT__player_rgb__DOT__player_2_shoot = VL_RAND_RESET_I(1);
-    { int __Vi0=0; for (; __Vi0<2048; ++__Vi0) {
+    { int __Vi0=0; for (; __Vi0<1024; ++__Vi0) {
             top__DOT__top__DOT__player_rgb__DOT__mem_player_1__DOT__mem[__Vi0] = VL_RAND_RESET_I(24);
     }}
-    { int __Vi0=0; for (; __Vi0<2048; ++__Vi0) {
+    { int __Vi0=0; for (; __Vi0<1024; ++__Vi0) {
             top__DOT__top__DOT__player_rgb__DOT__mem_player_2__DOT__mem[__Vi0] = VL_RAND_RESET_I(24);
     }}
     top__DOT__top__DOT__player_rgb__DOT__pos_edge_detect_1__DOT__sig_dly = VL_RAND_RESET_I(1);

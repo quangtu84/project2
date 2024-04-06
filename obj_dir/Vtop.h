@@ -133,8 +133,8 @@ VL_MODULE(Vtop) {
         IData/*23:0*/ top__DOT__top__DOT__player_rgb__DOT__dout_2;
         CData/*6:0*/ top__DOT__top__DOT__map_rgb__DOT__map_tiles[13][13];
         IData/*23:0*/ top__DOT__top__DOT__map_rgb__DOT__tile__DOT__mem[8192];
-        IData/*23:0*/ top__DOT__top__DOT__player_rgb__DOT__mem_player_1__DOT__mem[2048];
-        IData/*23:0*/ top__DOT__top__DOT__player_rgb__DOT__mem_player_2__DOT__mem[2048];
+        IData/*23:0*/ top__DOT__top__DOT__player_rgb__DOT__mem_player_1__DOT__mem[1024];
+        IData/*23:0*/ top__DOT__top__DOT__player_rgb__DOT__mem_player_2__DOT__mem[1024];
         SData/*15:0*/ top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[16][16];
         SData/*15:0*/ top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[16][16];
         SData/*15:0*/ top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[16][16];
