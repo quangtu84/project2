@@ -15,8 +15,9 @@ module game_top #(
     input logic clk_i,
     input logic reset_i
 );
-    logic map_enable, clk_slow, cannot_walk_through, hsync, vsync, destroyable_block, all_hard_block, bullet_collide, bullet_collide_player_1, bullet_collide_player_2;
-    logic [(COLOR_BITS/3)-1 :0] map_blue, map_green, map_red, player_red, player_green, player_blue, bullet_blue, bullet_green, bullet_red;
+    logic map_enable, clk_slow, cannot_walk_through, hsync, vsync, destroyable_block, all_hard_block, bullet_collide, bullet_collide_player_1, bullet_collide_player_2, number_enable;
+    logic [(COLOR_BITS/3)-1 :0] map_blue, map_green, map_red, player_red, player_green, player_blue, bullet_blue, bullet_green, bullet_red, number_blue, number_green, number_red;
+    logic [5:0] score_player_1, score_player_2;
 
     hvsync_gen hvsync_gen(
         .clk_i(clk_i),
@@ -59,6 +60,10 @@ module game_top #(
         .bullet_blue_i(bullet_blue),
         .bullet_green_i(bullet_green),
         .bullet_red_i(bullet_red),
+        .number_blue_i(number_blue),
+        .number_green_i(number_green),
+        .number_red_i(number_red),
+        .number_enable_i(number_enable),
 
         .is_menu_i(is_menu),
         .is_playing_i(is_playing),
@@ -68,6 +73,8 @@ module game_top #(
         .blue_o(blue_o),
         .green_o(green_o),
         .red_o(red_o)
+
+
     );
 
     speed_control speed_control(
@@ -116,6 +123,9 @@ module game_top #(
         .bullet_collide_player_1_i(bullet_collide_player_1),
         .bullet_collide_player_2_i(bullet_collide_player_2),
 
+        .score_player_1_o(score_player_1),
+        .score_player_2_o(score_player_2),
+
         .is_menu_o(is_menu),
         .is_playing_o(is_playing),
         .is_continue_o(is_continue),
@@ -124,6 +134,18 @@ module game_top #(
 
         .reset_i(reset_i),
         .clk_i(clk_i)
+    );
+
+    score score (
+        .score_player_1_i(score_player_1),
+        .score_player_2_i(score_player_2),
+        .hpos_i(hpos_o),
+        .vpos_i(vpos_o),
+
+        .number_blue_o(number_blue),
+        .number_green_o(number_green),
+        .number_red_o(number_red),
+        .number_enable_o(number_enable)
     );
 /* verilator lint_off PINCONNECTEMPTY */
 endmodule

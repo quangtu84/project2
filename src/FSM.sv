@@ -7,6 +7,9 @@ module FSM (
     input logic bullet_collide_player_1_i,
     input logic bullet_collide_player_2_i,
 
+    output logic [5:0] score_player_1_o,
+    output logic [5:0] score_player_2_o,
+
     output logic is_menu_o,
     output logic is_playing_o,
     output logic is_continue_o,
@@ -24,9 +27,11 @@ enum [1:0] {
     FINAL_SCORE = 3
 } game_state;
 
-logic [4:0] score_player_1, score_player_2;
+logic [5:0] score_player_1, score_player_2;
 logic bullet_collide_player_1, bullet_collide_player_2;
 
+assign score_player_1_o = score_player_1;
+assign score_player_2_o = score_player_2;
 
 pos_edge_detect pos_edge_detect_bullet_1 (
     .sig(bullet_collide_player_1_i),           

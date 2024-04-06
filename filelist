@@ -5,7 +5,9 @@ src/map_rgb.sv
 src/mem_player_1.sv
 src/mem_player_2.sv
 src/mem_tile.sv
+src/number.sv
 src/player_rgb.sv
-src/rgb_render.sv
-src/speed_control.sv
 src/pos_edge_detect.sv
+src/rgb_render.sv
+src/score.sv
+src/speed_control.sv
