@@ -15,8 +15,8 @@ module game_top #(
     input logic clk_i,
     input logic reset_i
 );
-    logic map_enable, clk_slow, cannot_walk_through, hsync, vsync, destroyable_block, all_hard_block, bullet_collide, bullet_collide_player_1, bullet_collide_player_2, number_enable;
-    logic [(COLOR_BITS/3)-1 :0] map_blue, map_green, map_red, player_red, player_green, player_blue, bullet_blue, bullet_green, bullet_red, number_blue, number_green, number_red;
+    logic map_enable, clk_slow, cannot_walk_through, hsync, vsync, destroyable_block, all_hard_block, bullet_collide, bullet_collide_player_1, bullet_collide_player_2, number_enable, tank_enable;
+    logic [(COLOR_BITS/3)-1 :0] map_blue, map_green, map_red, player_red, player_green, player_blue, bullet_blue, bullet_green, bullet_red, number_blue, number_green, number_red, tank_blue, tank_green, tank_red;
     logic [5:0] score_player_1, score_player_2;
 
     hvsync_gen hvsync_gen(
@@ -64,6 +64,10 @@ module game_top #(
         .number_green_i(number_green),
         .number_red_i(number_red),
         .number_enable_i(number_enable),
+        .tank_blue_i(tank_blue),
+        .tank_green_i(tank_green),
+        .tank_red_i(tank_red),
+        .tank_enable_i(tank_enable),
 
         .is_menu_i(is_menu),
         .is_playing_i(is_playing),
@@ -145,7 +149,12 @@ module game_top #(
         .number_blue_o(number_blue),
         .number_green_o(number_green),
         .number_red_o(number_red),
-        .number_enable_o(number_enable)
+        .number_enable_o(number_enable),
+
+        .tank_blue_o(tank_blue),
+        .tank_green_o(tank_green),
+        .tank_red_o(tank_red),
+        .tank_enable_o(tank_enable)
     );
 /* verilator lint_off PINCONNECTEMPTY */
 endmodule

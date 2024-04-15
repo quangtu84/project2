@@ -48,6 +48,7 @@ VL_MODULE(Vtop) {
         CData/*0:0*/ top__DOT__top__DOT__bullet_collide_player_1;
         CData/*0:0*/ top__DOT__top__DOT__bullet_collide_player_2;
         CData/*0:0*/ top__DOT__top__DOT__number_enable;
+        CData/*0:0*/ top__DOT__top__DOT__tank_enable;
         CData/*7:0*/ top__DOT__top__DOT__map_blue;
         CData/*7:0*/ top__DOT__top__DOT__map_green;
         CData/*7:0*/ top__DOT__top__DOT__map_red;
@@ -57,6 +58,9 @@ VL_MODULE(Vtop) {
         CData/*7:0*/ top__DOT__top__DOT__number_blue;
         CData/*7:0*/ top__DOT__top__DOT__number_green;
         CData/*7:0*/ top__DOT__top__DOT__number_red;
+        CData/*7:0*/ top__DOT__top__DOT__tank_blue;
+        CData/*7:0*/ top__DOT__top__DOT__tank_green;
+        CData/*7:0*/ top__DOT__top__DOT__tank_red;
         CData/*0:0*/ top__DOT__top__DOT__is_menu;
         CData/*0:0*/ top__DOT__top__DOT__is_playing;
         CData/*0:0*/ top__DOT__top__DOT__is_continue;
@@ -99,12 +103,12 @@ VL_MODULE(Vtop) {
         CData/*3:0*/ top__DOT__top__DOT__player_rgb__DOT__bullet_2_dir;
         CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__show_bullet_2;
         CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__player_2_bullet;
+    };
+    struct {
         CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__player_2_shoot;
         CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__pos_edge_detect_1__DOT__sig_dly;
         CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__pos_edge_detect_bullet_collide_player_2__DOT__sig_dly;
         CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__pos_edge_detect_2__DOT__sig_dly;
-    };
-    struct {
         CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__pos_edge_detect_bullet_collide_player_1__DOT__sig_dly;
         CData/*1:0*/ top__DOT__top__DOT__game_FSM__DOT__game_state;
         CData/*5:0*/ top__DOT__top__DOT__game_FSM__DOT__score_player_1;
@@ -113,6 +117,8 @@ VL_MODULE(Vtop) {
         CData/*0:0*/ top__DOT__top__DOT__score__DOT__enable_player_1_10;
         CData/*0:0*/ top__DOT__top__DOT__score__DOT__enable_player_2_1;
         CData/*0:0*/ top__DOT__top__DOT__score__DOT__enable_player_2_10;
+        CData/*0:0*/ top__DOT__top__DOT__score__DOT__enable_tank_1;
+        CData/*0:0*/ top__DOT__top__DOT__score__DOT__enable_tank_2;
         CData/*0:0*/ top__DOT__top__DOT__score__DOT__data_player_1_1;
         CData/*0:0*/ top__DOT__top__DOT__score__DOT__data_player_1_10;
         CData/*0:0*/ top__DOT__top__DOT__score__DOT__data_player_2_1;
@@ -131,6 +137,8 @@ VL_MODULE(Vtop) {
         IData/*24:0*/ top__DOT__top__DOT__speed_control__DOT__count;
         IData/*23:0*/ top__DOT__top__DOT__player_rgb__DOT__dout_1;
         IData/*23:0*/ top__DOT__top__DOT__player_rgb__DOT__dout_2;
+        IData/*23:0*/ top__DOT__top__DOT__score__DOT__dout_1;
+        IData/*23:0*/ top__DOT__top__DOT__score__DOT__dout_2;
         CData/*6:0*/ top__DOT__top__DOT__map_rgb__DOT__map_tiles[13][13];
         IData/*23:0*/ top__DOT__top__DOT__map_rgb__DOT__tile__DOT__mem[8192];
         IData/*23:0*/ top__DOT__top__DOT__player_rgb__DOT__mem_player_1__DOT__mem[1024];
@@ -139,6 +147,8 @@ VL_MODULE(Vtop) {
         SData/*15:0*/ top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[16][16];
         SData/*15:0*/ top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[16][16];
         SData/*15:0*/ top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[16][16];
+        IData/*23:0*/ top__DOT__top__DOT__score__DOT__tank_player_1__DOT__mem[1024];
+        IData/*23:0*/ top__DOT__top__DOT__score__DOT__tank_player_2__DOT__mem[1024];
     };
     
     // LOCAL VARIABLES

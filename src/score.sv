@@ -10,19 +10,30 @@ module score #(
     output logic [(COLOR_BITS/3)-1 :0] number_blue_o,
     output logic [(COLOR_BITS/3)-1 :0] number_green_o,
     output logic [(COLOR_BITS/3)-1 :0] number_red_o,
-    output logic number_enable_o
+    output logic number_enable_o,
+
+    output logic [(COLOR_BITS/3)-1 :0] tank_blue_o,
+    output logic [(COLOR_BITS/3)-1 :0] tank_green_o,
+    output logic [(COLOR_BITS/3)-1 :0] tank_red_o,
+    output logic tank_enable_o
+
 );
     parameter SCORE_Y = 32*5;
     parameter SCORE_X_1 = 32*15;
     parameter SCORE_X_2 = SCORE_X_1 + 16;
     parameter SCORE_X_3 = 32*18;
     parameter SCORE_X_4 = SCORE_X_3 + 16;
+    parameter TANK_Y = 32*4;
+    parameter TANK_X_1 = 32*15;
+    parameter TANK_X_2 = 32*18;
 
+    logic [COLOR_BITS-1 :0] dout_1, dout_2;
     logic [5:0] player_1_1, player_1_10, player_2_1, player_2_10;
-    logic enable_player_1_1, enable_player_1_10, enable_player_2_1, enable_player_2_10;
+    logic enable_player_1_1, enable_player_1_10, enable_player_2_1, enable_player_2_10, enable_tank_1, enable_tank_2;
     logic data_player_1_1, data_player_1_10, data_player_2_1, data_player_2_10;
 
     assign number_enable_o = enable_player_1_1 || enable_player_1_10 || enable_player_2_1 || enable_player_2_10;
+    assign tank_enable_o = enable_tank_1 || enable_tank_2;
     assign player_1_1  = score_player_1_i %10;
     assign player_1_10 = score_player_1_i /10;
     assign player_2_1  = score_player_2_i %10;
@@ -38,6 +49,15 @@ module score #(
             if((hpos_i >= SCORE_X_2) && (hpos_i < SCORE_X_2 + 16)) enable_player_1_1  = 1;
             if((hpos_i >= SCORE_X_3) && (hpos_i < SCORE_X_3 + 16)) enable_player_2_10 = 1;
             if((hpos_i >= SCORE_X_4) && (hpos_i < SCORE_X_4 + 16)) enable_player_2_1  = 1;
+        end
+    end
+
+    always_comb begin
+        enable_tank_1  = 0; 
+        enable_tank_2 = 0; 
+        if((vpos_i >= TANK_Y) && (vpos_i < TANK_Y + 32)) begin
+            if((hpos_i >= TANK_X_1) && (hpos_i < TANK_X_1 + 32)) enable_tank_1 = 1;
+            if((hpos_i >= TANK_X_2) && (hpos_i < TANK_X_2 + 32)) enable_tank_2 = 1;
         end
     end
 
@@ -69,6 +89,29 @@ module score #(
         .y_ofs_i(vpos_i[3:0]),
         .number_bit_o(data_player_2_10)
     );
+
+    mem_player_1  #(
+        .COLOR_BITS(COLOR_BITS)
+    ) tank_player_1 (
+        .addr({vpos_i[4:0], hpos_i[4:0]}),
+        .dout(dout_1)
+    );
+
+    mem_player_2  #(
+        .COLOR_BITS(COLOR_BITS)
+    ) tank_player_2 (
+        .addr({vpos_i[4:0], hpos_i[4:0]}),
+        .dout(dout_2)
+    );
+
+    always_comb begin
+        if(enable_tank_1) begin
+            {tank_blue_o, tank_green_o, tank_red_o} = dout_1 == 0 ? 24'hE0E0E0 : dout_1;
+        end
+        if(enable_tank_2) begin
+            {tank_blue_o, tank_green_o, tank_red_o} = dout_2 == 0 ? 24'hE0E0E0 : dout_2;
+        end
+    end
 
     always_comb begin
         if(number_enable_o) begin
