@@ -28,7 +28,8 @@ module player_rgb #(
     output logic bullet_collide_player_1_o,
     output logic bullet_collide_player_2_o,
 
-    input logic clk_slow_i,
+    input logic player_update_i,
+    input logic bullet_update_i,
     input logic clk_i,
     input logic reset_i
 );
@@ -38,10 +39,10 @@ module player_rgb #(
     localparam PLAYER_2_X_INIT = 7*32;
     localparam PLAYER_2_Y_INIT = 32*13;
     localparam PLAYER_MOVE_SPEED = 1;
-    localparam BULLET_MOVE_SPEED = 4;
+    localparam BULLET_MOVE_SPEED = 1;
     localparam PLAYER_BOUND = 28;
     localparam PLAYER_BOUND_2 = 3;
-    localparam BULLET_BOUND = 4;
+    localparam BULLET_BOUND = 5;
 
     logic [9:0] player_1_x, player_1_y, player_2_x, player_2_y;  //upper left point of tank
     logic player_1_box, player_1_collide_with_wall_top, player_1_collide_with_wall_bottom, player_1_collide_with_wall_left, player_1_collide_with_wall_right;
@@ -155,7 +156,7 @@ module player_rgb #(
     ///////////////////////////////////////////
     //              player move
     ///////////////////////////////////////////
-    always_ff @(posedge clk_slow_i or posedge reset_i) begin
+    always_ff @(posedge player_update_i or posedge reset_i) begin
         if(reset_i) begin
             player_1_x <= PLAYER_1_X_INIT;
             player_1_y <= PLAYER_1_Y_INIT;
@@ -347,9 +348,11 @@ module player_rgb #(
                 end
                 SHOOT: begin
                     show_bullet_1 <= 1;
+                    if ((player_1_bullet && all_hard_block_i) || (player_1_bullet && player_2_bullet) || bullet_collide_player_2) bullet_1_collide <= 1;
                     if (bullet_1_collide) begin
                         bullet_1_state <= COLLIDE;
                         show_bullet_1 <= 0;
+                        bullet_1_collide <= 0;
                     end
                 end
                 COLLIDE: begin
@@ -361,8 +364,8 @@ module player_rgb #(
         end
     end
 
-    always_ff @(posedge clk_slow_i) begin
-        if(bullet_1_state == SHOOT) begin
+    always_ff @(posedge bullet_update_i) begin
+        if(bullet_1_state == SHOOT && show_bullet_1) begin
             case (bullet_1_dir)
                 4'b0001: begin //down
                     player_1_bullet_y <= player_1_bullet_y + BULLET_MOVE_SPEED;
@@ -406,9 +409,9 @@ module player_rgb #(
         .clk(clk_i),            
         .pe(bullet_collide_player_2)
     );
-    assign bullet_1_collide = (player_1_bullet && all_hard_block_i) || (player_1_bullet && player_2_bullet) || bullet_collide_player_2;
+    //assign bullet_1_collide = (player_1_bullet && all_hard_block_i) || (player_1_bullet && player_2_bullet) || bullet_collide_player_2;
 
-    assign player_1_bullet = show_bullet_1 && ((vpos_i - player_1_bullet_y) <= BULLET_BOUND)  && ((hpos_i - player_1_bullet_x) <= BULLET_BOUND);
+    assign player_1_bullet = show_bullet_1 && ((vpos_i - player_1_bullet_y) < BULLET_BOUND)  && ((hpos_i - player_1_bullet_x) < BULLET_BOUND);
 
     ///////////////////////////////////////////
     //              bullet_2 FSM
@@ -439,9 +442,11 @@ module player_rgb #(
                 end
                 SHOOT: begin
                     show_bullet_2 <= 1;
+                    if ((player_2_bullet && all_hard_block_i) || (player_2_bullet && player_1_bullet) || bullet_collide_player_1) bullet_2_collide <= 1;
                     if (bullet_2_collide) begin
                         bullet_2_state <= COLLIDE;
                         show_bullet_2 <= 0;
+                        bullet_2_collide <= 0;
                     end
                 end
                 COLLIDE: begin
@@ -453,8 +458,8 @@ module player_rgb #(
         end
     end
 
-    always_ff @(posedge clk_slow_i) begin
-        if(bullet_2_state == SHOOT) begin
+    always_ff @(posedge bullet_update_i) begin
+        if(bullet_2_state == SHOOT && show_bullet_2) begin
             case (bullet_2_dir)
                 4'b0001: begin //down
                     player_2_bullet_y <= player_2_bullet_y + BULLET_MOVE_SPEED;
@@ -498,9 +503,9 @@ module player_rgb #(
         .clk(clk_i),            
         .pe(bullet_collide_player_1)
     );
-    assign bullet_2_collide = (player_2_bullet && all_hard_block_i) || (player_2_bullet && player_1_bullet) || bullet_collide_player_1;
+    //assign bullet_2_collide = (player_2_bullet && all_hard_block_i) || (player_2_bullet && player_1_bullet) || bullet_collide_player_1;
 
-    assign player_2_bullet = show_bullet_2 && ((vpos_i - player_2_bullet_y) <= BULLET_BOUND)  && ((hpos_i - player_2_bullet_x) <= BULLET_BOUND);
+    assign player_2_bullet = show_bullet_2 && ((vpos_i - player_2_bullet_y) < BULLET_BOUND)  && ((hpos_i - player_2_bullet_x) < BULLET_BOUND);
 
     ///////////////////////////////////////////////
     //              Bullet GFX

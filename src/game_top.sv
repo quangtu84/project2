@@ -6,35 +6,46 @@ module game_top #(
     input logic [3:0] player_2_move_i,
     input logic player_1_shoot_i,
     input logic player_2_shoot_i,
-    output logic display_enable_o,
+    output logic hsync_no,
+    output logic vsync_no,
+    //for simulation only
     output logic [9:0] hpos_o,
     output logic [9:0] vpos_o,
+    output logic display_enable_o,
+    /////////////////////////
     output logic [(COLOR_BITS/3)-1 :0] blue_o,
     output logic [(COLOR_BITS/3)-1 :0] green_o,
     output logic [(COLOR_BITS/3)-1 :0] red_o,
     input logic clk_i,
     input logic reset_i
 );
-    logic map_enable, clk_slow, cannot_walk_through, hsync, vsync, destroyable_block, all_hard_block, bullet_collide, bullet_collide_player_1, bullet_collide_player_2, number_enable, tank_enable;
+
+    logic map_enable, clk_player, clk_bullet, cannot_walk_through, destroyable_block, all_hard_block, bullet_collide, bullet_collide_player_1, bullet_collide_player_2, number_enable, tank_enable;
     logic [(COLOR_BITS/3)-1 :0] map_blue, map_green, map_red, player_red, player_green, player_blue, bullet_blue, bullet_green, bullet_red, number_blue, number_green, number_red, tank_blue, tank_green, tank_red;
     logic [5:0] score_player_1, score_player_2;
-
+    logic [9:0] hpos, vpos;
+    logic display_enable;
+    //for simulation only
+    assign hpos_o = hpos;
+    assign vpos_o = vpos;
+    assign display_enable_o = display_enable;
+    /////////////////////
     hvsync_gen hvsync_gen(
         .clk_i(clk_i),
-        .hsync_no(hsync),
-        .vsync_no(vsync),
-        .display_enable_o(display_enable_o),
-        .hpos_o(hpos_o),
-        .vpos_o(vpos_o)
+        .hsync_no(hsync_no),
+        .vsync_no(vsync_no),
+        .display_enable_o(display_enable),
+        .hpos_o(hpos),
+        .vpos_o(vpos)
     );
 
     map_rgb  #(
         .COLOR_BITS(COLOR_BITS)
     ) map_rgb(
         .bullet_collide_i(bullet_collide),
-        .display_enable_i(display_enable_o),
-        .hpos_i(hpos_o),
-        .vpos_i(vpos_o),
+        .display_enable_i(display_enable),
+        .hpos_i(hpos),
+        .vpos_i(vpos),
         .map_enable_o(map_enable),
         .cannot_walk_through_o(cannot_walk_through),
         .destroyable_block_o(destroyable_block),
@@ -50,7 +61,7 @@ module game_top #(
         .COLOR_BITS(COLOR_BITS)
     ) rgb_render(
         .map_enable_i(map_enable),
-        .display_enable_i(display_enable_o),
+        .display_enable_i(display_enable),
         .map_blue_i(map_blue),
         .map_green_i(map_green),
         .map_red_i(map_red),
@@ -83,7 +94,8 @@ module game_top #(
 
     speed_control speed_control(
         .clk_i(clk_i),
-        .update_clk_o(clk_slow)
+        .player_update_o(clk_player),
+        .bullet_update_o(clk_bullet)
     );
 /* verilator lint_off PINCONNECTEMPTY */
     player_rgb #(
@@ -95,9 +107,9 @@ module game_top #(
         .player_1_shoot_i(player_1_shoot_i),
         .player_2_shoot_i(player_2_shoot_i),
         //video signal
-        .display_enable_i(display_enable_o),
-        .hpos_i(hpos_o),
-        .vpos_i(vpos_o),
+        .display_enable_i(display_enable),
+        .hpos_i(hpos),
+        .vpos_i(vpos),
         .player_blue_o(player_blue),
         .player_green_o(player_green),
         .player_red_o(player_red),
@@ -109,12 +121,13 @@ module game_top #(
         .destroyable_block_i(destroyable_block),
         .cannot_walk_through_i(cannot_walk_through),
         .all_hard_block_i(all_hard_block),
-        .hsync_i(hsync),
+        .hsync_i(hsync_no),
         .bullet_collide_o(bullet_collide),
         .bullet_collide_player_1_o(bullet_collide_player_1),
         .bullet_collide_player_2_o(bullet_collide_player_2),
 
-        .clk_slow_i(clk_slow),
+        .player_update_i(clk_player),
+        .bullet_update_i(clk_bullet),
         .clk_i(clk_i),
         .reset_i(reset)
     );
@@ -141,10 +154,11 @@ module game_top #(
     );
 
     score score (
+        .clk_i(clk_i),
         .score_player_1_i(score_player_1),
         .score_player_2_i(score_player_2),
-        .hpos_i(hpos_o),
-        .vpos_i(vpos_o),
+        .hpos_i(hpos),
+        .vpos_i(vpos),
 
         .number_blue_o(number_blue),
         .number_green_o(number_green),

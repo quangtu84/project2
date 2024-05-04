@@ -20,12 +20,11 @@ module FSM (
     input logic clk_i
 );
 
-enum [1:0] {
-    MENU        = 0,
-    START       = 1,
-    CONTINUE    = 2,
-    FINAL_SCORE = 3
-} game_state;
+logic [1:0] game_state;
+localparam MENU        = 0;
+localparam START       = 1;
+localparam CONTINUE    = 2;
+localparam FINAL_SCORE = 3;
 
 logic [5:0] score_player_1, score_player_2;
 logic bullet_collide_player_1, bullet_collide_player_2;

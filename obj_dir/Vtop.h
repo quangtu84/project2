@@ -22,11 +22,13 @@ VL_MODULE(Vtop) {
     // PORTS
     // The application code writes and reads these signals to
     // propagate new values into/out from the Verilated model.
+    VL_OUT8(hsync_no,0,0);
     VL_IN8(clk_i,0,0);
     VL_IN8(player_1_move_i,3,0);
     VL_IN8(player_2_move_i,3,0);
     VL_IN8(player_1_shoot_i,0,0);
     VL_IN8(player_2_shoot_i,0,0);
+    VL_OUT8(vsync_no,0,0);
     VL_OUT8(display_enable_o,0,0);
     VL_OUT8(blue_o,7,0);
     VL_OUT8(green_o,7,0);
@@ -39,8 +41,8 @@ VL_MODULE(Vtop) {
     // Internals; generally not touched by application code
     // Anonymous structures to workaround compiler member-count bugs
     struct {
-        CData/*0:0*/ top__DOT__top__DOT__clk_slow;
-        CData/*0:0*/ top__DOT__top__DOT__hsync;
+        CData/*0:0*/ top__DOT__top__DOT__clk_player;
+        CData/*0:0*/ top__DOT__top__DOT__clk_bullet;
         CData/*0:0*/ top__DOT__top__DOT__reset;
         CData/*0:0*/ top__DOT__top__DOT__map_enable;
         CData/*0:0*/ top__DOT__top__DOT__cannot_walk_through;
@@ -61,11 +63,13 @@ VL_MODULE(Vtop) {
         CData/*7:0*/ top__DOT__top__DOT__tank_blue;
         CData/*7:0*/ top__DOT__top__DOT__tank_green;
         CData/*7:0*/ top__DOT__top__DOT__tank_red;
+        CData/*0:0*/ top__DOT__top__DOT__display_enable;
         CData/*0:0*/ top__DOT__top__DOT__is_menu;
         CData/*0:0*/ top__DOT__top__DOT__is_playing;
         CData/*0:0*/ top__DOT__top__DOT__is_continue;
         CData/*0:0*/ top__DOT__top__DOT__is_final;
         CData/*0:0*/ top__DOT__top__DOT__hvsync_gen__DOT__hsync;
+        CData/*0:0*/ top__DOT__top__DOT__hvsync_gen__DOT__vsync;
         CData/*0:0*/ top__DOT__top__DOT__hvsync_gen__DOT__h_maxxed;
         CData/*0:0*/ top__DOT__top__DOT__hvsync_gen__DOT__v_maxxed;
         CData/*2:0*/ top__DOT__top__DOT__map_rgb__DOT__block_type;
@@ -97,14 +101,16 @@ VL_MODULE(Vtop) {
         CData/*1:0*/ top__DOT__top__DOT__player_rgb__DOT__bullet_1_state;
         CData/*3:0*/ top__DOT__top__DOT__player_rgb__DOT__bullet_1_dir;
         CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__show_bullet_1;
+        CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__bullet_1_collide;
         CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__player_1_bullet;
         CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__player_1_shoot;
         CData/*1:0*/ top__DOT__top__DOT__player_rgb__DOT__bullet_2_state;
-        CData/*3:0*/ top__DOT__top__DOT__player_rgb__DOT__bullet_2_dir;
-        CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__show_bullet_2;
-        CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__player_2_bullet;
     };
     struct {
+        CData/*3:0*/ top__DOT__top__DOT__player_rgb__DOT__bullet_2_dir;
+        CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__show_bullet_2;
+        CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__bullet_2_collide;
+        CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__player_2_bullet;
         CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__player_2_shoot;
         CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__pos_edge_detect_1__DOT__sig_dly;
         CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__pos_edge_detect_bullet_collide_player_2__DOT__sig_dly;
@@ -123,6 +129,8 @@ VL_MODULE(Vtop) {
         CData/*0:0*/ top__DOT__top__DOT__score__DOT__data_player_1_10;
         CData/*0:0*/ top__DOT__top__DOT__score__DOT__data_player_2_1;
         CData/*0:0*/ top__DOT__top__DOT__score__DOT__data_player_2_10;
+        SData/*9:0*/ top__DOT__top__DOT__hpos;
+        SData/*9:0*/ top__DOT__top__DOT__vpos;
         SData/*9:0*/ top__DOT__top__DOT__player_rgb__DOT__player_1_x;
         SData/*9:0*/ top__DOT__top__DOT__player_rgb__DOT__player_1_y;
         SData/*9:0*/ top__DOT__top__DOT__player_rgb__DOT__player_2_x;
@@ -135,6 +143,7 @@ VL_MODULE(Vtop) {
         SData/*9:0*/ top__DOT__top__DOT__player_rgb__DOT__player_2_bullet_y;
         IData/*23:0*/ top__DOT__top__DOT__map_rgb__DOT__dout;
         IData/*24:0*/ top__DOT__top__DOT__speed_control__DOT__count;
+        IData/*24:0*/ top__DOT__top__DOT__speed_control__DOT__count2;
         IData/*23:0*/ top__DOT__top__DOT__player_rgb__DOT__dout_1;
         IData/*23:0*/ top__DOT__top__DOT__player_rgb__DOT__dout_2;
         IData/*23:0*/ top__DOT__top__DOT__score__DOT__dout_1;
@@ -161,17 +170,22 @@ VL_MODULE(Vtop) {
     CData/*0:0*/ top__DOT__top__DOT__map_rgb__DOT____Vlvbound6;
     CData/*0:0*/ __Vdly__top__DOT__top__DOT__reset;
     CData/*1:0*/ __Vdly__top__DOT__top__DOT__player_rgb__DOT__bullet_1_state;
+    CData/*0:0*/ __Vdly__top__DOT__top__DOT__player_rgb__DOT__bullet_1_collide;
     CData/*1:0*/ __Vdly__top__DOT__top__DOT__player_rgb__DOT__bullet_2_state;
+    CData/*0:0*/ __Vdly__top__DOT__top__DOT__player_rgb__DOT__bullet_2_collide;
     CData/*0:0*/ __VinpClk__TOP__top__DOT__top__DOT__reset;
-    CData/*0:0*/ __VinpClk__TOP__top__DOT__top__DOT__clk_slow;
+    CData/*0:0*/ __VinpClk__TOP__top__DOT__top__DOT__clk_player;
+    CData/*0:0*/ __VinpClk__TOP__top__DOT__top__DOT__clk_bullet;
     CData/*0:0*/ __Vclklast__TOP__clk_i;
     CData/*0:0*/ __Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__reset;
-    CData/*0:0*/ __Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__clk_slow;
-    CData/*0:0*/ __Vclklast__TOP__top__DOT__top__DOT__hsync;
-    CData/*0:0*/ __Vchglast__TOP__top__DOT__top__DOT__clk_slow;
+    CData/*0:0*/ __Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__clk_player;
+    CData/*0:0*/ __Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__clk_bullet;
+    CData/*0:0*/ __Vclklast__TOP__hsync_no;
+    CData/*0:0*/ __Vchglast__TOP__top__DOT__top__DOT__clk_player;
+    CData/*0:0*/ __Vchglast__TOP__top__DOT__top__DOT__clk_bullet;
     CData/*0:0*/ __Vchglast__TOP__top__DOT__top__DOT__reset;
-    SData/*9:0*/ __Vdly__hpos_o;
-    SData/*9:0*/ __Vdly__vpos_o;
+    SData/*9:0*/ __Vdly__top__DOT__top__DOT__hpos;
+    SData/*9:0*/ __Vdly__top__DOT__top__DOT__vpos;
     SData/*9:0*/ __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_x;
     SData/*9:0*/ __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_y;
     SData/*9:0*/ __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_x;
@@ -220,12 +234,13 @@ VL_MODULE(Vtop) {
     static void _eval_settle(Vtop__Syms* __restrict vlSymsp) VL_ATTR_COLD;
     static void _initial__TOP__1(Vtop__Syms* __restrict vlSymsp) VL_ATTR_COLD;
     static void _multiclk__TOP__15(Vtop__Syms* __restrict vlSymsp);
-    static void _multiclk__TOP__17(Vtop__Syms* __restrict vlSymsp);
+    static void _multiclk__TOP__16(Vtop__Syms* __restrict vlSymsp);
+    static void _multiclk__TOP__18(Vtop__Syms* __restrict vlSymsp);
     static void _sequent__TOP__10(Vtop__Syms* __restrict vlSymsp);
     static void _sequent__TOP__11(Vtop__Syms* __restrict vlSymsp);
     static void _sequent__TOP__13(Vtop__Syms* __restrict vlSymsp);
     static void _sequent__TOP__14(Vtop__Syms* __restrict vlSymsp);
-    static void _sequent__TOP__16(Vtop__Syms* __restrict vlSymsp);
+    static void _sequent__TOP__17(Vtop__Syms* __restrict vlSymsp);
     static void _sequent__TOP__2(Vtop__Syms* __restrict vlSymsp);
     static void _sequent__TOP__3(Vtop__Syms* __restrict vlSymsp);
     static void _sequent__TOP__5(Vtop__Syms* __restrict vlSymsp);

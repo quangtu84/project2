@@ -127,7 +127,7 @@ module map_rgb #(
             map_tiles[3][3] <= {BRICK,4'b1111};
             map_tiles[3][4] <= {AIR,4'b1111};
             map_tiles[3][5] <= {BRICK,4'b1111};
-            map_tiles[3][6] <= {WALL,4'b1111};
+            map_tiles[3][6] <= {AIR,4'b1111};
             map_tiles[3][7] <= {BRICK,4'b1111};
             map_tiles[3][8] <= {AIR,4'b1111};
             map_tiles[3][9] <= {BRICK,4'b1111};

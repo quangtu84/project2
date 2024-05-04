@@ -2,6 +2,7 @@
 module score #(
     parameter COLOR_BITS = 24
 ) (
+    input logic clk_i,
     input logic [5:0] score_player_1_i,
     input logic [5:0] score_player_2_i,
     input logic [9:0] hpos_i,
@@ -104,12 +105,12 @@ module score #(
         .dout(dout_2)
     );
 
-    always_comb begin
+    always_ff @(posedge clk_i) begin
         if(enable_tank_1) begin
-            {tank_blue_o, tank_green_o, tank_red_o} = dout_1 == 0 ? 24'hE0E0E0 : dout_1;
+            {tank_blue_o, tank_green_o, tank_red_o} <= dout_1 == 0 ? 24'hE0E0E0 : dout_1;
         end
         if(enable_tank_2) begin
-            {tank_blue_o, tank_green_o, tank_red_o} = dout_2 == 0 ? 24'hE0E0E0 : dout_2;
+            {tank_blue_o, tank_green_o, tank_red_o} <= dout_2 == 0 ? 24'hE0E0E0 : dout_2;
         end
     end
 

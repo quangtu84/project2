@@ -37,6 +37,7 @@ module rgb_render #(
 );
 
     always_comb begin
+        {blue_o, green_o, red_o} = 0;
         if (display_enable_i) begin
             if(is_menu_i) begin 
                 {blue_o, green_o, red_o} = 24'hE0E0E0;
