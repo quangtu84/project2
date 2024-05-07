@@ -26,6 +26,10 @@ module rgb_render #(
     input logic [(COLOR_BITS/3)-1 :0] tank_red_i,
     input logic tank_enable_i,
 
+    input logic [(COLOR_BITS/3)-1 :0] menu_blue_i,
+    input logic [(COLOR_BITS/3)-1 :0] menu_green_i,
+    input logic [(COLOR_BITS/3)-1 :0] menu_red_i,
+
     input logic is_menu_i,
     input logic is_playing_i,
     input logic is_continue_i,
@@ -40,7 +44,7 @@ module rgb_render #(
         {blue_o, green_o, red_o} = 0;
         if (display_enable_i) begin
             if(is_menu_i) begin 
-                {blue_o, green_o, red_o} = 24'hE0E0E0;
+                {blue_o, green_o, red_o} = {menu_blue_i, menu_green_i, menu_red_i};
 
             end else if (is_playing_i) begin
                 if(map_enable_i) begin

@@ -63,6 +63,9 @@ VL_MODULE(Vtop) {
         CData/*7:0*/ top__DOT__top__DOT__tank_blue;
         CData/*7:0*/ top__DOT__top__DOT__tank_green;
         CData/*7:0*/ top__DOT__top__DOT__tank_red;
+        CData/*7:0*/ top__DOT__top__DOT__menu_blue;
+        CData/*7:0*/ top__DOT__top__DOT__menu_green;
+        CData/*7:0*/ top__DOT__top__DOT__menu_red;
         CData/*0:0*/ top__DOT__top__DOT__display_enable;
         CData/*0:0*/ top__DOT__top__DOT__is_menu;
         CData/*0:0*/ top__DOT__top__DOT__is_playing;
@@ -78,6 +81,7 @@ VL_MODULE(Vtop) {
         CData/*0:0*/ top__DOT__top__DOT__map_rgb__DOT__UR;
         CData/*0:0*/ top__DOT__top__DOT__map_rgb__DOT__LR;
         CData/*0:0*/ top__DOT__top__DOT__map_rgb__DOT__LL;
+        CData/*7:0*/ top__DOT__top__DOT__menu__DOT__bit_number;
         CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__player_1_box;
         CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_top;
         CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_bottom;
@@ -101,12 +105,12 @@ VL_MODULE(Vtop) {
         CData/*1:0*/ top__DOT__top__DOT__player_rgb__DOT__bullet_1_state;
         CData/*3:0*/ top__DOT__top__DOT__player_rgb__DOT__bullet_1_dir;
         CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__show_bullet_1;
+    };
+    struct {
         CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__bullet_1_collide;
         CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__player_1_bullet;
         CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__player_1_shoot;
         CData/*1:0*/ top__DOT__top__DOT__player_rgb__DOT__bullet_2_state;
-    };
-    struct {
         CData/*3:0*/ top__DOT__top__DOT__player_rgb__DOT__bullet_2_dir;
         CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__show_bullet_2;
         CData/*0:0*/ top__DOT__top__DOT__player_rgb__DOT__bullet_2_collide;
@@ -150,6 +154,7 @@ VL_MODULE(Vtop) {
         IData/*23:0*/ top__DOT__top__DOT__score__DOT__dout_2;
         CData/*6:0*/ top__DOT__top__DOT__map_rgb__DOT__map_tiles[13][13];
         IData/*23:0*/ top__DOT__top__DOT__map_rgb__DOT__tile__DOT__mem[8192];
+        CData/*7:0*/ top__DOT__top__DOT__menu__DOT__ascii_rom__DOT__mem[1024];
         IData/*23:0*/ top__DOT__top__DOT__player_rgb__DOT__mem_player_1__DOT__mem[1024];
         IData/*23:0*/ top__DOT__top__DOT__player_rgb__DOT__mem_player_2__DOT__mem[1024];
         SData/*15:0*/ top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[16][16];

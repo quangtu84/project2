@@ -21,7 +21,7 @@ module game_top #(
 );
 
     logic map_enable, clk_player, clk_bullet, cannot_walk_through, destroyable_block, all_hard_block, bullet_collide, bullet_collide_player_1, bullet_collide_player_2, number_enable, tank_enable;
-    logic [(COLOR_BITS/3)-1 :0] map_blue, map_green, map_red, player_red, player_green, player_blue, bullet_blue, bullet_green, bullet_red, number_blue, number_green, number_red, tank_blue, tank_green, tank_red;
+    logic [(COLOR_BITS/3)-1 :0] map_blue, map_green, map_red, player_red, player_green, player_blue, bullet_blue, bullet_green, bullet_red, number_blue, number_green, number_red, tank_blue, tank_green, tank_red, menu_blue, menu_green, menu_red;
     logic [5:0] score_player_1, score_player_2;
     logic [9:0] hpos, vpos;
     logic display_enable;
@@ -57,6 +57,17 @@ module game_top #(
         .reset_i(reset)
     );
 
+    menu  #(
+        .COLOR_BITS(COLOR_BITS)
+    ) menu(
+        .hpos_i(hpos),
+        .vpos_i(vpos),
+
+        .menu_blue_o(menu_blue),
+        .menu_green_o(menu_green),
+        .menu_red_o(menu_red)
+    );
+
     rgb_render  #(
         .COLOR_BITS(COLOR_BITS)
     ) rgb_render(
@@ -79,6 +90,9 @@ module game_top #(
         .tank_green_i(tank_green),
         .tank_red_i(tank_red),
         .tank_enable_i(tank_enable),
+        .menu_blue_i(menu_blue),
+        .menu_green_i(menu_green),
+        .menu_red_i(menu_red),
 
         .is_menu_i(is_menu),
         .is_playing_i(is_playing),

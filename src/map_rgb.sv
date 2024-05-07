@@ -35,7 +35,7 @@ module map_rgb #(
                                  || ((block_type == BRICK) && UL) || ((block_type == BRICK) && UR)
                                  || ((block_type == BRICK) && LR) || ((block_type == BRICK) && LL);
     assign destroyable_block_o = ((block_type == BRICK) && UL) || ((block_type == BRICK) && UR)
-                               ||((block_type == BRICK) && LR) || ((block_type == BRICK) && LL);;
+                               ||((block_type == BRICK) && LR) || ((block_type == BRICK) && LL);
     assign all_hard_block_o = block_type == WALL || (display_enable_i && !map_enable_o)
                             || ((block_type == BRICK) && UL) || ((block_type == BRICK) && UR)
                             || ((block_type == BRICK) && LR) || ((block_type == BRICK) && LL);

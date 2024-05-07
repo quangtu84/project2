@@ -1,3 +1,4 @@
+src/ascii_rom.sv
 src/FSM.sv
 src/game_top.sv
 src/hvsync_gen.sv
@@ -5,6 +6,7 @@ src/map_rgb.sv
 src/mem_player_1.sv
 src/mem_player_2.sv
 src/mem_tile.sv
+src/menu.sv
 src/number.sv
 src/player_rgb.sv
 src/pos_edge_detect.sv
