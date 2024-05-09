@@ -24,6 +24,7 @@ module game_top #(
     logic [(COLOR_BITS/3)-1 :0] map_blue, map_green, map_red, player_red, player_green, player_blue, bullet_blue, bullet_green, bullet_red, number_blue, number_green, number_red, tank_blue, tank_green, tank_red, menu_blue, menu_green, menu_red;
     logic [5:0] score_player_1, score_player_2;
     logic [9:0] hpos, vpos;
+    logic [1:0] map_type;
     logic display_enable;
     //for simulation only
     assign hpos_o = hpos;
@@ -42,6 +43,7 @@ module game_top #(
     map_rgb  #(
         .COLOR_BITS(COLOR_BITS)
     ) map_rgb(
+        .map_type_i(map_type),
         .bullet_collide_i(bullet_collide),
         .display_enable_i(display_enable),
         .hpos_i(hpos),
@@ -60,12 +62,18 @@ module game_top #(
     menu  #(
         .COLOR_BITS(COLOR_BITS)
     ) menu(
+        .sellect_up_i(player_1_move_i[1]),
+        .sellect_down_i(player_1_move_i[0]),
         .hpos_i(hpos),
         .vpos_i(vpos),
 
         .menu_blue_o(menu_blue),
         .menu_green_o(menu_green),
-        .menu_red_o(menu_red)
+        .menu_red_o(menu_red),
+        .map_type_o(map_type),
+
+        .clk_i(clk_i),
+        .reset_i(reset_i)
     );
 
     rgb_render  #(

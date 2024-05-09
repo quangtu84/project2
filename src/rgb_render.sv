@@ -40,6 +40,17 @@ module rgb_render #(
     output logic [(COLOR_BITS/3)-1 :0] red_o
 );
 
+    logic map_enable;
+    logic [(COLOR_BITS/3)-1 :0] player_blue;
+    logic [(COLOR_BITS/3)-1 :0] player_green;
+    logic [(COLOR_BITS/3)-1 :0] player_red;
+
+
+    assign map_enable = |map_blue_i || |map_green_i || |map_green_i;
+    assign player_blue = map_enable ? 0 : player_blue_i;
+    assign player_green = map_enable ? 0 : player_green_i;
+    assign player_red = map_enable ? 0 : player_red_i;
+
     always_comb begin
         {blue_o, green_o, red_o} = 0;
         if (display_enable_i) begin
@@ -48,9 +59,9 @@ module rgb_render #(
 
             end else if (is_playing_i) begin
                 if(map_enable_i) begin
-                    blue_o  = map_blue_i  | player_blue_i     | bullet_blue_i;
-                    green_o = map_green_i | player_green_i    | bullet_green_i;
-                    red_o   = map_red_i   | player_red_i      | bullet_red_i;
+                    blue_o  = map_blue_i  | player_blue     | bullet_blue_i;
+                    green_o = map_green_i | player_green    | bullet_green_i;
+                    red_o   = map_red_i   | player_red      | bullet_red_i;
                 end else begin
                     if (number_enable_i) begin
                         {blue_o, green_o, red_o} = {number_blue_i, number_green_i, number_red_i};

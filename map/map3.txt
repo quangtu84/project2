@@ -1,0 +1,13 @@
+AIR     AIR	    WATER   WATER   AIR	    AIR	    AIR	    AIR	    AIR	    AIR	    AIR	    AIR	    AIR
+WALL    AIR	    AIR	    WATER   TREE    AIR	    BRICK   AIR	    AIR	    AIR	    AIR	    AIR	    AIR
+TREE    WALL    AIR	    AIR	    AIR	    AIR	    WALL    AIR	    BRICK   AIR	    WATER   WATER   AIR
+TREE    TREE    AIR	    WALL    BRICK   BRICK   AIR	    AIR	    WALL    TREE    WATER   AIR	    AIR
+TREE    TREE    TREE    AIR	    AIR	    WALL    BRICK   BRICK   AIR	    AIR	    AIR	    AIR	    WALL
+TREE    TREE    WALL    WALL    AIR	    BRICK   AIR	    WALL    BRICK   AIR	    AIR	    WALL    TREE
+TREE    WALL    AIR	    AIR	    BRICK   WALL    AIR	    BRICK   AIR	    WALL    AIR	    TREE    TREE
+AIR     AIR	    AIR	    AIR	    AIR	    BRICK   BRICK   WALL    AIR	    AIR	    TREE    TREE    TREE
+AIR     AIR	    WATER   TREE    WALL    AIR	    AIR	    BRICK   BRICK   WALL    WALL    TREE    TREE
+AIR     WATER   WATER   AIR	    BRICK   AIR	    WALL    AIR	    AIR	    AIR	    AIR	    AIR	    TREE
+AIR     AIR	    AIR	    AIR	    AIR	    AIR	    BRICK	AIR	    TREE    WATER   AIR	    AIR	    WALL
+WALL    AIR	    AIR	    AIR	    AIR	    AIR	    AIR	    AIR	    AIR	    WATER   WATER   AIR	    AIR
+WALL    WALL    AIR	    AIR	    AIR	    AIR	    AIR	    AIR	    AIR	    AIR	    AIR	    AIR	    WALL

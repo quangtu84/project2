@@ -66,11 +66,11 @@ always_ff @(posedge clk_i) begin
                 is_playing_o <= 1;
                 if(bullet_collide_player_1) begin
                     score_player_2 <= score_player_2 + 1;
-                    game_state <= CONTINUE;
+                    game_state <= MENU;
                 end
                 if(bullet_collide_player_2) begin
                     score_player_1 <= score_player_1 + 1;
-                    game_state <= CONTINUE;
+                    game_state <= MENU;
                 end
             end
             CONTINUE: begin
