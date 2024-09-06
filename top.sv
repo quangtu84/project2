@@ -15,6 +15,7 @@ module top #(
     output logic [(COLOR_BITS/3)-1 :0] blue_o,
     output logic [(COLOR_BITS/3)-1 :0] green_o,
     output logic [(COLOR_BITS/3)-1 :0] red_o,
+	output logic VGA_clk_o,
     input logic clk_i,
     input logic reset_i
 );

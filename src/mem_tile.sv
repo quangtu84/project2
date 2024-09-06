@@ -11,7 +11,6 @@ module mem_tile #(
   assign dout = mem[addr]; // read memory to dout (async)
   
   initial begin
-    if (COLOR_BITS == 24) $readmemh("pixel/24bit_rgb.txt",mem);
-    else if(COLOR_BITS == 12) $readmemh("pixel/12bit_rgb.txt",mem);
+    $readmemh("pixel/24bit_rgb.txt",mem);
   end
 endmodule

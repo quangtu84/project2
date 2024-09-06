@@ -16,6 +16,7 @@ module game_top #(
     output logic [(COLOR_BITS/3)-1 :0] blue_o,
     output logic [(COLOR_BITS/3)-1 :0] green_o,
     output logic [(COLOR_BITS/3)-1 :0] red_o,
+	output logic VGA_clk_o,
     input logic clk_i,
     input logic reset_i
 );
@@ -26,13 +27,15 @@ module game_top #(
     logic [9:0] hpos, vpos;
     logic [1:0] map_type;
     logic display_enable;
+    logic VGA_clk;
+    assign VGA_clk_o = VGA_clk;
     //for simulation only
     assign hpos_o = hpos;
     assign vpos_o = vpos;
     assign display_enable_o = display_enable;
     /////////////////////
     hvsync_gen hvsync_gen(
-        .clk_i(clk_i),
+        .clk_i(VGA_clk),
         .hsync_no(hsync_no),
         .vsync_no(vsync_no),
         .display_enable_o(display_enable),
@@ -55,7 +58,7 @@ module game_top #(
         .map_blue_o(map_blue), 
         .map_green_o(map_green), 
         .map_red_o(map_red),
-        .clk_i(clk_i),
+        .clk_i(VGA_clk),
         .reset_i(reset)
     );
 
@@ -72,7 +75,7 @@ module game_top #(
         .menu_red_o(menu_red),
         .map_type_o(map_type),
 
-        .clk_i(clk_i),
+        .clk_i(VGA_clk),
         .reset_i(reset_i)
     );
 
@@ -117,7 +120,8 @@ module game_top #(
     speed_control speed_control(
         .clk_i(clk_i),
         .player_update_o(clk_player),
-        .bullet_update_o(clk_bullet)
+        .bullet_update_o(clk_bullet),
+        .VGA_clk_o(VGA_clk)
     );
 /* verilator lint_off PINCONNECTEMPTY */
     player_rgb #(
@@ -150,7 +154,7 @@ module game_top #(
 
         .player_update_i(clk_player),
         .bullet_update_i(clk_bullet),
-        .clk_i(clk_i),
+        .clk_i(VGA_clk),
         .reset_i(reset)
     );
 
@@ -172,11 +176,11 @@ module game_top #(
         .reset_o(reset),
 
         .reset_i(reset_i),
-        .clk_i(clk_i)
+        .clk_i(VGA_clk)
     );
 
     score score (
-        .clk_i(clk_i),
+        .clk_i(VGA_clk),
         .score_player_1_i(score_player_1),
         .score_player_2_i(score_player_2),
         .hpos_i(hpos),

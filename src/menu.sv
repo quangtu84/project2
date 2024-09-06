@@ -113,6 +113,7 @@ module menu #(
 
     always_comb begin
         rom_addr = 0;
+        x_ofs = 0;
         if (title_enable) begin 
             rom_addr = {title_buffer[hpos_i[8:5]-5],vpos_i[6:3]};
             x_ofs = ~hpos_i[4:2];
