@@ -86,21 +86,22 @@ void Vtop::_initial__TOP__1(Vtop__Syms* __restrict vlSymsp) {
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_initial__TOP__1\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Variables
-    WData/*223:0*/ __Vtemp1[7];
-    WData/*223:0*/ __Vtemp2[7];
+    WData/*255:0*/ __Vtemp1[8];
+    WData/*255:0*/ __Vtemp2[8];
     WData/*191:0*/ __Vtemp3[6];
-    WData/*223:0*/ __Vtemp4[7];
-    WData/*223:0*/ __Vtemp5[7];
-    WData/*159:0*/ __Vtemp6[5];
+    WData/*255:0*/ __Vtemp4[8];
+    WData/*255:0*/ __Vtemp5[8];
+    WData/*223:0*/ __Vtemp6[7];
     // Body
     __Vtemp1[0U] = 0x2e747874U;
     __Vtemp1[1U] = 0x65725f31U;
     __Vtemp1[2U] = 0x706c6179U;
     __Vtemp1[3U] = 0x7267625fU;
     __Vtemp1[4U] = 0x6269745fU;
-    __Vtemp1[5U] = 0x6c2f3234U;
-    __Vtemp1[6U] = 0x70697865U;
-    VL_READMEM_N(true, 24, 1024, 0, VL_CVT_PACK_STR_NW(7, __Vtemp1)
+    __Vtemp1[5U] = 0x622f3234U;
+    __Vtemp1[6U] = 0x745f7267U;
+    __Vtemp1[7U] = 0x32346269U;
+    VL_READMEM_N(true, 24, 1024, 0, VL_CVT_PACK_STR_NW(8, __Vtemp1)
                  , vlTOPp->top__DOT__top__DOT__score__DOT__tank_player_1__DOT__mem
                  , 0, ~VL_ULL(0));
     __Vtemp2[0U] = 0x2e747874U;
@@ -108,9 +109,10 @@ void Vtop::_initial__TOP__1(Vtop__Syms* __restrict vlSymsp) {
     __Vtemp2[2U] = 0x706c6179U;
     __Vtemp2[3U] = 0x7267625fU;
     __Vtemp2[4U] = 0x6269745fU;
-    __Vtemp2[5U] = 0x6c2f3234U;
-    __Vtemp2[6U] = 0x70697865U;
-    VL_READMEM_N(true, 24, 1024, 0, VL_CVT_PACK_STR_NW(7, __Vtemp2)
+    __Vtemp2[5U] = 0x622f3234U;
+    __Vtemp2[6U] = 0x745f7267U;
+    __Vtemp2[7U] = 0x32346269U;
+    VL_READMEM_N(true, 24, 1024, 0, VL_CVT_PACK_STR_NW(8, __Vtemp2)
                  , vlTOPp->top__DOT__top__DOT__score__DOT__tank_player_2__DOT__mem
                  , 0, ~VL_ULL(0));
     __Vtemp3[0U] = 0x2e62696eU;
@@ -122,1049 +124,27 @@ void Vtop::_initial__TOP__1(Vtop__Syms* __restrict vlSymsp) {
     VL_READMEM_N(false, 8, 1024, 0, VL_CVT_PACK_STR_NW(6, __Vtemp3)
                  , vlTOPp->top__DOT__top__DOT__menu__DOT__ascii_rom__DOT__mem
                  , 0, ~VL_ULL(0));
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0U][1U] = 0xff0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0U][2U] = 0xff0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0U][3U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0U][4U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0U][5U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0U][6U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0U][7U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0U][8U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0U][9U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0U][0xaU] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0U][0xbU] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0U][0xcU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0U][0xdU] = 0xff0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0U][0xeU] = 0xff0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[1U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[1U][1U] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[1U][2U] = 0x7c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[1U][3U] = 0xfc0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[1U][4U] = 0x1fc0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[1U][5U] = 0x3bc0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[1U][6U] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[1U][7U] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[1U][8U] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[1U][9U] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[1U][0xaU] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[1U][0xbU] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[1U][0xcU] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[1U][0xdU] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[1U][0xeU] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[1U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[2U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[2U][1U] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[2U][2U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[2U][3U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[2U][4U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[2U][5U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[2U][6U] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[2U][7U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[2U][8U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[2U][9U] = 0x3ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[2U][0xaU] = 0x3c00U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[2U][0xbU] = 0x3c00U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[2U][0xcU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[2U][0xdU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[2U][0xeU] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[2U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[3U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[3U][1U] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[3U][2U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[3U][3U] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[3U][4U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[3U][5U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[3U][6U] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[3U][7U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[3U][8U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[3U][9U] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[3U][0xaU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[3U][0xbU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[3U][0xcU] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[3U][0xdU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[3U][0xeU] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[3U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[4U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[4U][1U] = 0x1c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[4U][2U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[4U][3U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[4U][4U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[4U][5U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[4U][6U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[4U][7U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[4U][8U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[4U][9U] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[4U][0xaU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[4U][0xbU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[4U][0xcU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[4U][0xdU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[4U][0xeU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[4U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[5U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[5U][1U] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[5U][2U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[5U][3U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[5U][4U] = 0x3c00U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[5U][5U] = 0x3c00U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[5U][6U] = 0x3ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[5U][7U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[5U][8U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[5U][9U] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[5U][0xaU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[5U][0xbU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[5U][0xcU] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[5U][0xdU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[5U][0xeU] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[5U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[6U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[6U][1U] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[6U][2U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[6U][3U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[6U][4U] = 0x3c00U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[6U][5U] = 0x3c00U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[6U][6U] = 0x3ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[6U][7U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[6U][8U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[6U][9U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[6U][0xaU] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[6U][0xbU] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[6U][0xcU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[6U][0xdU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[6U][0xeU] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[6U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[7U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[7U][1U] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[7U][2U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[7U][3U] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[7U][4U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[7U][5U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[7U][6U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[7U][7U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[7U][8U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[7U][9U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[7U][0xaU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[7U][0xbU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[7U][0xcU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[7U][0xdU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[7U][0xeU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[7U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[8U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[8U][1U] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[8U][2U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[8U][3U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[8U][4U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[8U][5U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[8U][6U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[8U][7U] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[8U][8U] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[8U][9U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[8U][0xaU] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[8U][0xbU] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[8U][0xcU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[8U][0xdU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[8U][0xeU] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[8U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[9U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[9U][1U] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[9U][2U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[9U][3U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[9U][4U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[9U][5U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[9U][6U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[9U][7U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[9U][8U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[9U][9U] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[9U][0xaU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[9U][0xbU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[9U][0xcU] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[9U][0xdU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[9U][0xeU] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[9U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xaU][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xaU][1U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xaU][2U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xaU][3U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xaU][4U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xaU][5U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xaU][6U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xaU][7U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xaU][8U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xaU][9U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xaU][0xaU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xaU][0xbU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xaU][0xcU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xaU][0xdU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xaU][0xeU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xaU][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xbU][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xbU][1U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xbU][2U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xbU][3U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xbU][4U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xbU][5U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xbU][6U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xbU][7U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xbU][8U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xbU][9U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xbU][0xaU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xbU][0xbU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xbU][0xcU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xbU][0xdU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xbU][0xeU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xbU][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xcU][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xcU][1U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xcU][2U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xcU][3U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xcU][4U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xcU][5U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xcU][6U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xcU][7U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xcU][8U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xcU][9U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xcU][0xaU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xcU][0xbU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xcU][0xcU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xcU][0xdU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xcU][0xeU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xcU][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xdU][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xdU][1U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xdU][2U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xdU][3U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xdU][4U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xdU][5U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xdU][6U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xdU][7U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xdU][8U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xdU][9U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xdU][0xaU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xdU][0xbU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xdU][0xcU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xdU][0xdU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xdU][0xeU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xdU][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xeU][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xeU][1U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xeU][2U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xeU][3U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xeU][4U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xeU][5U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xeU][6U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xeU][7U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xeU][8U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xeU][9U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xeU][0xaU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xeU][0xbU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xeU][0xcU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xeU][0xdU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xeU][0xeU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xeU][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xfU][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xfU][1U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xfU][2U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xfU][3U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xfU][4U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xfU][5U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xfU][6U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xfU][7U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xfU][8U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xfU][9U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xfU][0xaU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xfU][0xbU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xfU][0xcU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xfU][0xdU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xfU][0xeU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[0xfU][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0U][1U] = 0xff0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0U][2U] = 0xff0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0U][3U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0U][4U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0U][5U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0U][6U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0U][7U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0U][8U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0U][9U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0U][0xaU] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0U][0xbU] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0U][0xcU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0U][0xdU] = 0xff0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0U][0xeU] = 0xff0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[1U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[1U][1U] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[1U][2U] = 0x7c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[1U][3U] = 0xfc0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[1U][4U] = 0x1fc0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[1U][5U] = 0x3bc0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[1U][6U] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[1U][7U] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[1U][8U] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[1U][9U] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[1U][0xaU] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[1U][0xbU] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[1U][0xcU] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[1U][0xdU] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[1U][0xeU] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[1U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[2U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[2U][1U] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[2U][2U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[2U][3U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[2U][4U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[2U][5U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[2U][6U] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[2U][7U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[2U][8U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[2U][9U] = 0x3ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[2U][0xaU] = 0x3c00U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[2U][0xbU] = 0x3c00U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[2U][0xcU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[2U][0xdU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[2U][0xeU] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[2U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[3U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[3U][1U] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[3U][2U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[3U][3U] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[3U][4U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[3U][5U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[3U][6U] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[3U][7U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[3U][8U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[3U][9U] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[3U][0xaU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[3U][0xbU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[3U][0xcU] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[3U][0xdU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[3U][0xeU] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[3U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[4U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[4U][1U] = 0x1c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[4U][2U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[4U][3U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[4U][4U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[4U][5U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[4U][6U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[4U][7U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[4U][8U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[4U][9U] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[4U][0xaU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[4U][0xbU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[4U][0xcU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[4U][0xdU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[4U][0xeU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[4U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[5U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[5U][1U] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[5U][2U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[5U][3U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[5U][4U] = 0x3c00U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[5U][5U] = 0x3c00U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[5U][6U] = 0x3ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[5U][7U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[5U][8U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[5U][9U] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[5U][0xaU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[5U][0xbU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[5U][0xcU] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[5U][0xdU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[5U][0xeU] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[5U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[6U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[6U][1U] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[6U][2U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[6U][3U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[6U][4U] = 0x3c00U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[6U][5U] = 0x3c00U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[6U][6U] = 0x3ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[6U][7U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[6U][8U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[6U][9U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[6U][0xaU] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[6U][0xbU] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[6U][0xcU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[6U][0xdU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[6U][0xeU] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[6U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[7U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[7U][1U] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[7U][2U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[7U][3U] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[7U][4U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[7U][5U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[7U][6U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[7U][7U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[7U][8U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[7U][9U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[7U][0xaU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[7U][0xbU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[7U][0xcU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[7U][0xdU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[7U][0xeU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[7U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[8U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[8U][1U] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[8U][2U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[8U][3U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[8U][4U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[8U][5U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[8U][6U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[8U][7U] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[8U][8U] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[8U][9U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[8U][0xaU] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[8U][0xbU] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[8U][0xcU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[8U][0xdU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[8U][0xeU] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[8U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[9U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[9U][1U] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[9U][2U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[9U][3U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[9U][4U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[9U][5U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[9U][6U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[9U][7U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[9U][8U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[9U][9U] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[9U][0xaU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[9U][0xbU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[9U][0xcU] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[9U][0xdU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[9U][0xeU] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[9U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xaU][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xaU][1U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xaU][2U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xaU][3U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xaU][4U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xaU][5U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xaU][6U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xaU][7U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xaU][8U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xaU][9U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xaU][0xaU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xaU][0xbU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xaU][0xcU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xaU][0xdU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xaU][0xeU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xaU][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xbU][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xbU][1U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xbU][2U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xbU][3U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xbU][4U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xbU][5U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xbU][6U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xbU][7U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xbU][8U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xbU][9U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xbU][0xaU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xbU][0xbU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xbU][0xcU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xbU][0xdU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xbU][0xeU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xbU][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xcU][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xcU][1U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xcU][2U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xcU][3U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xcU][4U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xcU][5U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xcU][6U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xcU][7U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xcU][8U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xcU][9U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xcU][0xaU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xcU][0xbU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xcU][0xcU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xcU][0xdU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xcU][0xeU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xcU][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xdU][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xdU][1U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xdU][2U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xdU][3U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xdU][4U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xdU][5U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xdU][6U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xdU][7U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xdU][8U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xdU][9U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xdU][0xaU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xdU][0xbU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xdU][0xcU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xdU][0xdU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xdU][0xeU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xdU][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xeU][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xeU][1U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xeU][2U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xeU][3U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xeU][4U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xeU][5U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xeU][6U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xeU][7U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xeU][8U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xeU][9U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xeU][0xaU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xeU][0xbU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xeU][0xcU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xeU][0xdU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xeU][0xeU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xeU][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xfU][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xfU][1U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xfU][2U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xfU][3U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xfU][4U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xfU][5U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xfU][6U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xfU][7U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xfU][8U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xfU][9U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xfU][0xaU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xfU][0xbU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xfU][0xcU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xfU][0xdU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xfU][0xeU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[0xfU][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0U][1U] = 0xff0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0U][2U] = 0xff0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0U][3U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0U][4U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0U][5U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0U][6U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0U][7U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0U][8U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0U][9U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0U][0xaU] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0U][0xbU] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0U][0xcU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0U][0xdU] = 0xff0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0U][0xeU] = 0xff0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[1U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[1U][1U] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[1U][2U] = 0x7c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[1U][3U] = 0xfc0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[1U][4U] = 0x1fc0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[1U][5U] = 0x3bc0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[1U][6U] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[1U][7U] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[1U][8U] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[1U][9U] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[1U][0xaU] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[1U][0xbU] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[1U][0xcU] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[1U][0xdU] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[1U][0xeU] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[1U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[2U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[2U][1U] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[2U][2U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[2U][3U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[2U][4U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[2U][5U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[2U][6U] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[2U][7U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[2U][8U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[2U][9U] = 0x3ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[2U][0xaU] = 0x3c00U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[2U][0xbU] = 0x3c00U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[2U][0xcU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[2U][0xdU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[2U][0xeU] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[2U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[3U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[3U][1U] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[3U][2U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[3U][3U] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[3U][4U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[3U][5U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[3U][6U] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[3U][7U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[3U][8U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[3U][9U] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[3U][0xaU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[3U][0xbU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[3U][0xcU] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[3U][0xdU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[3U][0xeU] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[3U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[4U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[4U][1U] = 0x1c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[4U][2U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[4U][3U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[4U][4U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[4U][5U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[4U][6U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[4U][7U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[4U][8U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[4U][9U] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[4U][0xaU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[4U][0xbU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[4U][0xcU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[4U][0xdU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[4U][0xeU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[4U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[5U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[5U][1U] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[5U][2U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[5U][3U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[5U][4U] = 0x3c00U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[5U][5U] = 0x3c00U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[5U][6U] = 0x3ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[5U][7U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[5U][8U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[5U][9U] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[5U][0xaU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[5U][0xbU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[5U][0xcU] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[5U][0xdU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[5U][0xeU] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[5U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[6U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[6U][1U] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[6U][2U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[6U][3U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[6U][4U] = 0x3c00U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[6U][5U] = 0x3c00U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[6U][6U] = 0x3ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[6U][7U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[6U][8U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[6U][9U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[6U][0xaU] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[6U][0xbU] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[6U][0xcU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[6U][0xdU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[6U][0xeU] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[6U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[7U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[7U][1U] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[7U][2U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[7U][3U] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[7U][4U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[7U][5U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[7U][6U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[7U][7U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[7U][8U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[7U][9U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[7U][0xaU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[7U][0xbU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[7U][0xcU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[7U][0xdU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[7U][0xeU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[7U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[8U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[8U][1U] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[8U][2U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[8U][3U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[8U][4U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[8U][5U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[8U][6U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[8U][7U] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[8U][8U] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[8U][9U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[8U][0xaU] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[8U][0xbU] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[8U][0xcU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[8U][0xdU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[8U][0xeU] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[8U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[9U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[9U][1U] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[9U][2U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[9U][3U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[9U][4U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[9U][5U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[9U][6U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[9U][7U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[9U][8U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[9U][9U] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[9U][0xaU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[9U][0xbU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[9U][0xcU] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[9U][0xdU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[9U][0xeU] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[9U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xaU][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xaU][1U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xaU][2U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xaU][3U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xaU][4U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xaU][5U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xaU][6U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xaU][7U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xaU][8U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xaU][9U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xaU][0xaU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xaU][0xbU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xaU][0xcU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xaU][0xdU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xaU][0xeU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xaU][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xbU][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xbU][1U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xbU][2U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xbU][3U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xbU][4U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xbU][5U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xbU][6U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xbU][7U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xbU][8U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xbU][9U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xbU][0xaU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xbU][0xbU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xbU][0xcU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xbU][0xdU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xbU][0xeU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xbU][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xcU][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xcU][1U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xcU][2U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xcU][3U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xcU][4U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xcU][5U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xcU][6U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xcU][7U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xcU][8U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xcU][9U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xcU][0xaU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xcU][0xbU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xcU][0xcU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xcU][0xdU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xcU][0xeU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xcU][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xdU][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xdU][1U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xdU][2U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xdU][3U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xdU][4U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xdU][5U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xdU][6U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xdU][7U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xdU][8U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xdU][9U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xdU][0xaU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xdU][0xbU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xdU][0xcU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xdU][0xdU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xdU][0xeU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xdU][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xeU][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xeU][1U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xeU][2U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xeU][3U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xeU][4U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xeU][5U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xeU][6U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xeU][7U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xeU][8U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xeU][9U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xeU][0xaU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xeU][0xbU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xeU][0xcU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xeU][0xdU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xeU][0xeU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xeU][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xfU][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xfU][1U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xfU][2U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xfU][3U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xfU][4U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xfU][5U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xfU][6U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xfU][7U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xfU][8U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xfU][9U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xfU][0xaU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xfU][0xbU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xfU][0xcU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xfU][0xdU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xfU][0xeU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[0xfU][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0U][1U] = 0xff0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0U][2U] = 0xff0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0U][3U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0U][4U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0U][5U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0U][6U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0U][7U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0U][8U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0U][9U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0U][0xaU] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0U][0xbU] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0U][0xcU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0U][0xdU] = 0xff0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0U][0xeU] = 0xff0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[1U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[1U][1U] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[1U][2U] = 0x7c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[1U][3U] = 0xfc0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[1U][4U] = 0x1fc0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[1U][5U] = 0x3bc0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[1U][6U] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[1U][7U] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[1U][8U] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[1U][9U] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[1U][0xaU] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[1U][0xbU] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[1U][0xcU] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[1U][0xdU] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[1U][0xeU] = 0x3c0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[1U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[2U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[2U][1U] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[2U][2U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[2U][3U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[2U][4U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[2U][5U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[2U][6U] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[2U][7U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[2U][8U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[2U][9U] = 0x3ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[2U][0xaU] = 0x3c00U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[2U][0xbU] = 0x3c00U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[2U][0xcU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[2U][0xdU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[2U][0xeU] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[2U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[3U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[3U][1U] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[3U][2U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[3U][3U] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[3U][4U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[3U][5U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[3U][6U] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[3U][7U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[3U][8U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[3U][9U] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[3U][0xaU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[3U][0xbU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[3U][0xcU] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[3U][0xdU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[3U][0xeU] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[3U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[4U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[4U][1U] = 0x1c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[4U][2U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[4U][3U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[4U][4U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[4U][5U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[4U][6U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[4U][7U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[4U][8U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[4U][9U] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[4U][0xaU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[4U][0xbU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[4U][0xcU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[4U][0xdU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[4U][0xeU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[4U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[5U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[5U][1U] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[5U][2U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[5U][3U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[5U][4U] = 0x3c00U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[5U][5U] = 0x3c00U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[5U][6U] = 0x3ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[5U][7U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[5U][8U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[5U][9U] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[5U][0xaU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[5U][0xbU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[5U][0xcU] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[5U][0xdU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[5U][0xeU] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[5U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[6U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[6U][1U] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[6U][2U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[6U][3U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[6U][4U] = 0x3c00U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[6U][5U] = 0x3c00U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[6U][6U] = 0x3ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[6U][7U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[6U][8U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[6U][9U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[6U][0xaU] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[6U][0xbU] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[6U][0xcU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[6U][0xdU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[6U][0xeU] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[6U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[7U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[7U][1U] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[7U][2U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[7U][3U] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[7U][4U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[7U][5U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[7U][6U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[7U][7U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[7U][8U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[7U][9U] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[7U][0xaU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[7U][0xbU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[7U][0xcU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[7U][0xdU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[7U][0xeU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[7U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[8U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[8U][1U] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[8U][2U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[8U][3U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[8U][4U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[8U][5U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[8U][6U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[8U][7U] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[8U][8U] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[8U][9U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[8U][0xaU] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[8U][0xbU] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[8U][0xcU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[8U][0xdU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[8U][0xeU] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[8U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[9U][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[9U][1U] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[9U][2U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[9U][3U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[9U][4U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[9U][5U] = 0x3c3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[9U][6U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[9U][7U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[9U][8U] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[9U][9U] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[9U][0xaU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[9U][0xbU] = 0x3cU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[9U][0xcU] = 0x1ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[9U][0xdU] = 0x3ffcU;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[9U][0xeU] = 0x1ff8U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[9U][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xaU][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xaU][1U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xaU][2U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xaU][3U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xaU][4U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xaU][5U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xaU][6U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xaU][7U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xaU][8U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xaU][9U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xaU][0xaU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xaU][0xbU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xaU][0xcU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xaU][0xdU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xaU][0xeU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xaU][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xbU][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xbU][1U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xbU][2U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xbU][3U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xbU][4U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xbU][5U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xbU][6U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xbU][7U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xbU][8U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xbU][9U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xbU][0xaU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xbU][0xbU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xbU][0xcU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xbU][0xdU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xbU][0xeU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xbU][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xcU][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xcU][1U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xcU][2U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xcU][3U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xcU][4U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xcU][5U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xcU][6U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xcU][7U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xcU][8U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xcU][9U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xcU][0xaU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xcU][0xbU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xcU][0xcU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xcU][0xdU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xcU][0xeU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xcU][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xdU][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xdU][1U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xdU][2U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xdU][3U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xdU][4U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xdU][5U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xdU][6U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xdU][7U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xdU][8U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xdU][9U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xdU][0xaU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xdU][0xbU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xdU][0xcU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xdU][0xdU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xdU][0xeU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xdU][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xeU][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xeU][1U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xeU][2U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xeU][3U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xeU][4U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xeU][5U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xeU][6U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xeU][7U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xeU][8U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xeU][9U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xeU][0xaU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xeU][0xbU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xeU][0xcU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xeU][0xdU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xeU][0xeU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xeU][0xfU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xfU][0U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xfU][1U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xfU][2U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xfU][3U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xfU][4U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xfU][5U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xfU][6U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xfU][7U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xfU][8U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xfU][9U] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xfU][0xaU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xfU][0xbU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xfU][0xcU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xfU][0xdU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xfU][0xeU] = 0U;
-    vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[0xfU][0xfU] = 0U;
     __Vtemp4[0U] = 0x2e747874U;
     __Vtemp4[1U] = 0x65725f31U;
     __Vtemp4[2U] = 0x706c6179U;
     __Vtemp4[3U] = 0x7267625fU;
     __Vtemp4[4U] = 0x6269745fU;
-    __Vtemp4[5U] = 0x6c2f3234U;
-    __Vtemp4[6U] = 0x70697865U;
-    VL_READMEM_N(true, 24, 1024, 0, VL_CVT_PACK_STR_NW(7, __Vtemp4)
-                 , vlTOPp->top__DOT__top__DOT__player_rgb__DOT__mem_player_1__DOT__mem
+    __Vtemp4[5U] = 0x622f3234U;
+    __Vtemp4[6U] = 0x745f7267U;
+    __Vtemp4[7U] = 0x32346269U;
+    VL_READMEM_N(true, 24, 1024, 0, VL_CVT_PACK_STR_NW(8, __Vtemp4)
+                 , vlTOPp->top__DOT__top__DOT__mem_player_1__DOT__mem
                  , 0, ~VL_ULL(0));
     __Vtemp5[0U] = 0x2e747874U;
     __Vtemp5[1U] = 0x65725f32U;
     __Vtemp5[2U] = 0x706c6179U;
     __Vtemp5[3U] = 0x7267625fU;
     __Vtemp5[4U] = 0x6269745fU;
-    __Vtemp5[5U] = 0x6c2f3234U;
-    __Vtemp5[6U] = 0x70697865U;
-    VL_READMEM_N(true, 24, 1024, 0, VL_CVT_PACK_STR_NW(7, __Vtemp5)
-                 , vlTOPp->top__DOT__top__DOT__player_rgb__DOT__mem_player_2__DOT__mem
+    __Vtemp5[5U] = 0x622f3234U;
+    __Vtemp5[6U] = 0x745f7267U;
+    __Vtemp5[7U] = 0x32346269U;
+    VL_READMEM_N(true, 24, 1024, 0, VL_CVT_PACK_STR_NW(8, __Vtemp5)
+                 , vlTOPp->top__DOT__top__DOT__mem_player_2__DOT__mem
                  , 0, ~VL_ULL(0));
     vlTOPp->top__DOT__top__DOT__menu__DOT____Vxrand5 
         = VL_RAND_RESET_I(6);
@@ -1177,11 +157,13 @@ void Vtop::_initial__TOP__1(Vtop__Syms* __restrict vlSymsp) {
     vlTOPp->top__DOT__top__DOT__menu__DOT____Vxrand1 
         = VL_RAND_RESET_I(6);
     __Vtemp6[0U] = 0x2e747874U;
-    __Vtemp6[1U] = 0x5f726762U;
-    __Vtemp6[2U] = 0x34626974U;
-    __Vtemp6[3U] = 0x656c2f32U;
-    __Vtemp6[4U] = 0x706978U;
-    VL_READMEM_N(true, 24, 8192, 0, VL_CVT_PACK_STR_NW(5, __Vtemp6)
+    __Vtemp6[1U] = 0x5f6d6170U;
+    __Vtemp6[2U] = 0x5f726762U;
+    __Vtemp6[3U] = 0x34626974U;
+    __Vtemp6[4U] = 0x67622f32U;
+    __Vtemp6[5U] = 0x69745f72U;
+    __Vtemp6[6U] = 0x323462U;
+    VL_READMEM_N(true, 24, 8192, 0, VL_CVT_PACK_STR_NW(7, __Vtemp6)
                  , vlTOPp->top__DOT__top__DOT__map_rgb__DOT__tile__DOT__mem
                  , 0, ~VL_ULL(0));
     vlTOPp->top__DOT__top__DOT__map_rgb__DOT____Vxrand1 
@@ -1275,64 +257,46 @@ void Vtop::_settle__TOP__3(Vtop__Syms* __restrict vlSymsp) {
         = (1U & ((IData)(vlTOPp->player_1_move_i) & 
                  (~ (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__sellect_down_edge_dect__DOT__sig_dly))));
     vlTOPp->hsync_no = (1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__hvsync_gen__DOT__hsync)));
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_shoot 
-        = ((IData)(vlTOPp->player_1_shoot_i) & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__pos_edge_detect_1__DOT__sig_dly)));
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_shoot 
-        = ((IData)(vlTOPp->player_2_shoot_i) & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__pos_edge_detect_2__DOT__sig_dly)));
+    vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_shoot 
+        = ((IData)(vlTOPp->player_1_shoot_i) & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__pos_edge_detect_1__DOT__sig_dly)));
+    vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_shoot 
+        = ((IData)(vlTOPp->player_2_shoot_i) & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__pos_edge_detect_1__DOT__sig_dly)));
     vlTOPp->hpos_o = vlTOPp->top__DOT__top__DOT__hpos;
     vlTOPp->vpos_o = vlTOPp->top__DOT__top__DOT__vpos;
     vlTOPp->top__DOT__top__DOT__hvsync_gen__DOT__h_maxxed 
         = (0x31fU == (IData)(vlTOPp->top__DOT__top__DOT__hpos));
     vlTOPp->top__DOT__top__DOT__hvsync_gen__DOT__v_maxxed 
         = (0x20cU == (IData)(vlTOPp->top__DOT__top__DOT__vpos));
-    vlTOPp->top__DOT__top__DOT__score__DOT__enable_tank_2 = 0U;
-    if (((0x80U <= (IData)(vlTOPp->top__DOT__top__DOT__vpos)) 
-         & (0xa0U > (IData)(vlTOPp->top__DOT__top__DOT__vpos)))) {
-        if (((0x240U <= (IData)(vlTOPp->top__DOT__top__DOT__hpos)) 
-             & (0x260U > (IData)(vlTOPp->top__DOT__top__DOT__hpos)))) {
-            vlTOPp->top__DOT__top__DOT__score__DOT__enable_tank_2 = 1U;
-        }
-    }
-    vlTOPp->top__DOT__top__DOT__score__DOT__enable_tank_1 = 0U;
-    if (((0x80U <= (IData)(vlTOPp->top__DOT__top__DOT__vpos)) 
-         & (0xa0U > (IData)(vlTOPp->top__DOT__top__DOT__vpos)))) {
-        if (((0x1e0U <= (IData)(vlTOPp->top__DOT__top__DOT__hpos)) 
-             & (0x200U > (IData)(vlTOPp->top__DOT__top__DOT__hpos)))) {
-            vlTOPp->top__DOT__top__DOT__score__DOT__enable_tank_1 = 1U;
-        }
-    }
-    vlTOPp->top__DOT__top__DOT__score__DOT__enable_player_2_10 = 0U;
-    if (((0xa0U <= (IData)(vlTOPp->top__DOT__top__DOT__vpos)) 
-         & (0xb0U > (IData)(vlTOPp->top__DOT__top__DOT__vpos)))) {
-        if (((0x240U <= (IData)(vlTOPp->top__DOT__top__DOT__hpos)) 
-             & (0x250U > (IData)(vlTOPp->top__DOT__top__DOT__hpos)))) {
-            vlTOPp->top__DOT__top__DOT__score__DOT__enable_player_2_10 = 1U;
-        }
-    }
-    vlTOPp->top__DOT__top__DOT__score__DOT__enable_player_2_1 = 0U;
-    if (((0xa0U <= (IData)(vlTOPp->top__DOT__top__DOT__vpos)) 
-         & (0xb0U > (IData)(vlTOPp->top__DOT__top__DOT__vpos)))) {
-        if (((0x250U <= (IData)(vlTOPp->top__DOT__top__DOT__hpos)) 
-             & (0x260U > (IData)(vlTOPp->top__DOT__top__DOT__hpos)))) {
-            vlTOPp->top__DOT__top__DOT__score__DOT__enable_player_2_1 = 1U;
-        }
-    }
-    vlTOPp->top__DOT__top__DOT__score__DOT__enable_player_1_1 = 0U;
-    if (((0xa0U <= (IData)(vlTOPp->top__DOT__top__DOT__vpos)) 
-         & (0xb0U > (IData)(vlTOPp->top__DOT__top__DOT__vpos)))) {
-        if (((0x1f0U <= (IData)(vlTOPp->top__DOT__top__DOT__hpos)) 
-             & (0x200U > (IData)(vlTOPp->top__DOT__top__DOT__hpos)))) {
-            vlTOPp->top__DOT__top__DOT__score__DOT__enable_player_1_1 = 1U;
-        }
-    }
-    vlTOPp->top__DOT__top__DOT__score__DOT__enable_player_1_10 = 0U;
-    if (((0xa0U <= (IData)(vlTOPp->top__DOT__top__DOT__vpos)) 
-         & (0xb0U > (IData)(vlTOPp->top__DOT__top__DOT__vpos)))) {
-        if (((0x1e0U <= (IData)(vlTOPp->top__DOT__top__DOT__hpos)) 
-             & (0x1f0U > (IData)(vlTOPp->top__DOT__top__DOT__hpos)))) {
-            vlTOPp->top__DOT__top__DOT__score__DOT__enable_player_1_10 = 1U;
-        }
-    }
+    vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet 
+        = (((IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__show_bullet) 
+            & (5U > ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+                     - (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet_y)))) 
+           & (5U > ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                    - (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet_x))));
+    vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet 
+        = (((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__show_bullet) 
+            & (5U > ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+                     - (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet_y)))) 
+           & (5U > ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                    - (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet_x))));
+    vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_box 
+        = ((((0x1eU >= ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+                        - (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_y))) 
+             & (1U <= ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+                       - (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_y)))) 
+            & (0x1eU >= ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                         - (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_x)))) 
+           & (1U <= ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                     - (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_x))));
+    vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_box 
+        = ((((0x1eU >= ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+                        - (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_y))) 
+             & (1U <= ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+                       - (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_y)))) 
+            & (0x1eU >= ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                         - (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_x)))) 
+           & (1U <= ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                     - (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_x))));
     vlTOPp->top__DOT__top__DOT__menu__DOT__title_enable 
         = (((1U == (7U & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
                           >> 7U))) & (4U < (0x1fU & 
@@ -1408,50 +372,10 @@ void Vtop::_settle__TOP__3(Vtop__Syms* __restrict vlSymsp) {
                                                    > (IData)(vlTOPp->top__DOT__top__DOT__hpos)) 
                                                   & (0x1e0U 
                                                      > (IData)(vlTOPp->top__DOT__top__DOT__vpos)));
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_bullet 
-        = (((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__show_bullet_1) 
-            & (5U > ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                     - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_bullet_y)))) 
-           & (5U > ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                    - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_bullet_x))));
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_bullet 
-        = (((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__show_bullet_2) 
-            & (5U > ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                     - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_bullet_y)))) 
-           & (5U > ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                    - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_bullet_x))));
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_box 
-        = ((((0x1cU >= ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                        - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_y))) 
-             & (3U <= ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                       - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_y)))) 
-            & (0x1cU >= ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                         - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_x)))) 
-           & (3U <= ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                     - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_x))));
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_box 
-        = ((((0x1cU >= ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                        - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_y))) 
-             & (3U <= ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                       - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_y)))) 
-            & (0x1cU >= ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                         - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_x)))) 
-           & (3U <= ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                     - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_x))));
-    vlTOPp->top__DOT__top__DOT__score__DOT__dout_1 
-        = vlTOPp->top__DOT__top__DOT__score__DOT__tank_player_1__DOT__mem
-        [((0x3e0U & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                     << 5U)) | (0x1fU & (IData)(vlTOPp->top__DOT__top__DOT__hpos)))];
-    vlTOPp->top__DOT__top__DOT__score__DOT__dout_2 
-        = vlTOPp->top__DOT__top__DOT__score__DOT__tank_player_2__DOT__mem
-        [((0x3e0U & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                     << 5U)) | (0x1fU & (IData)(vlTOPp->top__DOT__top__DOT__hpos)))];
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__dout_1 
-        = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__mem_player_1__DOT__mem
-        [vlTOPp->top__DOT__top__DOT__player_rgb__DOT__addr_1];
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__dout_2 
-        = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__mem_player_2__DOT__mem
-        [vlTOPp->top__DOT__top__DOT__player_rgb__DOT__addr_2];
+    vlTOPp->top__DOT__top__DOT__player_1_bits = vlTOPp->top__DOT__top__DOT__mem_player_1__DOT__mem
+        [vlTOPp->top__DOT__top__DOT__player_1_addr];
+    vlTOPp->top__DOT__top__DOT__player_2_bits = vlTOPp->top__DOT__top__DOT__mem_player_2__DOT__mem
+        [vlTOPp->top__DOT__top__DOT__player_2_addr];
     vlTOPp->top__DOT__top__DOT__map_type = ((9U == (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__arrow_pos))
                                              ? 0U : 
                                             ((0xaU 
@@ -1472,42 +396,12 @@ void Vtop::_settle__TOP__3(Vtop__Syms* __restrict vlSymsp) {
                                              > (0x3fU 
                                                 & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
                                                    >> 4U))));
-    vlTOPp->top__DOT__top__DOT__tank_enable = ((IData)(vlTOPp->top__DOT__top__DOT__score__DOT__enable_tank_1) 
-                                               | (IData)(vlTOPp->top__DOT__top__DOT__score__DOT__enable_tank_2));
-    vlTOPp->top__DOT__top__DOT__score__DOT__data_player_2_10 
-        = ((IData)(vlTOPp->top__DOT__top__DOT__score__DOT__enable_player_2_10)
-            ? (1U & (vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array
-                     [((0U == (0xfU & VL_DIV_III(32, (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_2), (IData)(0xaU))))
-                        ? 0xaU : (0xfU & VL_DIV_III(32, (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_2), (IData)(0xaU))))]
-                     [(0xfU & (IData)(vlTOPp->top__DOT__top__DOT__vpos))] 
-                     >> (0xfU & (~ (IData)(vlTOPp->top__DOT__top__DOT__hpos)))))
-            : 0U);
-    vlTOPp->top__DOT__top__DOT__score__DOT__data_player_2_1 
-        = ((IData)(vlTOPp->top__DOT__top__DOT__score__DOT__enable_player_2_1)
-            ? (1U & (vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array
-                     [(0xfU & VL_MODDIV_III(32, (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_2), (IData)(0xaU)))]
-                     [(0xfU & (IData)(vlTOPp->top__DOT__top__DOT__vpos))] 
-                     >> (0xfU & (~ (IData)(vlTOPp->top__DOT__top__DOT__hpos)))))
-            : 0U);
-    vlTOPp->top__DOT__top__DOT__score__DOT__data_player_1_1 
-        = ((IData)(vlTOPp->top__DOT__top__DOT__score__DOT__enable_player_1_1)
-            ? (1U & (vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array
-                     [(0xfU & VL_MODDIV_III(32, (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_1), (IData)(0xaU)))]
-                     [(0xfU & (IData)(vlTOPp->top__DOT__top__DOT__vpos))] 
-                     >> (0xfU & (~ (IData)(vlTOPp->top__DOT__top__DOT__hpos)))))
-            : 0U);
-    vlTOPp->top__DOT__top__DOT__score__DOT__data_player_1_10 
-        = ((IData)(vlTOPp->top__DOT__top__DOT__score__DOT__enable_player_1_10)
-            ? (1U & (vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array
-                     [((0U == (0xfU & VL_DIV_III(32, (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_1), (IData)(0xaU))))
-                        ? 0xaU : (0xfU & VL_DIV_III(32, (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_1), (IData)(0xaU))))]
-                     [(0xfU & (IData)(vlTOPp->top__DOT__top__DOT__vpos))] 
-                     >> (0xfU & (~ (IData)(vlTOPp->top__DOT__top__DOT__hpos)))))
-            : 0U);
-    vlTOPp->top__DOT__top__DOT__number_enable = ((((IData)(vlTOPp->top__DOT__top__DOT__score__DOT__enable_player_1_1) 
-                                                   | (IData)(vlTOPp->top__DOT__top__DOT__score__DOT__enable_player_1_10)) 
-                                                  | (IData)(vlTOPp->top__DOT__top__DOT__score__DOT__enable_player_2_1)) 
-                                                 | (IData)(vlTOPp->top__DOT__top__DOT__score__DOT__enable_player_2_10));
+    vlTOPp->top__DOT__top__DOT__player_1_tank_enable 
+        = ((IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_box) 
+           & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_1_die)));
+    vlTOPp->top__DOT__top__DOT__player_2_tank_enable 
+        = ((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_box) 
+           & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_2_die)));
     vlTOPp->display_enable_o = vlTOPp->top__DOT__top__DOT__display_enable;
     vlTOPp->top__DOT__top__DOT__map_enable = (((((IData)(vlTOPp->top__DOT__top__DOT__display_enable) 
                                                  & (0x20U 
@@ -1518,41 +412,48 @@ void Vtop::_settle__TOP__3(Vtop__Syms* __restrict vlSymsp) {
                                                   <= (IData)(vlTOPp->top__DOT__top__DOT__vpos))) 
                                               & (0x1bfU 
                                                  >= (IData)(vlTOPp->top__DOT__top__DOT__vpos)));
-    vlTOPp->top__DOT__top__DOT__player_blue = (0xffU 
-                                               & (((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_box) 
-                                                   & (~ (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_player_1)))
+    vlTOPp->top__DOT__top__DOT__player_1_blue = (((~ (IData)(vlTOPp->top__DOT__top__DOT__player_1_die)) 
+                                                  & (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_box))
+                                                  ? 
+                                                 (0xffU 
+                                                  & (vlTOPp->top__DOT__top__DOT__player_1_bits 
+                                                     >> 0x10U))
+                                                  : 0U);
+    vlTOPp->top__DOT__top__DOT__player_1_red = (((~ (IData)(vlTOPp->top__DOT__top__DOT__player_1_die)) 
+                                                 & (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_box))
+                                                 ? 
+                                                (0xffU 
+                                                 & vlTOPp->top__DOT__top__DOT__player_1_bits)
+                                                 : 0U);
+    vlTOPp->top__DOT__top__DOT__player_1_green = ((
+                                                   (~ (IData)(vlTOPp->top__DOT__top__DOT__player_1_die)) 
+                                                   & (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_box))
                                                    ? 
-                                                  (vlTOPp->top__DOT__top__DOT__player_rgb__DOT__dout_1 
-                                                   >> 0x10U)
-                                                   : 
-                                                  (((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_box) 
-                                                    & (~ (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_player_2)))
-                                                    ? 
-                                                   (vlTOPp->top__DOT__top__DOT__player_rgb__DOT__dout_2 
-                                                    >> 0x10U)
-                                                    : 0U)));
-    vlTOPp->top__DOT__top__DOT__player_red = (0xffU 
-                                              & (((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_box) 
-                                                  & (~ (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_player_1)))
-                                                  ? vlTOPp->top__DOT__top__DOT__player_rgb__DOT__dout_1
-                                                  : 
-                                                 (((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_box) 
-                                                   & (~ (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_player_2)))
-                                                   ? vlTOPp->top__DOT__top__DOT__player_rgb__DOT__dout_2
-                                                   : 0U)));
-    vlTOPp->top__DOT__top__DOT__player_green = (0xffU 
-                                                & (((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_box) 
-                                                    & (~ (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_player_1)))
-                                                    ? 
-                                                   (vlTOPp->top__DOT__top__DOT__player_rgb__DOT__dout_1 
-                                                    >> 8U)
-                                                    : 
-                                                   (((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_box) 
-                                                     & (~ (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_player_2)))
-                                                     ? 
-                                                    (vlTOPp->top__DOT__top__DOT__player_rgb__DOT__dout_2 
-                                                     >> 8U)
-                                                     : 0U)));
+                                                  (0xffU 
+                                                   & (vlTOPp->top__DOT__top__DOT__player_1_bits 
+                                                      >> 8U))
+                                                   : 0U);
+    vlTOPp->top__DOT__top__DOT__player_2_blue = (((~ (IData)(vlTOPp->top__DOT__top__DOT__player_2_die)) 
+                                                  & (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_box))
+                                                  ? 
+                                                 (0xffU 
+                                                  & (vlTOPp->top__DOT__top__DOT__player_2_bits 
+                                                     >> 0x10U))
+                                                  : 0U);
+    vlTOPp->top__DOT__top__DOT__player_2_red = (((~ (IData)(vlTOPp->top__DOT__top__DOT__player_2_die)) 
+                                                 & (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_box))
+                                                 ? 
+                                                (0xffU 
+                                                 & vlTOPp->top__DOT__top__DOT__player_2_bits)
+                                                 : 0U);
+    vlTOPp->top__DOT__top__DOT__player_2_green = ((
+                                                   (~ (IData)(vlTOPp->top__DOT__top__DOT__player_2_die)) 
+                                                   & (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_box))
+                                                   ? 
+                                                  (0xffU 
+                                                   & (vlTOPp->top__DOT__top__DOT__player_2_bits 
+                                                      >> 8U))
+                                                   : 0U);
     vlTOPp->top__DOT__top__DOT__menu__DOT__x_ofs = 0U;
     if (vlTOPp->top__DOT__top__DOT__menu__DOT__title_enable) {
         vlTOPp->top__DOT__top__DOT__menu__DOT__x_ofs 
@@ -1646,33 +547,9 @@ void Vtop::_settle__TOP__3(Vtop__Syms* __restrict vlSymsp) {
                 << 4U) | (0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
                                   >> 1U)));
     }
-    vlTOPp->top__DOT__top__DOT__number_blue = ((IData)(vlTOPp->top__DOT__top__DOT__number_enable)
-                                                ? (
-                                                   ((((IData)(vlTOPp->top__DOT__top__DOT__score__DOT__data_player_1_1) 
-                                                      | (IData)(vlTOPp->top__DOT__top__DOT__score__DOT__data_player_1_10)) 
-                                                     | (IData)(vlTOPp->top__DOT__top__DOT__score__DOT__data_player_2_1)) 
-                                                    | (IData)(vlTOPp->top__DOT__top__DOT__score__DOT__data_player_2_10))
-                                                    ? 0U
-                                                    : 0xe0U)
-                                                : 0U);
-    vlTOPp->top__DOT__top__DOT__number_green = ((IData)(vlTOPp->top__DOT__top__DOT__number_enable)
-                                                 ? 
-                                                (((((IData)(vlTOPp->top__DOT__top__DOT__score__DOT__data_player_1_1) 
-                                                    | (IData)(vlTOPp->top__DOT__top__DOT__score__DOT__data_player_1_10)) 
-                                                   | (IData)(vlTOPp->top__DOT__top__DOT__score__DOT__data_player_2_1)) 
-                                                  | (IData)(vlTOPp->top__DOT__top__DOT__score__DOT__data_player_2_10))
-                                                  ? 0U
-                                                  : 0xe0U)
-                                                 : 0U);
-    vlTOPp->top__DOT__top__DOT__number_red = ((IData)(vlTOPp->top__DOT__top__DOT__number_enable)
-                                               ? ((
-                                                   (((IData)(vlTOPp->top__DOT__top__DOT__score__DOT__data_player_1_1) 
-                                                     | (IData)(vlTOPp->top__DOT__top__DOT__score__DOT__data_player_1_10)) 
-                                                    | (IData)(vlTOPp->top__DOT__top__DOT__score__DOT__data_player_2_1)) 
-                                                   | (IData)(vlTOPp->top__DOT__top__DOT__score__DOT__data_player_2_10))
-                                                   ? 0U
-                                                   : 0xe0U)
-                                               : 0U);
+    vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__all_player 
+        = ((IData)(vlTOPp->top__DOT__top__DOT__player_1_tank_enable) 
+           | (IData)(vlTOPp->top__DOT__top__DOT__player_2_tank_enable));
     vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type 
         = ((IData)(vlTOPp->top__DOT__top__DOT__map_enable)
             ? (7U & (((0xcU >= (0xfU & (((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
@@ -1740,26 +617,6 @@ void Vtop::_settle__TOP__3(Vtop__Syms* __restrict vlSymsp) {
     vlTOPp->top__DOT__top__DOT__menu_red = ((1U & ((IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__bit_number) 
                                                    >> (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__x_ofs)))
                                              ? 0U : 0xe0U);
-    vlTOPp->top__DOT__top__DOT__cannot_walk_through 
-        = (((((((((((IData)(vlTOPp->top__DOT__top__DOT__display_enable) 
-                    & (~ (IData)(vlTOPp->top__DOT__top__DOT__map_enable))) 
-                   | (3U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type))) 
-                  | ((0U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
-                     & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UL))) 
-                 | ((0U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
-                    & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UR))) 
-                | ((0U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
-                   & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LR))) 
-               | ((0U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
-                  & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LL))) 
-              | ((1U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
-                 & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UL))) 
-             | ((1U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
-                & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UR))) 
-            | ((1U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
-               & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LR))) 
-           | ((1U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
-              & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LL)));
     vlTOPp->top__DOT__top__DOT__all_hard_block = ((
                                                    ((((((((IData)(vlTOPp->top__DOT__top__DOT__display_enable) 
                                                           & (~ (IData)(vlTOPp->top__DOT__top__DOT__map_enable))) 
@@ -1787,6 +644,26 @@ void Vtop::_settle__TOP__3(Vtop__Syms* __restrict vlSymsp) {
                                                   | ((1U 
                                                       == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
                                                      & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LL)));
+    vlTOPp->top__DOT__top__DOT__cannot_walk_through 
+        = (((((((((((IData)(vlTOPp->top__DOT__top__DOT__display_enable) 
+                    & (~ (IData)(vlTOPp->top__DOT__top__DOT__map_enable))) 
+                   | (3U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type))) 
+                  | ((0U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
+                     & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UL))) 
+                 | ((0U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
+                    & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UR))) 
+                | ((0U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
+                   & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LR))) 
+               | ((0U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
+                  & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LL))) 
+              | ((1U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
+                 & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UL))) 
+             | ((1U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
+                & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UR))) 
+            | ((1U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
+               & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LR))) 
+           | ((1U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
+              & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LL)));
     vlTOPp->top__DOT__top__DOT__map_red = (((((IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UL) 
                                               | (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UR)) 
                                              | (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LR)) 
@@ -1810,6 +687,12 @@ void Vtop::_settle__TOP__3(Vtop__Syms* __restrict vlSymsp) {
                                                  & (vlTOPp->top__DOT__top__DOT__map_rgb__DOT__dout 
                                                     >> 8U))
                                               : 0U);
+    vlTOPp->top__DOT__top__DOT____Vcellinp__player_1__cannot_walk_through_i 
+        = ((IData)(vlTOPp->top__DOT__top__DOT__cannot_walk_through) 
+           | (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__all_player));
+    vlTOPp->top__DOT__top__DOT____Vcellinp__player_2__cannot_walk_through_i 
+        = ((IData)(vlTOPp->top__DOT__top__DOT__cannot_walk_through) 
+           | (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__all_player));
     vlTOPp->top__DOT__top__DOT__rgb_render__DOT__map_enable 
         = (((0U != (IData)(vlTOPp->top__DOT__top__DOT__map_blue)) 
             | (0U != (IData)(vlTOPp->top__DOT__top__DOT__map_green))) 
@@ -1824,15 +707,17 @@ void Vtop::_settle__TOP__3(Vtop__Syms* __restrict vlSymsp) {
                                            ? (((IData)(vlTOPp->top__DOT__top__DOT__map_red) 
                                                | ((IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__map_enable)
                                                    ? 0U
-                                                   : (IData)(vlTOPp->top__DOT__top__DOT__player_red))) 
-                                              | (((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_bullet) 
-                                                  | (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_bullet))
+                                                   : 
+                                                  ((IData)(vlTOPp->top__DOT__top__DOT__player_1_red) 
+                                                   | (IData)(vlTOPp->top__DOT__top__DOT__player_2_red)))) 
+                                              | (((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet) 
+                                                  | (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet))
                                                   ? 0xffffffU
                                                   : 0U))
-                                           : ((IData)(vlTOPp->top__DOT__top__DOT__number_enable)
-                                               ? (IData)(vlTOPp->top__DOT__top__DOT__number_red)
-                                               : ((IData)(vlTOPp->top__DOT__top__DOT__tank_enable)
-                                                   ? (IData)(vlTOPp->top__DOT__top__DOT__tank_red)
+                                           : ((IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__number_enable_i)
+                                               ? (IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__number_red_i)
+                                               : ((IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__tank_enable_i)
+                                                   ? (IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__tank_red_i)
                                                    : 0xe0U))));
             } else {
                 if (vlTOPp->top__DOT__top__DOT__is_continue) {
@@ -1857,16 +742,18 @@ void Vtop::_settle__TOP__3(Vtop__Syms* __restrict vlSymsp) {
                                             ? (((IData)(vlTOPp->top__DOT__top__DOT__map_blue) 
                                                 | ((IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__map_enable)
                                                     ? 0U
-                                                    : (IData)(vlTOPp->top__DOT__top__DOT__player_blue))) 
-                                               | ((((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_bullet) 
-                                                    | (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_bullet))
+                                                    : 
+                                                   ((IData)(vlTOPp->top__DOT__top__DOT__player_1_blue) 
+                                                    | (IData)(vlTOPp->top__DOT__top__DOT__player_2_blue)))) 
+                                               | ((((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet) 
+                                                    | (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet))
                                                     ? 0xffffffU
                                                     : 0U) 
                                                   >> 0x10U))
-                                            : ((IData)(vlTOPp->top__DOT__top__DOT__number_enable)
-                                                ? (IData)(vlTOPp->top__DOT__top__DOT__number_blue)
-                                                : ((IData)(vlTOPp->top__DOT__top__DOT__tank_enable)
-                                                    ? (IData)(vlTOPp->top__DOT__top__DOT__tank_blue)
+                                            : ((IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__number_enable_i)
+                                                ? (IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__number_blue_i)
+                                                : ((IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__tank_enable_i)
+                                                    ? (IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__tank_blue_i)
                                                     : 0xe0U))));
             } else {
                 if (vlTOPp->top__DOT__top__DOT__is_continue) {
@@ -1891,17 +778,19 @@ void Vtop::_settle__TOP__3(Vtop__Syms* __restrict vlSymsp) {
                                              ? (((IData)(vlTOPp->top__DOT__top__DOT__map_green) 
                                                  | ((IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__map_enable)
                                                      ? 0U
-                                                     : (IData)(vlTOPp->top__DOT__top__DOT__player_green))) 
-                                                | ((((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_bullet) 
-                                                     | (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_bullet))
+                                                     : 
+                                                    ((IData)(vlTOPp->top__DOT__top__DOT__player_1_green) 
+                                                     | (IData)(vlTOPp->top__DOT__top__DOT__player_2_green)))) 
+                                                | ((((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet) 
+                                                     | (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet))
                                                      ? 0xffffffU
                                                      : 0U) 
                                                    >> 8U))
-                                             : ((IData)(vlTOPp->top__DOT__top__DOT__number_enable)
-                                                 ? (IData)(vlTOPp->top__DOT__top__DOT__number_green)
+                                             : ((IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__number_enable_i)
+                                                 ? (IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__number_green_i)
                                                  : 
-                                                ((IData)(vlTOPp->top__DOT__top__DOT__tank_enable)
-                                                  ? (IData)(vlTOPp->top__DOT__top__DOT__tank_green)
+                                                ((IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__tank_enable_i)
+                                                  ? (IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__tank_green_i)
                                                   : 0xe0U))));
             } else {
                 if (vlTOPp->top__DOT__top__DOT__is_continue) {
@@ -1922,89 +811,89 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__4(Vtop__Syms* __restrict vlSymsp) {
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__4\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
-    vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_y 
-        = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_y;
-    vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_x 
-        = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_x;
-    vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_y 
-        = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_y;
-    vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_x 
-        = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_x;
+    vlTOPp->__Vdly__top__DOT__top__DOT__player_2__DOT__tank_y 
+        = vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_y;
+    vlTOPp->__Vdly__top__DOT__top__DOT__player_2__DOT__tank_x 
+        = vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_x;
+    vlTOPp->__Vdly__top__DOT__top__DOT__player_1__DOT__tank_y 
+        = vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_y;
+    vlTOPp->__Vdly__top__DOT__top__DOT__player_1__DOT__tank_x 
+        = vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_x;
     if (vlTOPp->top__DOT__top__DOT__reset) {
-        vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_y = 0x1a0U;
+        vlTOPp->__Vdly__top__DOT__top__DOT__player_2__DOT__tank_y = 0x1a0U;
     } else {
         if ((8U & (IData)(vlTOPp->player_2_move_i))) {
             if ((4U & (IData)(vlTOPp->player_2_move_i))) {
-                vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_y 
-                    = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_y;
+                vlTOPp->__Vdly__top__DOT__top__DOT__player_2__DOT__tank_y 
+                    = vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_y;
             } else {
                 if ((2U & (IData)(vlTOPp->player_2_move_i))) {
-                    vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_y 
-                        = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_y;
+                    vlTOPp->__Vdly__top__DOT__top__DOT__player_2__DOT__tank_y 
+                        = vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_y;
                 } else {
                     if ((1U & (IData)(vlTOPp->player_2_move_i))) {
-                        vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_y 
-                            = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_y;
+                        vlTOPp->__Vdly__top__DOT__top__DOT__player_2__DOT__tank_y 
+                            = vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_y;
                     }
                 }
             }
         } else {
             if ((4U & (IData)(vlTOPp->player_2_move_i))) {
                 if ((2U & (IData)(vlTOPp->player_2_move_i))) {
-                    vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_y 
-                        = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_y;
+                    vlTOPp->__Vdly__top__DOT__top__DOT__player_2__DOT__tank_y 
+                        = vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_y;
                 } else {
                     if ((1U & (IData)(vlTOPp->player_2_move_i))) {
-                        vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_y 
-                            = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_y;
+                        vlTOPp->__Vdly__top__DOT__top__DOT__player_2__DOT__tank_y 
+                            = vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_y;
                     }
                 }
             } else {
                 if ((2U & (IData)(vlTOPp->player_2_move_i))) {
                     if ((1U & (IData)(vlTOPp->player_2_move_i))) {
-                        vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_y 
-                            = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_y;
+                        vlTOPp->__Vdly__top__DOT__top__DOT__player_2__DOT__tank_y 
+                            = vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_y;
                     } else {
-                        if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_top)))) {
-                            vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_y 
-                                = (0x3ffU & ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_y) 
+                        if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_collide_with_wall_top)))) {
+                            vlTOPp->__Vdly__top__DOT__top__DOT__player_2__DOT__tank_y 
+                                = (0x3ffU & ((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_y) 
                                              - (IData)(1U)));
                         }
                     }
                 } else {
                     if ((1U & (IData)(vlTOPp->player_2_move_i))) {
-                        if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_bottom)))) {
-                            vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_y 
+                        if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_collide_with_wall_bottom)))) {
+                            vlTOPp->__Vdly__top__DOT__top__DOT__player_2__DOT__tank_y 
                                 = (0x3ffU & ((IData)(1U) 
-                                             + (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_y)));
+                                             + (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_y)));
                         }
                     } else {
-                        vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_y 
-                            = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_y;
+                        vlTOPp->__Vdly__top__DOT__top__DOT__player_2__DOT__tank_y 
+                            = vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_y;
                     }
                 }
             }
         }
     }
     if (vlTOPp->top__DOT__top__DOT__reset) {
-        vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_x = 0xe0U;
+        vlTOPp->__Vdly__top__DOT__top__DOT__player_2__DOT__tank_x = 0xa0U;
     } else {
         if ((8U & (IData)(vlTOPp->player_2_move_i))) {
             if ((4U & (IData)(vlTOPp->player_2_move_i))) {
-                vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_x 
-                    = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_x;
+                vlTOPp->__Vdly__top__DOT__top__DOT__player_2__DOT__tank_x 
+                    = vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_x;
             } else {
                 if ((2U & (IData)(vlTOPp->player_2_move_i))) {
-                    vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_x 
-                        = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_x;
+                    vlTOPp->__Vdly__top__DOT__top__DOT__player_2__DOT__tank_x 
+                        = vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_x;
                 } else {
                     if ((1U & (IData)(vlTOPp->player_2_move_i))) {
-                        vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_x 
-                            = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_x;
+                        vlTOPp->__Vdly__top__DOT__top__DOT__player_2__DOT__tank_x 
+                            = vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_x;
                     } else {
-                        if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_left)))) {
-                            vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_x 
-                                = (0x3ffU & ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_x) 
+                        if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_collide_with_wall_left)))) {
+                            vlTOPp->__Vdly__top__DOT__top__DOT__player_2__DOT__tank_x 
+                                = (0x3ffU & ((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_x) 
                                              - (IData)(1U)));
                         }
                     }
@@ -2013,110 +902,110 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__4(Vtop__Syms* __restrict vlSymsp) {
         } else {
             if ((4U & (IData)(vlTOPp->player_2_move_i))) {
                 if ((2U & (IData)(vlTOPp->player_2_move_i))) {
-                    vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_x 
-                        = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_x;
+                    vlTOPp->__Vdly__top__DOT__top__DOT__player_2__DOT__tank_x 
+                        = vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_x;
                 } else {
                     if ((1U & (IData)(vlTOPp->player_2_move_i))) {
-                        vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_x 
-                            = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_x;
+                        vlTOPp->__Vdly__top__DOT__top__DOT__player_2__DOT__tank_x 
+                            = vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_x;
                     } else {
-                        if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_right)))) {
-                            vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_x 
+                        if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_collide_with_wall_right)))) {
+                            vlTOPp->__Vdly__top__DOT__top__DOT__player_2__DOT__tank_x 
                                 = (0x3ffU & ((IData)(1U) 
-                                             + (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_x)));
+                                             + (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_x)));
                         }
                     }
                 }
             } else {
                 if ((2U & (IData)(vlTOPp->player_2_move_i))) {
                     if ((1U & (IData)(vlTOPp->player_2_move_i))) {
-                        vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_x 
-                            = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_x;
+                        vlTOPp->__Vdly__top__DOT__top__DOT__player_2__DOT__tank_x 
+                            = vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_x;
                     }
                 } else {
                     if ((1U & (~ (IData)(vlTOPp->player_2_move_i)))) {
-                        vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_x 
-                            = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_x;
+                        vlTOPp->__Vdly__top__DOT__top__DOT__player_2__DOT__tank_x 
+                            = vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_x;
                     }
                 }
             }
         }
     }
     if (vlTOPp->top__DOT__top__DOT__reset) {
-        vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_y = 0x20U;
+        vlTOPp->__Vdly__top__DOT__top__DOT__player_1__DOT__tank_y = 0x1a0U;
     } else {
         if ((8U & (IData)(vlTOPp->player_1_move_i))) {
             if ((4U & (IData)(vlTOPp->player_1_move_i))) {
-                vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_y 
-                    = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_y;
+                vlTOPp->__Vdly__top__DOT__top__DOT__player_1__DOT__tank_y 
+                    = vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_y;
             } else {
                 if ((2U & (IData)(vlTOPp->player_1_move_i))) {
-                    vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_y 
-                        = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_y;
+                    vlTOPp->__Vdly__top__DOT__top__DOT__player_1__DOT__tank_y 
+                        = vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_y;
                 } else {
                     if ((1U & (IData)(vlTOPp->player_1_move_i))) {
-                        vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_y 
-                            = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_y;
+                        vlTOPp->__Vdly__top__DOT__top__DOT__player_1__DOT__tank_y 
+                            = vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_y;
                     }
                 }
             }
         } else {
             if ((4U & (IData)(vlTOPp->player_1_move_i))) {
                 if ((2U & (IData)(vlTOPp->player_1_move_i))) {
-                    vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_y 
-                        = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_y;
+                    vlTOPp->__Vdly__top__DOT__top__DOT__player_1__DOT__tank_y 
+                        = vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_y;
                 } else {
                     if ((1U & (IData)(vlTOPp->player_1_move_i))) {
-                        vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_y 
-                            = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_y;
+                        vlTOPp->__Vdly__top__DOT__top__DOT__player_1__DOT__tank_y 
+                            = vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_y;
                     }
                 }
             } else {
                 if ((2U & (IData)(vlTOPp->player_1_move_i))) {
                     if ((1U & (IData)(vlTOPp->player_1_move_i))) {
-                        vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_y 
-                            = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_y;
+                        vlTOPp->__Vdly__top__DOT__top__DOT__player_1__DOT__tank_y 
+                            = vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_y;
                     } else {
-                        if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_top)))) {
-                            vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_y 
-                                = (0x3ffU & ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_y) 
+                        if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_top)))) {
+                            vlTOPp->__Vdly__top__DOT__top__DOT__player_1__DOT__tank_y 
+                                = (0x3ffU & ((IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_y) 
                                              - (IData)(1U)));
                         }
                     }
                 } else {
                     if ((1U & (IData)(vlTOPp->player_1_move_i))) {
-                        if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_bottom)))) {
-                            vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_y 
+                        if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_bottom)))) {
+                            vlTOPp->__Vdly__top__DOT__top__DOT__player_1__DOT__tank_y 
                                 = (0x3ffU & ((IData)(1U) 
-                                             + (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_y)));
+                                             + (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_y)));
                         }
                     } else {
-                        vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_y 
-                            = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_y;
+                        vlTOPp->__Vdly__top__DOT__top__DOT__player_1__DOT__tank_y 
+                            = vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_y;
                     }
                 }
             }
         }
     }
     if (vlTOPp->top__DOT__top__DOT__reset) {
-        vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_x = 0xe0U;
+        vlTOPp->__Vdly__top__DOT__top__DOT__player_1__DOT__tank_x = 0x120U;
     } else {
         if ((8U & (IData)(vlTOPp->player_1_move_i))) {
             if ((4U & (IData)(vlTOPp->player_1_move_i))) {
-                vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_x 
-                    = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_x;
+                vlTOPp->__Vdly__top__DOT__top__DOT__player_1__DOT__tank_x 
+                    = vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_x;
             } else {
                 if ((2U & (IData)(vlTOPp->player_1_move_i))) {
-                    vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_x 
-                        = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_x;
+                    vlTOPp->__Vdly__top__DOT__top__DOT__player_1__DOT__tank_x 
+                        = vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_x;
                 } else {
                     if ((1U & (IData)(vlTOPp->player_1_move_i))) {
-                        vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_x 
-                            = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_x;
+                        vlTOPp->__Vdly__top__DOT__top__DOT__player_1__DOT__tank_x 
+                            = vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_x;
                     } else {
-                        if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_left)))) {
-                            vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_x 
-                                = (0x3ffU & ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_x) 
+                        if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_left)))) {
+                            vlTOPp->__Vdly__top__DOT__top__DOT__player_1__DOT__tank_x 
+                                = (0x3ffU & ((IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_x) 
                                              - (IData)(1U)));
                         }
                     }
@@ -2125,30 +1014,30 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__4(Vtop__Syms* __restrict vlSymsp) {
         } else {
             if ((4U & (IData)(vlTOPp->player_1_move_i))) {
                 if ((2U & (IData)(vlTOPp->player_1_move_i))) {
-                    vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_x 
-                        = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_x;
+                    vlTOPp->__Vdly__top__DOT__top__DOT__player_1__DOT__tank_x 
+                        = vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_x;
                 } else {
                     if ((1U & (IData)(vlTOPp->player_1_move_i))) {
-                        vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_x 
-                            = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_x;
+                        vlTOPp->__Vdly__top__DOT__top__DOT__player_1__DOT__tank_x 
+                            = vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_x;
                     } else {
-                        if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_right)))) {
-                            vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_x 
+                        if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_right)))) {
+                            vlTOPp->__Vdly__top__DOT__top__DOT__player_1__DOT__tank_x 
                                 = (0x3ffU & ((IData)(1U) 
-                                             + (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_x)));
+                                             + (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_x)));
                         }
                     }
                 }
             } else {
                 if ((2U & (IData)(vlTOPp->player_1_move_i))) {
                     if ((1U & (IData)(vlTOPp->player_1_move_i))) {
-                        vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_x 
-                            = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_x;
+                        vlTOPp->__Vdly__top__DOT__top__DOT__player_1__DOT__tank_x 
+                            = vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_x;
                     }
                 } else {
                     if ((1U & (~ (IData)(vlTOPp->player_1_move_i)))) {
-                        vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_x 
-                            = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_x;
+                        vlTOPp->__Vdly__top__DOT__top__DOT__player_1__DOT__tank_x 
+                            = vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_x;
                     }
                 }
             }
@@ -2160,285 +1049,285 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__5(Vtop__Syms* __restrict vlSymsp) {
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__5\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Variables
-    SData/*9:0*/ __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_bullet_y;
-    SData/*9:0*/ __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_bullet_x;
-    SData/*9:0*/ __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_bullet_y;
-    SData/*9:0*/ __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_bullet_x;
+    SData/*9:0*/ __Vdly__top__DOT__top__DOT__player_1__DOT__tank_bullet_y;
+    SData/*9:0*/ __Vdly__top__DOT__top__DOT__player_1__DOT__tank_bullet_x;
+    SData/*9:0*/ __Vdly__top__DOT__top__DOT__player_2__DOT__tank_bullet_y;
+    SData/*9:0*/ __Vdly__top__DOT__top__DOT__player_2__DOT__tank_bullet_x;
     // Body
-    __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_bullet_x 
-        = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_bullet_x;
-    __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_bullet_y 
-        = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_bullet_y;
-    __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_bullet_x 
-        = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_bullet_x;
-    __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_bullet_y 
-        = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_bullet_y;
-    if (((1U == (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_2_state)) 
-         & (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__show_bullet_2))) {
-        if ((8U & (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_2_dir))) {
-            if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_2_dir) 
+    __Vdly__top__DOT__top__DOT__player_2__DOT__tank_bullet_x 
+        = vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet_x;
+    __Vdly__top__DOT__top__DOT__player_2__DOT__tank_bullet_y 
+        = vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet_y;
+    __Vdly__top__DOT__top__DOT__player_1__DOT__tank_bullet_x 
+        = vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet_x;
+    __Vdly__top__DOT__top__DOT__player_1__DOT__tank_bullet_y 
+        = vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet_y;
+    if (((1U == (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__bullet_stage)) 
+         & (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__show_bullet))) {
+        if ((8U & (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__bullet_dir))) {
+            if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__bullet_dir) 
                           >> 2U)))) {
-                if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_2_dir) 
+                if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__bullet_dir) 
                               >> 1U)))) {
-                    if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_2_dir)))) {
-                        __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_bullet_x 
-                            = (0x3ffU & ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_bullet_x) 
+                    if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__bullet_dir)))) {
+                        __Vdly__top__DOT__top__DOT__player_2__DOT__tank_bullet_x 
+                            = (0x3ffU & ((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet_x) 
                                          - (IData)(1U)));
                     }
                 }
             }
         } else {
-            if ((4U & (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_2_dir))) {
-                if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_2_dir) 
+            if ((4U & (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__bullet_dir))) {
+                if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__bullet_dir) 
                               >> 1U)))) {
-                    if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_2_dir)))) {
-                        __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_bullet_x 
+                    if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__bullet_dir)))) {
+                        __Vdly__top__DOT__top__DOT__player_2__DOT__tank_bullet_x 
                             = (0x3ffU & ((IData)(1U) 
-                                         + (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_bullet_x)));
+                                         + (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet_x)));
                     }
                 }
             }
         }
     }
-    if ((0U == (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_2_state))) {
-        if ((8U & (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_prev_direct))) {
-            if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_prev_direct) 
+    if ((0U == (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__bullet_stage))) {
+        if ((8U & (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_prev_direct))) {
+            if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_prev_direct) 
                           >> 2U)))) {
-                if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_prev_direct) 
+                if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_prev_direct) 
                               >> 1U)))) {
-                    if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_prev_direct)))) {
-                        __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_bullet_x 
-                            = (0x3ffU & ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_x) 
+                    if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_prev_direct)))) {
+                        __Vdly__top__DOT__top__DOT__player_2__DOT__tank_bullet_x 
+                            = (0x3ffU & ((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_x) 
                                          - (IData)(4U)));
                     }
                 }
             }
         } else {
-            if ((4U & (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_prev_direct))) {
-                if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_prev_direct) 
+            if ((4U & (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_prev_direct))) {
+                if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_prev_direct) 
                               >> 1U)))) {
-                    if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_prev_direct)))) {
-                        __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_bullet_x 
+                    if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_prev_direct)))) {
+                        __Vdly__top__DOT__top__DOT__player_2__DOT__tank_bullet_x 
                             = (0x3ffU & ((IData)(0x20U) 
-                                         + (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_x)));
+                                         + (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_x)));
                     }
                 }
             } else {
-                if ((2U & (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_prev_direct))) {
-                    if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_prev_direct)))) {
-                        __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_bullet_x 
+                if ((2U & (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_prev_direct))) {
+                    if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_prev_direct)))) {
+                        __Vdly__top__DOT__top__DOT__player_2__DOT__tank_bullet_x 
                             = (0x3ffU & ((IData)(0xeU) 
-                                         + (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_x)));
+                                         + (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_x)));
                     }
                 } else {
-                    if ((1U & (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_prev_direct))) {
-                        __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_bullet_x 
+                    if ((1U & (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_prev_direct))) {
+                        __Vdly__top__DOT__top__DOT__player_2__DOT__tank_bullet_x 
                             = (0x3ffU & ((IData)(0xeU) 
-                                         + (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_x)));
+                                         + (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_x)));
                     }
                 }
             }
         }
     }
-    if (((1U == (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_2_state)) 
-         & (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__show_bullet_2))) {
-        if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_2_dir) 
+    if (((1U == (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__bullet_stage)) 
+         & (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__show_bullet))) {
+        if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__bullet_dir) 
                       >> 3U)))) {
-            if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_2_dir) 
+            if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__bullet_dir) 
                           >> 2U)))) {
-                if ((2U & (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_2_dir))) {
-                    if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_2_dir)))) {
-                        __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_bullet_y 
-                            = (0x3ffU & ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_bullet_y) 
+                if ((2U & (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__bullet_dir))) {
+                    if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__bullet_dir)))) {
+                        __Vdly__top__DOT__top__DOT__player_2__DOT__tank_bullet_y 
+                            = (0x3ffU & ((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet_y) 
                                          - (IData)(1U)));
                     }
                 } else {
-                    if ((1U & (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_2_dir))) {
-                        __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_bullet_y 
+                    if ((1U & (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__bullet_dir))) {
+                        __Vdly__top__DOT__top__DOT__player_2__DOT__tank_bullet_y 
                             = (0x3ffU & ((IData)(1U) 
-                                         + (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_bullet_y)));
+                                         + (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet_y)));
                     }
                 }
             }
         }
     }
-    if ((0U == (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_2_state))) {
-        if ((8U & (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_prev_direct))) {
-            if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_prev_direct) 
+    if ((0U == (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__bullet_stage))) {
+        if ((8U & (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_prev_direct))) {
+            if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_prev_direct) 
                           >> 2U)))) {
-                if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_prev_direct) 
+                if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_prev_direct) 
                               >> 1U)))) {
-                    if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_prev_direct)))) {
-                        __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_bullet_y 
+                    if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_prev_direct)))) {
+                        __Vdly__top__DOT__top__DOT__player_2__DOT__tank_bullet_y 
                             = (0x3ffU & ((IData)(0xeU) 
-                                         + (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_y)));
+                                         + (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_y)));
                     }
                 }
             }
         } else {
-            if ((4U & (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_prev_direct))) {
-                if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_prev_direct) 
+            if ((4U & (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_prev_direct))) {
+                if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_prev_direct) 
                               >> 1U)))) {
-                    if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_prev_direct)))) {
-                        __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_bullet_y 
+                    if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_prev_direct)))) {
+                        __Vdly__top__DOT__top__DOT__player_2__DOT__tank_bullet_y 
                             = (0x3ffU & ((IData)(0xeU) 
-                                         + (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_y)));
+                                         + (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_y)));
                     }
                 }
             } else {
-                if ((2U & (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_prev_direct))) {
-                    if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_prev_direct)))) {
-                        __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_bullet_y 
-                            = (0x3ffU & ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_y) 
+                if ((2U & (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_prev_direct))) {
+                    if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_prev_direct)))) {
+                        __Vdly__top__DOT__top__DOT__player_2__DOT__tank_bullet_y 
+                            = (0x3ffU & ((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_y) 
                                          - (IData)(4U)));
                     }
                 } else {
-                    if ((1U & (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_prev_direct))) {
-                        __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_bullet_y 
+                    if ((1U & (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_prev_direct))) {
+                        __Vdly__top__DOT__top__DOT__player_2__DOT__tank_bullet_y 
                             = (0x3ffU & ((IData)(0x20U) 
-                                         + (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_y)));
+                                         + (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_y)));
                     }
                 }
             }
         }
     }
-    if (((1U == (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_1_state)) 
-         & (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__show_bullet_1))) {
-        if ((8U & (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_1_dir))) {
-            if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_1_dir) 
+    if (((1U == (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__bullet_stage)) 
+         & (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__show_bullet))) {
+        if ((8U & (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__bullet_dir))) {
+            if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__bullet_dir) 
                           >> 2U)))) {
-                if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_1_dir) 
+                if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__bullet_dir) 
                               >> 1U)))) {
-                    if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_1_dir)))) {
-                        __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_bullet_x 
-                            = (0x3ffU & ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_bullet_x) 
+                    if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__bullet_dir)))) {
+                        __Vdly__top__DOT__top__DOT__player_1__DOT__tank_bullet_x 
+                            = (0x3ffU & ((IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet_x) 
                                          - (IData)(1U)));
                     }
                 }
             }
         } else {
-            if ((4U & (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_1_dir))) {
-                if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_1_dir) 
+            if ((4U & (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__bullet_dir))) {
+                if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__bullet_dir) 
                               >> 1U)))) {
-                    if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_1_dir)))) {
-                        __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_bullet_x 
+                    if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__bullet_dir)))) {
+                        __Vdly__top__DOT__top__DOT__player_1__DOT__tank_bullet_x 
                             = (0x3ffU & ((IData)(1U) 
-                                         + (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_bullet_x)));
+                                         + (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet_x)));
                     }
                 }
             }
         }
     }
-    if ((0U == (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_1_state))) {
-        if ((8U & (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_prev_direct))) {
-            if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_prev_direct) 
+    if ((0U == (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__bullet_stage))) {
+        if ((8U & (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_prev_direct))) {
+            if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_prev_direct) 
                           >> 2U)))) {
-                if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_prev_direct) 
+                if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_prev_direct) 
                               >> 1U)))) {
-                    if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_prev_direct)))) {
-                        __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_bullet_x 
-                            = (0x3ffU & ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_x) 
+                    if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_prev_direct)))) {
+                        __Vdly__top__DOT__top__DOT__player_1__DOT__tank_bullet_x 
+                            = (0x3ffU & ((IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_x) 
                                          - (IData)(4U)));
                     }
                 }
             }
         } else {
-            if ((4U & (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_prev_direct))) {
-                if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_prev_direct) 
+            if ((4U & (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_prev_direct))) {
+                if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_prev_direct) 
                               >> 1U)))) {
-                    if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_prev_direct)))) {
-                        __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_bullet_x 
+                    if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_prev_direct)))) {
+                        __Vdly__top__DOT__top__DOT__player_1__DOT__tank_bullet_x 
                             = (0x3ffU & ((IData)(0x20U) 
-                                         + (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_x)));
+                                         + (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_x)));
                     }
                 }
             } else {
-                if ((2U & (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_prev_direct))) {
-                    if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_prev_direct)))) {
-                        __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_bullet_x 
+                if ((2U & (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_prev_direct))) {
+                    if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_prev_direct)))) {
+                        __Vdly__top__DOT__top__DOT__player_1__DOT__tank_bullet_x 
                             = (0x3ffU & ((IData)(0xeU) 
-                                         + (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_x)));
+                                         + (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_x)));
                     }
                 } else {
-                    if ((1U & (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_prev_direct))) {
-                        __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_bullet_x 
+                    if ((1U & (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_prev_direct))) {
+                        __Vdly__top__DOT__top__DOT__player_1__DOT__tank_bullet_x 
                             = (0x3ffU & ((IData)(0xeU) 
-                                         + (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_x)));
+                                         + (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_x)));
                     }
                 }
             }
         }
     }
-    if (((1U == (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_1_state)) 
-         & (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__show_bullet_1))) {
-        if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_1_dir) 
+    if (((1U == (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__bullet_stage)) 
+         & (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__show_bullet))) {
+        if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__bullet_dir) 
                       >> 3U)))) {
-            if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_1_dir) 
+            if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__bullet_dir) 
                           >> 2U)))) {
-                if ((2U & (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_1_dir))) {
-                    if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_1_dir)))) {
-                        __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_bullet_y 
-                            = (0x3ffU & ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_bullet_y) 
+                if ((2U & (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__bullet_dir))) {
+                    if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__bullet_dir)))) {
+                        __Vdly__top__DOT__top__DOT__player_1__DOT__tank_bullet_y 
+                            = (0x3ffU & ((IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet_y) 
                                          - (IData)(1U)));
                     }
                 } else {
-                    if ((1U & (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_1_dir))) {
-                        __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_bullet_y 
+                    if ((1U & (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__bullet_dir))) {
+                        __Vdly__top__DOT__top__DOT__player_1__DOT__tank_bullet_y 
                             = (0x3ffU & ((IData)(1U) 
-                                         + (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_bullet_y)));
+                                         + (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet_y)));
                     }
                 }
             }
         }
     }
-    if ((0U == (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_1_state))) {
-        if ((8U & (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_prev_direct))) {
-            if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_prev_direct) 
+    if ((0U == (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__bullet_stage))) {
+        if ((8U & (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_prev_direct))) {
+            if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_prev_direct) 
                           >> 2U)))) {
-                if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_prev_direct) 
+                if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_prev_direct) 
                               >> 1U)))) {
-                    if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_prev_direct)))) {
-                        __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_bullet_y 
+                    if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_prev_direct)))) {
+                        __Vdly__top__DOT__top__DOT__player_1__DOT__tank_bullet_y 
                             = (0x3ffU & ((IData)(0xeU) 
-                                         + (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_y)));
+                                         + (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_y)));
                     }
                 }
             }
         } else {
-            if ((4U & (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_prev_direct))) {
-                if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_prev_direct) 
+            if ((4U & (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_prev_direct))) {
+                if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_prev_direct) 
                               >> 1U)))) {
-                    if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_prev_direct)))) {
-                        __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_bullet_y 
+                    if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_prev_direct)))) {
+                        __Vdly__top__DOT__top__DOT__player_1__DOT__tank_bullet_y 
                             = (0x3ffU & ((IData)(0xeU) 
-                                         + (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_y)));
+                                         + (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_y)));
                     }
                 }
             } else {
-                if ((2U & (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_prev_direct))) {
-                    if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_prev_direct)))) {
-                        __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_bullet_y 
-                            = (0x3ffU & ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_y) 
+                if ((2U & (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_prev_direct))) {
+                    if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_prev_direct)))) {
+                        __Vdly__top__DOT__top__DOT__player_1__DOT__tank_bullet_y 
+                            = (0x3ffU & ((IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_y) 
                                          - (IData)(4U)));
                     }
                 } else {
-                    if ((1U & (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_prev_direct))) {
-                        __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_bullet_y 
+                    if ((1U & (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_prev_direct))) {
+                        __Vdly__top__DOT__top__DOT__player_1__DOT__tank_bullet_y 
                             = (0x3ffU & ((IData)(0x20U) 
-                                         + (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_y)));
+                                         + (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_y)));
                     }
                 }
             }
         }
     }
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_bullet_x 
-        = __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_bullet_x;
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_bullet_y 
-        = __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_bullet_y;
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_bullet_x 
-        = __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_bullet_x;
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_bullet_y 
-        = __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_bullet_y;
+    vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet_x 
+        = __Vdly__top__DOT__top__DOT__player_2__DOT__tank_bullet_x;
+    vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet_y 
+        = __Vdly__top__DOT__top__DOT__player_2__DOT__tank_bullet_y;
+    vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet_x 
+        = __Vdly__top__DOT__top__DOT__player_1__DOT__tank_bullet_x;
+    vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet_y 
+        = __Vdly__top__DOT__top__DOT__player_1__DOT__tank_bullet_y;
 }
 
 VL_INLINE_OPT void Vtop::_combo__TOP__6(Vtop__Syms* __restrict vlSymsp) {
@@ -2452,172 +1341,65 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__7(Vtop__Syms* __restrict vlSymsp) {
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__7\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Variables
-    CData/*4:0*/ __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_xofs;
-    CData/*4:0*/ __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_xofs_backward;
-    CData/*4:0*/ __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_xofs;
-    CData/*4:0*/ __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_xofs_backward;
-    CData/*1:0*/ __Vdly__top__DOT__top__DOT__game_FSM__DOT__game_state;
-    CData/*5:0*/ __Vdly__top__DOT__top__DOT__game_FSM__DOT__score_player_1;
-    CData/*5:0*/ __Vdly__top__DOT__top__DOT__game_FSM__DOT__score_player_2;
+    CData/*4:0*/ __Vdly__top__DOT__top__DOT__player_1__DOT__tank_xofs;
+    CData/*4:0*/ __Vdly__top__DOT__top__DOT__player_1__DOT__tank_xofs_backward;
+    CData/*4:0*/ __Vdly__top__DOT__top__DOT__player_2__DOT__tank_xofs;
+    CData/*4:0*/ __Vdly__top__DOT__top__DOT__player_2__DOT__tank_xofs_backward;
     // Body
-    vlTOPp->__Vdly__top__DOT__top__DOT__reset = vlTOPp->top__DOT__top__DOT__reset;
-    __Vdly__top__DOT__top__DOT__game_FSM__DOT__game_state 
-        = vlTOPp->top__DOT__top__DOT__game_FSM__DOT__game_state;
-    __Vdly__top__DOT__top__DOT__game_FSM__DOT__score_player_2 
-        = vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_2;
-    __Vdly__top__DOT__top__DOT__game_FSM__DOT__score_player_1 
-        = vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_1;
-    __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_xofs_backward 
-        = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_xofs_backward;
-    __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_xofs 
-        = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_xofs;
-    __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_xofs_backward 
-        = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_xofs_backward;
-    __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_xofs 
-        = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_xofs;
+    __Vdly__top__DOT__top__DOT__player_2__DOT__tank_xofs_backward 
+        = vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_xofs_backward;
+    __Vdly__top__DOT__top__DOT__player_2__DOT__tank_xofs 
+        = vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_xofs;
+    __Vdly__top__DOT__top__DOT__player_1__DOT__tank_xofs_backward 
+        = vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_xofs_backward;
+    __Vdly__top__DOT__top__DOT__player_1__DOT__tank_xofs 
+        = vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_xofs;
     vlTOPp->__Vdly__top__DOT__top__DOT__vpos = vlTOPp->top__DOT__top__DOT__vpos;
     vlTOPp->__Vdly__top__DOT__top__DOT__hpos = vlTOPp->top__DOT__top__DOT__hpos;
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__pos_edge_detect_2__DOT__sig_dly 
+    vlTOPp->top__DOT__top__DOT__player_2__DOT__pos_edge_detect_1__DOT__sig_dly 
         = vlTOPp->player_2_shoot_i;
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__pos_edge_detect_1__DOT__sig_dly 
+    vlTOPp->top__DOT__top__DOT__player_1__DOT__pos_edge_detect_1__DOT__sig_dly 
         = vlTOPp->player_1_shoot_i;
     vlTOPp->top__DOT__top__DOT__menu__DOT__sellect_down_edge_dect__DOT__sig_dly 
         = (1U & (IData)(vlTOPp->player_1_move_i));
     vlTOPp->top__DOT__top__DOT__menu__DOT__sellect_up_edge_dect__DOT__sig_dly 
         = (1U & ((IData)(vlTOPp->player_1_move_i) >> 1U));
-    if (vlTOPp->top__DOT__top__DOT__score__DOT__enable_tank_1) {
-        vlTOPp->top__DOT__top__DOT__tank_red = ((0U 
-                                                 == vlTOPp->top__DOT__top__DOT__score__DOT__dout_1)
-                                                 ? 0xe0U
-                                                 : 
-                                                (0xffU 
-                                                 & vlTOPp->top__DOT__top__DOT__score__DOT__dout_1));
-    }
-    if (vlTOPp->top__DOT__top__DOT__score__DOT__enable_tank_2) {
-        vlTOPp->top__DOT__top__DOT__tank_red = ((0U 
-                                                 == vlTOPp->top__DOT__top__DOT__score__DOT__dout_2)
-                                                 ? 0xe0U
-                                                 : 
-                                                (0xffU 
-                                                 & vlTOPp->top__DOT__top__DOT__score__DOT__dout_2));
-    }
-    if (vlTOPp->top__DOT__top__DOT__score__DOT__enable_tank_1) {
-        vlTOPp->top__DOT__top__DOT__tank_green = (0xffU 
-                                                  & (((0U 
-                                                       == vlTOPp->top__DOT__top__DOT__score__DOT__dout_1)
-                                                       ? 0xe0e0e0U
-                                                       : vlTOPp->top__DOT__top__DOT__score__DOT__dout_1) 
-                                                     >> 8U));
-    }
-    if (vlTOPp->top__DOT__top__DOT__score__DOT__enable_tank_2) {
-        vlTOPp->top__DOT__top__DOT__tank_green = (0xffU 
-                                                  & (((0U 
-                                                       == vlTOPp->top__DOT__top__DOT__score__DOT__dout_2)
-                                                       ? 0xe0e0e0U
-                                                       : vlTOPp->top__DOT__top__DOT__score__DOT__dout_2) 
-                                                     >> 8U));
-    }
-    if (vlTOPp->top__DOT__top__DOT__score__DOT__enable_tank_1) {
-        vlTOPp->top__DOT__top__DOT__tank_blue = (0xffU 
-                                                 & (((0U 
-                                                      == vlTOPp->top__DOT__top__DOT__score__DOT__dout_1)
-                                                      ? 0xe0e0e0U
-                                                      : vlTOPp->top__DOT__top__DOT__score__DOT__dout_1) 
-                                                    >> 0x10U));
-    }
-    if (vlTOPp->top__DOT__top__DOT__score__DOT__enable_tank_2) {
-        vlTOPp->top__DOT__top__DOT__tank_blue = (0xffU 
-                                                 & (((0U 
-                                                      == vlTOPp->top__DOT__top__DOT__score__DOT__dout_2)
-                                                      ? 0xe0e0e0U
-                                                      : vlTOPp->top__DOT__top__DOT__score__DOT__dout_2) 
-                                                    >> 0x10U));
-    }
-    if (vlTOPp->reset_i) {
-        __Vdly__top__DOT__top__DOT__game_FSM__DOT__game_state = 0U;
-        __Vdly__top__DOT__top__DOT__game_FSM__DOT__score_player_1 = 0U;
-        __Vdly__top__DOT__top__DOT__game_FSM__DOT__score_player_2 = 0U;
-    } else {
-        vlTOPp->top__DOT__top__DOT__is_menu = 0U;
-        vlTOPp->top__DOT__top__DOT__is_playing = 0U;
-        vlTOPp->top__DOT__top__DOT__is_continue = 0U;
-        vlTOPp->top__DOT__top__DOT__is_final = 0U;
-        vlTOPp->__Vdly__top__DOT__top__DOT__reset = 1U;
-        if ((0U == (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__game_state))) {
-            vlTOPp->top__DOT__top__DOT__is_menu = 1U;
-            vlTOPp->__Vdly__top__DOT__top__DOT__reset = 1U;
-            if (vlTOPp->player_1_shoot_i) {
-                __Vdly__top__DOT__top__DOT__game_FSM__DOT__game_state = 1U;
-            }
-        } else {
-            if ((1U == (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__game_state))) {
-                vlTOPp->__Vdly__top__DOT__top__DOT__reset = 0U;
-                vlTOPp->top__DOT__top__DOT__is_playing = 1U;
-                if (((IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_player_1) 
-                     & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__pos_edge_detect_bullet_collide_player_1__DOT__sig_dly)))) {
-                    __Vdly__top__DOT__top__DOT__game_FSM__DOT__score_player_2 
-                        = (0x3fU & ((IData)(1U) + (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_2)));
-                    __Vdly__top__DOT__top__DOT__game_FSM__DOT__game_state = 0U;
-                }
-                if (((IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_player_2) 
-                     & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__pos_edge_detect_bullet_collide_player_2__DOT__sig_dly)))) {
-                    __Vdly__top__DOT__top__DOT__game_FSM__DOT__score_player_1 
-                        = (0x3fU & ((IData)(1U) + (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_1)));
-                    __Vdly__top__DOT__top__DOT__game_FSM__DOT__game_state = 0U;
-                }
-            } else {
-                if ((2U == (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__game_state))) {
-                    vlTOPp->top__DOT__top__DOT__is_continue = 1U;
-                    vlTOPp->__Vdly__top__DOT__top__DOT__reset = 1U;
-                    if (vlTOPp->player_1_shoot_i) {
-                        __Vdly__top__DOT__top__DOT__game_FSM__DOT__game_state = 1U;
-                    }
-                } else {
-                    if ((3U == (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__game_state))) {
-                        vlTOPp->top__DOT__top__DOT__is_final = 1U;
-                    } else {
-                        __Vdly__top__DOT__top__DOT__game_FSM__DOT__game_state = 0U;
-                    }
-                }
-            }
-        }
-    }
     if (((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-         == (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_x))) {
-        __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_xofs_backward = 0x1eU;
+         == (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_x))) {
+        __Vdly__top__DOT__top__DOT__player_2__DOT__tank_xofs_backward = 0x1fU;
     } else {
-        if ((0U != (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_xofs_backward))) {
-            __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_xofs_backward 
-                = (0x1fU & ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_xofs_backward) 
+        if ((0U != (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_xofs_backward))) {
+            __Vdly__top__DOT__top__DOT__player_2__DOT__tank_xofs_backward 
+                = (0x1fU & ((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_xofs_backward) 
                             - (IData)(1U)));
         }
     }
     if (((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-         == (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_x))) {
-        __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_xofs = 1U;
+         == (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_x))) {
+        __Vdly__top__DOT__top__DOT__player_2__DOT__tank_xofs = 2U;
     } else {
-        if ((0x1fU != (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_xofs))) {
-            __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_xofs 
-                = (0x1fU & ((IData)(1U) + (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_xofs)));
+        if ((0x1fU != (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_xofs))) {
+            __Vdly__top__DOT__top__DOT__player_2__DOT__tank_xofs 
+                = (0x1fU & ((IData)(1U) + (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_xofs)));
         }
     }
     if (((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-         == (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_x))) {
-        __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_xofs_backward = 0x1cU;
+         == (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_x))) {
+        __Vdly__top__DOT__top__DOT__player_1__DOT__tank_xofs_backward = 0x1fU;
     } else {
-        if ((0U != (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_xofs_backward))) {
-            __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_xofs_backward 
-                = (0x1fU & ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_xofs_backward) 
+        if ((0U != (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_xofs_backward))) {
+            __Vdly__top__DOT__top__DOT__player_1__DOT__tank_xofs_backward 
+                = (0x1fU & ((IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_xofs_backward) 
                             - (IData)(1U)));
         }
     }
     if (((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-         == (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_x))) {
-        __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_xofs = 1U;
+         == (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_x))) {
+        __Vdly__top__DOT__top__DOT__player_1__DOT__tank_xofs = 2U;
     } else {
-        if ((0x1fU != (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_xofs))) {
-            __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_xofs 
-                = (0x1fU & ((IData)(1U) + (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_xofs)));
+        if ((0x1fU != (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_xofs))) {
+            __Vdly__top__DOT__top__DOT__player_1__DOT__tank_xofs 
+                = (0x1fU & ((IData)(1U) + (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_xofs)));
         }
     }
     vlTOPp->top__DOT__top__DOT__hvsync_gen__DOT__vsync 
@@ -2628,78 +1410,78 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__7(Vtop__Syms* __restrict vlSymsp) {
             ((IData)(vlTOPp->top__DOT__top__DOT__hvsync_gen__DOT__v_maxxed)
               ? 0U : (0x3ffU & ((IData)(1U) + (IData)(vlTOPp->top__DOT__top__DOT__vpos))));
     }
-    if ((8U & (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_prev_direct))) {
-        if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_prev_direct) 
+    if ((8U & (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_prev_direct))) {
+        if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_prev_direct) 
                       >> 2U)))) {
-            if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_prev_direct) 
+            if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_prev_direct) 
                           >> 1U)))) {
-                if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_prev_direct)))) {
-                    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__addr_2 
-                        = (((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_yofs) 
-                            << 5U) | (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_xofs));
+                if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_prev_direct)))) {
+                    vlTOPp->top__DOT__top__DOT__player_2_addr 
+                        = (((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_yofs) 
+                            << 5U) | (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_xofs_backward));
                 }
             }
         }
     } else {
-        if ((4U & (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_prev_direct))) {
-            if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_prev_direct) 
+        if ((4U & (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_prev_direct))) {
+            if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_prev_direct) 
                           >> 1U)))) {
-                if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_prev_direct)))) {
-                    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__addr_2 
-                        = (((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_yofs) 
-                            << 5U) | (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_xofs_backward));
+                if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_prev_direct)))) {
+                    vlTOPp->top__DOT__top__DOT__player_2_addr 
+                        = (((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_yofs) 
+                            << 5U) | (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_xofs));
                 }
             }
         } else {
-            if ((2U & (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_prev_direct))) {
-                if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_prev_direct)))) {
-                    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__addr_2 
-                        = (((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_xofs) 
-                            << 5U) | (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_yofs));
+            if ((2U & (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_prev_direct))) {
+                if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_prev_direct)))) {
+                    vlTOPp->top__DOT__top__DOT__player_2_addr 
+                        = (((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_xofs) 
+                            << 5U) | (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_yofs_backward));
                 }
             } else {
-                if ((1U & (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_prev_direct))) {
-                    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__addr_2 
-                        = (((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_xofs) 
-                            << 5U) | (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_yofs_backward));
+                if ((1U & (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_prev_direct))) {
+                    vlTOPp->top__DOT__top__DOT__player_2_addr 
+                        = (((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_xofs) 
+                            << 5U) | (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_yofs));
                 }
             }
         }
     }
-    if ((8U & (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_prev_direct))) {
-        if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_prev_direct) 
+    if ((8U & (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_prev_direct))) {
+        if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_prev_direct) 
                       >> 2U)))) {
-            if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_prev_direct) 
+            if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_prev_direct) 
                           >> 1U)))) {
-                if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_prev_direct)))) {
-                    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__addr_1 
-                        = (((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_yofs) 
-                            << 5U) | (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_xofs_backward));
+                if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_prev_direct)))) {
+                    vlTOPp->top__DOT__top__DOT__player_1_addr 
+                        = (((IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_yofs) 
+                            << 5U) | (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_xofs_backward));
                 }
             }
         }
     } else {
-        if ((4U & (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_prev_direct))) {
-            if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_prev_direct) 
+        if ((4U & (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_prev_direct))) {
+            if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_prev_direct) 
                           >> 1U)))) {
-                if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_prev_direct)))) {
-                    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__addr_1 
-                        = (((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_yofs) 
-                            << 5U) | (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_xofs));
+                if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_prev_direct)))) {
+                    vlTOPp->top__DOT__top__DOT__player_1_addr 
+                        = (((IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_yofs) 
+                            << 5U) | (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_xofs));
                 }
             }
         } else {
-            if ((2U & (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_prev_direct))) {
-                if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_prev_direct)))) {
-                    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__addr_1 
-                        = (((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_xofs) 
-                            << 5U) | (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_yofs_backward));
+            if ((2U & (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_prev_direct))) {
+                if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_prev_direct)))) {
+                    vlTOPp->top__DOT__top__DOT__player_1_addr 
+                        = (((IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_xofs) 
+                            << 5U) | (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_yofs_backward));
                 }
             } else {
-                if ((1U & (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_prev_direct))) {
-                    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__addr_1 
-                        = (((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_xofs) 
-                            << 5U) | (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_yofs));
+                if ((1U & (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_prev_direct))) {
+                    vlTOPp->top__DOT__top__DOT__player_1_addr 
+                        = (((IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_xofs) 
+                            << 5U) | (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_yofs));
                 }
             }
         }
@@ -2713,32 +1495,65 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__7(Vtop__Syms* __restrict vlSymsp) {
                                                 (0x3ffU 
                                                  & ((IData)(1U) 
                                                     + (IData)(vlTOPp->top__DOT__top__DOT__hpos))));
-    vlTOPp->top__DOT__top__DOT__game_FSM__DOT__game_state 
-        = __Vdly__top__DOT__top__DOT__game_FSM__DOT__game_state;
-    vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_1 
-        = __Vdly__top__DOT__top__DOT__game_FSM__DOT__score_player_1;
-    vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_2 
-        = __Vdly__top__DOT__top__DOT__game_FSM__DOT__score_player_2;
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_xofs 
-        = __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_xofs;
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_xofs_backward 
-        = __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_xofs_backward;
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_xofs_backward 
-        = __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_xofs_backward;
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_xofs 
-        = __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_xofs;
+    vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_xofs_backward 
+        = __Vdly__top__DOT__top__DOT__player_2__DOT__tank_xofs_backward;
+    vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_xofs 
+        = __Vdly__top__DOT__top__DOT__player_2__DOT__tank_xofs;
+    vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_xofs_backward 
+        = __Vdly__top__DOT__top__DOT__player_1__DOT__tank_xofs_backward;
+    vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_xofs 
+        = __Vdly__top__DOT__top__DOT__player_1__DOT__tank_xofs;
     vlTOPp->vsync_no = (1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__hvsync_gen__DOT__vsync)));
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__dout_2 
-        = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__mem_player_2__DOT__mem
-        [vlTOPp->top__DOT__top__DOT__player_rgb__DOT__addr_2];
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__dout_1 
-        = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__mem_player_1__DOT__mem
-        [vlTOPp->top__DOT__top__DOT__player_rgb__DOT__addr_1];
+    vlTOPp->top__DOT__top__DOT__player_2_bits = vlTOPp->top__DOT__top__DOT__mem_player_2__DOT__mem
+        [vlTOPp->top__DOT__top__DOT__player_2_addr];
+    vlTOPp->top__DOT__top__DOT__player_1_bits = vlTOPp->top__DOT__top__DOT__mem_player_1__DOT__mem
+        [vlTOPp->top__DOT__top__DOT__player_1_addr];
     vlTOPp->hsync_no = (1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__hvsync_gen__DOT__hsync)));
 }
 
 VL_INLINE_OPT void Vtop::_sequent__TOP__8(Vtop__Syms* __restrict vlSymsp) {
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__8\n"); );
+    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
+    // Variables
+    CData/*4:0*/ __Vdly__top__DOT__top__DOT__menu__DOT__arrow_pos;
+    // Body
+    vlTOPp->__Vdly__top__DOT__top__DOT__game_FSM__DOT__score_player_2 
+        = vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_2;
+    vlTOPp->__Vdly__top__DOT__top__DOT__game_FSM__DOT__score_player_1 
+        = vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_1;
+    vlTOPp->__Vdly__top__DOT__top__DOT__game_FSM__DOT__game_state 
+        = vlTOPp->top__DOT__top__DOT__game_FSM__DOT__game_state;
+    __Vdly__top__DOT__top__DOT__menu__DOT__arrow_pos 
+        = vlTOPp->top__DOT__top__DOT__menu__DOT__arrow_pos;
+    if (vlTOPp->reset_i) {
+        __Vdly__top__DOT__top__DOT__menu__DOT__arrow_pos = 9U;
+    } else {
+        if (((IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__sellect_down) 
+             & (0xcU > (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__arrow_pos)))) {
+            __Vdly__top__DOT__top__DOT__menu__DOT__arrow_pos 
+                = (0x1fU & ((IData)(1U) + (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__arrow_pos)));
+        } else {
+            if (vlTOPp->top__DOT__top__DOT__menu__DOT__sellect_down) {
+                __Vdly__top__DOT__top__DOT__menu__DOT__arrow_pos = 9U;
+            }
+        }
+        if (((IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__sellect_up) 
+             & (9U < (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__arrow_pos)))) {
+            __Vdly__top__DOT__top__DOT__menu__DOT__arrow_pos 
+                = (0x1fU & ((IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__arrow_pos) 
+                            - (IData)(1U)));
+        } else {
+            if (vlTOPp->top__DOT__top__DOT__menu__DOT__sellect_up) {
+                __Vdly__top__DOT__top__DOT__menu__DOT__arrow_pos = 0xcU;
+            }
+        }
+    }
+    vlTOPp->top__DOT__top__DOT__menu__DOT__arrow_pos 
+        = __Vdly__top__DOT__top__DOT__menu__DOT__arrow_pos;
+}
+
+VL_INLINE_OPT void Vtop::_sequent__TOP__9(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__9\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Variables
     CData/*0:0*/ __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v0;
@@ -2765,19 +1580,13 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__8(Vtop__Syms* __restrict vlSymsp) {
     CData/*2:0*/ __Vdlyvlsb__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v679;
     CData/*0:0*/ __Vdlyvval__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v679;
     CData/*0:0*/ __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v679;
-    CData/*1:0*/ __Vdly__top__DOT__top__DOT__player_rgb__DOT__bullet_1_state;
-    CData/*0:0*/ __Vdly__top__DOT__top__DOT__player_rgb__DOT__bullet_1_collide;
-    CData/*1:0*/ __Vdly__top__DOT__top__DOT__player_rgb__DOT__bullet_2_state;
-    CData/*0:0*/ __Vdly__top__DOT__top__DOT__player_rgb__DOT__bullet_2_collide;
+    CData/*1:0*/ __Vdly__top__DOT__top__DOT__player_1__DOT__bullet_stage;
+    CData/*1:0*/ __Vdly__top__DOT__top__DOT__player_2__DOT__bullet_stage;
     // Body
-    __Vdly__top__DOT__top__DOT__player_rgb__DOT__bullet_2_collide 
-        = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_2_collide;
-    __Vdly__top__DOT__top__DOT__player_rgb__DOT__bullet_2_state 
-        = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_2_state;
-    __Vdly__top__DOT__top__DOT__player_rgb__DOT__bullet_1_collide 
-        = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_1_collide;
-    __Vdly__top__DOT__top__DOT__player_rgb__DOT__bullet_1_state 
-        = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_1_state;
+    __Vdly__top__DOT__top__DOT__player_2__DOT__bullet_stage 
+        = vlTOPp->top__DOT__top__DOT__player_2__DOT__bullet_stage;
+    __Vdly__top__DOT__top__DOT__player_1__DOT__bullet_stage 
+        = vlTOPp->top__DOT__top__DOT__player_1__DOT__bullet_stage;
     __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v0 = 0U;
     __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v169 = 0U;
     __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v338 = 0U;
@@ -2787,65 +1596,55 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__8(Vtop__Syms* __restrict vlSymsp) {
     __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v678 = 0U;
     __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v679 = 0U;
     if (vlTOPp->top__DOT__top__DOT__reset) {
-        __Vdly__top__DOT__top__DOT__player_rgb__DOT__bullet_2_state = 0U;
+        __Vdly__top__DOT__top__DOT__player_2__DOT__bullet_stage = 0U;
     } else {
-        if ((0U == (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_2_state))) {
-            vlTOPp->top__DOT__top__DOT__player_rgb__DOT__show_bullet_2 = 0U;
-            vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_2_dir 
-                = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_prev_direct;
-            if (vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_shoot) {
-                __Vdly__top__DOT__top__DOT__player_rgb__DOT__bullet_2_state = 1U;
+        if ((0U == (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__bullet_stage))) {
+            vlTOPp->top__DOT__top__DOT__player_2__DOT__show_bullet = 0U;
+            vlTOPp->top__DOT__top__DOT__player_2__DOT__bullet_dir 
+                = vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_prev_direct;
+            if (((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_shoot) 
+                 & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_2_die)))) {
+                __Vdly__top__DOT__top__DOT__player_2__DOT__bullet_stage = 1U;
             }
         } else {
-            if ((1U == (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_2_state))) {
-                vlTOPp->top__DOT__top__DOT__player_rgb__DOT__show_bullet_2 = 1U;
-                if ((((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_bullet) 
-                      & ((IData)(vlTOPp->top__DOT__top__DOT__all_hard_block) 
-                         | (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_bullet))) 
-                     | ((IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_player_1) 
-                        & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__pos_edge_detect_bullet_collide_player_1__DOT__sig_dly))))) {
-                    __Vdly__top__DOT__top__DOT__player_rgb__DOT__bullet_2_collide = 1U;
-                }
-                if (vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_2_collide) {
-                    __Vdly__top__DOT__top__DOT__player_rgb__DOT__bullet_2_state = 2U;
-                    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__show_bullet_2 = 0U;
-                    __Vdly__top__DOT__top__DOT__player_rgb__DOT__bullet_2_collide = 0U;
+            if ((1U == (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__bullet_stage))) {
+                vlTOPp->top__DOT__top__DOT__player_2__DOT__show_bullet = 1U;
+                if ((((IData)(vlTOPp->top__DOT__top__DOT__all_hard_block) 
+                      | (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__all_player)) 
+                     & (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet))) {
+                    __Vdly__top__DOT__top__DOT__player_2__DOT__bullet_stage = 2U;
+                    vlTOPp->top__DOT__top__DOT__player_2__DOT__show_bullet = 0U;
                 }
             } else {
-                if ((2U == (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_2_state))) {
-                    __Vdly__top__DOT__top__DOT__player_rgb__DOT__bullet_2_state = 0U;
+                if ((2U == (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__bullet_stage))) {
+                    __Vdly__top__DOT__top__DOT__player_2__DOT__bullet_stage = 0U;
                 }
             }
         }
     }
     if (vlTOPp->top__DOT__top__DOT__reset) {
-        __Vdly__top__DOT__top__DOT__player_rgb__DOT__bullet_1_state = 0U;
+        __Vdly__top__DOT__top__DOT__player_1__DOT__bullet_stage = 0U;
     } else {
-        if ((0U == (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_1_state))) {
-            vlTOPp->top__DOT__top__DOT__player_rgb__DOT__show_bullet_1 = 0U;
-            vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_1_dir 
-                = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_prev_direct;
-            if (vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_shoot) {
-                __Vdly__top__DOT__top__DOT__player_rgb__DOT__bullet_1_state = 1U;
+        if ((0U == (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__bullet_stage))) {
+            vlTOPp->top__DOT__top__DOT__player_1__DOT__show_bullet = 0U;
+            vlTOPp->top__DOT__top__DOT__player_1__DOT__bullet_dir 
+                = vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_prev_direct;
+            if (((IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_shoot) 
+                 & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_1_die)))) {
+                __Vdly__top__DOT__top__DOT__player_1__DOT__bullet_stage = 1U;
             }
         } else {
-            if ((1U == (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_1_state))) {
-                vlTOPp->top__DOT__top__DOT__player_rgb__DOT__show_bullet_1 = 1U;
-                if ((((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_bullet) 
-                      & ((IData)(vlTOPp->top__DOT__top__DOT__all_hard_block) 
-                         | (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_bullet))) 
-                     | ((IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_player_2) 
-                        & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__pos_edge_detect_bullet_collide_player_2__DOT__sig_dly))))) {
-                    __Vdly__top__DOT__top__DOT__player_rgb__DOT__bullet_1_collide = 1U;
-                }
-                if (vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_1_collide) {
-                    __Vdly__top__DOT__top__DOT__player_rgb__DOT__bullet_1_state = 2U;
-                    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__show_bullet_1 = 0U;
-                    __Vdly__top__DOT__top__DOT__player_rgb__DOT__bullet_1_collide = 0U;
+            if ((1U == (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__bullet_stage))) {
+                vlTOPp->top__DOT__top__DOT__player_1__DOT__show_bullet = 1U;
+                if ((((IData)(vlTOPp->top__DOT__top__DOT__all_hard_block) 
+                      | (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__all_player)) 
+                     & (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet))) {
+                    __Vdly__top__DOT__top__DOT__player_1__DOT__bullet_stage = 2U;
+                    vlTOPp->top__DOT__top__DOT__player_1__DOT__show_bullet = 0U;
                 }
             } else {
-                if ((2U == (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_1_state))) {
-                    __Vdly__top__DOT__top__DOT__player_rgb__DOT__bullet_1_state = 0U;
+                if ((2U == (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__bullet_stage))) {
+                    __Vdly__top__DOT__top__DOT__player_1__DOT__bullet_stage = 0U;
                 }
             }
         }
@@ -2875,8 +1674,8 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__8(Vtop__Syms* __restrict vlSymsp) {
                   & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LR))) 
               | ((0U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
                  & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LL))) 
-             & ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_bullet) 
-                | (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_bullet)))) {
+             & ((IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet) 
+                | (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet)))) {
             if (vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UL) {
                 vlTOPp->top__DOT__top__DOT__map_rgb__DOT____Vlvbound3 = 0U;
                 if (((0xcU >= (0xfU & (((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
@@ -2951,16 +1750,12 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__8(Vtop__Syms* __restrict vlSymsp) {
             }
         }
     }
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_2_collide 
-        = __Vdly__top__DOT__top__DOT__player_rgb__DOT__bullet_2_collide;
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_2_state 
-        = __Vdly__top__DOT__top__DOT__player_rgb__DOT__bullet_2_state;
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_1_collide 
-        = __Vdly__top__DOT__top__DOT__player_rgb__DOT__bullet_1_collide;
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__bullet_1_state 
-        = __Vdly__top__DOT__top__DOT__player_rgb__DOT__bullet_1_state;
+    vlTOPp->top__DOT__top__DOT__player_2__DOT__bullet_stage 
+        = __Vdly__top__DOT__top__DOT__player_2__DOT__bullet_stage;
+    vlTOPp->top__DOT__top__DOT__player_1__DOT__bullet_stage 
+        = __Vdly__top__DOT__top__DOT__player_1__DOT__bullet_stage;
     if (__Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v0) {
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][0U] = 0x7fU;
+        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][0U] = 0x4fU;
         vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][1U] = 0x7fU;
         vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][2U] = 0x7fU;
         vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][3U] = 0x7fU;
@@ -3681,39 +2476,191 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__8(Vtop__Syms* __restrict vlSymsp) {
     }
 }
 
-VL_INLINE_OPT void Vtop::_sequent__TOP__9(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__9\n"); );
+VL_INLINE_OPT void Vtop::_sequent__TOP__10(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__10\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Variables
-    CData/*4:0*/ __Vdly__top__DOT__top__DOT__menu__DOT__arrow_pos;
+    CData/*4:0*/ __Vdly__top__DOT__top__DOT__player_1__DOT__tank_yofs;
+    CData/*4:0*/ __Vdly__top__DOT__top__DOT__player_1__DOT__tank_yofs_backward;
+    CData/*4:0*/ __Vdly__top__DOT__top__DOT__player_2__DOT__tank_yofs;
+    CData/*4:0*/ __Vdly__top__DOT__top__DOT__player_2__DOT__tank_yofs_backward;
     // Body
-    __Vdly__top__DOT__top__DOT__menu__DOT__arrow_pos 
-        = vlTOPp->top__DOT__top__DOT__menu__DOT__arrow_pos;
-    if (vlTOPp->reset_i) {
-        __Vdly__top__DOT__top__DOT__menu__DOT__arrow_pos = 9U;
+    __Vdly__top__DOT__top__DOT__player_2__DOT__tank_yofs_backward 
+        = vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_yofs_backward;
+    __Vdly__top__DOT__top__DOT__player_2__DOT__tank_yofs 
+        = vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_yofs;
+    __Vdly__top__DOT__top__DOT__player_1__DOT__tank_yofs_backward 
+        = vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_yofs_backward;
+    __Vdly__top__DOT__top__DOT__player_1__DOT__tank_yofs 
+        = vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_yofs;
+    if (((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+         == (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_y))) {
+        __Vdly__top__DOT__top__DOT__player_2__DOT__tank_yofs_backward = 0x1eU;
     } else {
-        if (((IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__sellect_down) 
-             & (0xcU > (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__arrow_pos)))) {
-            __Vdly__top__DOT__top__DOT__menu__DOT__arrow_pos 
-                = (0x1fU & ((IData)(1U) + (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__arrow_pos)));
-        } else {
-            if (vlTOPp->top__DOT__top__DOT__menu__DOT__sellect_down) {
-                __Vdly__top__DOT__top__DOT__menu__DOT__arrow_pos = 9U;
-            }
-        }
-        if (((IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__sellect_up) 
-             & (9U < (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__arrow_pos)))) {
-            __Vdly__top__DOT__top__DOT__menu__DOT__arrow_pos 
-                = (0x1fU & ((IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__arrow_pos) 
+        if ((0U != (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_yofs_backward))) {
+            __Vdly__top__DOT__top__DOT__player_2__DOT__tank_yofs_backward 
+                = (0x1fU & ((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_yofs_backward) 
                             - (IData)(1U)));
+        }
+    }
+    if (((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+         == (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_y))) {
+        __Vdly__top__DOT__top__DOT__player_2__DOT__tank_yofs = 2U;
+    } else {
+        if ((0x1fU != (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_yofs))) {
+            __Vdly__top__DOT__top__DOT__player_2__DOT__tank_yofs 
+                = (0x1fU & ((IData)(1U) + (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_yofs)));
+        }
+    }
+    if (((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+         == (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_y))) {
+        __Vdly__top__DOT__top__DOT__player_1__DOT__tank_yofs_backward = 0x1eU;
+    } else {
+        if ((0U != (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_yofs_backward))) {
+            __Vdly__top__DOT__top__DOT__player_1__DOT__tank_yofs_backward 
+                = (0x1fU & ((IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_yofs_backward) 
+                            - (IData)(1U)));
+        }
+    }
+    if (((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+         == (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_y))) {
+        __Vdly__top__DOT__top__DOT__player_1__DOT__tank_yofs = 2U;
+    } else {
+        if ((0x1fU != (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_yofs))) {
+            __Vdly__top__DOT__top__DOT__player_1__DOT__tank_yofs 
+                = (0x1fU & ((IData)(1U) + (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_yofs)));
+        }
+    }
+    vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_yofs_backward 
+        = __Vdly__top__DOT__top__DOT__player_2__DOT__tank_yofs_backward;
+    vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_yofs 
+        = __Vdly__top__DOT__top__DOT__player_2__DOT__tank_yofs;
+    vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_yofs_backward 
+        = __Vdly__top__DOT__top__DOT__player_1__DOT__tank_yofs_backward;
+    vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_yofs 
+        = __Vdly__top__DOT__top__DOT__player_1__DOT__tank_yofs;
+}
+
+VL_INLINE_OPT void Vtop::_combo__TOP__11(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_combo__TOP__11\n"); );
+    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
+    // Body
+    vlTOPp->top__DOT__top__DOT__menu__DOT__sellect_down 
+        = (1U & ((IData)(vlTOPp->player_1_move_i) & 
+                 (~ (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__sellect_down_edge_dect__DOT__sig_dly))));
+    vlTOPp->top__DOT__top__DOT__menu__DOT__sellect_up 
+        = (1U & (((IData)(vlTOPp->player_1_move_i) 
+                  >> 1U) & (~ (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__sellect_up_edge_dect__DOT__sig_dly))));
+}
+
+VL_INLINE_OPT void Vtop::_sequent__TOP__12(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__12\n"); );
+    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
+    // Body
+    if (((IData)(vlTOPp->top__DOT__top__DOT__player_2_tank_enable) 
+         & (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet))) {
+        vlTOPp->top__DOT__top__DOT__player_2_die = 1U;
+    }
+    if (((IData)(vlTOPp->top__DOT__top__DOT__player_1_tank_enable) 
+         & (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet))) {
+        vlTOPp->top__DOT__top__DOT__player_1_die = 1U;
+    }
+}
+
+VL_INLINE_OPT void Vtop::_sequent__TOP__13(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__13\n"); );
+    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
+    // Body
+    if (vlTOPp->top__DOT__top__DOT__reset) {
+        vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_prev_direct = 2U;
+    } else {
+        if ((8U & (IData)(vlTOPp->player_2_move_i))) {
+            if ((1U & (~ ((IData)(vlTOPp->player_2_move_i) 
+                          >> 2U)))) {
+                if ((1U & (~ ((IData)(vlTOPp->player_2_move_i) 
+                              >> 1U)))) {
+                    if ((1U & (~ (IData)(vlTOPp->player_2_move_i)))) {
+                        if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_collide_with_wall_left)))) {
+                            vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_prev_direct = 8U;
+                        }
+                    }
+                }
+            }
         } else {
-            if (vlTOPp->top__DOT__top__DOT__menu__DOT__sellect_up) {
-                __Vdly__top__DOT__top__DOT__menu__DOT__arrow_pos = 0xcU;
+            if ((4U & (IData)(vlTOPp->player_2_move_i))) {
+                if ((1U & (~ ((IData)(vlTOPp->player_2_move_i) 
+                              >> 1U)))) {
+                    if ((1U & (~ (IData)(vlTOPp->player_2_move_i)))) {
+                        if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_collide_with_wall_right)))) {
+                            vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_prev_direct = 4U;
+                        }
+                    }
+                }
+            } else {
+                if ((2U & (IData)(vlTOPp->player_2_move_i))) {
+                    if ((1U & (~ (IData)(vlTOPp->player_2_move_i)))) {
+                        if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_collide_with_wall_top)))) {
+                            vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_prev_direct = 2U;
+                        }
+                    }
+                } else {
+                    if ((1U & (IData)(vlTOPp->player_2_move_i))) {
+                        if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_collide_with_wall_bottom)))) {
+                            vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_prev_direct = 1U;
+                        }
+                    }
+                }
             }
         }
     }
-    vlTOPp->top__DOT__top__DOT__menu__DOT__arrow_pos 
-        = __Vdly__top__DOT__top__DOT__menu__DOT__arrow_pos;
+    if (vlTOPp->top__DOT__top__DOT__reset) {
+        vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_prev_direct = 2U;
+    } else {
+        if ((8U & (IData)(vlTOPp->player_1_move_i))) {
+            if ((1U & (~ ((IData)(vlTOPp->player_1_move_i) 
+                          >> 2U)))) {
+                if ((1U & (~ ((IData)(vlTOPp->player_1_move_i) 
+                              >> 1U)))) {
+                    if ((1U & (~ (IData)(vlTOPp->player_1_move_i)))) {
+                        if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_left)))) {
+                            vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_prev_direct = 8U;
+                        }
+                    }
+                }
+            }
+        } else {
+            if ((4U & (IData)(vlTOPp->player_1_move_i))) {
+                if ((1U & (~ ((IData)(vlTOPp->player_1_move_i) 
+                              >> 1U)))) {
+                    if ((1U & (~ (IData)(vlTOPp->player_1_move_i)))) {
+                        if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_right)))) {
+                            vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_prev_direct = 4U;
+                        }
+                    }
+                }
+            } else {
+                if ((2U & (IData)(vlTOPp->player_1_move_i))) {
+                    if ((1U & (~ (IData)(vlTOPp->player_1_move_i)))) {
+                        if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_top)))) {
+                            vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_prev_direct = 2U;
+                        }
+                    }
+                } else {
+                    if ((1U & (IData)(vlTOPp->player_1_move_i))) {
+                        if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_bottom)))) {
+                            vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_prev_direct = 1U;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+VL_INLINE_OPT void Vtop::_sequent__TOP__14(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__14\n"); );
+    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
+    // Body
     vlTOPp->top__DOT__top__DOT__map_type = ((9U == (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__arrow_pos))
                                              ? 0U : 
                                             ((0xaU 
@@ -3728,189 +2675,12 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__9(Vtop__Syms* __restrict vlSymsp) {
                                                    : 0U))));
 }
 
-VL_INLINE_OPT void Vtop::_sequent__TOP__10(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__10\n"); );
-    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
-    // Variables
-    CData/*4:0*/ __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_yofs;
-    CData/*4:0*/ __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_yofs_backward;
-    CData/*4:0*/ __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_yofs;
-    CData/*4:0*/ __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_yofs_backward;
-    // Body
-    __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_yofs_backward 
-        = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_yofs_backward;
-    __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_yofs 
-        = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_yofs;
-    __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_yofs_backward 
-        = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_yofs_backward;
-    __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_yofs 
-        = vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_yofs;
-    if (((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-         == (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_y))) {
-        __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_yofs_backward = 0x1fU;
-    } else {
-        if ((0U != (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_yofs_backward))) {
-            __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_yofs_backward 
-                = (0x1fU & ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_yofs_backward) 
-                            - (IData)(1U)));
-        }
-    }
-    if (((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-         == (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_y))) {
-        __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_yofs = 0U;
-    } else {
-        if ((0x1fU != (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_yofs))) {
-            __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_yofs 
-                = (0x1fU & ((IData)(1U) + (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_yofs)));
-        }
-    }
-    if (((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-         == (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_y))) {
-        __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_yofs_backward = 0x1eU;
-    } else {
-        if ((0U != (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_yofs_backward))) {
-            __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_yofs_backward 
-                = (0x1fU & ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_yofs_backward) 
-                            - (IData)(1U)));
-        }
-    }
-    if (((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-         == (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_y))) {
-        __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_yofs = 1U;
-    } else {
-        if ((0x1fU != (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_yofs))) {
-            __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_yofs 
-                = (0x1fU & ((IData)(1U) + (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_yofs)));
-        }
-    }
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_yofs_backward 
-        = __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_yofs_backward;
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_yofs 
-        = __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_yofs;
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_yofs_backward 
-        = __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_yofs_backward;
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_yofs 
-        = __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_yofs;
-}
-
-VL_INLINE_OPT void Vtop::_sequent__TOP__11(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__11\n"); );
-    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
-    // Body
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__pos_edge_detect_bullet_collide_player_1__DOT__sig_dly 
-        = vlTOPp->top__DOT__top__DOT__bullet_collide_player_1;
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__pos_edge_detect_bullet_collide_player_2__DOT__sig_dly 
-        = vlTOPp->top__DOT__top__DOT__bullet_collide_player_2;
-}
-
-VL_INLINE_OPT void Vtop::_sequent__TOP__12(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__12\n"); );
+VL_INLINE_OPT void Vtop::_sequent__TOP__15(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__15\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
     if (vlTOPp->top__DOT__top__DOT__reset) {
-        vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_prev_direct = 2U;
-    } else {
-        if ((8U & (IData)(vlTOPp->player_2_move_i))) {
-            if ((1U & (~ ((IData)(vlTOPp->player_2_move_i) 
-                          >> 2U)))) {
-                if ((1U & (~ ((IData)(vlTOPp->player_2_move_i) 
-                              >> 1U)))) {
-                    if ((1U & (~ (IData)(vlTOPp->player_2_move_i)))) {
-                        if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_left)))) {
-                            vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_prev_direct = 8U;
-                        }
-                    }
-                }
-            }
-        } else {
-            if ((4U & (IData)(vlTOPp->player_2_move_i))) {
-                if ((1U & (~ ((IData)(vlTOPp->player_2_move_i) 
-                              >> 1U)))) {
-                    if ((1U & (~ (IData)(vlTOPp->player_2_move_i)))) {
-                        if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_right)))) {
-                            vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_prev_direct = 4U;
-                        }
-                    }
-                }
-            } else {
-                if ((2U & (IData)(vlTOPp->player_2_move_i))) {
-                    if ((1U & (~ (IData)(vlTOPp->player_2_move_i)))) {
-                        if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_top)))) {
-                            vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_prev_direct = 2U;
-                        }
-                    }
-                } else {
-                    if ((1U & (IData)(vlTOPp->player_2_move_i))) {
-                        if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_bottom)))) {
-                            vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_prev_direct = 1U;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    if (vlTOPp->top__DOT__top__DOT__reset) {
-        vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_prev_direct = 1U;
-    } else {
-        if ((8U & (IData)(vlTOPp->player_1_move_i))) {
-            if ((1U & (~ ((IData)(vlTOPp->player_1_move_i) 
-                          >> 2U)))) {
-                if ((1U & (~ ((IData)(vlTOPp->player_1_move_i) 
-                              >> 1U)))) {
-                    if ((1U & (~ (IData)(vlTOPp->player_1_move_i)))) {
-                        if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_left)))) {
-                            vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_prev_direct = 8U;
-                        }
-                    }
-                }
-            }
-        } else {
-            if ((4U & (IData)(vlTOPp->player_1_move_i))) {
-                if ((1U & (~ ((IData)(vlTOPp->player_1_move_i) 
-                              >> 1U)))) {
-                    if ((1U & (~ (IData)(vlTOPp->player_1_move_i)))) {
-                        if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_right)))) {
-                            vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_prev_direct = 4U;
-                        }
-                    }
-                }
-            } else {
-                if ((2U & (IData)(vlTOPp->player_1_move_i))) {
-                    if ((1U & (~ (IData)(vlTOPp->player_1_move_i)))) {
-                        if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_top)))) {
-                            vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_prev_direct = 2U;
-                        }
-                    }
-                } else {
-                    if ((1U & (IData)(vlTOPp->player_1_move_i))) {
-                        if ((1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_bottom)))) {
-                            vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_prev_direct = 1U;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-VL_INLINE_OPT void Vtop::_combo__TOP__13(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_combo__TOP__13\n"); );
-    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
-    // Body
-    vlTOPp->top__DOT__top__DOT__menu__DOT__sellect_down 
-        = (1U & ((IData)(vlTOPp->player_1_move_i) & 
-                 (~ (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__sellect_down_edge_dect__DOT__sig_dly))));
-    vlTOPp->top__DOT__top__DOT__menu__DOT__sellect_up 
-        = (1U & (((IData)(vlTOPp->player_1_move_i) 
-                  >> 1U) & (~ (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__sellect_up_edge_dect__DOT__sig_dly))));
-}
-
-VL_INLINE_OPT void Vtop::_sequent__TOP__14(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__14\n"); );
-    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
-    // Body
-    if (vlTOPp->top__DOT__top__DOT__reset) {
-        vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_left = 0U;
+        vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_collide_with_wall_left = 0U;
     } else {
         if ((1U & (~ ((IData)(vlTOPp->player_2_move_i) 
                       >> 3U)))) {
@@ -3918,39 +2688,37 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__14(Vtop__Syms* __restrict vlSymsp) {
                 if ((1U & (~ ((IData)(vlTOPp->player_2_move_i) 
                               >> 1U)))) {
                     if ((1U & (~ (IData)(vlTOPp->player_2_move_i)))) {
-                        vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_left = 0U;
+                        vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_collide_with_wall_left = 0U;
                     }
                 }
             } else {
                 if ((2U & (IData)(vlTOPp->player_2_move_i))) {
                     if ((1U & (~ (IData)(vlTOPp->player_2_move_i)))) {
-                        vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_left = 0U;
+                        vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_collide_with_wall_left = 0U;
                     }
                 } else {
                     if ((1U & (IData)(vlTOPp->player_2_move_i))) {
-                        vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_left = 0U;
+                        vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_collide_with_wall_left = 0U;
                     }
                 }
             }
         }
-        if (vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_shoot) {
-            vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_left = 0U;
+        if (vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_shoot) {
+            vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_collide_with_wall_left = 0U;
         }
-        if (((IData)(vlTOPp->top__DOT__top__DOT__cannot_walk_through) 
-             | ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_box) 
-                & (~ (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_player_1))))) {
-            if ((((2U == ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                          - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_x))) 
-                  & (0x1bU >= ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                               - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_y)))) 
-                 & (4U <= ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                           - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_y))))) {
-                vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_left = 1U;
+        if (vlTOPp->top__DOT__top__DOT____Vcellinp__player_2__cannot_walk_through_i) {
+            if ((((0U == ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                          - (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_x))) 
+                  & (0x1dU >= ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+                               - (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_y)))) 
+                 & (2U <= ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+                           - (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_y))))) {
+                vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_collide_with_wall_left = 1U;
             }
         }
     }
     if (vlTOPp->top__DOT__top__DOT__reset) {
-        vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_right = 0U;
+        vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_collide_with_wall_right = 0U;
     } else {
         if ((8U & (IData)(vlTOPp->player_2_move_i))) {
             if ((1U & (~ ((IData)(vlTOPp->player_2_move_i) 
@@ -3958,7 +2726,7 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__14(Vtop__Syms* __restrict vlSymsp) {
                 if ((1U & (~ ((IData)(vlTOPp->player_2_move_i) 
                               >> 1U)))) {
                     if ((1U & (~ (IData)(vlTOPp->player_2_move_i)))) {
-                        vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_right = 0U;
+                        vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_collide_with_wall_right = 0U;
                     }
                 }
             }
@@ -3967,33 +2735,31 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__14(Vtop__Syms* __restrict vlSymsp) {
                           >> 2U)))) {
                 if ((2U & (IData)(vlTOPp->player_2_move_i))) {
                     if ((1U & (~ (IData)(vlTOPp->player_2_move_i)))) {
-                        vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_right = 0U;
+                        vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_collide_with_wall_right = 0U;
                     }
                 } else {
                     if ((1U & (IData)(vlTOPp->player_2_move_i))) {
-                        vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_right = 0U;
+                        vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_collide_with_wall_right = 0U;
                     }
                 }
             }
         }
-        if (vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_shoot) {
-            vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_right = 0U;
+        if (vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_shoot) {
+            vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_collide_with_wall_right = 0U;
         }
-        if (((IData)(vlTOPp->top__DOT__top__DOT__cannot_walk_through) 
-             | ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_box) 
-                & (~ (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_player_1))))) {
-            if ((((0x1dU == ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                             - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_x))) 
-                  & (0x1bU >= ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                               - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_y)))) 
-                 & (4U <= ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                           - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_y))))) {
-                vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_right = 1U;
+        if (vlTOPp->top__DOT__top__DOT____Vcellinp__player_2__cannot_walk_through_i) {
+            if ((((0x1fU == ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                             - (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_x))) 
+                  & (0x1dU >= ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+                               - (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_y)))) 
+                 & (2U <= ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+                           - (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_y))))) {
+                vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_collide_with_wall_right = 1U;
             }
         }
     }
     if (vlTOPp->top__DOT__top__DOT__reset) {
-        vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_top = 0U;
+        vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_collide_with_wall_top = 0U;
     } else {
         if ((8U & (IData)(vlTOPp->player_2_move_i))) {
             if ((1U & (~ ((IData)(vlTOPp->player_2_move_i) 
@@ -4001,7 +2767,7 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__14(Vtop__Syms* __restrict vlSymsp) {
                 if ((1U & (~ ((IData)(vlTOPp->player_2_move_i) 
                               >> 1U)))) {
                     if ((1U & (~ (IData)(vlTOPp->player_2_move_i)))) {
-                        vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_top = 0U;
+                        vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_collide_with_wall_top = 0U;
                     }
                 }
             }
@@ -4010,36 +2776,34 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__14(Vtop__Syms* __restrict vlSymsp) {
                 if ((1U & (~ ((IData)(vlTOPp->player_2_move_i) 
                               >> 1U)))) {
                     if ((1U & (~ (IData)(vlTOPp->player_2_move_i)))) {
-                        vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_top = 0U;
+                        vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_collide_with_wall_top = 0U;
                     }
                 }
             } else {
                 if ((1U & (~ ((IData)(vlTOPp->player_2_move_i) 
                               >> 1U)))) {
                     if ((1U & (IData)(vlTOPp->player_2_move_i))) {
-                        vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_top = 0U;
+                        vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_collide_with_wall_top = 0U;
                     }
                 }
             }
         }
-        if (vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_shoot) {
-            vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_top = 0U;
+        if (vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_shoot) {
+            vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_collide_with_wall_top = 0U;
         }
-        if (((IData)(vlTOPp->top__DOT__top__DOT__cannot_walk_through) 
-             | ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_box) 
-                & (~ (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_player_1))))) {
-            if ((((2U == ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                          - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_y))) 
-                  & (0x1bU >= ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                               - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_x)))) 
-                 & (4U <= ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                           - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_x))))) {
-                vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_top = 1U;
+        if (vlTOPp->top__DOT__top__DOT____Vcellinp__player_2__cannot_walk_through_i) {
+            if ((((0U == ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+                          - (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_y))) 
+                  & (0x1dU >= ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                               - (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_x)))) 
+                 & (2U <= ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                           - (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_x))))) {
+                vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_collide_with_wall_top = 1U;
             }
         }
     }
     if (vlTOPp->top__DOT__top__DOT__reset) {
-        vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_bottom = 0U;
+        vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_collide_with_wall_bottom = 0U;
     } else {
         if ((8U & (IData)(vlTOPp->player_2_move_i))) {
             if ((1U & (~ ((IData)(vlTOPp->player_2_move_i) 
@@ -4047,7 +2811,7 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__14(Vtop__Syms* __restrict vlSymsp) {
                 if ((1U & (~ ((IData)(vlTOPp->player_2_move_i) 
                               >> 1U)))) {
                     if ((1U & (~ (IData)(vlTOPp->player_2_move_i)))) {
-                        vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_bottom = 0U;
+                        vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_collide_with_wall_bottom = 0U;
                     }
                 }
             }
@@ -4056,35 +2820,33 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__14(Vtop__Syms* __restrict vlSymsp) {
                 if ((1U & (~ ((IData)(vlTOPp->player_2_move_i) 
                               >> 1U)))) {
                     if ((1U & (~ (IData)(vlTOPp->player_2_move_i)))) {
-                        vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_bottom = 0U;
+                        vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_collide_with_wall_bottom = 0U;
                     }
                 }
             } else {
                 if ((2U & (IData)(vlTOPp->player_2_move_i))) {
                     if ((1U & (~ (IData)(vlTOPp->player_2_move_i)))) {
-                        vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_bottom = 0U;
+                        vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_collide_with_wall_bottom = 0U;
                     }
                 }
             }
         }
-        if (vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_shoot) {
-            vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_bottom = 0U;
+        if (vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_shoot) {
+            vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_collide_with_wall_bottom = 0U;
         }
-        if (((IData)(vlTOPp->top__DOT__top__DOT__cannot_walk_through) 
-             | ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_box) 
-                & (~ (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_player_1))))) {
-            if ((((0x1dU == ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                             - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_y))) 
-                  & (0x1bU >= ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                               - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_x)))) 
-                 & (4U <= ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                           - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_x))))) {
-                vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_bottom = 1U;
+        if (vlTOPp->top__DOT__top__DOT____Vcellinp__player_2__cannot_walk_through_i) {
+            if ((((0x1fU == ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+                             - (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_y))) 
+                  & (0x1dU >= ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                               - (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_x)))) 
+                 & (2U <= ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                           - (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_x))))) {
+                vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_collide_with_wall_bottom = 1U;
             }
         }
     }
     if (vlTOPp->top__DOT__top__DOT__reset) {
-        vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_left = 0U;
+        vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_left = 0U;
     } else {
         if ((1U & (~ ((IData)(vlTOPp->player_1_move_i) 
                       >> 3U)))) {
@@ -4092,39 +2854,37 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__14(Vtop__Syms* __restrict vlSymsp) {
                 if ((1U & (~ ((IData)(vlTOPp->player_1_move_i) 
                               >> 1U)))) {
                     if ((1U & (~ (IData)(vlTOPp->player_1_move_i)))) {
-                        vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_left = 0U;
+                        vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_left = 0U;
                     }
                 }
             } else {
                 if ((2U & (IData)(vlTOPp->player_1_move_i))) {
                     if ((1U & (~ (IData)(vlTOPp->player_1_move_i)))) {
-                        vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_left = 0U;
+                        vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_left = 0U;
                     }
                 } else {
                     if ((1U & (IData)(vlTOPp->player_1_move_i))) {
-                        vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_left = 0U;
+                        vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_left = 0U;
                     }
                 }
             }
         }
-        if (vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_shoot) {
-            vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_left = 0U;
+        if (vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_shoot) {
+            vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_left = 0U;
         }
-        if (((IData)(vlTOPp->top__DOT__top__DOT__cannot_walk_through) 
-             | ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_box) 
-                & (~ (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_player_2))))) {
-            if ((((2U == ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                          - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_x))) 
-                  & (0x1bU >= ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                               - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_y)))) 
-                 & (4U <= ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                           - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_y))))) {
-                vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_left = 1U;
+        if (vlTOPp->top__DOT__top__DOT____Vcellinp__player_1__cannot_walk_through_i) {
+            if ((((0U == ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                          - (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_x))) 
+                  & (0x1dU >= ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+                               - (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_y)))) 
+                 & (2U <= ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+                           - (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_y))))) {
+                vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_left = 1U;
             }
         }
     }
     if (vlTOPp->top__DOT__top__DOT__reset) {
-        vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_right = 0U;
+        vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_right = 0U;
     } else {
         if ((8U & (IData)(vlTOPp->player_1_move_i))) {
             if ((1U & (~ ((IData)(vlTOPp->player_1_move_i) 
@@ -4132,7 +2892,7 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__14(Vtop__Syms* __restrict vlSymsp) {
                 if ((1U & (~ ((IData)(vlTOPp->player_1_move_i) 
                               >> 1U)))) {
                     if ((1U & (~ (IData)(vlTOPp->player_1_move_i)))) {
-                        vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_right = 0U;
+                        vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_right = 0U;
                     }
                 }
             }
@@ -4141,33 +2901,31 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__14(Vtop__Syms* __restrict vlSymsp) {
                           >> 2U)))) {
                 if ((2U & (IData)(vlTOPp->player_1_move_i))) {
                     if ((1U & (~ (IData)(vlTOPp->player_1_move_i)))) {
-                        vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_right = 0U;
+                        vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_right = 0U;
                     }
                 } else {
                     if ((1U & (IData)(vlTOPp->player_1_move_i))) {
-                        vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_right = 0U;
+                        vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_right = 0U;
                     }
                 }
             }
         }
-        if (vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_shoot) {
-            vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_right = 0U;
+        if (vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_shoot) {
+            vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_right = 0U;
         }
-        if (((IData)(vlTOPp->top__DOT__top__DOT__cannot_walk_through) 
-             | ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_box) 
-                & (~ (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_player_2))))) {
-            if ((((0x1dU == ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                             - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_x))) 
-                  & (0x1bU >= ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                               - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_y)))) 
-                 & (4U <= ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                           - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_y))))) {
-                vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_right = 1U;
+        if (vlTOPp->top__DOT__top__DOT____Vcellinp__player_1__cannot_walk_through_i) {
+            if ((((0x1fU == ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                             - (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_x))) 
+                  & (0x1dU >= ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+                               - (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_y)))) 
+                 & (2U <= ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+                           - (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_y))))) {
+                vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_right = 1U;
             }
         }
     }
     if (vlTOPp->top__DOT__top__DOT__reset) {
-        vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_top = 0U;
+        vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_top = 0U;
     } else {
         if ((8U & (IData)(vlTOPp->player_1_move_i))) {
             if ((1U & (~ ((IData)(vlTOPp->player_1_move_i) 
@@ -4175,7 +2933,7 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__14(Vtop__Syms* __restrict vlSymsp) {
                 if ((1U & (~ ((IData)(vlTOPp->player_1_move_i) 
                               >> 1U)))) {
                     if ((1U & (~ (IData)(vlTOPp->player_1_move_i)))) {
-                        vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_top = 0U;
+                        vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_top = 0U;
                     }
                 }
             }
@@ -4184,36 +2942,34 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__14(Vtop__Syms* __restrict vlSymsp) {
                 if ((1U & (~ ((IData)(vlTOPp->player_1_move_i) 
                               >> 1U)))) {
                     if ((1U & (~ (IData)(vlTOPp->player_1_move_i)))) {
-                        vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_top = 0U;
+                        vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_top = 0U;
                     }
                 }
             } else {
                 if ((1U & (~ ((IData)(vlTOPp->player_1_move_i) 
                               >> 1U)))) {
                     if ((1U & (IData)(vlTOPp->player_1_move_i))) {
-                        vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_top = 0U;
+                        vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_top = 0U;
                     }
                 }
             }
         }
-        if (vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_shoot) {
-            vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_top = 0U;
+        if (vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_shoot) {
+            vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_top = 0U;
         }
-        if (((IData)(vlTOPp->top__DOT__top__DOT__cannot_walk_through) 
-             | ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_box) 
-                & (~ (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_player_2))))) {
-            if ((((2U == ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                          - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_y))) 
-                  & (0x1bU >= ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                               - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_x)))) 
-                 & (4U <= ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                           - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_x))))) {
-                vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_top = 1U;
+        if (vlTOPp->top__DOT__top__DOT____Vcellinp__player_1__cannot_walk_through_i) {
+            if ((((0U == ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+                          - (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_y))) 
+                  & (0x1dU >= ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                               - (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_x)))) 
+                 & (2U <= ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                           - (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_x))))) {
+                vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_top = 1U;
             }
         }
     }
     if (vlTOPp->top__DOT__top__DOT__reset) {
-        vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_bottom = 0U;
+        vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_bottom = 0U;
     } else {
         if ((8U & (IData)(vlTOPp->player_1_move_i))) {
             if ((1U & (~ ((IData)(vlTOPp->player_1_move_i) 
@@ -4221,7 +2977,7 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__14(Vtop__Syms* __restrict vlSymsp) {
                 if ((1U & (~ ((IData)(vlTOPp->player_1_move_i) 
                               >> 1U)))) {
                     if ((1U & (~ (IData)(vlTOPp->player_1_move_i)))) {
-                        vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_bottom = 0U;
+                        vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_bottom = 0U;
                     }
                 }
             }
@@ -4230,144 +2986,130 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__14(Vtop__Syms* __restrict vlSymsp) {
                 if ((1U & (~ ((IData)(vlTOPp->player_1_move_i) 
                               >> 1U)))) {
                     if ((1U & (~ (IData)(vlTOPp->player_1_move_i)))) {
-                        vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_bottom = 0U;
+                        vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_bottom = 0U;
                     }
                 }
             } else {
                 if ((2U & (IData)(vlTOPp->player_1_move_i))) {
                     if ((1U & (~ (IData)(vlTOPp->player_1_move_i)))) {
-                        vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_bottom = 0U;
+                        vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_bottom = 0U;
                     }
                 }
             }
         }
-        if (vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_shoot) {
-            vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_bottom = 0U;
+        if (vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_shoot) {
+            vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_bottom = 0U;
         }
-        if (((IData)(vlTOPp->top__DOT__top__DOT__cannot_walk_through) 
-             | ((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_box) 
-                & (~ (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_player_2))))) {
-            if ((((0x1dU == ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                             - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_y))) 
-                  & (0x1bU >= ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                               - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_x)))) 
-                 & (4U <= ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                           - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_x))))) {
-                vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_bottom = 1U;
+        if (vlTOPp->top__DOT__top__DOT____Vcellinp__player_1__cannot_walk_through_i) {
+            if ((((0x1fU == ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+                             - (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_y))) 
+                  & (0x1dU >= ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                               - (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_x)))) 
+                 & (2U <= ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                           - (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_x))))) {
+                vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_bottom = 1U;
             }
         }
     }
-    if (vlTOPp->top__DOT__top__DOT__reset) {
-        vlTOPp->top__DOT__top__DOT__bullet_collide_player_1 = 0U;
-    } else {
-        if (((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_bullet) 
-             & (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_box))) {
-            vlTOPp->top__DOT__top__DOT__bullet_collide_player_1 = 1U;
-        }
-    }
-    if (vlTOPp->top__DOT__top__DOT__reset) {
-        vlTOPp->top__DOT__top__DOT__bullet_collide_player_2 = 0U;
-    } else {
-        if (((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_bullet) 
-             & (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_box))) {
-            vlTOPp->top__DOT__top__DOT__bullet_collide_player_2 = 1U;
-        }
-    }
 }
 
-VL_INLINE_OPT void Vtop::_combo__TOP__15(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_combo__TOP__15\n"); );
+VL_INLINE_OPT void Vtop::_combo__TOP__16(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_combo__TOP__16\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_shoot 
-        = ((IData)(vlTOPp->player_2_shoot_i) & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__pos_edge_detect_2__DOT__sig_dly)));
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_shoot 
-        = ((IData)(vlTOPp->player_1_shoot_i) & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__pos_edge_detect_1__DOT__sig_dly)));
-}
-
-VL_INLINE_OPT void Vtop::_sequent__TOP__16(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__16\n"); );
-    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
-    // Body
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_y 
-        = vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_y;
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_x 
-        = vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_x;
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_y 
-        = vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_y;
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_x 
-        = vlTOPp->__Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_x;
+    vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_shoot 
+        = ((IData)(vlTOPp->player_2_shoot_i) & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__pos_edge_detect_1__DOT__sig_dly)));
+    vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_shoot 
+        = ((IData)(vlTOPp->player_1_shoot_i) & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__pos_edge_detect_1__DOT__sig_dly)));
 }
 
 VL_INLINE_OPT void Vtop::_sequent__TOP__17(Vtop__Syms* __restrict vlSymsp) {
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__17\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
+    vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_y 
+        = vlTOPp->__Vdly__top__DOT__top__DOT__player_2__DOT__tank_y;
+    vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_x 
+        = vlTOPp->__Vdly__top__DOT__top__DOT__player_2__DOT__tank_x;
+    vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_y 
+        = vlTOPp->__Vdly__top__DOT__top__DOT__player_1__DOT__tank_y;
+    vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_x 
+        = vlTOPp->__Vdly__top__DOT__top__DOT__player_1__DOT__tank_x;
+}
+
+VL_INLINE_OPT void Vtop::_sequent__TOP__18(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__18\n"); );
+    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
+    // Body
+    if (vlTOPp->reset_i) {
+        vlTOPp->__Vdly__top__DOT__top__DOT__game_FSM__DOT__game_state = 0U;
+        vlTOPp->__Vdly__top__DOT__top__DOT__game_FSM__DOT__score_player_1 = 0U;
+        vlTOPp->__Vdly__top__DOT__top__DOT__game_FSM__DOT__score_player_2 = 0U;
+    } else {
+        vlTOPp->top__DOT__top__DOT__is_menu = 0U;
+        vlTOPp->top__DOT__top__DOT__is_playing = 0U;
+        vlTOPp->top__DOT__top__DOT__is_continue = 0U;
+        vlTOPp->top__DOT__top__DOT__is_final = 0U;
+        vlTOPp->top__DOT__top__DOT__reset = 1U;
+        if ((0U == (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__game_state))) {
+            vlTOPp->top__DOT__top__DOT__is_menu = 1U;
+            vlTOPp->top__DOT__top__DOT__reset = 1U;
+            if (vlTOPp->player_1_shoot_i) {
+                vlTOPp->__Vdly__top__DOT__top__DOT__game_FSM__DOT__game_state = 1U;
+            }
+        } else {
+            if ((1U == (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__game_state))) {
+                vlTOPp->top__DOT__top__DOT__reset = 0U;
+                vlTOPp->top__DOT__top__DOT__is_playing = 1U;
+                if (((IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__bullet_collide_player_1_i) 
+                     & (~ (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__pos_edge_detect_bullet_1__DOT__sig_dly)))) {
+                    vlTOPp->__Vdly__top__DOT__top__DOT__game_FSM__DOT__score_player_2 
+                        = (0x3fU & ((IData)(1U) + (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_2)));
+                    vlTOPp->__Vdly__top__DOT__top__DOT__game_FSM__DOT__game_state = 0U;
+                }
+                if (((IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__bullet_collide_player_2_i) 
+                     & (~ (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__pos_edge_detect_bullet_2__DOT__sig_dly)))) {
+                    vlTOPp->__Vdly__top__DOT__top__DOT__game_FSM__DOT__score_player_1 
+                        = (0x3fU & ((IData)(1U) + (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_1)));
+                    vlTOPp->__Vdly__top__DOT__top__DOT__game_FSM__DOT__game_state = 0U;
+                }
+            } else {
+                if ((2U == (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__game_state))) {
+                    vlTOPp->top__DOT__top__DOT__is_continue = 1U;
+                    vlTOPp->top__DOT__top__DOT__reset = 1U;
+                    if (vlTOPp->player_1_shoot_i) {
+                        vlTOPp->__Vdly__top__DOT__top__DOT__game_FSM__DOT__game_state = 1U;
+                    }
+                } else {
+                    if ((3U == (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__game_state))) {
+                        vlTOPp->top__DOT__top__DOT__is_final = 1U;
+                    } else {
+                        vlTOPp->__Vdly__top__DOT__top__DOT__game_FSM__DOT__game_state = 0U;
+                    }
+                }
+            }
+        }
+    }
+    vlTOPp->top__DOT__top__DOT__game_FSM__DOT__game_state 
+        = vlTOPp->__Vdly__top__DOT__top__DOT__game_FSM__DOT__game_state;
+    vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_1 
+        = vlTOPp->__Vdly__top__DOT__top__DOT__game_FSM__DOT__score_player_1;
+    vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_2 
+        = vlTOPp->__Vdly__top__DOT__top__DOT__game_FSM__DOT__score_player_2;
+}
+
+VL_INLINE_OPT void Vtop::_sequent__TOP__19(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__19\n"); );
+    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
+    // Body
     vlTOPp->top__DOT__top__DOT__vpos = vlTOPp->__Vdly__top__DOT__top__DOT__vpos;
     vlTOPp->top__DOT__top__DOT__hpos = vlTOPp->__Vdly__top__DOT__top__DOT__hpos;
-    vlTOPp->top__DOT__top__DOT__reset = vlTOPp->__Vdly__top__DOT__top__DOT__reset;
     vlTOPp->vpos_o = vlTOPp->top__DOT__top__DOT__vpos;
     vlTOPp->top__DOT__top__DOT__hvsync_gen__DOT__v_maxxed 
         = (0x20cU == (IData)(vlTOPp->top__DOT__top__DOT__vpos));
     vlTOPp->hpos_o = vlTOPp->top__DOT__top__DOT__hpos;
     vlTOPp->top__DOT__top__DOT__hvsync_gen__DOT__h_maxxed 
         = (0x31fU == (IData)(vlTOPp->top__DOT__top__DOT__hpos));
-    vlTOPp->top__DOT__top__DOT__score__DOT__dout_1 
-        = vlTOPp->top__DOT__top__DOT__score__DOT__tank_player_1__DOT__mem
-        [((0x3e0U & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                     << 5U)) | (0x1fU & (IData)(vlTOPp->top__DOT__top__DOT__hpos)))];
-    vlTOPp->top__DOT__top__DOT__score__DOT__dout_2 
-        = vlTOPp->top__DOT__top__DOT__score__DOT__tank_player_2__DOT__mem
-        [((0x3e0U & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                     << 5U)) | (0x1fU & (IData)(vlTOPp->top__DOT__top__DOT__hpos)))];
-    vlTOPp->top__DOT__top__DOT__score__DOT__enable_tank_2 = 0U;
-    if (((0x80U <= (IData)(vlTOPp->top__DOT__top__DOT__vpos)) 
-         & (0xa0U > (IData)(vlTOPp->top__DOT__top__DOT__vpos)))) {
-        if (((0x240U <= (IData)(vlTOPp->top__DOT__top__DOT__hpos)) 
-             & (0x260U > (IData)(vlTOPp->top__DOT__top__DOT__hpos)))) {
-            vlTOPp->top__DOT__top__DOT__score__DOT__enable_tank_2 = 1U;
-        }
-    }
-    vlTOPp->top__DOT__top__DOT__score__DOT__enable_tank_1 = 0U;
-    if (((0x80U <= (IData)(vlTOPp->top__DOT__top__DOT__vpos)) 
-         & (0xa0U > (IData)(vlTOPp->top__DOT__top__DOT__vpos)))) {
-        if (((0x1e0U <= (IData)(vlTOPp->top__DOT__top__DOT__hpos)) 
-             & (0x200U > (IData)(vlTOPp->top__DOT__top__DOT__hpos)))) {
-            vlTOPp->top__DOT__top__DOT__score__DOT__enable_tank_1 = 1U;
-        }
-    }
-    vlTOPp->top__DOT__top__DOT__score__DOT__enable_player_2_10 = 0U;
-    if (((0xa0U <= (IData)(vlTOPp->top__DOT__top__DOT__vpos)) 
-         & (0xb0U > (IData)(vlTOPp->top__DOT__top__DOT__vpos)))) {
-        if (((0x240U <= (IData)(vlTOPp->top__DOT__top__DOT__hpos)) 
-             & (0x250U > (IData)(vlTOPp->top__DOT__top__DOT__hpos)))) {
-            vlTOPp->top__DOT__top__DOT__score__DOT__enable_player_2_10 = 1U;
-        }
-    }
-    vlTOPp->top__DOT__top__DOT__score__DOT__enable_player_2_1 = 0U;
-    if (((0xa0U <= (IData)(vlTOPp->top__DOT__top__DOT__vpos)) 
-         & (0xb0U > (IData)(vlTOPp->top__DOT__top__DOT__vpos)))) {
-        if (((0x250U <= (IData)(vlTOPp->top__DOT__top__DOT__hpos)) 
-             & (0x260U > (IData)(vlTOPp->top__DOT__top__DOT__hpos)))) {
-            vlTOPp->top__DOT__top__DOT__score__DOT__enable_player_2_1 = 1U;
-        }
-    }
-    vlTOPp->top__DOT__top__DOT__score__DOT__enable_player_1_1 = 0U;
-    if (((0xa0U <= (IData)(vlTOPp->top__DOT__top__DOT__vpos)) 
-         & (0xb0U > (IData)(vlTOPp->top__DOT__top__DOT__vpos)))) {
-        if (((0x1f0U <= (IData)(vlTOPp->top__DOT__top__DOT__hpos)) 
-             & (0x200U > (IData)(vlTOPp->top__DOT__top__DOT__hpos)))) {
-            vlTOPp->top__DOT__top__DOT__score__DOT__enable_player_1_1 = 1U;
-        }
-    }
-    vlTOPp->top__DOT__top__DOT__score__DOT__enable_player_1_10 = 0U;
-    if (((0xa0U <= (IData)(vlTOPp->top__DOT__top__DOT__vpos)) 
-         & (0xb0U > (IData)(vlTOPp->top__DOT__top__DOT__vpos)))) {
-        if (((0x1e0U <= (IData)(vlTOPp->top__DOT__top__DOT__hpos)) 
-             & (0x1f0U > (IData)(vlTOPp->top__DOT__top__DOT__hpos)))) {
-            vlTOPp->top__DOT__top__DOT__score__DOT__enable_player_1_10 = 1U;
-        }
-    }
     vlTOPp->top__DOT__top__DOT__menu__DOT__title_enable 
         = (((1U == (7U & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
                           >> 7U))) & (4U < (0x1fU & 
@@ -4443,42 +3185,10 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__17(Vtop__Syms* __restrict vlSymsp) {
                                                    > (IData)(vlTOPp->top__DOT__top__DOT__hpos)) 
                                                   & (0x1e0U 
                                                      > (IData)(vlTOPp->top__DOT__top__DOT__vpos)));
-    vlTOPp->top__DOT__top__DOT__tank_enable = ((IData)(vlTOPp->top__DOT__top__DOT__score__DOT__enable_tank_1) 
-                                               | (IData)(vlTOPp->top__DOT__top__DOT__score__DOT__enable_tank_2));
-    vlTOPp->top__DOT__top__DOT__score__DOT__data_player_2_10 
-        = ((IData)(vlTOPp->top__DOT__top__DOT__score__DOT__enable_player_2_10)
-            ? (1U & (vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array
-                     [((0U == (0xfU & VL_DIV_III(32, (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_2), (IData)(0xaU))))
-                        ? 0xaU : (0xfU & VL_DIV_III(32, (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_2), (IData)(0xaU))))]
-                     [(0xfU & (IData)(vlTOPp->top__DOT__top__DOT__vpos))] 
-                     >> (0xfU & (~ (IData)(vlTOPp->top__DOT__top__DOT__hpos)))))
-            : 0U);
-    vlTOPp->top__DOT__top__DOT__score__DOT__data_player_2_1 
-        = ((IData)(vlTOPp->top__DOT__top__DOT__score__DOT__enable_player_2_1)
-            ? (1U & (vlTOPp->top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array
-                     [(0xfU & VL_MODDIV_III(32, (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_2), (IData)(0xaU)))]
-                     [(0xfU & (IData)(vlTOPp->top__DOT__top__DOT__vpos))] 
-                     >> (0xfU & (~ (IData)(vlTOPp->top__DOT__top__DOT__hpos)))))
-            : 0U);
-    vlTOPp->top__DOT__top__DOT__score__DOT__data_player_1_1 
-        = ((IData)(vlTOPp->top__DOT__top__DOT__score__DOT__enable_player_1_1)
-            ? (1U & (vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array
-                     [(0xfU & VL_MODDIV_III(32, (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_1), (IData)(0xaU)))]
-                     [(0xfU & (IData)(vlTOPp->top__DOT__top__DOT__vpos))] 
-                     >> (0xfU & (~ (IData)(vlTOPp->top__DOT__top__DOT__hpos)))))
-            : 0U);
-    vlTOPp->top__DOT__top__DOT__score__DOT__data_player_1_10 
-        = ((IData)(vlTOPp->top__DOT__top__DOT__score__DOT__enable_player_1_10)
-            ? (1U & (vlTOPp->top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array
-                     [((0U == (0xfU & VL_DIV_III(32, (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_1), (IData)(0xaU))))
-                        ? 0xaU : (0xfU & VL_DIV_III(32, (IData)(vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_1), (IData)(0xaU))))]
-                     [(0xfU & (IData)(vlTOPp->top__DOT__top__DOT__vpos))] 
-                     >> (0xfU & (~ (IData)(vlTOPp->top__DOT__top__DOT__hpos)))))
-            : 0U);
-    vlTOPp->top__DOT__top__DOT__number_enable = ((((IData)(vlTOPp->top__DOT__top__DOT__score__DOT__enable_player_1_1) 
-                                                   | (IData)(vlTOPp->top__DOT__top__DOT__score__DOT__enable_player_1_10)) 
-                                                  | (IData)(vlTOPp->top__DOT__top__DOT__score__DOT__enable_player_2_1)) 
-                                                 | (IData)(vlTOPp->top__DOT__top__DOT__score__DOT__enable_player_2_10));
+    vlTOPp->top__DOT__top__DOT__game_FSM__DOT__pos_edge_detect_bullet_1__DOT__sig_dly 
+        = vlTOPp->top__DOT__top__DOT__game_FSM__DOT__bullet_collide_player_1_i;
+    vlTOPp->top__DOT__top__DOT__game_FSM__DOT__pos_edge_detect_bullet_2__DOT__sig_dly 
+        = vlTOPp->top__DOT__top__DOT__game_FSM__DOT__bullet_collide_player_2_i;
     vlTOPp->display_enable_o = vlTOPp->top__DOT__top__DOT__display_enable;
     vlTOPp->top__DOT__top__DOT__map_enable = (((((IData)(vlTOPp->top__DOT__top__DOT__display_enable) 
                                                  & (0x20U 
@@ -4489,37 +3199,103 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__17(Vtop__Syms* __restrict vlSymsp) {
                                                   <= (IData)(vlTOPp->top__DOT__top__DOT__vpos))) 
                                               & (0x1bfU 
                                                  >= (IData)(vlTOPp->top__DOT__top__DOT__vpos)));
-    vlTOPp->top__DOT__top__DOT__number_blue = ((IData)(vlTOPp->top__DOT__top__DOT__number_enable)
-                                                ? (
-                                                   ((((IData)(vlTOPp->top__DOT__top__DOT__score__DOT__data_player_1_1) 
-                                                      | (IData)(vlTOPp->top__DOT__top__DOT__score__DOT__data_player_1_10)) 
-                                                     | (IData)(vlTOPp->top__DOT__top__DOT__score__DOT__data_player_2_1)) 
-                                                    | (IData)(vlTOPp->top__DOT__top__DOT__score__DOT__data_player_2_10))
-                                                    ? 0U
-                                                    : 0xe0U)
-                                                : 0U);
-    vlTOPp->top__DOT__top__DOT__number_green = ((IData)(vlTOPp->top__DOT__top__DOT__number_enable)
-                                                 ? 
-                                                (((((IData)(vlTOPp->top__DOT__top__DOT__score__DOT__data_player_1_1) 
-                                                    | (IData)(vlTOPp->top__DOT__top__DOT__score__DOT__data_player_1_10)) 
-                                                   | (IData)(vlTOPp->top__DOT__top__DOT__score__DOT__data_player_2_1)) 
-                                                  | (IData)(vlTOPp->top__DOT__top__DOT__score__DOT__data_player_2_10))
-                                                  ? 0U
-                                                  : 0xe0U)
-                                                 : 0U);
-    vlTOPp->top__DOT__top__DOT__number_red = ((IData)(vlTOPp->top__DOT__top__DOT__number_enable)
-                                               ? ((
-                                                   (((IData)(vlTOPp->top__DOT__top__DOT__score__DOT__data_player_1_1) 
-                                                     | (IData)(vlTOPp->top__DOT__top__DOT__score__DOT__data_player_1_10)) 
-                                                    | (IData)(vlTOPp->top__DOT__top__DOT__score__DOT__data_player_2_1)) 
-                                                   | (IData)(vlTOPp->top__DOT__top__DOT__score__DOT__data_player_2_10))
-                                                   ? 0U
-                                                   : 0xe0U)
-                                               : 0U);
 }
 
-VL_INLINE_OPT void Vtop::_sequent__TOP__18(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__18\n"); );
+VL_INLINE_OPT void Vtop::_multiclk__TOP__20(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_multiclk__TOP__20\n"); );
+    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
+    // Body
+    vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet 
+        = (((IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__show_bullet) 
+            & (5U > ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+                     - (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet_y)))) 
+           & (5U > ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                    - (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet_x))));
+    vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet 
+        = (((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__show_bullet) 
+            & (5U > ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+                     - (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet_y)))) 
+           & (5U > ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                    - (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet_x))));
+}
+
+VL_INLINE_OPT void Vtop::_multiclk__TOP__21(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_multiclk__TOP__21\n"); );
+    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
+    // Body
+    vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_box 
+        = ((((0x1eU >= ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+                        - (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_y))) 
+             & (1U <= ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+                       - (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_y)))) 
+            & (0x1eU >= ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                         - (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_x)))) 
+           & (1U <= ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                     - (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_x))));
+    vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_box 
+        = ((((0x1eU >= ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+                        - (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_y))) 
+             & (1U <= ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+                       - (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_y)))) 
+            & (0x1eU >= ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                         - (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_x)))) 
+           & (1U <= ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                     - (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_x))));
+    vlTOPp->top__DOT__top__DOT__player_1_blue = (((~ (IData)(vlTOPp->top__DOT__top__DOT__player_1_die)) 
+                                                  & (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_box))
+                                                  ? 
+                                                 (0xffU 
+                                                  & (vlTOPp->top__DOT__top__DOT__player_1_bits 
+                                                     >> 0x10U))
+                                                  : 0U);
+    vlTOPp->top__DOT__top__DOT__player_1_red = (((~ (IData)(vlTOPp->top__DOT__top__DOT__player_1_die)) 
+                                                 & (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_box))
+                                                 ? 
+                                                (0xffU 
+                                                 & vlTOPp->top__DOT__top__DOT__player_1_bits)
+                                                 : 0U);
+    vlTOPp->top__DOT__top__DOT__player_1_green = ((
+                                                   (~ (IData)(vlTOPp->top__DOT__top__DOT__player_1_die)) 
+                                                   & (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_box))
+                                                   ? 
+                                                  (0xffU 
+                                                   & (vlTOPp->top__DOT__top__DOT__player_1_bits 
+                                                      >> 8U))
+                                                   : 0U);
+    vlTOPp->top__DOT__top__DOT__player_1_tank_enable 
+        = ((IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_box) 
+           & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_1_die)));
+    vlTOPp->top__DOT__top__DOT__player_2_blue = (((~ (IData)(vlTOPp->top__DOT__top__DOT__player_2_die)) 
+                                                  & (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_box))
+                                                  ? 
+                                                 (0xffU 
+                                                  & (vlTOPp->top__DOT__top__DOT__player_2_bits 
+                                                     >> 0x10U))
+                                                  : 0U);
+    vlTOPp->top__DOT__top__DOT__player_2_red = (((~ (IData)(vlTOPp->top__DOT__top__DOT__player_2_die)) 
+                                                 & (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_box))
+                                                 ? 
+                                                (0xffU 
+                                                 & vlTOPp->top__DOT__top__DOT__player_2_bits)
+                                                 : 0U);
+    vlTOPp->top__DOT__top__DOT__player_2_green = ((
+                                                   (~ (IData)(vlTOPp->top__DOT__top__DOT__player_2_die)) 
+                                                   & (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_box))
+                                                   ? 
+                                                  (0xffU 
+                                                   & (vlTOPp->top__DOT__top__DOT__player_2_bits 
+                                                      >> 8U))
+                                                   : 0U);
+    vlTOPp->top__DOT__top__DOT__player_2_tank_enable 
+        = ((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_box) 
+           & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_2_die)));
+    vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__all_player 
+        = ((IData)(vlTOPp->top__DOT__top__DOT__player_1_tank_enable) 
+           | (IData)(vlTOPp->top__DOT__top__DOT__player_2_tank_enable));
+}
+
+VL_INLINE_OPT void Vtop::_sequent__TOP__22(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__22\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
     vlTOPp->top__DOT__top__DOT__menu__DOT__arrow_en 
@@ -4640,85 +3416,8 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__18(Vtop__Syms* __restrict vlSymsp) {
                                              ? 0U : 0xe0U);
 }
 
-VL_INLINE_OPT void Vtop::_multiclk__TOP__19(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_multiclk__TOP__19\n"); );
-    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
-    // Body
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_bullet 
-        = (((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__show_bullet_1) 
-            & (5U > ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                     - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_bullet_y)))) 
-           & (5U > ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                    - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_bullet_x))));
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_bullet 
-        = (((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__show_bullet_2) 
-            & (5U > ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                     - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_bullet_y)))) 
-           & (5U > ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                    - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_bullet_x))));
-}
-
-VL_INLINE_OPT void Vtop::_multiclk__TOP__20(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_multiclk__TOP__20\n"); );
-    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
-    // Body
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_box 
-        = ((((0x1cU >= ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                        - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_y))) 
-             & (3U <= ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                       - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_y)))) 
-            & (0x1cU >= ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                         - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_x)))) 
-           & (3U <= ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                     - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_x))));
-    vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_box 
-        = ((((0x1cU >= ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                        - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_y))) 
-             & (3U <= ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                       - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_y)))) 
-            & (0x1cU >= ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                         - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_x)))) 
-           & (3U <= ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                     - (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_x))));
-    vlTOPp->top__DOT__top__DOT__player_blue = (0xffU 
-                                               & (((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_box) 
-                                                   & (~ (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_player_1)))
-                                                   ? 
-                                                  (vlTOPp->top__DOT__top__DOT__player_rgb__DOT__dout_1 
-                                                   >> 0x10U)
-                                                   : 
-                                                  (((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_box) 
-                                                    & (~ (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_player_2)))
-                                                    ? 
-                                                   (vlTOPp->top__DOT__top__DOT__player_rgb__DOT__dout_2 
-                                                    >> 0x10U)
-                                                    : 0U)));
-    vlTOPp->top__DOT__top__DOT__player_red = (0xffU 
-                                              & (((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_box) 
-                                                  & (~ (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_player_1)))
-                                                  ? vlTOPp->top__DOT__top__DOT__player_rgb__DOT__dout_1
-                                                  : 
-                                                 (((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_box) 
-                                                   & (~ (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_player_2)))
-                                                   ? vlTOPp->top__DOT__top__DOT__player_rgb__DOT__dout_2
-                                                   : 0U)));
-    vlTOPp->top__DOT__top__DOT__player_green = (0xffU 
-                                                & (((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_box) 
-                                                    & (~ (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_player_1)))
-                                                    ? 
-                                                   (vlTOPp->top__DOT__top__DOT__player_rgb__DOT__dout_1 
-                                                    >> 8U)
-                                                    : 
-                                                   (((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_box) 
-                                                     & (~ (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_player_2)))
-                                                     ? 
-                                                    (vlTOPp->top__DOT__top__DOT__player_rgb__DOT__dout_2 
-                                                     >> 8U)
-                                                     : 0U)));
-}
-
-VL_INLINE_OPT void Vtop::_sequent__TOP__21(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__21\n"); );
+VL_INLINE_OPT void Vtop::_sequent__TOP__23(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__23\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
     vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type 
@@ -4773,26 +3472,6 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__21(Vtop__Syms* __restrict vlSymsp) {
           & (0x10U <= (0x1fU & (IData)(vlTOPp->top__DOT__top__DOT__vpos)))) 
          & ((IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_state) 
             >> 3U));
-    vlTOPp->top__DOT__top__DOT__cannot_walk_through 
-        = (((((((((((IData)(vlTOPp->top__DOT__top__DOT__display_enable) 
-                    & (~ (IData)(vlTOPp->top__DOT__top__DOT__map_enable))) 
-                   | (3U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type))) 
-                  | ((0U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
-                     & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UL))) 
-                 | ((0U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
-                    & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UR))) 
-                | ((0U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
-                   & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LR))) 
-               | ((0U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
-                  & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LL))) 
-              | ((1U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
-                 & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UL))) 
-             | ((1U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
-                & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UR))) 
-            | ((1U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
-               & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LR))) 
-           | ((1U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
-              & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LL)));
     vlTOPp->top__DOT__top__DOT__all_hard_block = ((
                                                    ((((((((IData)(vlTOPp->top__DOT__top__DOT__display_enable) 
                                                           & (~ (IData)(vlTOPp->top__DOT__top__DOT__map_enable))) 
@@ -4820,6 +3499,26 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__21(Vtop__Syms* __restrict vlSymsp) {
                                                   | ((1U 
                                                       == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
                                                      & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LL)));
+    vlTOPp->top__DOT__top__DOT__cannot_walk_through 
+        = (((((((((((IData)(vlTOPp->top__DOT__top__DOT__display_enable) 
+                    & (~ (IData)(vlTOPp->top__DOT__top__DOT__map_enable))) 
+                   | (3U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type))) 
+                  | ((0U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
+                     & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UL))) 
+                 | ((0U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
+                    & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UR))) 
+                | ((0U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
+                   & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LR))) 
+               | ((0U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
+                  & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LL))) 
+              | ((1U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
+                 & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UL))) 
+             | ((1U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
+                & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UR))) 
+            | ((1U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
+               & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LR))) 
+           | ((1U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
+              & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LL)));
     vlTOPp->top__DOT__top__DOT__map_red = (((((IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UL) 
                                               | (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UR)) 
                                              | (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LR)) 
@@ -4849,8 +3548,20 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__21(Vtop__Syms* __restrict vlSymsp) {
            | (0U != (IData)(vlTOPp->top__DOT__top__DOT__map_green)));
 }
 
-VL_INLINE_OPT void Vtop::_multiclk__TOP__22(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_multiclk__TOP__22\n"); );
+VL_INLINE_OPT void Vtop::_multiclk__TOP__24(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_multiclk__TOP__24\n"); );
+    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
+    // Body
+    vlTOPp->top__DOT__top__DOT____Vcellinp__player_1__cannot_walk_through_i 
+        = ((IData)(vlTOPp->top__DOT__top__DOT__cannot_walk_through) 
+           | (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__all_player));
+    vlTOPp->top__DOT__top__DOT____Vcellinp__player_2__cannot_walk_through_i 
+        = ((IData)(vlTOPp->top__DOT__top__DOT__cannot_walk_through) 
+           | (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__all_player));
+}
+
+VL_INLINE_OPT void Vtop::_multiclk__TOP__25(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_multiclk__TOP__25\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
     vlTOPp->red_o = 0U;
@@ -4863,15 +3574,17 @@ VL_INLINE_OPT void Vtop::_multiclk__TOP__22(Vtop__Syms* __restrict vlSymsp) {
                                            ? (((IData)(vlTOPp->top__DOT__top__DOT__map_red) 
                                                | ((IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__map_enable)
                                                    ? 0U
-                                                   : (IData)(vlTOPp->top__DOT__top__DOT__player_red))) 
-                                              | (((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_bullet) 
-                                                  | (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_bullet))
+                                                   : 
+                                                  ((IData)(vlTOPp->top__DOT__top__DOT__player_1_red) 
+                                                   | (IData)(vlTOPp->top__DOT__top__DOT__player_2_red)))) 
+                                              | (((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet) 
+                                                  | (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet))
                                                   ? 0xffffffU
                                                   : 0U))
-                                           : ((IData)(vlTOPp->top__DOT__top__DOT__number_enable)
-                                               ? (IData)(vlTOPp->top__DOT__top__DOT__number_red)
-                                               : ((IData)(vlTOPp->top__DOT__top__DOT__tank_enable)
-                                                   ? (IData)(vlTOPp->top__DOT__top__DOT__tank_red)
+                                           : ((IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__number_enable_i)
+                                               ? (IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__number_red_i)
+                                               : ((IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__tank_enable_i)
+                                                   ? (IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__tank_red_i)
                                                    : 0xe0U))));
             } else {
                 if (vlTOPp->top__DOT__top__DOT__is_continue) {
@@ -4896,16 +3609,18 @@ VL_INLINE_OPT void Vtop::_multiclk__TOP__22(Vtop__Syms* __restrict vlSymsp) {
                                             ? (((IData)(vlTOPp->top__DOT__top__DOT__map_blue) 
                                                 | ((IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__map_enable)
                                                     ? 0U
-                                                    : (IData)(vlTOPp->top__DOT__top__DOT__player_blue))) 
-                                               | ((((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_bullet) 
-                                                    | (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_bullet))
+                                                    : 
+                                                   ((IData)(vlTOPp->top__DOT__top__DOT__player_1_blue) 
+                                                    | (IData)(vlTOPp->top__DOT__top__DOT__player_2_blue)))) 
+                                               | ((((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet) 
+                                                    | (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet))
                                                     ? 0xffffffU
                                                     : 0U) 
                                                   >> 0x10U))
-                                            : ((IData)(vlTOPp->top__DOT__top__DOT__number_enable)
-                                                ? (IData)(vlTOPp->top__DOT__top__DOT__number_blue)
-                                                : ((IData)(vlTOPp->top__DOT__top__DOT__tank_enable)
-                                                    ? (IData)(vlTOPp->top__DOT__top__DOT__tank_blue)
+                                            : ((IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__number_enable_i)
+                                                ? (IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__number_blue_i)
+                                                : ((IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__tank_enable_i)
+                                                    ? (IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__tank_blue_i)
                                                     : 0xe0U))));
             } else {
                 if (vlTOPp->top__DOT__top__DOT__is_continue) {
@@ -4930,17 +3645,19 @@ VL_INLINE_OPT void Vtop::_multiclk__TOP__22(Vtop__Syms* __restrict vlSymsp) {
                                              ? (((IData)(vlTOPp->top__DOT__top__DOT__map_green) 
                                                  | ((IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__map_enable)
                                                      ? 0U
-                                                     : (IData)(vlTOPp->top__DOT__top__DOT__player_green))) 
-                                                | ((((IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_1_bullet) 
-                                                     | (IData)(vlTOPp->top__DOT__top__DOT__player_rgb__DOT__player_2_bullet))
+                                                     : 
+                                                    ((IData)(vlTOPp->top__DOT__top__DOT__player_1_green) 
+                                                     | (IData)(vlTOPp->top__DOT__top__DOT__player_2_green)))) 
+                                                | ((((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet) 
+                                                     | (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet))
                                                      ? 0xffffffU
                                                      : 0U) 
                                                    >> 8U))
-                                             : ((IData)(vlTOPp->top__DOT__top__DOT__number_enable)
-                                                 ? (IData)(vlTOPp->top__DOT__top__DOT__number_green)
+                                             : ((IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__number_enable_i)
+                                                 ? (IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__number_green_i)
                                                  : 
-                                                ((IData)(vlTOPp->top__DOT__top__DOT__tank_enable)
-                                                  ? (IData)(vlTOPp->top__DOT__top__DOT__tank_green)
+                                                ((IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__tank_enable_i)
+                                                  ? (IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__tank_green_i)
                                                   : 0xe0U))));
             } else {
                 if (vlTOPp->top__DOT__top__DOT__is_continue) {
@@ -4979,46 +3696,47 @@ void Vtop::_eval(Vtop__Syms* __restrict vlSymsp) {
          & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk)))) {
         vlTOPp->_sequent__TOP__7(vlSymsp);
     }
+    if ((((IData)(vlTOPp->reset_i) & (~ (IData)(vlTOPp->__Vclklast__TOP__reset_i))) 
+         | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
+            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))))) {
+        vlTOPp->_sequent__TOP__8(vlSymsp);
+    }
     if ((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
           & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))) 
          | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__reset) 
             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__reset))))) {
-        vlTOPp->_sequent__TOP__8(vlSymsp);
-    }
-    if ((((IData)(vlTOPp->reset_i) & (~ (IData)(vlTOPp->__Vclklast__TOP__reset_i))) 
-         | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
-            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))))) {
         vlTOPp->_sequent__TOP__9(vlSymsp);
     }
     if (((IData)(vlTOPp->hsync_no) & (~ (IData)(vlTOPp->__Vclklast__TOP__hsync_no)))) {
         vlTOPp->_sequent__TOP__10(vlSymsp);
     }
+    vlTOPp->_combo__TOP__11(vlSymsp);
     if (((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
          & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk)))) {
-        vlTOPp->_sequent__TOP__11(vlSymsp);
+        vlTOPp->_sequent__TOP__12(vlSymsp);
     }
     if ((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__clk_player) 
           & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__clk_player))) 
          | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__reset) 
             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__reset))))) {
-        vlTOPp->_sequent__TOP__12(vlSymsp);
+        vlTOPp->_sequent__TOP__13(vlSymsp);
     }
-    vlTOPp->_combo__TOP__13(vlSymsp);
+    if ((((IData)(vlTOPp->reset_i) & (~ (IData)(vlTOPp->__Vclklast__TOP__reset_i))) 
+         | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
+            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))))) {
+        vlTOPp->_sequent__TOP__14(vlSymsp);
+    }
     if ((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
           & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))) 
          | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__reset) 
             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__reset))))) {
-        vlTOPp->_sequent__TOP__14(vlSymsp);
+        vlTOPp->_sequent__TOP__15(vlSymsp);
     }
-    vlTOPp->_combo__TOP__15(vlSymsp);
+    vlTOPp->_combo__TOP__16(vlSymsp);
     if ((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__clk_player) 
           & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__clk_player))) 
          | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__reset) 
             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__reset))))) {
-        vlTOPp->_sequent__TOP__16(vlSymsp);
-    }
-    if (((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
-         & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk)))) {
         vlTOPp->_sequent__TOP__17(vlSymsp);
     }
     if ((((IData)(vlTOPp->reset_i) & (~ (IData)(vlTOPp->__Vclklast__TOP__reset_i))) 
@@ -5026,13 +3744,17 @@ void Vtop::_eval(Vtop__Syms* __restrict vlSymsp) {
             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))))) {
         vlTOPp->_sequent__TOP__18(vlSymsp);
     }
+    if (((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
+         & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk)))) {
+        vlTOPp->_sequent__TOP__19(vlSymsp);
+    }
     if (((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))) 
           | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__clk_bullet) 
              & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__clk_bullet)))) 
          | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__reset) 
             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__reset))))) {
-        vlTOPp->_multiclk__TOP__19(vlSymsp);
+        vlTOPp->_multiclk__TOP__20(vlSymsp);
     }
     if (((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))) 
@@ -5040,13 +3762,26 @@ void Vtop::_eval(Vtop__Syms* __restrict vlSymsp) {
              & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__clk_player)))) 
          | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__reset) 
             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__reset))))) {
-        vlTOPp->_multiclk__TOP__20(vlSymsp);
+        vlTOPp->_multiclk__TOP__21(vlSymsp);
+    }
+    if ((((IData)(vlTOPp->reset_i) & (~ (IData)(vlTOPp->__Vclklast__TOP__reset_i))) 
+         | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
+            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))))) {
+        vlTOPp->_sequent__TOP__22(vlSymsp);
     }
     if ((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
           & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))) 
          | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__reset) 
             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__reset))))) {
-        vlTOPp->_sequent__TOP__21(vlSymsp);
+        vlTOPp->_sequent__TOP__23(vlSymsp);
+    }
+    if (((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
+           & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))) 
+          | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__clk_player) 
+             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__clk_player)))) 
+         | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__reset) 
+            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__reset))))) {
+        vlTOPp->_multiclk__TOP__24(vlSymsp);
     }
     if (((((((IData)(vlTOPp->reset_i) & (~ (IData)(vlTOPp->__Vclklast__TOP__reset_i))) 
             | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
@@ -5057,7 +3792,7 @@ void Vtop::_eval(Vtop__Syms* __restrict vlSymsp) {
              & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__clk_player)))) 
          | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__reset) 
             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__reset))))) {
-        vlTOPp->_multiclk__TOP__22(vlSymsp);
+        vlTOPp->_multiclk__TOP__25(vlSymsp);
     }
     // Final
     vlTOPp->__Vclklast__TOP__clk_i = vlTOPp->clk_i;
@@ -5123,10 +3858,10 @@ VL_INLINE_OPT QData Vtop::_change_request(Vtop__Syms* __restrict vlSymsp) {
          | (vlTOPp->top__DOT__top__DOT__clk_bullet ^ vlTOPp->__Vchglast__TOP__top__DOT__top__DOT__clk_bullet)
          | (vlTOPp->top__DOT__top__DOT__VGA_clk ^ vlTOPp->__Vchglast__TOP__top__DOT__top__DOT__VGA_clk)
          | (vlTOPp->top__DOT__top__DOT__reset ^ vlTOPp->__Vchglast__TOP__top__DOT__top__DOT__reset));
-    VL_DEBUG_IF( if(__req && ((vlTOPp->top__DOT__top__DOT__clk_player ^ vlTOPp->__Vchglast__TOP__top__DOT__top__DOT__clk_player))) VL_DBG_MSGF("        CHANGE: src/game_top.sv:24: top.top.clk_player\n"); );
-    VL_DEBUG_IF( if(__req && ((vlTOPp->top__DOT__top__DOT__clk_bullet ^ vlTOPp->__Vchglast__TOP__top__DOT__top__DOT__clk_bullet))) VL_DBG_MSGF("        CHANGE: src/game_top.sv:24: top.top.clk_bullet\n"); );
-    VL_DEBUG_IF( if(__req && ((vlTOPp->top__DOT__top__DOT__VGA_clk ^ vlTOPp->__Vchglast__TOP__top__DOT__top__DOT__VGA_clk))) VL_DBG_MSGF("        CHANGE: src/game_top.sv:30: top.top.VGA_clk\n"); );
-    VL_DEBUG_IF( if(__req && ((vlTOPp->top__DOT__top__DOT__reset ^ vlTOPp->__Vchglast__TOP__top__DOT__top__DOT__reset))) VL_DBG_MSGF("        CHANGE: src/game_top.sv:161: top.top.reset\n"); );
+    VL_DEBUG_IF( if(__req && ((vlTOPp->top__DOT__top__DOT__clk_player ^ vlTOPp->__Vchglast__TOP__top__DOT__top__DOT__clk_player))) VL_DBG_MSGF("        CHANGE: src/game_top.sv:26: top.top.clk_player\n"); );
+    VL_DEBUG_IF( if(__req && ((vlTOPp->top__DOT__top__DOT__clk_bullet ^ vlTOPp->__Vchglast__TOP__top__DOT__top__DOT__clk_bullet))) VL_DBG_MSGF("        CHANGE: src/game_top.sv:26: top.top.clk_bullet\n"); );
+    VL_DEBUG_IF( if(__req && ((vlTOPp->top__DOT__top__DOT__VGA_clk ^ vlTOPp->__Vchglast__TOP__top__DOT__top__DOT__VGA_clk))) VL_DBG_MSGF("        CHANGE: src/game_top.sv:32: top.top.VGA_clk\n"); );
+    VL_DEBUG_IF( if(__req && ((vlTOPp->top__DOT__top__DOT__reset ^ vlTOPp->__Vchglast__TOP__top__DOT__top__DOT__reset))) VL_DBG_MSGF("        CHANGE: src/game_top.sv:261: top.top.reset\n"); );
     // Final
     vlTOPp->__Vchglast__TOP__top__DOT__top__DOT__clk_player 
         = vlTOPp->top__DOT__top__DOT__clk_player;
@@ -5181,22 +3916,9 @@ void Vtop::_ctor_var_reset() {
     top__DOT__top__DOT__clk_bullet = VL_RAND_RESET_I(1);
     top__DOT__top__DOT__cannot_walk_through = VL_RAND_RESET_I(1);
     top__DOT__top__DOT__all_hard_block = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__bullet_collide_player_1 = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__bullet_collide_player_2 = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__number_enable = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__tank_enable = VL_RAND_RESET_I(1);
     top__DOT__top__DOT__map_blue = VL_RAND_RESET_I(8);
     top__DOT__top__DOT__map_green = VL_RAND_RESET_I(8);
     top__DOT__top__DOT__map_red = VL_RAND_RESET_I(8);
-    top__DOT__top__DOT__player_red = VL_RAND_RESET_I(8);
-    top__DOT__top__DOT__player_green = VL_RAND_RESET_I(8);
-    top__DOT__top__DOT__player_blue = VL_RAND_RESET_I(8);
-    top__DOT__top__DOT__number_blue = VL_RAND_RESET_I(8);
-    top__DOT__top__DOT__number_green = VL_RAND_RESET_I(8);
-    top__DOT__top__DOT__number_red = VL_RAND_RESET_I(8);
-    top__DOT__top__DOT__tank_blue = VL_RAND_RESET_I(8);
-    top__DOT__top__DOT__tank_green = VL_RAND_RESET_I(8);
-    top__DOT__top__DOT__tank_red = VL_RAND_RESET_I(8);
     top__DOT__top__DOT__menu_blue = VL_RAND_RESET_I(8);
     top__DOT__top__DOT__menu_green = VL_RAND_RESET_I(8);
     top__DOT__top__DOT__menu_red = VL_RAND_RESET_I(8);
@@ -5205,6 +3927,22 @@ void Vtop::_ctor_var_reset() {
     top__DOT__top__DOT__map_type = VL_RAND_RESET_I(2);
     top__DOT__top__DOT__display_enable = VL_RAND_RESET_I(1);
     top__DOT__top__DOT__VGA_clk = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__player_1_blue = VL_RAND_RESET_I(8);
+    top__DOT__top__DOT__player_1_green = VL_RAND_RESET_I(8);
+    top__DOT__top__DOT__player_1_red = VL_RAND_RESET_I(8);
+    top__DOT__top__DOT__player_1_tank_enable = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__player_1_die = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__player_1_bits = VL_RAND_RESET_I(24);
+    top__DOT__top__DOT__player_1_addr = VL_RAND_RESET_I(10);
+    top__DOT__top__DOT____Vcellinp__player_1__cannot_walk_through_i = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__player_2_blue = VL_RAND_RESET_I(8);
+    top__DOT__top__DOT__player_2_green = VL_RAND_RESET_I(8);
+    top__DOT__top__DOT__player_2_red = VL_RAND_RESET_I(8);
+    top__DOT__top__DOT__player_2_tank_enable = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__player_2_die = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__player_2_bits = VL_RAND_RESET_I(24);
+    top__DOT__top__DOT__player_2_addr = VL_RAND_RESET_I(10);
+    top__DOT__top__DOT____Vcellinp__player_2__cannot_walk_through_i = VL_RAND_RESET_I(1);
     top__DOT__top__DOT__is_menu = VL_RAND_RESET_I(1);
     top__DOT__top__DOT__is_playing = VL_RAND_RESET_I(1);
     top__DOT__top__DOT__is_continue = VL_RAND_RESET_I(1);
@@ -5273,99 +4011,72 @@ void Vtop::_ctor_var_reset() {
     }}
     top__DOT__top__DOT__menu__DOT__sellect_up_edge_dect__DOT__sig_dly = VL_RAND_RESET_I(1);
     top__DOT__top__DOT__menu__DOT__sellect_down_edge_dect__DOT__sig_dly = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__rgb_render__DOT__number_blue_i = VL_RAND_RESET_I(8);
+    top__DOT__top__DOT__rgb_render__DOT__number_green_i = VL_RAND_RESET_I(8);
+    top__DOT__top__DOT__rgb_render__DOT__number_red_i = VL_RAND_RESET_I(8);
+    top__DOT__top__DOT__rgb_render__DOT__number_enable_i = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__rgb_render__DOT__tank_blue_i = VL_RAND_RESET_I(8);
+    top__DOT__top__DOT__rgb_render__DOT__tank_green_i = VL_RAND_RESET_I(8);
+    top__DOT__top__DOT__rgb_render__DOT__tank_red_i = VL_RAND_RESET_I(8);
+    top__DOT__top__DOT__rgb_render__DOT__tank_enable_i = VL_RAND_RESET_I(1);
     top__DOT__top__DOT__rgb_render__DOT__map_enable = VL_RAND_RESET_I(1);
     top__DOT__top__DOT__speed_control__DOT__count = VL_RAND_RESET_I(25);
     top__DOT__top__DOT__speed_control__DOT__count2 = VL_RAND_RESET_I(25);
     top__DOT__top__DOT__speed_control__DOT__a = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__player_rgb__DOT__player_1_x = VL_RAND_RESET_I(10);
-    top__DOT__top__DOT__player_rgb__DOT__player_1_y = VL_RAND_RESET_I(10);
-    top__DOT__top__DOT__player_rgb__DOT__player_2_x = VL_RAND_RESET_I(10);
-    top__DOT__top__DOT__player_rgb__DOT__player_2_y = VL_RAND_RESET_I(10);
-    top__DOT__top__DOT__player_rgb__DOT__player_1_box = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_top = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_bottom = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_left = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__player_rgb__DOT__player_1_collide_with_wall_right = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__player_rgb__DOT__player_2_box = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_top = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_bottom = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_left = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__player_rgb__DOT__player_2_collide_with_wall_right = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__player_rgb__DOT__player_1_prev_direct = VL_RAND_RESET_I(4);
-    top__DOT__top__DOT__player_rgb__DOT__player_2_prev_direct = VL_RAND_RESET_I(4);
-    top__DOT__top__DOT__player_rgb__DOT__addr_1 = VL_RAND_RESET_I(10);
-    top__DOT__top__DOT__player_rgb__DOT__dout_1 = VL_RAND_RESET_I(24);
-    top__DOT__top__DOT__player_rgb__DOT__player_1_yofs_backward = VL_RAND_RESET_I(5);
-    top__DOT__top__DOT__player_rgb__DOT__player_1_xofs_backward = VL_RAND_RESET_I(5);
-    top__DOT__top__DOT__player_rgb__DOT__player_1_xofs = VL_RAND_RESET_I(5);
-    top__DOT__top__DOT__player_rgb__DOT__player_1_yofs = VL_RAND_RESET_I(5);
-    top__DOT__top__DOT__player_rgb__DOT__addr_2 = VL_RAND_RESET_I(10);
-    top__DOT__top__DOT__player_rgb__DOT__dout_2 = VL_RAND_RESET_I(24);
-    top__DOT__top__DOT__player_rgb__DOT__player_2_yofs_backward = VL_RAND_RESET_I(5);
-    top__DOT__top__DOT__player_rgb__DOT__player_2_xofs_backward = VL_RAND_RESET_I(5);
-    top__DOT__top__DOT__player_rgb__DOT__player_2_xofs = VL_RAND_RESET_I(5);
-    top__DOT__top__DOT__player_rgb__DOT__player_2_yofs = VL_RAND_RESET_I(5);
-    top__DOT__top__DOT__player_rgb__DOT__player_1_bullet_x = VL_RAND_RESET_I(10);
-    top__DOT__top__DOT__player_rgb__DOT__player_1_bullet_y = VL_RAND_RESET_I(10);
-    top__DOT__top__DOT__player_rgb__DOT__bullet_1_state = VL_RAND_RESET_I(2);
-    top__DOT__top__DOT__player_rgb__DOT__bullet_1_dir = VL_RAND_RESET_I(4);
-    top__DOT__top__DOT__player_rgb__DOT__show_bullet_1 = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__player_rgb__DOT__bullet_1_collide = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__player_rgb__DOT__player_1_bullet = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__player_rgb__DOT__player_1_shoot = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__player_rgb__DOT__player_2_bullet_x = VL_RAND_RESET_I(10);
-    top__DOT__top__DOT__player_rgb__DOT__player_2_bullet_y = VL_RAND_RESET_I(10);
-    top__DOT__top__DOT__player_rgb__DOT__bullet_2_state = VL_RAND_RESET_I(2);
-    top__DOT__top__DOT__player_rgb__DOT__bullet_2_dir = VL_RAND_RESET_I(4);
-    top__DOT__top__DOT__player_rgb__DOT__show_bullet_2 = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__player_rgb__DOT__bullet_2_collide = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__player_rgb__DOT__player_2_bullet = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__player_rgb__DOT__player_2_shoot = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__player_1__DOT__tank_x = VL_RAND_RESET_I(10);
+    top__DOT__top__DOT__player_1__DOT__tank_y = VL_RAND_RESET_I(10);
+    top__DOT__top__DOT__player_1__DOT__tank_box = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_top = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_bottom = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_left = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_right = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__player_1__DOT__tank_prev_direct = VL_RAND_RESET_I(4);
+    top__DOT__top__DOT__player_1__DOT__tank_yofs_backward = VL_RAND_RESET_I(5);
+    top__DOT__top__DOT__player_1__DOT__tank_xofs_backward = VL_RAND_RESET_I(5);
+    top__DOT__top__DOT__player_1__DOT__tank_xofs = VL_RAND_RESET_I(5);
+    top__DOT__top__DOT__player_1__DOT__tank_yofs = VL_RAND_RESET_I(5);
+    top__DOT__top__DOT__player_1__DOT__tank_bullet_x = VL_RAND_RESET_I(10);
+    top__DOT__top__DOT__player_1__DOT__tank_bullet_y = VL_RAND_RESET_I(10);
+    top__DOT__top__DOT__player_1__DOT__bullet_stage = VL_RAND_RESET_I(2);
+    top__DOT__top__DOT__player_1__DOT__bullet_dir = VL_RAND_RESET_I(4);
+    top__DOT__top__DOT__player_1__DOT__show_bullet = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__player_1__DOT__tank_bullet = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__player_1__DOT__tank_shoot = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__player_1__DOT__pos_edge_detect_1__DOT__sig_dly = VL_RAND_RESET_I(1);
     { int __Vi0=0; for (; __Vi0<1024; ++__Vi0) {
-            top__DOT__top__DOT__player_rgb__DOT__mem_player_1__DOT__mem[__Vi0] = VL_RAND_RESET_I(24);
+            top__DOT__top__DOT__mem_player_1__DOT__mem[__Vi0] = VL_RAND_RESET_I(24);
     }}
+    top__DOT__top__DOT__player_2__DOT__tank_x = VL_RAND_RESET_I(10);
+    top__DOT__top__DOT__player_2__DOT__tank_y = VL_RAND_RESET_I(10);
+    top__DOT__top__DOT__player_2__DOT__tank_box = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__player_2__DOT__tank_collide_with_wall_top = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__player_2__DOT__tank_collide_with_wall_bottom = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__player_2__DOT__tank_collide_with_wall_left = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__player_2__DOT__tank_collide_with_wall_right = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__player_2__DOT__tank_prev_direct = VL_RAND_RESET_I(4);
+    top__DOT__top__DOT__player_2__DOT__tank_yofs_backward = VL_RAND_RESET_I(5);
+    top__DOT__top__DOT__player_2__DOT__tank_xofs_backward = VL_RAND_RESET_I(5);
+    top__DOT__top__DOT__player_2__DOT__tank_xofs = VL_RAND_RESET_I(5);
+    top__DOT__top__DOT__player_2__DOT__tank_yofs = VL_RAND_RESET_I(5);
+    top__DOT__top__DOT__player_2__DOT__tank_bullet_x = VL_RAND_RESET_I(10);
+    top__DOT__top__DOT__player_2__DOT__tank_bullet_y = VL_RAND_RESET_I(10);
+    top__DOT__top__DOT__player_2__DOT__bullet_stage = VL_RAND_RESET_I(2);
+    top__DOT__top__DOT__player_2__DOT__bullet_dir = VL_RAND_RESET_I(4);
+    top__DOT__top__DOT__player_2__DOT__show_bullet = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__player_2__DOT__tank_bullet = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__player_2__DOT__tank_shoot = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__player_2__DOT__pos_edge_detect_1__DOT__sig_dly = VL_RAND_RESET_I(1);
     { int __Vi0=0; for (; __Vi0<1024; ++__Vi0) {
-            top__DOT__top__DOT__player_rgb__DOT__mem_player_2__DOT__mem[__Vi0] = VL_RAND_RESET_I(24);
+            top__DOT__top__DOT__mem_player_2__DOT__mem[__Vi0] = VL_RAND_RESET_I(24);
     }}
-    top__DOT__top__DOT__player_rgb__DOT__pos_edge_detect_1__DOT__sig_dly = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__player_rgb__DOT__pos_edge_detect_bullet_collide_player_2__DOT__sig_dly = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__player_rgb__DOT__pos_edge_detect_2__DOT__sig_dly = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__player_rgb__DOT__pos_edge_detect_bullet_collide_player_1__DOT__sig_dly = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__bullet_collide_1__DOT__all_player = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__game_FSM__DOT__bullet_collide_player_1_i = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__game_FSM__DOT__bullet_collide_player_2_i = VL_RAND_RESET_I(1);
     top__DOT__top__DOT__game_FSM__DOT__game_state = VL_RAND_RESET_I(2);
     top__DOT__top__DOT__game_FSM__DOT__score_player_1 = VL_RAND_RESET_I(6);
     top__DOT__top__DOT__game_FSM__DOT__score_player_2 = VL_RAND_RESET_I(6);
-    top__DOT__top__DOT__score__DOT__dout_1 = VL_RAND_RESET_I(24);
-    top__DOT__top__DOT__score__DOT__dout_2 = VL_RAND_RESET_I(24);
-    top__DOT__top__DOT__score__DOT__enable_player_1_1 = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__score__DOT__enable_player_1_10 = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__score__DOT__enable_player_2_1 = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__score__DOT__enable_player_2_10 = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__score__DOT__enable_tank_1 = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__score__DOT__enable_tank_2 = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__score__DOT__data_player_1_1 = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__score__DOT__data_player_1_10 = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__score__DOT__data_player_2_1 = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__score__DOT__data_player_2_10 = VL_RAND_RESET_I(1);
-    { int __Vi0=0; for (; __Vi0<16; ++__Vi0) {
-            { int __Vi1=0; for (; __Vi1<16; ++__Vi1) {
-                    top__DOT__top__DOT__score__DOT__number_player_1_1__DOT__bit_array[__Vi0][__Vi1] = VL_RAND_RESET_I(16);
-            }}
-    }}
-    { int __Vi0=0; for (; __Vi0<16; ++__Vi0) {
-            { int __Vi1=0; for (; __Vi1<16; ++__Vi1) {
-                    top__DOT__top__DOT__score__DOT__number_player_1_10__DOT__bit_array[__Vi0][__Vi1] = VL_RAND_RESET_I(16);
-            }}
-    }}
-    { int __Vi0=0; for (; __Vi0<16; ++__Vi0) {
-            { int __Vi1=0; for (; __Vi1<16; ++__Vi1) {
-                    top__DOT__top__DOT__score__DOT__number_player_2_1__DOT__bit_array[__Vi0][__Vi1] = VL_RAND_RESET_I(16);
-            }}
-    }}
-    { int __Vi0=0; for (; __Vi0<16; ++__Vi0) {
-            { int __Vi1=0; for (; __Vi1<16; ++__Vi1) {
-                    top__DOT__top__DOT__score__DOT__number_player_2_10__DOT__bit_array[__Vi0][__Vi1] = VL_RAND_RESET_I(16);
-            }}
-    }}
+    top__DOT__top__DOT__game_FSM__DOT__pos_edge_detect_bullet_1__DOT__sig_dly = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__game_FSM__DOT__pos_edge_detect_bullet_2__DOT__sig_dly = VL_RAND_RESET_I(1);
     { int __Vi0=0; for (; __Vi0<1024; ++__Vi0) {
             top__DOT__top__DOT__score__DOT__tank_player_1__DOT__mem[__Vi0] = VL_RAND_RESET_I(24);
     }}
@@ -5374,11 +4085,13 @@ void Vtop::_ctor_var_reset() {
     }}
     __Vdly__top__DOT__top__DOT__hpos = VL_RAND_RESET_I(10);
     __Vdly__top__DOT__top__DOT__vpos = VL_RAND_RESET_I(10);
-    __Vdly__top__DOT__top__DOT__reset = VL_RAND_RESET_I(1);
-    __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_x = VL_RAND_RESET_I(10);
-    __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_2_y = VL_RAND_RESET_I(10);
-    __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_x = VL_RAND_RESET_I(10);
-    __Vdly__top__DOT__top__DOT__player_rgb__DOT__player_1_y = VL_RAND_RESET_I(10);
+    __Vdly__top__DOT__top__DOT__game_FSM__DOT__game_state = VL_RAND_RESET_I(2);
+    __Vdly__top__DOT__top__DOT__game_FSM__DOT__score_player_1 = VL_RAND_RESET_I(6);
+    __Vdly__top__DOT__top__DOT__game_FSM__DOT__score_player_2 = VL_RAND_RESET_I(6);
+    __Vdly__top__DOT__top__DOT__player_1__DOT__tank_x = VL_RAND_RESET_I(10);
+    __Vdly__top__DOT__top__DOT__player_1__DOT__tank_y = VL_RAND_RESET_I(10);
+    __Vdly__top__DOT__top__DOT__player_2__DOT__tank_x = VL_RAND_RESET_I(10);
+    __Vdly__top__DOT__top__DOT__player_2__DOT__tank_y = VL_RAND_RESET_I(10);
     __VinpClk__TOP__top__DOT__top__DOT__clk_player = VL_RAND_RESET_I(1);
     __VinpClk__TOP__top__DOT__top__DOT__reset = VL_RAND_RESET_I(1);
     __VinpClk__TOP__top__DOT__top__DOT__clk_bullet = VL_RAND_RESET_I(1);

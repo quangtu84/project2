@@ -49,7 +49,6 @@ module map_rgb #(
     localparam WALL     = 3'b001;
     localparam TREE     = 3'b010;
     localparam WATER    = 3'b011;
-    localparam EAGLE    = 3'b100;
     localparam AIR      = 3'b111;
 
 
@@ -90,7 +89,7 @@ module map_rgb #(
         if(reset_i) begin
             case (map_type_i)
                 0: begin //map 1
-                    map_tiles[0][0] <= {EAGLE,4'b1111};
+                    map_tiles[0][0] <= {AIR,4'b1111};
                     map_tiles[0][1] <= {AIR,4'b1111};
                     map_tiles[0][2] <= {AIR,4'b1111};
                     map_tiles[0][3] <= {AIR,4'b1111};

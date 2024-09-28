@@ -44,7 +44,7 @@ pos_edge_detect pos_edge_detect_bullet_2 (
     .pe(bullet_collide_player_2)
 );
 
-always_ff @(posedge clk_i or posedge reset_i) begin
+always_ff @(posedge clk_i) begin
     if(reset_i) begin
         game_state <= MENU;
         score_player_1 <= 0;

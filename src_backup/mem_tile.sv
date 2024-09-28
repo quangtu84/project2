@@ -1,5 +1,5 @@
-module mem_player_2 #(
-  parameter ADDRESS = 10,
+module mem_tile #(
+  parameter ADDRESS = 13,
   parameter COLOR_BITS = 24
 ) (
   input  logic [ADDRESS-1:0]    addr,	// address
@@ -11,6 +11,6 @@ module mem_player_2 #(
   assign dout = mem[addr]; // read memory to dout (async)
   
   initial begin
-    $readmemh("24bit_rgb/24bit_rgb_player_2.txt",mem);
+    $readmemh("pixel/24bit_rgb.txt",mem);
   end
 endmodule

@@ -11,6 +11,6 @@ module mem_tile #(
   assign dout = mem[addr]; // read memory to dout (async)
   
   initial begin
-    $readmemh("pixel/24bit_rgb.txt",mem);
+    $readmemh("24bit_rgb/24bit_rgb_map.txt",mem);
   end
 endmodule

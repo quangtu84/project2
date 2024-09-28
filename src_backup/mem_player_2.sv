@@ -11,6 +11,6 @@ module mem_player_2 #(
   assign dout = mem[addr]; // read memory to dout (async)
   
   initial begin
-    $readmemh("24bit_rgb/24bit_rgb_player_2.txt",mem);
+    $readmemh("pixel/24bit_rgb_player_2.txt",mem);
   end
 endmodule
