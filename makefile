@@ -14,7 +14,7 @@ SDL_CFLAGS = `sdl2-config --cflags`
 SDL_LDFLAGS = `sdl2-config --libs`
 
 ### LINT FLAGS
-LINT_FLAGS = -Wall --lint-only -sv
+LINT_FLAGS = -Wall --lint-only -sv --top-module game_top
 
 ### VERILATE FLAGS
 # Generate C++ in executable form

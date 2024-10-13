@@ -1,6 +1,6 @@
 /* verilator lint_off UNUSED */
 /* verilator lint_off UNDRIVEN */
-module tank #(
+module tank_bot #(
     parameter COLOR_BITS = 24,
     parameter [9:0] TANK_X_INIT = 10'd32,
     parameter [9:0] TANK_Y_INIT = 10'd416,
@@ -8,9 +8,6 @@ module tank #(
     parameter [9:0] TANK_MOVE_SPEED = 1,
     parameter [9:0] BULLET_MOVE_SPEED = 1
 ) (
-    //control tanks
-    input logic [3:0] tank_move_i,
-    input logic tank_shoot_i,
     input logic bullet_collide_i,
     input logic tank_die_i,
     input logic tank_revive_i,
@@ -41,15 +38,15 @@ module tank #(
     localparam PLAYER_BOUND = 30;
     localparam PLAYER_BOUND_2 = 0;
     localparam BULLET_BOUND = 5;
-
+    
     logic [9:0] tank_x, tank_y;  //upper left point of tank
     logic tank_box, tank_collide_with_wall_top, tank_collide_with_wall_bottom, tank_collide_with_wall_left, tank_collide_with_wall_right;
     logic [3:0] tank_prev_direct;
     logic [3:0] tank_move, auto_tank_move;
     logic auto_tank_shoot, tank_shoot2;
 
-    assign tank_move = tank_move_i;
-    assign tank_shoot2 = tank_shoot_i;
+    assign tank_move = auto_tank_move;
+    assign tank_shoot2 = auto_tank_shoot; 
 
     logic reset_tank;
     assign reset_tank = reset_i || tank_revive_i;
@@ -98,12 +95,12 @@ module tank #(
                 end
                 default:;
             endcase
-            if(tank_shoot) begin
-                    tank_collide_with_wall_top     <= 1'b0;
-                    tank_collide_with_wall_bottom     <= 1'b0;
-                    tank_collide_with_wall_right     <= 1'b0;
-                    tank_collide_with_wall_left     <= 1'b0;       
-            end
+            // if(tank_shoot) begin
+            //         tank_collide_with_wall_top     <= 1'b0;
+            //         tank_collide_with_wall_bottom     <= 1'b0;
+            //         tank_collide_with_wall_right     <= 1'b0;
+            //         tank_collide_with_wall_left     <= 1'b0;       
+            // end
             if(cannot_walk_through_i) begin
                 if (tank_top)           tank_collide_with_wall_top      <= 1'b1;
                 if (tank_bottom)        tank_collide_with_wall_bottom   <= 1'b1;
@@ -282,6 +279,153 @@ module tank #(
 
     assign tank_bullet = show_bullet && ((vpos_i - tank_bullet_y) < BULLET_BOUND)  && ((hpos_i - tank_bullet_x) < BULLET_BOUND);
     assign bullet_enable_o = tank_bullet;
+
+    //////////////////////////////////////////////
+    //          AUTO CONTROL BOTS               //
+    //////////////////////////////////////////////
+
+    logic [1:0] bot_stage, dir_stage;
+    logic [3:0] premove_tank;
+    logic [4:0] count;
+    logic [7:0] count2;
+
+    localparam IDLE = 2'b00;
+    localparam MOVE = 2'b01;
+    localparam CHECK = 2'b10;
+    localparam WAIT = 2'b11;
+
+    localparam LEFT = 2'b00;
+    localparam RIGHT = 2'b01;
+    localparam UP = 2'b10;
+    localparam DOWN = 2'b11;
+    localparam PLAYER_BOUND_2_FAR = 14;
+    localparam PLAYER_BOUND_FAR = 18;
+
+    logic tank_top_far, tank_bottom_far, tank_left_far, tank_right_far;
+    logic [3:0] previous_dir;
+
+    assign tank_top_far     = ((tank_y - vpos_i) < 17)      && ((hpos_i - tank_x) < PLAYER_BOUND_FAR-1)  && ((hpos_i - tank_x) > PLAYER_BOUND_2_FAR);
+    assign tank_bottom_far  = ((vpos_i - tank_y) < 49)      && ((hpos_i - tank_x) < PLAYER_BOUND_FAR-1)  && ((hpos_i - tank_x) > PLAYER_BOUND_2_FAR);
+    assign tank_left_far    = ((tank_x - hpos_i) < 17)      && ((vpos_i - tank_y) < PLAYER_BOUND_FAR-1)  && ((vpos_i - tank_y) > PLAYER_BOUND_2_FAR);
+    assign tank_right_far   = ((hpos_i - tank_x) < 49)      && ((vpos_i - tank_y) < PLAYER_BOUND_FAR-1)  && ((vpos_i - tank_y) > PLAYER_BOUND_2_FAR);
+
+
+always_ff @(posedge player_clk_i or posedge reset_tank) begin
+        if(reset_tank) begin
+            bot_stage <= IDLE;
+            dir_stage <= DOWN;
+        end else begin
+            case (bot_stage)
+                IDLE: begin
+                    // dir_stage <= lfsr[1:0];
+                    bot_stage <= CHECK;
+                end
+                CHECK: begin
+                    case (dir_stage)
+                        LEFT: begin
+                            if (tank_collide_with_wall_left) begin
+                                if (tank_collide_with_wall_right) begin
+                                    dir_stage <= UP;
+                                end else begin
+                                    premove_tank <= 4'b0100;
+                                    bot_stage <= MOVE;
+                                    dir_stage <= RIGHT;
+                                end
+                            end else begin
+                                premove_tank <= 4'b1000;
+                                bot_stage <= MOVE;
+                                dir_stage <= LEFT;
+                            end
+                            if (!tank_collide_with_wall_bottom) begin
+                                premove_tank <= 4'b0001;
+                                bot_stage <= MOVE;
+                                dir_stage <= DOWN;
+                            end 
+                        end
+                        RIGHT: begin
+                            if (tank_collide_with_wall_right) begin
+                                if (tank_collide_with_wall_left) begin
+                                    dir_stage <= UP;
+                                end else begin
+                                    premove_tank <= 4'b1000;
+                                    bot_stage <= MOVE;
+                                    dir_stage <= LEFT;
+                                end
+                            end else begin
+                                premove_tank <= 4'b0100;
+                                bot_stage <= MOVE;
+                                dir_stage <= RIGHT;
+                            end
+                            if (!tank_collide_with_wall_bottom) begin
+                                premove_tank <= 4'b0001;
+                                bot_stage <= MOVE;
+                                dir_stage <= DOWN;
+                            end 
+                        end
+                        UP: begin
+                            if (tank_collide_with_wall_top) begin
+                                if (tank_collide_with_wall_bottom) begin
+                                    if(tank_x < 256) begin
+                                        dir_stage <= RIGHT;
+                                    end else begin
+                                        dir_stage <= LEFT;
+                                    end
+                                end else begin
+                                    premove_tank <= 4'b0001;
+                                    bot_stage <= MOVE;
+                                    dir_stage <= DOWN;
+                                end
+                            end else begin
+                                premove_tank <= 4'b0010;
+                                bot_stage <= MOVE;
+                                dir_stage <= UP;
+                            end
+                        end
+                        DOWN: begin
+                            if (tank_collide_with_wall_bottom) begin
+                                if(tank_x < 256) begin
+                                    dir_stage <= RIGHT;
+                                end else begin
+                                    dir_stage <= LEFT;
+                                end
+                            end else begin
+                                premove_tank <= 4'b0001;
+                                bot_stage <= MOVE;
+                                dir_stage <= DOWN;
+                            end
+                        end
+                        default: ;
+                    endcase
+                    count <= 0;
+                end
+                MOVE: begin
+                    auto_tank_move <= premove_tank;
+                    count <= count + 1;
+                    if (count == 3) begin
+                        bot_stage <= WAIT;
+                    end
+                    count2 <= 0;
+                end
+                WAIT: begin
+                    if (((tank_x % 16) <=1) && ((tank_y % 16) <=1)) begin
+                        auto_tank_move <= 4'b0000;
+                        bot_stage <= IDLE;
+                    end else begin
+                        count2 <= count2 + 1;
+                        if (count2 == 200) bot_stage <= IDLE;
+                    end
+                end
+                default: ;
+            endcase
+        end
+    end
+
+    pulse_gen pulse_gen (
+        .clk(player_clk_i),
+        .reset(reset_tank),
+        .enable(bullet_stage == NOT_SHOOT),
+        .random_pulse(auto_tank_shoot)
+    );
 
 endmodule
 /* verilator lint_off UNUSED */

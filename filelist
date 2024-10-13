@@ -13,8 +13,10 @@ src/mem_player_2.sv
 src/mem_tile.sv
 src/menu.sv
 src/number.sv
+src/tank_bot.sv
 src/tank.sv
 src/pos_edge_detect.sv
+src/pulse_gen.sv
 src/rgb_render.sv
 src/score.sv
 src/speed_control.sv

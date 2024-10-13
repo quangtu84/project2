@@ -1,11 +1,14 @@
 module speed_control (
     input logic clk_i,
+    input logic hsync_i,
     output logic player_update_o,
     output logic bullet_update_o,
-	 output logic VGA_clk_o
+    output logic one_sec_clock_o,
+	  output logic VGA_clk_o
 );
-  logic [24:0] count;
-  logic [24:0] count2;
+  logic [23:0] count;
+  logic [23:0] count2;
+  logic [5:0] count3;
   logic a;
 
   always @(posedge clk_i) begin
@@ -28,4 +31,12 @@ module speed_control (
 		  a <= ~a;
 		  VGA_clk_o <= a;
 	 end
+
+  always @(posedge clk_i) begin
+    count3 <= count3 + 1;
+    if (count3 == 60) begin
+      one_sec_clock_o <= ~one_sec_clock_o;
+      count3  <= 0;
+    end
+  end
 endmodule

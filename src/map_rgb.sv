@@ -2,6 +2,7 @@ module map_rgb #(
     parameter COLOR_BITS = 24
 ) (
     input logic [1:0] map_type_i,
+    input logic bullet_collide_eagle_i,
     input logic bullet_collide_i,
     input logic display_enable_i,
     input logic [9:0] hpos_i,
@@ -10,6 +11,7 @@ module map_rgb #(
     output logic cannot_walk_through_o,
     output logic destroyable_block_o,
     output logic all_hard_block_o,
+    output logic eagle_block_o,
     output logic [(COLOR_BITS/3)-1 :0] map_blue_o,
     output logic [(COLOR_BITS/3)-1 :0] map_green_o,
     output logic [(COLOR_BITS/3)-1 :0] map_red_o,
@@ -43,7 +45,10 @@ module map_rgb #(
                             || ((block_type == BRICK) && UL) || ((block_type == BRICK) && UR)
                             || ((block_type == BRICK) && LR) || ((block_type == BRICK) && LL)
                             || ((block_type == WALL) && UL) || ((block_type == WALL) && UR)
-                            || ((block_type == WALL) && LR) || ((block_type == WALL) && LL);
+                            || ((block_type == WALL) && LR) || ((block_type == WALL) && LL)
+                            || (block_type == EAGLE);
+
+    assign eagle_block_o = block_type == EAGLE;
 
     localparam BRICK    = 3'b000;
     localparam WALL     = 3'b001;
@@ -90,7 +95,7 @@ module map_rgb #(
         if(reset_i) begin
             case (map_type_i)
                 0: begin //map 1
-                    map_tiles[0][0] <= {EAGLE,4'b1111};
+                    map_tiles[0][0] <= {AIR,4'b1111};
                     map_tiles[0][1] <= {AIR,4'b1111};
                     map_tiles[0][2] <= {AIR,4'b1111};
                     map_tiles[0][3] <= {AIR,4'b1111};
@@ -252,7 +257,7 @@ module map_rgb #(
                     map_tiles[12][3] <= {AIR,4'b1111};
                     map_tiles[12][4] <= {AIR,4'b1111};
                     map_tiles[12][5] <= {AIR,4'b1111};
-                    map_tiles[12][6] <= {AIR,4'b1111};
+                    map_tiles[12][6] <= {EAGLE,4'b1111};
                     map_tiles[12][7] <= {AIR,4'b1111};
                     map_tiles[12][8] <= {AIR,4'b1111};
                     map_tiles[12][9] <= {AIR,4'b1111};
@@ -783,7 +788,9 @@ module map_rgb #(
                 if(LR) map_tiles[map_y][map_x][2] <= 0;
                 if(LL) map_tiles[map_y][map_x][3] <= 0;
             end
-            //if(block_state == 4'b0000) map_tiles [map_y][map_x][6:4] <= AIR;
+            if (bullet_collide_eagle_i) begin
+                map_tiles[map_y][map_x] <= 0;
+            end
         end
     end
 endmodule
