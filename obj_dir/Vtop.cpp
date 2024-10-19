@@ -86,44 +86,44 @@ void Vtop::_initial__TOP__1(Vtop__Syms* __restrict vlSymsp) {
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_initial__TOP__1\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Variables
-    WData/*255:0*/ __Vtemp1[8];
-    WData/*255:0*/ __Vtemp2[8];
-    WData/*191:0*/ __Vtemp3[6];
+    WData/*191:0*/ __Vtemp1[6];
+    WData/*191:0*/ __Vtemp2[6];
+    WData/*255:0*/ __Vtemp3[8];
     WData/*255:0*/ __Vtemp4[8];
     WData/*255:0*/ __Vtemp5[8];
     WData/*255:0*/ __Vtemp6[8];
     WData/*223:0*/ __Vtemp7[7];
+    WData/*255:0*/ __Vtemp8[8];
+    WData/*255:0*/ __Vtemp9[8];
     // Body
-    __Vtemp1[0U] = 0x2e747874U;
-    __Vtemp1[1U] = 0x65725f31U;
-    __Vtemp1[2U] = 0x706c6179U;
-    __Vtemp1[3U] = 0x7267625fU;
-    __Vtemp1[4U] = 0x6269745fU;
-    __Vtemp1[5U] = 0x622f3234U;
-    __Vtemp1[6U] = 0x745f7267U;
-    __Vtemp1[7U] = 0x32346269U;
-    VL_READMEM_N(true, 24, 1024, 0, VL_CVT_PACK_STR_NW(8, __Vtemp1)
-                 , vlTOPp->top__DOT__top__DOT__score__DOT__tank_player_1__DOT__mem
-                 , 0, ~VL_ULL(0));
-    __Vtemp2[0U] = 0x2e747874U;
-    __Vtemp2[1U] = 0x65725f32U;
-    __Vtemp2[2U] = 0x706c6179U;
-    __Vtemp2[3U] = 0x7267625fU;
-    __Vtemp2[4U] = 0x6269745fU;
-    __Vtemp2[5U] = 0x622f3234U;
-    __Vtemp2[6U] = 0x745f7267U;
-    __Vtemp2[7U] = 0x32346269U;
-    VL_READMEM_N(true, 24, 1024, 0, VL_CVT_PACK_STR_NW(8, __Vtemp2)
-                 , vlTOPp->top__DOT__top__DOT__score__DOT__tank_player_2__DOT__mem
-                 , 0, ~VL_ULL(0));
-    __Vtemp3[0U] = 0x2e62696eU;
-    __Vtemp3[1U] = 0x5f6d6f64U;
-    __Vtemp3[2U] = 0x74657874U;
-    __Vtemp3[3U] = 0x6369695fU;
-    __Vtemp3[4U] = 0x6c2f6173U;
-    __Vtemp3[5U] = 0x70697865U;
-    VL_READMEM_N(false, 8, 1024, 0, VL_CVT_PACK_STR_NW(6, __Vtemp3)
+    __Vtemp1[0U] = 0x2e62696eU;
+    __Vtemp1[1U] = 0x5f6d6f64U;
+    __Vtemp1[2U] = 0x74657874U;
+    __Vtemp1[3U] = 0x6369695fU;
+    __Vtemp1[4U] = 0x6c2f6173U;
+    __Vtemp1[5U] = 0x70697865U;
+    VL_READMEM_N(false, 8, 1024, 0, VL_CVT_PACK_STR_NW(6, __Vtemp1)
                  , vlTOPp->top__DOT__top__DOT__menu__DOT__ascii_rom__DOT__mem
+                 , 0, ~VL_ULL(0));
+    __Vtemp2[0U] = 0x2e62696eU;
+    __Vtemp2[1U] = 0x5f6d6f64U;
+    __Vtemp2[2U] = 0x74657874U;
+    __Vtemp2[3U] = 0x6369695fU;
+    __Vtemp2[4U] = 0x6c2f6173U;
+    __Vtemp2[5U] = 0x70697865U;
+    VL_READMEM_N(false, 8, 1024, 0, VL_CVT_PACK_STR_NW(6, __Vtemp2)
+                 , vlTOPp->top__DOT__top__DOT__score_board__DOT__ascii_rom__DOT__mem
+                 , 0, ~VL_ULL(0));
+    __Vtemp3[0U] = 0x2e747874U;
+    __Vtemp3[1U] = 0x655f3136U;
+    __Vtemp3[2U] = 0x5f6c6976U;
+    __Vtemp3[3U] = 0x5f726762U;
+    __Vtemp3[4U] = 0x34626974U;
+    __Vtemp3[5U] = 0x67622f32U;
+    __Vtemp3[6U] = 0x69745f72U;
+    __Vtemp3[7U] = 0x323462U;
+    VL_READMEM_N(true, 24, 256, 0, VL_CVT_PACK_STR_NW(8, __Vtemp3)
+                 , vlTOPp->top__DOT__top__DOT__score_board__DOT__mem_lives__DOT__mem
                  , 0, ~VL_ULL(0));
     __Vtemp4[0U] = 0x2e747874U;
     __Vtemp4[1U] = 0x65725f31U;
@@ -158,16 +158,6 @@ void Vtop::_initial__TOP__1(Vtop__Syms* __restrict vlSymsp) {
     VL_READMEM_N(true, 24, 1024, 0, VL_CVT_PACK_STR_NW(8, __Vtemp6)
                  , vlTOPp->top__DOT__top__DOT__mem_enemy_1__DOT__mem
                  , 0, ~VL_ULL(0));
-    vlTOPp->top__DOT__top__DOT__menu__DOT____Vxrand5 
-        = VL_RAND_RESET_I(6);
-    vlTOPp->top__DOT__top__DOT__menu__DOT____Vxrand4 
-        = VL_RAND_RESET_I(6);
-    vlTOPp->top__DOT__top__DOT__menu__DOT____Vxrand3 
-        = VL_RAND_RESET_I(6);
-    vlTOPp->top__DOT__top__DOT__menu__DOT____Vxrand2 
-        = VL_RAND_RESET_I(6);
-    vlTOPp->top__DOT__top__DOT__menu__DOT____Vxrand1 
-        = VL_RAND_RESET_I(6);
     __Vtemp7[0U] = 0x2e747874U;
     __Vtemp7[1U] = 0x5f6d6170U;
     __Vtemp7[2U] = 0x5f726762U;
@@ -178,11 +168,36 @@ void Vtop::_initial__TOP__1(Vtop__Syms* __restrict vlSymsp) {
     VL_READMEM_N(true, 24, 8192, 0, VL_CVT_PACK_STR_NW(7, __Vtemp7)
                  , vlTOPp->top__DOT__top__DOT__map_rgb__DOT__tile__DOT__mem
                  , 0, ~VL_ULL(0));
+    __Vtemp8[0U] = 0x2e747874U;
+    __Vtemp8[1U] = 0x65725f31U;
+    __Vtemp8[2U] = 0x706c6179U;
+    __Vtemp8[3U] = 0x7267625fU;
+    __Vtemp8[4U] = 0x6269745fU;
+    __Vtemp8[5U] = 0x622f3234U;
+    __Vtemp8[6U] = 0x745f7267U;
+    __Vtemp8[7U] = 0x32346269U;
+    VL_READMEM_N(true, 24, 1024, 0, VL_CVT_PACK_STR_NW(8, __Vtemp8)
+                 , vlTOPp->top__DOT__top__DOT__score_board__DOT__mem_player_1__DOT__mem
+                 , 0, ~VL_ULL(0));
+    __Vtemp9[0U] = 0x2e747874U;
+    __Vtemp9[1U] = 0x65725f32U;
+    __Vtemp9[2U] = 0x706c6179U;
+    __Vtemp9[3U] = 0x7267625fU;
+    __Vtemp9[4U] = 0x6269745fU;
+    __Vtemp9[5U] = 0x622f3234U;
+    __Vtemp9[6U] = 0x745f7267U;
+    __Vtemp9[7U] = 0x32346269U;
+    VL_READMEM_N(true, 24, 1024, 0, VL_CVT_PACK_STR_NW(8, __Vtemp9)
+                 , vlTOPp->top__DOT__top__DOT__score_board__DOT__mem_player_2__DOT__mem
+                 , 0, ~VL_ULL(0));
+    vlTOPp->top__DOT__top__DOT__score_board__DOT____Vxrand1 
+        = VL_RAND_RESET_I(6);
+    vlTOPp->top__DOT__top__DOT__menu__DOT____Vxrand2 
+        = VL_RAND_RESET_I(6);
+    vlTOPp->top__DOT__top__DOT__menu__DOT____Vxrand1 
+        = VL_RAND_RESET_I(6);
     vlTOPp->top__DOT__top__DOT__map_rgb__DOT____Vxrand1 
         = VL_RAND_RESET_I(7);
-    vlTOPp->top__DOT__top__DOT__map_rgb__DOT____Vxrand2 
-        = VL_RAND_RESET_I(7);
-    vlTOPp->top__DOT__top__DOT__enemy_1__DOT__pulse_gen__DOT__counter = 0U;
     vlTOPp->top__DOT__top__DOT__menu__DOT__title_buffer[0U] = 0xcU;
     vlTOPp->top__DOT__top__DOT__menu__DOT__title_buffer[1U] = 0xbU;
     vlTOPp->top__DOT__top__DOT__menu__DOT__title_buffer[2U] = 0x1eU;
@@ -194,81 +209,38 @@ void Vtop::_initial__TOP__1(Vtop__Syms* __restrict vlSymsp) {
     vlTOPp->top__DOT__top__DOT__menu__DOT__title_buffer[8U] = 0x13U;
     vlTOPp->top__DOT__top__DOT__menu__DOT__title_buffer[9U] = 0x1eU;
     vlTOPp->top__DOT__top__DOT__menu__DOT__title_buffer[0xaU] = 0x23U;
-    vlTOPp->top__DOT__top__DOT__menu__DOT__map1_buffer[0U] = 0x17U;
-    vlTOPp->top__DOT__top__DOT__menu__DOT__map1_buffer[1U] = 0xbU;
-    vlTOPp->top__DOT__top__DOT__menu__DOT__map1_buffer[2U] = 0x1aU;
-    vlTOPp->top__DOT__top__DOT__menu__DOT__map1_buffer[3U] = 0x25U;
-    vlTOPp->top__DOT__top__DOT__menu__DOT__map1_buffer[4U] = 2U;
-    vlTOPp->top__DOT__top__DOT__menu__DOT__map2_buffer[0U] = 0x17U;
-    vlTOPp->top__DOT__top__DOT__menu__DOT__map2_buffer[1U] = 0xbU;
-    vlTOPp->top__DOT__top__DOT__menu__DOT__map2_buffer[2U] = 0x1aU;
-    vlTOPp->top__DOT__top__DOT__menu__DOT__map2_buffer[3U] = 0x25U;
-    vlTOPp->top__DOT__top__DOT__menu__DOT__map2_buffer[4U] = 3U;
-    vlTOPp->top__DOT__top__DOT__menu__DOT__map3_buffer[0U] = 0x17U;
-    vlTOPp->top__DOT__top__DOT__menu__DOT__map3_buffer[1U] = 0xbU;
-    vlTOPp->top__DOT__top__DOT__menu__DOT__map3_buffer[2U] = 0x1aU;
-    vlTOPp->top__DOT__top__DOT__menu__DOT__map3_buffer[3U] = 0x25U;
-    vlTOPp->top__DOT__top__DOT__menu__DOT__map3_buffer[4U] = 4U;
-    vlTOPp->top__DOT__top__DOT__menu__DOT__map4_buffer[0U] = 0x17U;
-    vlTOPp->top__DOT__top__DOT__menu__DOT__map4_buffer[1U] = 0xbU;
-    vlTOPp->top__DOT__top__DOT__menu__DOT__map4_buffer[2U] = 0x1aU;
-    vlTOPp->top__DOT__top__DOT__menu__DOT__map4_buffer[3U] = 0x25U;
-    vlTOPp->top__DOT__top__DOT__menu__DOT__map4_buffer[4U] = 5U;
-    vlTOPp->top__DOT__top__DOT__menu__DOT__arrow = 0U;
-    vlTOPp->top__DOT__top__DOT__menu__DOT__arrow_pos = 9U;
+    vlTOPp->top__DOT__top__DOT__menu__DOT__game_start[0U] = 0x1dU;
+    vlTOPp->top__DOT__top__DOT__menu__DOT__game_start[1U] = 0x1aU;
+    vlTOPp->top__DOT__top__DOT__menu__DOT__game_start[2U] = 0xbU;
+    vlTOPp->top__DOT__top__DOT__menu__DOT__game_start[3U] = 0xdU;
+    vlTOPp->top__DOT__top__DOT__menu__DOT__game_start[4U] = 0xfU;
+    vlTOPp->top__DOT__top__DOT__menu__DOT__game_start[5U] = 0x25U;
+    vlTOPp->top__DOT__top__DOT__menu__DOT__game_start[6U] = 0x1eU;
+    vlTOPp->top__DOT__top__DOT__menu__DOT__game_start[7U] = 0x19U;
+    vlTOPp->top__DOT__top__DOT__menu__DOT__game_start[8U] = 0x25U;
+    vlTOPp->top__DOT__top__DOT__menu__DOT__game_start[9U] = 0x1dU;
+    vlTOPp->top__DOT__top__DOT__menu__DOT__game_start[0xaU] = 0x1eU;
+    vlTOPp->top__DOT__top__DOT__menu__DOT__game_start[0xbU] = 0xbU;
+    vlTOPp->top__DOT__top__DOT__menu__DOT__game_start[0xcU] = 0x1cU;
+    vlTOPp->top__DOT__top__DOT__menu__DOT__game_start[0xdU] = 0x1eU;
+    vlTOPp->top__DOT__top__DOT__map_rgb__DOT____Vxrand2 
+        = VL_RAND_RESET_I(7);
+    vlTOPp->top__DOT__top__DOT__enemy_1__DOT__pulse_gen__DOT__counter = 0U;
 }
 
-VL_INLINE_OPT void Vtop::_sequent__TOP__2(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__2\n"); );
-    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
-    // Variables
-    CData/*0:0*/ __Vdly__top__DOT__top__DOT__speed_control__DOT__a;
-    IData/*23:0*/ __Vdly__top__DOT__top__DOT__speed_control__DOT__count;
-    IData/*23:0*/ __Vdly__top__DOT__top__DOT__speed_control__DOT__count2;
-    // Body
-    __Vdly__top__DOT__top__DOT__speed_control__DOT__count 
-        = vlTOPp->top__DOT__top__DOT__speed_control__DOT__count;
-    __Vdly__top__DOT__top__DOT__speed_control__DOT__a 
-        = vlTOPp->top__DOT__top__DOT__speed_control__DOT__a;
-    __Vdly__top__DOT__top__DOT__speed_control__DOT__count2 
-        = vlTOPp->top__DOT__top__DOT__speed_control__DOT__count2;
-    __Vdly__top__DOT__top__DOT__speed_control__DOT__count 
-        = (0xffffffU & ((IData)(1U) + vlTOPp->top__DOT__top__DOT__speed_control__DOT__count));
-    if ((0x30d40U == vlTOPp->top__DOT__top__DOT__speed_control__DOT__count)) {
-        vlTOPp->top__DOT__top__DOT__clk_player = (1U 
-                                                  & (~ (IData)(vlTOPp->top__DOT__top__DOT__clk_player)));
-        __Vdly__top__DOT__top__DOT__speed_control__DOT__count = 0U;
-    }
-    __Vdly__top__DOT__top__DOT__speed_control__DOT__count2 
-        = (0xffffffU & ((IData)(1U) + vlTOPp->top__DOT__top__DOT__speed_control__DOT__count2));
-    if ((0x124f8U == vlTOPp->top__DOT__top__DOT__speed_control__DOT__count2)) {
-        vlTOPp->top__DOT__top__DOT__clk_bullet = (1U 
-                                                  & (~ (IData)(vlTOPp->top__DOT__top__DOT__clk_bullet)));
-        __Vdly__top__DOT__top__DOT__speed_control__DOT__count2 = 0U;
-    }
-    __Vdly__top__DOT__top__DOT__speed_control__DOT__a 
-        = (1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__speed_control__DOT__a)));
-    vlTOPp->top__DOT__top__DOT__VGA_clk = vlTOPp->top__DOT__top__DOT__speed_control__DOT__a;
-    vlTOPp->top__DOT__top__DOT__speed_control__DOT__count 
-        = __Vdly__top__DOT__top__DOT__speed_control__DOT__count;
-    vlTOPp->top__DOT__top__DOT__speed_control__DOT__count2 
-        = __Vdly__top__DOT__top__DOT__speed_control__DOT__count2;
-    vlTOPp->top__DOT__top__DOT__speed_control__DOT__a 
-        = __Vdly__top__DOT__top__DOT__speed_control__DOT__a;
-}
-
-void Vtop::_settle__TOP__3(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_settle__TOP__3\n"); );
+void Vtop::_settle__TOP__2(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_settle__TOP__2\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
+    vlTOPp->top__DOT__top__DOT__score_board__DOT__game_start[0U] = 0x16U;
+    vlTOPp->top__DOT__top__DOT__score_board__DOT__game_start[1U] = 0xfU;
+    vlTOPp->top__DOT__top__DOT__score_board__DOT__game_start[2U] = 0x20U;
+    vlTOPp->top__DOT__top__DOT__score_board__DOT__game_start[3U] = 0xfU;
+    vlTOPp->top__DOT__top__DOT__score_board__DOT__game_start[4U] = 0x16U;
+    vlTOPp->top__DOT__top__DOT__score_board__DOT__game_start[5U] = 0x25U;
+    vlTOPp->top__DOT__top__DOT__score_board__DOT__game_start[6U] = 6U;
     vlTOPp->VGA_clk_o = vlTOPp->top__DOT__top__DOT__VGA_clk;
     vlTOPp->vsync_no = (1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__hvsync_gen__DOT__vsync)));
-    vlTOPp->top__DOT__top__DOT__menu__DOT__sellect_up 
-        = (1U & (((IData)(vlTOPp->player_1_move_i) 
-                  >> 1U) & (~ (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__sellect_up_edge_dect__DOT__sig_dly))));
-    vlTOPp->top__DOT__top__DOT__menu__DOT__sellect_down 
-        = (1U & ((IData)(vlTOPp->player_1_move_i) & 
-                 (~ (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__sellect_down_edge_dect__DOT__sig_dly))));
     vlTOPp->hsync_no = (1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__hvsync_gen__DOT__hsync)));
     vlTOPp->top__DOT__top__DOT__player_1__DOT__reset_tank 
         = ((IData)(vlTOPp->top__DOT__top__DOT__reset) 
@@ -297,19 +269,22 @@ void Vtop::_settle__TOP__3(Vtop__Syms* __restrict vlSymsp) {
                  ((IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__pulse_gen__DOT__lfsr) 
                   >> 3U)));
     vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_bullet 
-        = (((IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__show_bullet) 
+        = ((((~ (IData)(vlTOPp->top__DOT__top__DOT__enemy_1_die)) 
+             & (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__show_bullet)) 
             & (5U > ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
                      - (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_bullet_y)))) 
            & (5U > ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
                     - (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_bullet_x))));
     vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet 
-        = (((IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__show_bullet) 
+        = ((((~ (IData)(vlTOPp->top__DOT__top__DOT__player_1_die)) 
+             & (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__show_bullet)) 
             & (5U > ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
                      - (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet_y)))) 
            & (5U > ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
                     - (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet_x))));
     vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet 
-        = (((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__show_bullet) 
+        = ((((~ (IData)(vlTOPp->top__DOT__top__DOT__player_2_die)) 
+             & (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__show_bullet)) 
             & (5U > ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
                      - (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet_y)))) 
            & (5U > ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
@@ -341,6 +316,70 @@ void Vtop::_settle__TOP__3(Vtop__Syms* __restrict vlSymsp) {
                         - (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_x)))) 
            & (0U < ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
                     - (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_x))));
+    if (((0x160U < (IData)(vlTOPp->top__DOT__top__DOT__vpos)) 
+         & (0x180U > (IData)(vlTOPp->top__DOT__top__DOT__vpos)))) {
+        vlTOPp->top__DOT__top__DOT__score_board__DOT__player_1_tank_enable = 0U;
+        if (((0x1e0U < (IData)(vlTOPp->top__DOT__top__DOT__hpos)) 
+             & (0x200U > (IData)(vlTOPp->top__DOT__top__DOT__hpos)))) {
+            vlTOPp->top__DOT__top__DOT__score_board__DOT__player_1_tank_enable = 1U;
+        }
+    } else {
+        vlTOPp->top__DOT__top__DOT__score_board__DOT__player_1_tank_enable = 0U;
+    }
+    if (((0x160U < (IData)(vlTOPp->top__DOT__top__DOT__vpos)) 
+         & (0x180U > (IData)(vlTOPp->top__DOT__top__DOT__vpos)))) {
+        vlTOPp->top__DOT__top__DOT__score_board__DOT__player_2_tank_enable = 0U;
+        if (((0x240U < (IData)(vlTOPp->top__DOT__top__DOT__hpos)) 
+             & (0x260U > (IData)(vlTOPp->top__DOT__top__DOT__hpos)))) {
+            vlTOPp->top__DOT__top__DOT__score_board__DOT__player_2_tank_enable = 1U;
+        }
+    } else {
+        vlTOPp->top__DOT__top__DOT__score_board__DOT__player_2_tank_enable = 0U;
+    }
+    if (((0x1e0U < (IData)(vlTOPp->top__DOT__top__DOT__hpos)) 
+         & (0x1f0U > (IData)(vlTOPp->top__DOT__top__DOT__hpos)))) {
+        vlTOPp->top__DOT__top__DOT__score_board__DOT__tank_left_enable_16 = 0U;
+        if (((0x20U < (IData)(vlTOPp->top__DOT__top__DOT__vpos)) 
+             & (0x120U > (IData)(vlTOPp->top__DOT__top__DOT__vpos)))) {
+            vlTOPp->top__DOT__top__DOT__score_board__DOT__tank_left_enable_16 = 1U;
+        }
+    } else {
+        vlTOPp->top__DOT__top__DOT__score_board__DOT__tank_left_enable_16 = 0U;
+    }
+    if (((0x1f0U < (IData)(vlTOPp->top__DOT__top__DOT__hpos)) 
+         & (0x200U > (IData)(vlTOPp->top__DOT__top__DOT__hpos)))) {
+        vlTOPp->top__DOT__top__DOT__score_board__DOT__tank_left_enable_32 = 0U;
+        if (((0x20U < (IData)(vlTOPp->top__DOT__top__DOT__vpos)) 
+             & (0x120U > (IData)(vlTOPp->top__DOT__top__DOT__vpos)))) {
+            vlTOPp->top__DOT__top__DOT__score_board__DOT__tank_left_enable_32 = 1U;
+        }
+    } else {
+        vlTOPp->top__DOT__top__DOT__score_board__DOT__tank_left_enable_32 = 0U;
+    }
+    if (((0x180U < (IData)(vlTOPp->top__DOT__top__DOT__vpos)) 
+         & (0x190U > (IData)(vlTOPp->top__DOT__top__DOT__vpos)))) {
+        vlTOPp->top__DOT__top__DOT__score_board__DOT__player_1_enable = 0U;
+        if (((0x1d0U < (IData)(vlTOPp->top__DOT__top__DOT__hpos)) 
+             & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                < (0x3ffU & ((IData)(0x1d0U) + ((IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_left) 
+                                                << 4U)))))) {
+            vlTOPp->top__DOT__top__DOT__score_board__DOT__player_1_enable = 1U;
+        }
+    } else {
+        vlTOPp->top__DOT__top__DOT__score_board__DOT__player_1_enable = 0U;
+    }
+    if (((0x180U < (IData)(vlTOPp->top__DOT__top__DOT__vpos)) 
+         & (0x190U > (IData)(vlTOPp->top__DOT__top__DOT__vpos)))) {
+        vlTOPp->top__DOT__top__DOT__score_board__DOT__player_2_enable = 0U;
+        if (((0x240U < (IData)(vlTOPp->top__DOT__top__DOT__hpos)) 
+             & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                < (0x3ffU & ((IData)(0x240U) + ((IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_left) 
+                                                << 4U)))))) {
+            vlTOPp->top__DOT__top__DOT__score_board__DOT__player_2_enable = 1U;
+        }
+    } else {
+        vlTOPp->top__DOT__top__DOT__score_board__DOT__player_2_enable = 0U;
+    }
     vlTOPp->top__DOT__top__DOT__menu__DOT__title_enable 
         = (((1U == (7U & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
                           >> 7U))) & (4U < (0x1fU & 
@@ -348,100 +387,43 @@ void Vtop::_settle__TOP__3(Vtop__Syms* __restrict vlSymsp) {
                                              >> 5U)))) 
            & (0x10U > (0x1fU & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
                                 >> 5U))));
-    vlTOPp->top__DOT__top__DOT__menu__DOT__map1 = (
-                                                   ((9U 
-                                                     == 
-                                                     (0x1fU 
-                                                      & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                                                         >> 5U))) 
-                                                    & (0x10U 
-                                                       < 
-                                                       (0x3fU 
-                                                        & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                                                           >> 4U)))) 
-                                                   & (0x16U 
-                                                      > 
-                                                      (0x3fU 
-                                                       & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                                                          >> 4U))));
-    vlTOPp->top__DOT__top__DOT__menu__DOT__map2 = (
-                                                   ((0xaU 
-                                                     == 
-                                                     (0x1fU 
-                                                      & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                                                         >> 5U))) 
-                                                    & (0x10U 
-                                                       < 
-                                                       (0x3fU 
-                                                        & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                                                           >> 4U)))) 
-                                                   & (0x16U 
-                                                      > 
-                                                      (0x3fU 
-                                                       & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                                                          >> 4U))));
-    vlTOPp->top__DOT__top__DOT__menu__DOT__map3 = (
-                                                   ((0xbU 
-                                                     == 
-                                                     (0x1fU 
-                                                      & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                                                         >> 5U))) 
-                                                    & (0x10U 
-                                                       < 
-                                                       (0x3fU 
-                                                        & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                                                           >> 4U)))) 
-                                                   & (0x16U 
-                                                      > 
-                                                      (0x3fU 
-                                                       & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                                                          >> 4U))));
-    vlTOPp->top__DOT__top__DOT__menu__DOT__map4 = (
-                                                   ((0xcU 
-                                                     == 
-                                                     (0x1fU 
-                                                      & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                                                         >> 5U))) 
-                                                    & (0x10U 
-                                                       < 
-                                                       (0x3fU 
-                                                        & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                                                           >> 4U)))) 
-                                                   & (0x16U 
-                                                      > 
-                                                      (0x3fU 
-                                                       & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                                                          >> 4U))));
+    vlTOPp->top__DOT__top__DOT__menu__DOT__game_start_enable 
+        = (((9U == (0x1fU & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+                             >> 5U))) & (0xdU < (0x3fU 
+                                                 & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                                                    >> 4U)))) 
+           & (0x1cU > (0x3fU & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                                >> 4U))));
+    vlTOPp->top__DOT__top__DOT__score_board__DOT__level_enable 
+        = (((0xaU == (0x1fU & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+                               >> 5U))) & (0x1cU < 
+                                           (0x3fU & 
+                                            ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                                             >> 4U)))) 
+           & (0x24U > (0x3fU & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                                >> 4U))));
     vlTOPp->top__DOT__top__DOT__display_enable = ((0x280U 
                                                    > (IData)(vlTOPp->top__DOT__top__DOT__hpos)) 
                                                   & (0x1e0U 
                                                      > (IData)(vlTOPp->top__DOT__top__DOT__vpos)));
+    vlTOPp->top__DOT__top__DOT__score_board__DOT__tank_left_dout 
+        = vlTOPp->top__DOT__top__DOT__score_board__DOT__mem_lives__DOT__mem
+        [((0xf0U & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+                    << 4U)) | (0xfU & (IData)(vlTOPp->top__DOT__top__DOT__hpos)))];
     vlTOPp->top__DOT__top__DOT__player_1_bits = vlTOPp->top__DOT__top__DOT__mem_player_1__DOT__mem
         [vlTOPp->top__DOT__top__DOT__player_1_addr];
     vlTOPp->top__DOT__top__DOT__player_2_bits = vlTOPp->top__DOT__top__DOT__mem_player_2__DOT__mem
         [vlTOPp->top__DOT__top__DOT__player_2_addr];
     vlTOPp->top__DOT__top__DOT__enemy_1_bits = vlTOPp->top__DOT__top__DOT__mem_enemy_1__DOT__mem
         [vlTOPp->top__DOT__top__DOT__enemy_1_addr];
-    vlTOPp->top__DOT__top__DOT__map_type = ((9U == (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__arrow_pos))
-                                             ? 0U : 
-                                            ((0xaU 
-                                              == (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__arrow_pos))
-                                              ? 1U : 
-                                             ((0xbU 
-                                               == (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__arrow_pos))
-                                               ? 2U
-                                               : ((0xcU 
-                                                   == (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__arrow_pos))
-                                                   ? 3U
-                                                   : 0U))));
-    vlTOPp->top__DOT__top__DOT__menu__DOT__arrow_en 
-        = ((((0x1fU & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                       >> 5U)) == (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__arrow_pos)) 
-            & (0xeU < (0x3fU & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                                >> 4U)))) & (0x10U 
-                                             > (0x3fU 
-                                                & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                                                   >> 4U))));
+    vlTOPp->top__DOT__top__DOT__score_board__DOT__player_1_bits 
+        = vlTOPp->top__DOT__top__DOT__score_board__DOT__mem_player_1__DOT__mem
+        [((0x3e0U & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                     << 5U)) | (0x1fU & (IData)(vlTOPp->top__DOT__top__DOT__vpos)))];
+    vlTOPp->top__DOT__top__DOT__score_board__DOT__player_2_bits 
+        = vlTOPp->top__DOT__top__DOT__score_board__DOT__mem_player_2__DOT__mem
+        [((0x3e0U & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                     << 5U)) | (0x1fU & (IData)(vlTOPp->top__DOT__top__DOT__vpos)))];
     vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__all_player_bullet 
         = ((IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet) 
            | (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet));
@@ -454,6 +436,63 @@ void Vtop::_settle__TOP__3(Vtop__Syms* __restrict vlSymsp) {
     vlTOPp->top__DOT__top__DOT__player_2_tank_enable 
         = ((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_box) 
            & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_2_die)));
+    vlTOPp->top__DOT__top__DOT__score_board__DOT__tank_left_enable 
+        = ((((IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__tank_left_enable_16) 
+             | (IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__tank_left_enable_32)) 
+            | (IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__player_1_enable)) 
+           | (IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__player_2_enable));
+    vlTOPp->top__DOT__top__DOT__menu__DOT__x_ofs = 0U;
+    if (vlTOPp->top__DOT__top__DOT__menu__DOT__title_enable) {
+        vlTOPp->top__DOT__top__DOT__menu__DOT__x_ofs 
+            = (7U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                        >> 2U)));
+    }
+    if (vlTOPp->top__DOT__top__DOT__menu__DOT__game_start_enable) {
+        vlTOPp->top__DOT__top__DOT__menu__DOT__x_ofs 
+            = (7U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                        >> 1U)));
+    }
+    vlTOPp->top__DOT__top__DOT__menu__DOT__rom_addr = 0U;
+    if (vlTOPp->top__DOT__top__DOT__menu__DOT__title_enable) {
+        vlTOPp->top__DOT__top__DOT__menu__DOT__rom_addr 
+            = ((((0xaU >= (0xfU & (((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                                    >> 5U) - (IData)(5U))))
+                  ? vlTOPp->top__DOT__top__DOT__menu__DOT__title_buffer
+                 [(0xfU & (((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                            >> 5U) - (IData)(5U)))]
+                  : (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT____Vxrand1)) 
+                << 4U) | (0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+                                  >> 3U)));
+    }
+    if (vlTOPp->top__DOT__top__DOT__menu__DOT__game_start_enable) {
+        vlTOPp->top__DOT__top__DOT__menu__DOT__rom_addr 
+            = ((((0xdU >= (0xfU & (((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                                    >> 4U) - (IData)(0xeU))))
+                  ? vlTOPp->top__DOT__top__DOT__menu__DOT__game_start
+                 [(0xfU & (((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                            >> 4U) - (IData)(0xeU)))]
+                  : (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT____Vxrand2)) 
+                << 4U) | (0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+                                  >> 1U)));
+    }
+    vlTOPp->top__DOT__top__DOT__score_board__DOT__x_ofs = 0U;
+    if (vlTOPp->top__DOT__top__DOT__score_board__DOT__level_enable) {
+        vlTOPp->top__DOT__top__DOT__score_board__DOT__x_ofs 
+            = (7U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                        >> 1U)));
+    }
+    vlTOPp->top__DOT__top__DOT__score_board__DOT__rom_addr = 0U;
+    if (vlTOPp->top__DOT__top__DOT__score_board__DOT__level_enable) {
+        vlTOPp->top__DOT__top__DOT__score_board__DOT__rom_addr 
+            = ((((6U >= (7U & ((0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                                        >> 4U)) - (IData)(5U))))
+                  ? vlTOPp->top__DOT__top__DOT__score_board__DOT__game_start
+                 [(7U & ((0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                                  >> 4U)) - (IData)(5U)))]
+                  : (IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT____Vxrand1)) 
+                << 4U) | (0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+                                  >> 1U)));
+    }
     vlTOPp->display_enable_o = vlTOPp->top__DOT__top__DOT__display_enable;
     vlTOPp->top__DOT__top__DOT__map_enable = (((((IData)(vlTOPp->top__DOT__top__DOT__display_enable) 
                                                  & (0x20U 
@@ -525,99 +564,43 @@ void Vtop::_settle__TOP__3(Vtop__Syms* __restrict vlSymsp) {
                                                   & (vlTOPp->top__DOT__top__DOT__enemy_1_bits 
                                                      >> 8U))
                                                   : 0U);
-    vlTOPp->top__DOT__top__DOT__menu__DOT__x_ofs = 0U;
-    if (vlTOPp->top__DOT__top__DOT__menu__DOT__title_enable) {
-        vlTOPp->top__DOT__top__DOT__menu__DOT__x_ofs 
-            = (7U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                        >> 2U)));
-    }
-    if (vlTOPp->top__DOT__top__DOT__menu__DOT__map1) {
-        vlTOPp->top__DOT__top__DOT__menu__DOT__x_ofs 
-            = (7U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                        >> 1U)));
-    }
-    if (vlTOPp->top__DOT__top__DOT__menu__DOT__map2) {
-        vlTOPp->top__DOT__top__DOT__menu__DOT__x_ofs 
-            = (7U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                        >> 1U)));
-    }
-    if (vlTOPp->top__DOT__top__DOT__menu__DOT__map3) {
-        vlTOPp->top__DOT__top__DOT__menu__DOT__x_ofs 
-            = (7U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                        >> 1U)));
-    }
-    if (vlTOPp->top__DOT__top__DOT__menu__DOT__map4) {
-        vlTOPp->top__DOT__top__DOT__menu__DOT__x_ofs 
-            = (7U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                        >> 1U)));
-    }
-    if (vlTOPp->top__DOT__top__DOT__menu__DOT__arrow_en) {
-        vlTOPp->top__DOT__top__DOT__menu__DOT__x_ofs 
-            = (7U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                        >> 1U)));
-    }
-    vlTOPp->top__DOT__top__DOT__menu__DOT__rom_addr = 0U;
-    if (vlTOPp->top__DOT__top__DOT__menu__DOT__title_enable) {
-        vlTOPp->top__DOT__top__DOT__menu__DOT__rom_addr 
-            = ((((0xaU >= (0xfU & (((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                                    >> 5U) - (IData)(5U))))
-                  ? vlTOPp->top__DOT__top__DOT__menu__DOT__title_buffer
-                 [(0xfU & (((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                            >> 5U) - (IData)(5U)))]
-                  : (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT____Vxrand1)) 
-                << 4U) | (0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                                  >> 3U)));
-    }
-    if (vlTOPp->top__DOT__top__DOT__menu__DOT__map1) {
-        vlTOPp->top__DOT__top__DOT__menu__DOT__rom_addr 
-            = ((((4U >= (7U & ((0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                                        >> 4U)) - (IData)(1U))))
-                  ? vlTOPp->top__DOT__top__DOT__menu__DOT__map1_buffer
-                 [(7U & ((0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                                  >> 4U)) - (IData)(1U)))]
-                  : (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT____Vxrand2)) 
-                << 4U) | (0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                                  >> 1U)));
-    }
-    if (vlTOPp->top__DOT__top__DOT__menu__DOT__map2) {
-        vlTOPp->top__DOT__top__DOT__menu__DOT__rom_addr 
-            = ((((4U >= (7U & ((0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                                        >> 4U)) - (IData)(1U))))
-                  ? vlTOPp->top__DOT__top__DOT__menu__DOT__map2_buffer
-                 [(7U & ((0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                                  >> 4U)) - (IData)(1U)))]
-                  : (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT____Vxrand3)) 
-                << 4U) | (0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                                  >> 1U)));
-    }
-    if (vlTOPp->top__DOT__top__DOT__menu__DOT__map3) {
-        vlTOPp->top__DOT__top__DOT__menu__DOT__rom_addr 
-            = ((((4U >= (7U & ((0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                                        >> 4U)) - (IData)(1U))))
-                  ? vlTOPp->top__DOT__top__DOT__menu__DOT__map3_buffer
-                 [(7U & ((0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                                  >> 4U)) - (IData)(1U)))]
-                  : (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT____Vxrand4)) 
-                << 4U) | (0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                                  >> 1U)));
-    }
-    if (vlTOPp->top__DOT__top__DOT__menu__DOT__map4) {
-        vlTOPp->top__DOT__top__DOT__menu__DOT__rom_addr 
-            = ((((4U >= (7U & ((0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                                        >> 4U)) - (IData)(1U))))
-                  ? vlTOPp->top__DOT__top__DOT__menu__DOT__map4_buffer
-                 [(7U & ((0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                                  >> 4U)) - (IData)(1U)))]
-                  : (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT____Vxrand5)) 
-                << 4U) | (0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                                  >> 1U)));
-    }
-    if (vlTOPp->top__DOT__top__DOT__menu__DOT__arrow_en) {
-        vlTOPp->top__DOT__top__DOT__menu__DOT__rom_addr 
-            = (((IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__arrow) 
-                << 4U) | (0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                                  >> 1U)));
-    }
+    vlTOPp->top__DOT__top__DOT__player_tank_blue = 
+        (0xffU & ((IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__player_1_tank_enable)
+                   ? (((0xffffffU == vlTOPp->top__DOT__top__DOT__score_board__DOT__player_1_bits)
+                        ? 0U : vlTOPp->top__DOT__top__DOT__score_board__DOT__player_1_bits) 
+                      >> 0x10U) : ((IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__player_2_tank_enable)
+                                    ? (((0xffffffU 
+                                         == vlTOPp->top__DOT__top__DOT__score_board__DOT__player_2_bits)
+                                         ? 0U : vlTOPp->top__DOT__top__DOT__score_board__DOT__player_2_bits) 
+                                       >> 0x10U) : 0U)));
+    vlTOPp->top__DOT__top__DOT__player_tank_red = (0xffU 
+                                                   & ((IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__player_1_tank_enable)
+                                                       ? 
+                                                      ((0xffffffU 
+                                                        == vlTOPp->top__DOT__top__DOT__score_board__DOT__player_1_bits)
+                                                        ? 0U
+                                                        : vlTOPp->top__DOT__top__DOT__score_board__DOT__player_1_bits)
+                                                       : 
+                                                      ((IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__player_2_tank_enable)
+                                                        ? 
+                                                       ((0xffffffU 
+                                                         == vlTOPp->top__DOT__top__DOT__score_board__DOT__player_2_bits)
+                                                         ? 0U
+                                                         : vlTOPp->top__DOT__top__DOT__score_board__DOT__player_2_bits)
+                                                        : 0U)));
+    vlTOPp->top__DOT__top__DOT__player_tank_green = 
+        (0xffU & ((IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__player_1_tank_enable)
+                   ? (((0xffffffU == vlTOPp->top__DOT__top__DOT__score_board__DOT__player_1_bits)
+                        ? 0U : vlTOPp->top__DOT__top__DOT__score_board__DOT__player_1_bits) 
+                      >> 8U) : ((IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__player_2_tank_enable)
+                                 ? (((0xffffffU == vlTOPp->top__DOT__top__DOT__score_board__DOT__player_2_bits)
+                                      ? 0U : vlTOPp->top__DOT__top__DOT__score_board__DOT__player_2_bits) 
+                                    >> 8U) : 0U)));
+    vlTOPp->top__DOT__top__DOT__player_tank_enable 
+        = (((0U != vlTOPp->top__DOT__top__DOT__score_board__DOT__player_1_bits) 
+            & (IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__player_1_tank_enable)) 
+           | ((0U != vlTOPp->top__DOT__top__DOT__score_board__DOT__player_2_bits) 
+              & (IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__player_2_tank_enable)));
     vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__all_bullet 
         = ((IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__all_player_bullet) 
            | (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_bullet));
@@ -628,6 +611,29 @@ void Vtop::_settle__TOP__3(Vtop__Syms* __restrict vlSymsp) {
                                                 | (IData)(vlTOPp->top__DOT__top__DOT__player_2_tank_enable)) 
                                                | (IData)(vlTOPp->top__DOT__top__DOT__enemy_1_tank_enable)) 
                                               | (IData)(vlTOPp->top__DOT__top__DOT__enemy_2_tank_enable));
+    vlTOPp->top__DOT__top__DOT__tank_left_blue = ((IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__tank_left_enable)
+                                                   ? 
+                                                  (0xffU 
+                                                   & (vlTOPp->top__DOT__top__DOT__score_board__DOT__tank_left_dout 
+                                                      >> 0x10U))
+                                                   : 0U);
+    vlTOPp->top__DOT__top__DOT__tank_left_red = ((IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__tank_left_enable)
+                                                  ? 
+                                                 (0xffU 
+                                                  & vlTOPp->top__DOT__top__DOT__score_board__DOT__tank_left_dout)
+                                                  : 0U);
+    vlTOPp->top__DOT__top__DOT__tank_left_green = ((IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__tank_left_enable)
+                                                    ? 
+                                                   (0xffU 
+                                                    & (vlTOPp->top__DOT__top__DOT__score_board__DOT__tank_left_dout 
+                                                       >> 8U))
+                                                    : 0U);
+    vlTOPp->top__DOT__top__DOT__menu__DOT__bit_number 
+        = vlTOPp->top__DOT__top__DOT__menu__DOT__ascii_rom__DOT__mem
+        [vlTOPp->top__DOT__top__DOT__menu__DOT__rom_addr];
+    vlTOPp->top__DOT__top__DOT__score_board__DOT__bit_number 
+        = vlTOPp->top__DOT__top__DOT__score_board__DOT__ascii_rom__DOT__mem
+        [vlTOPp->top__DOT__top__DOT__score_board__DOT__rom_addr];
     vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type 
         = ((IData)(vlTOPp->top__DOT__top__DOT__map_enable)
             ? (7U & (((0xcU >= (0xfU & (((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
@@ -655,9 +661,32 @@ void Vtop::_settle__TOP__3(Vtop__Syms* __restrict vlSymsp) {
                                            >> 5U) - (IData)(1U)))]
                         : (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT____Vxrand2)))
             : 0U);
-    vlTOPp->top__DOT__top__DOT__menu__DOT__bit_number 
-        = vlTOPp->top__DOT__top__DOT__menu__DOT__ascii_rom__DOT__mem
-        [vlTOPp->top__DOT__top__DOT__menu__DOT__rom_addr];
+    vlTOPp->top__DOT__top__DOT__menu_blue = ((1U & 
+                                              ((IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__bit_number) 
+                                               >> (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__x_ofs)))
+                                              ? 0U : 0xe0U);
+    vlTOPp->top__DOT__top__DOT__menu_green = ((1U & 
+                                               ((IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__bit_number) 
+                                                >> (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__x_ofs)))
+                                               ? 0U
+                                               : 0xe0U);
+    vlTOPp->top__DOT__top__DOT__menu_red = ((1U & ((IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__bit_number) 
+                                                   >> (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__x_ofs)))
+                                             ? 0U : 0xe0U);
+    vlTOPp->top__DOT__top__DOT__level_blue = ((1U & 
+                                               ((IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__bit_number) 
+                                                >> (IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__x_ofs)))
+                                               ? 0U
+                                               : 0xe0U);
+    vlTOPp->top__DOT__top__DOT__level_green = ((1U 
+                                                & ((IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__bit_number) 
+                                                   >> (IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__x_ofs)))
+                                                ? 0U
+                                                : 0xe0U);
+    vlTOPp->top__DOT__top__DOT__level_red = ((1U & 
+                                              ((IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__bit_number) 
+                                               >> (IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__x_ofs)))
+                                              ? 0U : 0xe0U);
     vlTOPp->top__DOT__top__DOT__map_rgb__DOT__dout 
         = vlTOPp->top__DOT__top__DOT__map_rgb__DOT__tile__DOT__mem
         [(((IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type) 
@@ -683,18 +712,6 @@ void Vtop::_settle__TOP__3(Vtop__Syms* __restrict vlSymsp) {
           & (0x10U <= (0x1fU & (IData)(vlTOPp->top__DOT__top__DOT__vpos)))) 
          & ((IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_state) 
             >> 3U));
-    vlTOPp->top__DOT__top__DOT__menu_blue = ((1U & 
-                                              ((IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__bit_number) 
-                                               >> (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__x_ofs)))
-                                              ? 0U : 0xe0U);
-    vlTOPp->top__DOT__top__DOT__menu_green = ((1U & 
-                                               ((IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__bit_number) 
-                                                >> (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__x_ofs)))
-                                               ? 0U
-                                               : 0xe0U);
-    vlTOPp->top__DOT__top__DOT__menu_red = ((1U & ((IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__bit_number) 
-                                                   >> (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__x_ofs)))
-                                             ? 0U : 0xe0U);
     vlTOPp->top__DOT__top__DOT__all_hard_block = ((
                                                    (((((((((IData)(vlTOPp->top__DOT__top__DOT__display_enable) 
                                                            & (~ (IData)(vlTOPp->top__DOT__top__DOT__map_enable))) 
@@ -725,32 +742,26 @@ void Vtop::_settle__TOP__3(Vtop__Syms* __restrict vlSymsp) {
                                                   | (4U 
                                                      == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)));
     vlTOPp->top__DOT__top__DOT__cannot_walk_through 
-        = (((((((((((IData)(vlTOPp->top__DOT__top__DOT__display_enable) 
-                    & (~ (IData)(vlTOPp->top__DOT__top__DOT__map_enable))) 
-                   | (3U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type))) 
+        = ((((((((((((IData)(vlTOPp->top__DOT__top__DOT__display_enable) 
+                     & (~ (IData)(vlTOPp->top__DOT__top__DOT__map_enable))) 
+                    | (3U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type))) 
+                   | ((0U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
+                      & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UL))) 
                   | ((0U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
-                     & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UL))) 
+                     & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UR))) 
                  | ((0U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
-                    & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UR))) 
+                    & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LR))) 
                 | ((0U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
-                   & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LR))) 
-               | ((0U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
-                  & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LL))) 
+                   & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LL))) 
+               | ((1U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
+                  & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UL))) 
               | ((1U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
-                 & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UL))) 
+                 & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UR))) 
              | ((1U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
-                & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UR))) 
+                & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LR))) 
             | ((1U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
-               & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LR))) 
-           | ((1U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
-              & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LL)));
-    vlTOPp->top__DOT__top__DOT__map_red = (((((IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UL) 
-                                              | (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UR)) 
-                                             | (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LR)) 
-                                            | (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LL))
-                                            ? (0xffU 
-                                               & vlTOPp->top__DOT__top__DOT__map_rgb__DOT__dout)
-                                            : 0U);
+               & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LL))) 
+           | (4U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)));
     vlTOPp->top__DOT__top__DOT__map_blue = (((((IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UL) 
                                                | (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UR)) 
                                               | (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LR)) 
@@ -759,6 +770,13 @@ void Vtop::_settle__TOP__3(Vtop__Syms* __restrict vlSymsp) {
                                                 & (vlTOPp->top__DOT__top__DOT__map_rgb__DOT__dout 
                                                    >> 0x10U))
                                              : 0U);
+    vlTOPp->top__DOT__top__DOT__map_red = (((((IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UL) 
+                                              | (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UR)) 
+                                             | (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LR)) 
+                                            | (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LL))
+                                            ? (0xffU 
+                                               & vlTOPp->top__DOT__top__DOT__map_rgb__DOT__dout)
+                                            : 0U);
     vlTOPp->top__DOT__top__DOT__map_green = (((((IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UL) 
                                                 | (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UR)) 
                                                | (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LR)) 
@@ -767,52 +785,12 @@ void Vtop::_settle__TOP__3(Vtop__Syms* __restrict vlSymsp) {
                                                  & (vlTOPp->top__DOT__top__DOT__map_rgb__DOT__dout 
                                                     >> 8U))
                                               : 0U);
+    vlTOPp->top__DOT__top__DOT____Vcellinp__player_1__cannot_walk_through_i 
+        = ((IData)(vlTOPp->top__DOT__top__DOT__cannot_walk_through) 
+           | (IData)(vlTOPp->top__DOT__top__DOT__player_box));
     vlTOPp->top__DOT__top__DOT____Vcellinp__player_2__cannot_walk_through_i 
         = ((IData)(vlTOPp->top__DOT__top__DOT__cannot_walk_through) 
            | (IData)(vlTOPp->top__DOT__top__DOT__player_box));
-    vlTOPp->top__DOT__top__DOT__rgb_render__DOT__map_enable 
-        = (((0U != (IData)(vlTOPp->top__DOT__top__DOT__map_blue)) 
-            | (0U != (IData)(vlTOPp->top__DOT__top__DOT__map_green))) 
-           | (0U != (IData)(vlTOPp->top__DOT__top__DOT__map_green)));
-    vlTOPp->red_o = 0U;
-    if (vlTOPp->top__DOT__top__DOT__display_enable) {
-        if (vlTOPp->top__DOT__top__DOT__is_menu) {
-            vlTOPp->red_o = vlTOPp->top__DOT__top__DOT__menu_red;
-        } else {
-            if (vlTOPp->top__DOT__top__DOT__is_playing) {
-                vlTOPp->red_o = (0xffU & ((IData)(vlTOPp->top__DOT__top__DOT__map_enable)
-                                           ? (((IData)(vlTOPp->top__DOT__top__DOT__map_red) 
-                                               | ((IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__map_enable)
-                                                   ? 0U
-                                                   : 
-                                                  ((((IData)(vlTOPp->top__DOT__top__DOT__player_1_red) 
-                                                     | (IData)(vlTOPp->top__DOT__top__DOT__player_2_red)) 
-                                                    | (IData)(vlTOPp->top__DOT__top__DOT__enemy_1_red)) 
-                                                   | (IData)(vlTOPp->top__DOT__top__DOT__enemy_2_red)))) 
-                                              | (((((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet) 
-                                                    | (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet)) 
-                                                   | (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_bullet)) 
-                                                  | (IData)(vlTOPp->top__DOT__top__DOT__enemy_2_bullet))
-                                                  ? 0xffffffU
-                                                  : 0U))
-                                           : ((IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__number_enable_i)
-                                               ? (IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__number_red_i)
-                                               : ((IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__tank_enable_i)
-                                                   ? (IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__tank_red_i)
-                                                   : 0xe0U))));
-            } else {
-                if (vlTOPp->top__DOT__top__DOT__is_continue) {
-                    vlTOPp->red_o = 0xe0U;
-                } else {
-                    if (vlTOPp->top__DOT__top__DOT__is_final) {
-                        vlTOPp->red_o = 0xe0U;
-                    }
-                }
-            }
-        }
-    } else {
-        vlTOPp->red_o = 0U;
-    }
     vlTOPp->blue_o = 0U;
     if (vlTOPp->top__DOT__top__DOT__display_enable) {
         if (vlTOPp->top__DOT__top__DOT__is_menu) {
@@ -821,13 +799,10 @@ void Vtop::_settle__TOP__3(Vtop__Syms* __restrict vlSymsp) {
             if (vlTOPp->top__DOT__top__DOT__is_playing) {
                 vlTOPp->blue_o = (0xffU & ((IData)(vlTOPp->top__DOT__top__DOT__map_enable)
                                             ? (((IData)(vlTOPp->top__DOT__top__DOT__map_blue) 
-                                                | ((IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__map_enable)
-                                                    ? 0U
-                                                    : 
-                                                   ((((IData)(vlTOPp->top__DOT__top__DOT__player_1_blue) 
-                                                      | (IData)(vlTOPp->top__DOT__top__DOT__player_2_blue)) 
-                                                     | (IData)(vlTOPp->top__DOT__top__DOT__enemy_1_blue)) 
-                                                    | (IData)(vlTOPp->top__DOT__top__DOT__enemy_2_blue)))) 
+                                                | ((((IData)(vlTOPp->top__DOT__top__DOT__player_1_blue) 
+                                                     | (IData)(vlTOPp->top__DOT__top__DOT__player_2_blue)) 
+                                                    | (IData)(vlTOPp->top__DOT__top__DOT__enemy_1_blue)) 
+                                                   | (IData)(vlTOPp->top__DOT__top__DOT__enemy_2_blue))) 
                                                | ((((((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet) 
                                                       | (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet)) 
                                                      | (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_bullet)) 
@@ -835,11 +810,14 @@ void Vtop::_settle__TOP__3(Vtop__Syms* __restrict vlSymsp) {
                                                     ? 0xffffffU
                                                     : 0U) 
                                                   >> 0x10U))
-                                            : ((IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__number_enable_i)
-                                                ? (IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__number_blue_i)
-                                                : ((IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__tank_enable_i)
-                                                    ? (IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__tank_blue_i)
-                                                    : 0xe0U))));
+                                            : ((IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__tank_left_enable)
+                                                ? (IData)(vlTOPp->top__DOT__top__DOT__tank_left_blue)
+                                                : ((IData)(vlTOPp->top__DOT__top__DOT__player_tank_enable)
+                                                    ? (IData)(vlTOPp->top__DOT__top__DOT__player_tank_blue)
+                                                    : 
+                                                   ((IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__level_enable)
+                                                     ? (IData)(vlTOPp->top__DOT__top__DOT__level_blue)
+                                                     : 0xe0U)))));
             } else {
                 if (vlTOPp->top__DOT__top__DOT__is_continue) {
                     vlTOPp->blue_o = 0xe0U;
@@ -853,6 +831,45 @@ void Vtop::_settle__TOP__3(Vtop__Syms* __restrict vlSymsp) {
     } else {
         vlTOPp->blue_o = 0U;
     }
+    vlTOPp->red_o = 0U;
+    if (vlTOPp->top__DOT__top__DOT__display_enable) {
+        if (vlTOPp->top__DOT__top__DOT__is_menu) {
+            vlTOPp->red_o = vlTOPp->top__DOT__top__DOT__menu_red;
+        } else {
+            if (vlTOPp->top__DOT__top__DOT__is_playing) {
+                vlTOPp->red_o = (0xffU & ((IData)(vlTOPp->top__DOT__top__DOT__map_enable)
+                                           ? (((IData)(vlTOPp->top__DOT__top__DOT__map_red) 
+                                               | ((((IData)(vlTOPp->top__DOT__top__DOT__player_1_red) 
+                                                    | (IData)(vlTOPp->top__DOT__top__DOT__player_2_red)) 
+                                                   | (IData)(vlTOPp->top__DOT__top__DOT__enemy_1_red)) 
+                                                  | (IData)(vlTOPp->top__DOT__top__DOT__enemy_2_red))) 
+                                              | (((((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet) 
+                                                    | (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet)) 
+                                                   | (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_bullet)) 
+                                                  | (IData)(vlTOPp->top__DOT__top__DOT__enemy_2_bullet))
+                                                  ? 0xffffffU
+                                                  : 0U))
+                                           : ((IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__tank_left_enable)
+                                               ? (IData)(vlTOPp->top__DOT__top__DOT__tank_left_red)
+                                               : ((IData)(vlTOPp->top__DOT__top__DOT__player_tank_enable)
+                                                   ? (IData)(vlTOPp->top__DOT__top__DOT__player_tank_red)
+                                                   : 
+                                                  ((IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__level_enable)
+                                                    ? (IData)(vlTOPp->top__DOT__top__DOT__level_red)
+                                                    : 0xe0U)))));
+            } else {
+                if (vlTOPp->top__DOT__top__DOT__is_continue) {
+                    vlTOPp->red_o = 0xe0U;
+                } else {
+                    if (vlTOPp->top__DOT__top__DOT__is_final) {
+                        vlTOPp->red_o = 0xe0U;
+                    }
+                }
+            }
+        }
+    } else {
+        vlTOPp->red_o = 0U;
+    }
     vlTOPp->green_o = 0U;
     if (vlTOPp->top__DOT__top__DOT__display_enable) {
         if (vlTOPp->top__DOT__top__DOT__is_menu) {
@@ -861,13 +878,10 @@ void Vtop::_settle__TOP__3(Vtop__Syms* __restrict vlSymsp) {
             if (vlTOPp->top__DOT__top__DOT__is_playing) {
                 vlTOPp->green_o = (0xffU & ((IData)(vlTOPp->top__DOT__top__DOT__map_enable)
                                              ? (((IData)(vlTOPp->top__DOT__top__DOT__map_green) 
-                                                 | ((IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__map_enable)
-                                                     ? 0U
-                                                     : 
-                                                    ((((IData)(vlTOPp->top__DOT__top__DOT__player_1_green) 
-                                                       | (IData)(vlTOPp->top__DOT__top__DOT__player_2_green)) 
-                                                      | (IData)(vlTOPp->top__DOT__top__DOT__enemy_1_green)) 
-                                                     | (IData)(vlTOPp->top__DOT__top__DOT__enemy_2_green)))) 
+                                                 | ((((IData)(vlTOPp->top__DOT__top__DOT__player_1_green) 
+                                                      | (IData)(vlTOPp->top__DOT__top__DOT__player_2_green)) 
+                                                     | (IData)(vlTOPp->top__DOT__top__DOT__enemy_1_green)) 
+                                                    | (IData)(vlTOPp->top__DOT__top__DOT__enemy_2_green))) 
                                                 | ((((((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet) 
                                                        | (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet)) 
                                                       | (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_bullet)) 
@@ -875,12 +889,15 @@ void Vtop::_settle__TOP__3(Vtop__Syms* __restrict vlSymsp) {
                                                      ? 0xffffffU
                                                      : 0U) 
                                                    >> 8U))
-                                             : ((IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__number_enable_i)
-                                                 ? (IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__number_green_i)
+                                             : ((IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__tank_left_enable)
+                                                 ? (IData)(vlTOPp->top__DOT__top__DOT__tank_left_green)
                                                  : 
-                                                ((IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__tank_enable_i)
-                                                  ? (IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__tank_green_i)
-                                                  : 0xe0U))));
+                                                ((IData)(vlTOPp->top__DOT__top__DOT__player_tank_enable)
+                                                  ? (IData)(vlTOPp->top__DOT__top__DOT__player_tank_green)
+                                                  : 
+                                                 ((IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__level_enable)
+                                                   ? (IData)(vlTOPp->top__DOT__top__DOT__level_green)
+                                                   : 0xe0U)))));
             } else {
                 if (vlTOPp->top__DOT__top__DOT__is_continue) {
                     vlTOPp->green_o = 0xe0U;
@@ -896,6 +913,45 @@ void Vtop::_settle__TOP__3(Vtop__Syms* __restrict vlSymsp) {
     }
 }
 
+VL_INLINE_OPT void Vtop::_sequent__TOP__3(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__3\n"); );
+    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
+    // Variables
+    CData/*0:0*/ __Vdly__top__DOT__top__DOT__speed_control__DOT__a;
+    IData/*23:0*/ __Vdly__top__DOT__top__DOT__speed_control__DOT__count;
+    IData/*23:0*/ __Vdly__top__DOT__top__DOT__speed_control__DOT__count2;
+    // Body
+    __Vdly__top__DOT__top__DOT__speed_control__DOT__count 
+        = vlTOPp->top__DOT__top__DOT__speed_control__DOT__count;
+    __Vdly__top__DOT__top__DOT__speed_control__DOT__a 
+        = vlTOPp->top__DOT__top__DOT__speed_control__DOT__a;
+    __Vdly__top__DOT__top__DOT__speed_control__DOT__count2 
+        = vlTOPp->top__DOT__top__DOT__speed_control__DOT__count2;
+    __Vdly__top__DOT__top__DOT__speed_control__DOT__count 
+        = (0xffffffU & ((IData)(1U) + vlTOPp->top__DOT__top__DOT__speed_control__DOT__count));
+    if ((0x30d40U == vlTOPp->top__DOT__top__DOT__speed_control__DOT__count)) {
+        vlTOPp->top__DOT__top__DOT__clk_player = (1U 
+                                                  & (~ (IData)(vlTOPp->top__DOT__top__DOT__clk_player)));
+        __Vdly__top__DOT__top__DOT__speed_control__DOT__count = 0U;
+    }
+    __Vdly__top__DOT__top__DOT__speed_control__DOT__count2 
+        = (0xffffffU & ((IData)(1U) + vlTOPp->top__DOT__top__DOT__speed_control__DOT__count2));
+    if ((0x61a8U == vlTOPp->top__DOT__top__DOT__speed_control__DOT__count2)) {
+        vlTOPp->top__DOT__top__DOT__clk_bullet = (1U 
+                                                  & (~ (IData)(vlTOPp->top__DOT__top__DOT__clk_bullet)));
+        __Vdly__top__DOT__top__DOT__speed_control__DOT__count2 = 0U;
+    }
+    __Vdly__top__DOT__top__DOT__speed_control__DOT__a 
+        = (1U & (~ (IData)(vlTOPp->top__DOT__top__DOT__speed_control__DOT__a)));
+    vlTOPp->top__DOT__top__DOT__VGA_clk = vlTOPp->top__DOT__top__DOT__speed_control__DOT__a;
+    vlTOPp->top__DOT__top__DOT__speed_control__DOT__count 
+        = __Vdly__top__DOT__top__DOT__speed_control__DOT__count;
+    vlTOPp->top__DOT__top__DOT__speed_control__DOT__count2 
+        = __Vdly__top__DOT__top__DOT__speed_control__DOT__count2;
+    vlTOPp->top__DOT__top__DOT__speed_control__DOT__a 
+        = __Vdly__top__DOT__top__DOT__speed_control__DOT__a;
+}
+
 VL_INLINE_OPT void Vtop::_sequent__TOP__4(Vtop__Syms* __restrict vlSymsp) {
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__4\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
@@ -905,6 +961,8 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__4(Vtop__Syms* __restrict vlSymsp) {
     // Body
     __Vdly__top__DOT__top__DOT__enemy_1__DOT__pulse_gen__DOT__counter 
         = vlTOPp->top__DOT__top__DOT__enemy_1__DOT__pulse_gen__DOT__counter;
+    __Vdly__top__DOT__top__DOT__enemy_1__DOT__pulse_gen__DOT__clk_div 
+        = vlTOPp->top__DOT__top__DOT__enemy_1__DOT__pulse_gen__DOT__clk_div;
     vlTOPp->__Vdly__top__DOT__top__DOT__enemy_1__DOT__count 
         = vlTOPp->top__DOT__top__DOT__enemy_1__DOT__count;
     vlTOPp->__Vdly__top__DOT__top__DOT__enemy_1__DOT__premove_tank 
@@ -915,8 +973,6 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__4(Vtop__Syms* __restrict vlSymsp) {
         = vlTOPp->top__DOT__top__DOT__enemy_1__DOT__dir_stage;
     vlTOPp->__Vdly__top__DOT__top__DOT__enemy_1__DOT__bot_stage 
         = vlTOPp->top__DOT__top__DOT__enemy_1__DOT__bot_stage;
-    __Vdly__top__DOT__top__DOT__enemy_1__DOT__pulse_gen__DOT__clk_div 
-        = vlTOPp->top__DOT__top__DOT__enemy_1__DOT__pulse_gen__DOT__clk_div;
     vlTOPp->__Vdly__top__DOT__top__DOT__enemy_1__DOT__tank_y 
         = vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_y;
     vlTOPp->__Vdly__top__DOT__top__DOT__enemy_1__DOT__tank_x 
@@ -1755,10 +1811,6 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__9(Vtop__Syms* __restrict vlSymsp) {
         = vlTOPp->player_2_shoot_i;
     vlTOPp->top__DOT__top__DOT__player_1__DOT__pos_edge_detect_1__DOT__sig_dly 
         = vlTOPp->player_1_shoot_i;
-    vlTOPp->top__DOT__top__DOT__menu__DOT__sellect_down_edge_dect__DOT__sig_dly 
-        = (1U & (IData)(vlTOPp->player_1_move_i));
-    vlTOPp->top__DOT__top__DOT__menu__DOT__sellect_up_edge_dect__DOT__sig_dly 
-        = (1U & ((IData)(vlTOPp->player_1_move_i) >> 1U));
     if ((8U & (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_prev_direct))) {
         if ((1U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_prev_direct) 
                       >> 2U)))) {
@@ -1972,8 +2024,6 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__9(Vtop__Syms* __restrict vlSymsp) {
 VL_INLINE_OPT void Vtop::_sequent__TOP__10(Vtop__Syms* __restrict vlSymsp) {
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__10\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
-    // Variables
-    CData/*4:0*/ __Vdly__top__DOT__top__DOT__menu__DOT__arrow_pos;
     // Body
     vlTOPp->__Vdly__top__DOT__top__DOT__game_FSM__DOT__score_player_2 
         = vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_2;
@@ -1981,33 +2031,6 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__10(Vtop__Syms* __restrict vlSymsp) {
         = vlTOPp->top__DOT__top__DOT__game_FSM__DOT__score_player_1;
     vlTOPp->__Vdly__top__DOT__top__DOT__game_FSM__DOT__game_state 
         = vlTOPp->top__DOT__top__DOT__game_FSM__DOT__game_state;
-    __Vdly__top__DOT__top__DOT__menu__DOT__arrow_pos 
-        = vlTOPp->top__DOT__top__DOT__menu__DOT__arrow_pos;
-    if (vlTOPp->reset_i) {
-        __Vdly__top__DOT__top__DOT__menu__DOT__arrow_pos = 9U;
-    } else {
-        if (((IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__sellect_down) 
-             & (0xcU > (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__arrow_pos)))) {
-            __Vdly__top__DOT__top__DOT__menu__DOT__arrow_pos 
-                = (0x1fU & ((IData)(1U) + (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__arrow_pos)));
-        } else {
-            if (vlTOPp->top__DOT__top__DOT__menu__DOT__sellect_down) {
-                __Vdly__top__DOT__top__DOT__menu__DOT__arrow_pos = 9U;
-            }
-        }
-        if (((IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__sellect_up) 
-             & (9U < (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__arrow_pos)))) {
-            __Vdly__top__DOT__top__DOT__menu__DOT__arrow_pos 
-                = (0x1fU & ((IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__arrow_pos) 
-                            - (IData)(1U)));
-        } else {
-            if (vlTOPp->top__DOT__top__DOT__menu__DOT__sellect_up) {
-                __Vdly__top__DOT__top__DOT__menu__DOT__arrow_pos = 0xcU;
-            }
-        }
-    }
-    vlTOPp->top__DOT__top__DOT__menu__DOT__arrow_pos 
-        = __Vdly__top__DOT__top__DOT__menu__DOT__arrow_pos;
 }
 
 VL_INLINE_OPT void Vtop::_sequent__TOP__11(Vtop__Syms* __restrict vlSymsp) {
@@ -2015,33 +2038,30 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__11(Vtop__Syms* __restrict vlSymsp) {
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Variables
     CData/*0:0*/ __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v0;
+    CData/*3:0*/ __Vdlyvdim0__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v169;
+    CData/*3:0*/ __Vdlyvdim1__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v169;
+    CData/*2:0*/ __Vdlyvlsb__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v169;
+    CData/*0:0*/ __Vdlyvval__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v169;
     CData/*0:0*/ __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v169;
-    CData/*0:0*/ __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v338;
-    CData/*0:0*/ __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v507;
-    CData/*3:0*/ __Vdlyvdim0__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v676;
-    CData/*3:0*/ __Vdlyvdim1__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v676;
-    CData/*2:0*/ __Vdlyvlsb__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v676;
-    CData/*0:0*/ __Vdlyvval__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v676;
-    CData/*0:0*/ __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v676;
-    CData/*3:0*/ __Vdlyvdim0__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v677;
-    CData/*3:0*/ __Vdlyvdim1__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v677;
-    CData/*2:0*/ __Vdlyvlsb__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v677;
-    CData/*0:0*/ __Vdlyvval__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v677;
-    CData/*0:0*/ __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v677;
-    CData/*3:0*/ __Vdlyvdim0__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v678;
-    CData/*3:0*/ __Vdlyvdim1__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v678;
-    CData/*2:0*/ __Vdlyvlsb__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v678;
-    CData/*0:0*/ __Vdlyvval__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v678;
-    CData/*0:0*/ __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v678;
-    CData/*3:0*/ __Vdlyvdim0__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v679;
-    CData/*3:0*/ __Vdlyvdim1__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v679;
-    CData/*2:0*/ __Vdlyvlsb__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v679;
-    CData/*0:0*/ __Vdlyvval__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v679;
-    CData/*0:0*/ __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v679;
-    CData/*3:0*/ __Vdlyvdim0__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v680;
-    CData/*3:0*/ __Vdlyvdim1__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v680;
-    CData/*6:0*/ __Vdlyvval__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v680;
-    CData/*0:0*/ __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v680;
+    CData/*3:0*/ __Vdlyvdim0__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v170;
+    CData/*3:0*/ __Vdlyvdim1__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v170;
+    CData/*2:0*/ __Vdlyvlsb__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v170;
+    CData/*0:0*/ __Vdlyvval__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v170;
+    CData/*0:0*/ __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v170;
+    CData/*3:0*/ __Vdlyvdim0__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v171;
+    CData/*3:0*/ __Vdlyvdim1__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v171;
+    CData/*2:0*/ __Vdlyvlsb__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v171;
+    CData/*0:0*/ __Vdlyvval__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v171;
+    CData/*0:0*/ __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v171;
+    CData/*3:0*/ __Vdlyvdim0__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v172;
+    CData/*3:0*/ __Vdlyvdim1__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v172;
+    CData/*2:0*/ __Vdlyvlsb__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v172;
+    CData/*0:0*/ __Vdlyvval__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v172;
+    CData/*0:0*/ __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v172;
+    CData/*3:0*/ __Vdlyvdim0__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v173;
+    CData/*3:0*/ __Vdlyvdim1__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v173;
+    CData/*6:0*/ __Vdlyvval__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v173;
+    CData/*0:0*/ __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v173;
     // Body
     vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_count_revive 
         = vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_count_revive;
@@ -2051,41 +2071,24 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__11(Vtop__Syms* __restrict vlSymsp) {
         = vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_stage;
     vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_2_count_revive 
         = vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_2_count_revive;
-    vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_left 
-        = vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_left;
     vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_stage 
         = vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_stage;
     vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_1_count_revive 
         = vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_1_count_revive;
-    vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_left 
-        = vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_left;
     vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_stage 
         = vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_stage;
+    vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_left 
+        = vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_left;
+    vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_left 
+        = vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_left;
     __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v0 = 0U;
     __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v169 = 0U;
-    __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v338 = 0U;
-    __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v507 = 0U;
-    __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v676 = 0U;
-    __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v677 = 0U;
-    __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v678 = 0U;
-    __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v679 = 0U;
-    __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v680 = 0U;
+    __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v170 = 0U;
+    __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v171 = 0U;
+    __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v172 = 0U;
+    __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v173 = 0U;
     if (vlTOPp->top__DOT__top__DOT__reset) {
-        if ((0U == (IData)(vlTOPp->top__DOT__top__DOT__map_type))) {
-            __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v0 = 1U;
-        } else {
-            if ((1U == (IData)(vlTOPp->top__DOT__top__DOT__map_type))) {
-                __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v169 = 1U;
-            } else {
-                if ((2U == (IData)(vlTOPp->top__DOT__top__DOT__map_type))) {
-                    __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v338 = 1U;
-                } else {
-                    if ((3U == (IData)(vlTOPp->top__DOT__top__DOT__map_type))) {
-                        __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v507 = 1U;
-                    }
-                }
-            }
-        }
+        __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v0 = 1U;
     } else {
         if (((((((0U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
                  & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UL)) 
@@ -2102,14 +2105,14 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__11(Vtop__Syms* __restrict vlSymsp) {
                                         >> 5U) - (IData)(1U)))) 
                      & (0xcU >= (0xfU & (((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
                                           >> 5U) - (IData)(1U)))))) {
-                    __Vdlyvval__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v676 
+                    __Vdlyvval__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v169 
                         = vlTOPp->top__DOT__top__DOT__map_rgb__DOT____Vlvbound3;
-                    __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v676 = 1U;
-                    __Vdlyvlsb__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v676 = 0U;
-                    __Vdlyvdim1__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v676 
+                    __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v169 = 1U;
+                    __Vdlyvlsb__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v169 = 0U;
+                    __Vdlyvdim1__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v169 
                         = (0xfU & (((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
                                     >> 5U) - (IData)(1U)));
-                    __Vdlyvdim0__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v676 
+                    __Vdlyvdim0__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v169 
                         = (0xfU & (((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
                                     >> 5U) - (IData)(1U)));
                 }
@@ -2120,14 +2123,14 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__11(Vtop__Syms* __restrict vlSymsp) {
                                         >> 5U) - (IData)(1U)))) 
                      & (0xcU >= (0xfU & (((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
                                           >> 5U) - (IData)(1U)))))) {
-                    __Vdlyvval__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v677 
+                    __Vdlyvval__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v170 
                         = vlTOPp->top__DOT__top__DOT__map_rgb__DOT____Vlvbound4;
-                    __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v677 = 1U;
-                    __Vdlyvlsb__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v677 = 1U;
-                    __Vdlyvdim1__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v677 
+                    __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v170 = 1U;
+                    __Vdlyvlsb__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v170 = 1U;
+                    __Vdlyvdim1__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v170 
                         = (0xfU & (((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
                                     >> 5U) - (IData)(1U)));
-                    __Vdlyvdim0__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v677 
+                    __Vdlyvdim0__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v170 
                         = (0xfU & (((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
                                     >> 5U) - (IData)(1U)));
                 }
@@ -2138,14 +2141,14 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__11(Vtop__Syms* __restrict vlSymsp) {
                                         >> 5U) - (IData)(1U)))) 
                      & (0xcU >= (0xfU & (((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
                                           >> 5U) - (IData)(1U)))))) {
-                    __Vdlyvval__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v678 
+                    __Vdlyvval__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v171 
                         = vlTOPp->top__DOT__top__DOT__map_rgb__DOT____Vlvbound5;
-                    __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v678 = 1U;
-                    __Vdlyvlsb__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v678 = 2U;
-                    __Vdlyvdim1__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v678 
+                    __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v171 = 1U;
+                    __Vdlyvlsb__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v171 = 2U;
+                    __Vdlyvdim1__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v171 
                         = (0xfU & (((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
                                     >> 5U) - (IData)(1U)));
-                    __Vdlyvdim0__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v678 
+                    __Vdlyvdim0__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v171 
                         = (0xfU & (((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
                                     >> 5U) - (IData)(1U)));
                 }
@@ -2156,14 +2159,14 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__11(Vtop__Syms* __restrict vlSymsp) {
                                         >> 5U) - (IData)(1U)))) 
                      & (0xcU >= (0xfU & (((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
                                           >> 5U) - (IData)(1U)))))) {
-                    __Vdlyvval__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v679 
+                    __Vdlyvval__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v172 
                         = vlTOPp->top__DOT__top__DOT__map_rgb__DOT____Vlvbound6;
-                    __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v679 = 1U;
-                    __Vdlyvlsb__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v679 = 3U;
-                    __Vdlyvdim1__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v679 
+                    __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v172 = 1U;
+                    __Vdlyvlsb__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v172 = 3U;
+                    __Vdlyvdim1__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v172 
                         = (0xfU & (((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
                                     >> 5U) - (IData)(1U)));
-                    __Vdlyvdim0__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v679 
+                    __Vdlyvdim0__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v172 
                         = (0xfU & (((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
                                     >> 5U) - (IData)(1U)));
                 }
@@ -2176,13 +2179,13 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__11(Vtop__Syms* __restrict vlSymsp) {
                                     >> 5U) - (IData)(1U)))) 
                  & (0xcU >= (0xfU & (((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
                                       >> 5U) - (IData)(1U)))))) {
-                __Vdlyvval__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v680 
+                __Vdlyvval__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v173 
                     = vlTOPp->top__DOT__top__DOT__map_rgb__DOT____Vlvbound7;
-                __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v680 = 1U;
-                __Vdlyvdim1__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v680 
+                __Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v173 = 1U;
+                __Vdlyvdim1__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v173 
                     = (0xfU & (((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
                                 >> 5U) - (IData)(1U)));
-                __Vdlyvdim0__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v680 
+                __Vdlyvdim0__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v173 
                     = (0xfU & (((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
                                 >> 5U) - (IData)(1U)));
             }
@@ -2360,557 +2363,44 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__11(Vtop__Syms* __restrict vlSymsp) {
         vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][0xcU] = 0x7fU;
     }
     if (__Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v169) {
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][0U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][1U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][2U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][3U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][4U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][5U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][6U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][7U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][8U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][9U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][0xaU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][0xbU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][0xcU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[1U][0U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[1U][1U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[1U][2U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[1U][3U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[1U][4U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[1U][5U] = 0xcU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[1U][6U] = 0xcU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[1U][7U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[1U][8U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[1U][9U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[1U][0xaU] = 0x1cU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[1U][0xbU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[1U][0xcU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[2U][0U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[2U][1U] = 0x1cU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[2U][2U] = 0x1cU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[2U][3U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[2U][4U] = 0xcU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[2U][5U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[2U][6U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[2U][7U] = 0x1cU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[2U][8U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[2U][9U] = 0xcU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[2U][0xaU] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[2U][0xbU] = 0xcU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[2U][0xcU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[3U][0U] = 0xcU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[3U][1U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[3U][2U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[3U][3U] = 0xcU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[3U][4U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[3U][5U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[3U][6U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[3U][7U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[3U][8U] = 0xcU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[3U][9U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[3U][0xaU] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[3U][0xbU] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[3U][0xcU] = 0xcU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[4U][0U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[4U][1U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[4U][2U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[4U][3U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[4U][4U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[4U][5U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[4U][6U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[4U][7U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[4U][8U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[4U][9U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[4U][0xaU] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[4U][0xbU] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[4U][0xcU] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[5U][0U] = 0x1fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[5U][1U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[5U][2U] = 0x3fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[5U][3U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[5U][4U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[5U][5U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[5U][6U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[5U][7U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[5U][8U] = 0x3fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[5U][9U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[5U][0xaU] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[5U][0xbU] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[5U][0xcU] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[6U][0U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[6U][1U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[6U][2U] = 0x3fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[6U][3U] = 0x3fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[6U][4U] = 0x3fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[6U][5U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[6U][6U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[6U][7U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[6U][8U] = 0x3fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[6U][9U] = 0x3fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[6U][0xaU] = 0x3fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[6U][0xbU] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[6U][0xcU] = 0x1fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[7U][0U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[7U][1U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[7U][2U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[7U][3U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[7U][4U] = 0x3fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[7U][5U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[7U][6U] = 0x1fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[7U][7U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[7U][8U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[7U][9U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[7U][0xaU] = 0x3fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[7U][0xbU] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[7U][0xcU] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[8U][0U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[8U][1U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[8U][2U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[8U][3U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[8U][4U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[8U][5U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[8U][6U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[8U][7U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[8U][8U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[8U][9U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[8U][0xaU] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[8U][0xbU] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[8U][0xcU] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[9U][0U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[9U][1U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[9U][2U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[9U][3U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[9U][4U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[9U][5U] = 3U;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[9U][6U] = 3U;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[9U][7U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[9U][8U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[9U][9U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[9U][0xaU] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[9U][0xbU] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[9U][0xcU] = 0x13U;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xaU][0U] = 0x13U;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xaU][1U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xaU][2U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xaU][3U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xaU][4U] = 3U;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xaU][5U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xaU][6U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xaU][7U] = 3U;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xaU][8U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xaU][9U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xaU][0xaU] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xaU][0xbU] = 0x13U;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xaU][0xcU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xbU][0U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xbU][1U] = 3U;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xbU][2U] = 3U;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xbU][3U] = 3U;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xbU][4U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xbU][5U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xbU][6U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xbU][7U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xbU][8U] = 0x13U;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xbU][9U] = 0x13U;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xbU][0xaU] = 3U;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xbU][0xbU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xbU][0xcU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][0U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][1U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][2U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][3U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][4U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][5U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][6U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][7U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][8U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][9U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][0xaU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][0xbU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][0xcU] = 0x7fU;
-    }
-    if (__Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v338) {
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][0U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][1U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][2U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][3U] = 0xcU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][4U] = 0xcU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][5U] = 0xcU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][6U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][7U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][8U] = 0xcU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][9U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][0xaU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][0xbU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][0xcU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[1U][0U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[1U][1U] = 0xcU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[1U][2U] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[1U][3U] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[1U][4U] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[1U][5U] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[1U][6U] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[1U][7U] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[1U][8U] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[1U][9U] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[1U][0xaU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[1U][0xbU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[1U][0xcU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[2U][0U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[2U][1U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[2U][2U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[2U][3U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[2U][4U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[2U][5U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[2U][6U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[2U][7U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[2U][8U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[2U][9U] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[2U][0xaU] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[2U][0xbU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[2U][0xcU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[3U][0U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[3U][1U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[3U][2U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[3U][3U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[3U][4U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[3U][5U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[3U][6U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[3U][7U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[3U][8U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[3U][9U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[3U][0xaU] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[3U][0xbU] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[3U][0xcU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[4U][0U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[4U][1U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[4U][2U] = 0x1fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[4U][3U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[4U][4U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[4U][5U] = 0x1fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[4U][6U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[4U][7U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[4U][8U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[4U][9U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[4U][0xaU] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[4U][0xbU] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[4U][0xcU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[5U][0U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[5U][1U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[5U][2U] = 0x1fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[5U][3U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[5U][4U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[5U][5U] = 0x1fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[5U][6U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[5U][7U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[5U][8U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[5U][9U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[5U][0xaU] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[5U][0xbU] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[5U][0xcU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[6U][0U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[6U][1U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[6U][2U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[6U][3U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[6U][4U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[6U][5U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[6U][6U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[6U][7U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[6U][8U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[6U][9U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[6U][0xaU] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[6U][0xbU] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[6U][0xcU] = 9U;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[7U][0U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[7U][1U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[7U][2U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[7U][3U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[7U][4U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[7U][5U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[7U][6U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[7U][7U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[7U][8U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[7U][9U] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[7U][0xaU] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[7U][0xbU] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[7U][0xcU] = 9U;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[8U][0U] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[8U][1U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[8U][2U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[8U][3U] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[8U][4U] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[8U][5U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[8U][6U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[8U][7U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[8U][8U] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[8U][9U] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[8U][0xaU] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[8U][0xbU] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[8U][0xcU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[9U][0U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[9U][1U] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[9U][2U] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[9U][3U] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[9U][4U] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[9U][5U] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[9U][6U] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[9U][7U] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[9U][8U] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[9U][9U] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[9U][0xaU] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[9U][0xbU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[9U][0xcU] = 0x1fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xaU][0U] = 0x1fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xaU][1U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xaU][2U] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xaU][3U] = 0x1fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xaU][4U] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xaU][5U] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xaU][6U] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xaU][7U] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xaU][8U] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xaU][9U] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xaU][0xaU] = 5U;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xaU][0xbU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xaU][0xcU] = 0x1fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xbU][0U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xbU][1U] = 0x1fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xbU][2U] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xbU][3U] = 3U;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xbU][4U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xbU][5U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xbU][6U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xbU][7U] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xbU][8U] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xbU][9U] = 0xfU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xbU][0xaU] = 0x1fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xbU][0xbU] = 0x1fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xbU][0xcU] = 0x1fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][0U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][1U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][2U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][3U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][4U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][5U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][6U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][7U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][8U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][9U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][0xaU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][0xbU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][0xcU] = 0x7fU;
-    }
-    if (__Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v507) {
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][0U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][1U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][2U] = 0x3fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][3U] = 0x3fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][4U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][5U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][6U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][7U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][8U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][9U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][0xaU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][0xbU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0U][0xcU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[1U][0U] = 0x1cU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[1U][1U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[1U][2U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[1U][3U] = 0x3fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[1U][4U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[1U][5U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[1U][6U] = 5U;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[1U][7U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[1U][8U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[1U][9U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[1U][0xaU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[1U][0xbU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[1U][0xcU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[2U][0U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[2U][1U] = 0x1cU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[2U][2U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[2U][3U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[2U][4U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[2U][5U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[2U][6U] = 0x15U;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[2U][7U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[2U][8U] = 5U;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[2U][9U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[2U][0xaU] = 0x3fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[2U][0xbU] = 0x3fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[2U][0xcU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[3U][0U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[3U][1U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[3U][2U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[3U][3U] = 0x13U;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[3U][4U] = 0xcU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[3U][5U] = 0xaU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[3U][6U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[3U][7U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[3U][8U] = 0x15U;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[3U][9U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[3U][0xaU] = 0x3fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[3U][0xbU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[3U][0xcU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[4U][0U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[4U][1U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[4U][2U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[4U][3U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[4U][4U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[4U][5U] = 0x1fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[4U][6U] = 0xcU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[4U][7U] = 0xaU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[4U][8U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[4U][9U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[4U][0xaU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[4U][0xbU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[4U][0xcU] = 0x1cU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[5U][0U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[5U][1U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[5U][2U] = 0x13U;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[5U][3U] = 0x1cU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[5U][4U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[5U][5U] = 0xaU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[5U][6U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[5U][7U] = 0x1fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[5U][8U] = 0xcU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[5U][9U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[5U][0xaU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[5U][0xbU] = 0x1cU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[5U][0xcU] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[6U][0U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[6U][1U] = 0x13U;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[6U][2U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[6U][3U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[6U][4U] = 3U;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[6U][5U] = 0x1fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[6U][6U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[6U][7U] = 0xaU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[6U][8U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[6U][9U] = 0x13U;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[6U][0xaU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[6U][0xbU] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[6U][0xcU] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[7U][0U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[7U][1U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[7U][2U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[7U][3U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[7U][4U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[7U][5U] = 5U;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[7U][6U] = 3U;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[7U][7U] = 0x1fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[7U][8U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[7U][9U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[7U][0xaU] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[7U][0xbU] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[7U][0xcU] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[8U][0U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[8U][1U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[8U][2U] = 0x3fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[8U][3U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[8U][4U] = 0x1aU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[8U][5U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[8U][6U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[8U][7U] = 5U;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[8U][8U] = 3U;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[8U][9U] = 0x1cU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[8U][0xaU] = 0x13U;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[8U][0xbU] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[8U][0xcU] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[9U][0U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[9U][1U] = 0x3fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[9U][2U] = 0x3fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[9U][3U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[9U][4U] = 0xaU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[9U][5U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[9U][6U] = 0x1aU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[9U][7U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[9U][8U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[9U][9U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[9U][0xaU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[9U][0xbU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[9U][0xcU] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xaU][0U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xaU][1U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xaU][2U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xaU][3U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xaU][4U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xaU][5U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xaU][6U] = 0xaU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xaU][7U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xaU][8U] = 0x2fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xaU][9U] = 0x3fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xaU][0xaU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xaU][0xbU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xaU][0xcU] = 0x1fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xbU][0U] = 0x1fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xbU][1U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xbU][2U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xbU][3U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xbU][4U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xbU][5U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xbU][6U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xbU][7U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xbU][8U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xbU][9U] = 0x3fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xbU][0xaU] = 0x3fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xbU][0xbU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xbU][0xcU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][0U] = 0x1fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][1U] = 0x1fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][2U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][3U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][4U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][5U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][6U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][7U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][8U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][9U] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][0xaU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][0xbU] = 0x7fU;
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[0xcU][0xcU] = 0x1fU;
-    }
-    if (__Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v676) {
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[__Vdlyvdim0__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v676][__Vdlyvdim1__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v676] 
-            = (((~ ((IData)(1U) << (IData)(__Vdlyvlsb__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v676))) 
+        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[__Vdlyvdim0__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v169][__Vdlyvdim1__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v169] 
+            = (((~ ((IData)(1U) << (IData)(__Vdlyvlsb__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v169))) 
                 & vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles
-                [__Vdlyvdim0__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v676]
-                [__Vdlyvdim1__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v676]) 
-               | ((IData)(__Vdlyvval__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v676) 
-                  << (IData)(__Vdlyvlsb__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v676)));
+                [__Vdlyvdim0__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v169]
+                [__Vdlyvdim1__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v169]) 
+               | ((IData)(__Vdlyvval__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v169) 
+                  << (IData)(__Vdlyvlsb__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v169)));
     }
-    if (__Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v677) {
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[__Vdlyvdim0__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v677][__Vdlyvdim1__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v677] 
-            = (((~ ((IData)(1U) << (IData)(__Vdlyvlsb__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v677))) 
+    if (__Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v170) {
+        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[__Vdlyvdim0__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v170][__Vdlyvdim1__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v170] 
+            = (((~ ((IData)(1U) << (IData)(__Vdlyvlsb__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v170))) 
                 & vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles
-                [__Vdlyvdim0__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v677]
-                [__Vdlyvdim1__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v677]) 
-               | ((IData)(__Vdlyvval__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v677) 
-                  << (IData)(__Vdlyvlsb__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v677)));
+                [__Vdlyvdim0__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v170]
+                [__Vdlyvdim1__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v170]) 
+               | ((IData)(__Vdlyvval__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v170) 
+                  << (IData)(__Vdlyvlsb__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v170)));
     }
-    if (__Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v678) {
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[__Vdlyvdim0__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v678][__Vdlyvdim1__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v678] 
-            = (((~ ((IData)(1U) << (IData)(__Vdlyvlsb__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v678))) 
+    if (__Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v171) {
+        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[__Vdlyvdim0__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v171][__Vdlyvdim1__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v171] 
+            = (((~ ((IData)(1U) << (IData)(__Vdlyvlsb__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v171))) 
                 & vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles
-                [__Vdlyvdim0__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v678]
-                [__Vdlyvdim1__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v678]) 
-               | ((IData)(__Vdlyvval__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v678) 
-                  << (IData)(__Vdlyvlsb__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v678)));
+                [__Vdlyvdim0__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v171]
+                [__Vdlyvdim1__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v171]) 
+               | ((IData)(__Vdlyvval__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v171) 
+                  << (IData)(__Vdlyvlsb__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v171)));
     }
-    if (__Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v679) {
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[__Vdlyvdim0__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v679][__Vdlyvdim1__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v679] 
-            = (((~ ((IData)(1U) << (IData)(__Vdlyvlsb__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v679))) 
+    if (__Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v172) {
+        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[__Vdlyvdim0__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v172][__Vdlyvdim1__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v172] 
+            = (((~ ((IData)(1U) << (IData)(__Vdlyvlsb__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v172))) 
                 & vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles
-                [__Vdlyvdim0__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v679]
-                [__Vdlyvdim1__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v679]) 
-               | ((IData)(__Vdlyvval__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v679) 
-                  << (IData)(__Vdlyvlsb__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v679)));
+                [__Vdlyvdim0__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v172]
+                [__Vdlyvdim1__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v172]) 
+               | ((IData)(__Vdlyvval__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v172) 
+                  << (IData)(__Vdlyvlsb__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v172)));
     }
-    if (__Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v680) {
-        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[__Vdlyvdim0__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v680][__Vdlyvdim1__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v680] 
-            = __Vdlyvval__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v680;
+    if (__Vdlyvset__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v173) {
+        vlTOPp->top__DOT__top__DOT__map_rgb__DOT__map_tiles[__Vdlyvdim0__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v173][__Vdlyvdim1__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v173] 
+            = __Vdlyvval__top__DOT__top__DOT__map_rgb__DOT__map_tiles__v173;
     }
 }
 
@@ -2943,11 +2433,12 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__12(Vtop__Syms* __restrict vlSymsp) {
         } else {
             if ((1U == (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__bullet_stage))) {
                 vlTOPp->top__DOT__top__DOT__enemy_1__DOT__show_bullet = 1U;
-                if ((((((IData)(vlTOPp->top__DOT__top__DOT__all_hard_block) 
-                        | (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__all_player)) 
-                       | (IData)(vlTOPp->top__DOT__top__DOT__enemy_1_tank_enable)) 
-                      | (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__all_player_bullet)) 
-                     & (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_bullet))) {
+                if (((((((IData)(vlTOPp->top__DOT__top__DOT__all_hard_block) 
+                         | (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__all_player)) 
+                        | (IData)(vlTOPp->top__DOT__top__DOT__enemy_1_tank_enable)) 
+                       | (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__all_player_bullet)) 
+                      & (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_bullet)) 
+                     | (IData)(vlTOPp->top__DOT__top__DOT__enemy_1_die))) {
                     vlTOPp->__Vdly__top__DOT__top__DOT__enemy_1__DOT__bullet_stage = 2U;
                     vlTOPp->top__DOT__top__DOT__enemy_1__DOT__show_bullet = 0U;
                 }
@@ -2982,7 +2473,7 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__12(Vtop__Syms* __restrict vlSymsp) {
                 }
             }
         }
-        if (vlTOPp->top__DOT__top__DOT____Vcellinp__player_2__cannot_walk_through_i) {
+        if (vlTOPp->top__DOT__top__DOT____Vcellinp__player_1__cannot_walk_through_i) {
             if ((((1U == ((IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_x) 
                           - (IData)(vlTOPp->top__DOT__top__DOT__hpos))) 
                   & (0x1cU > ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
@@ -3020,7 +2511,7 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__12(Vtop__Syms* __restrict vlSymsp) {
                 }
             }
         }
-        if (vlTOPp->top__DOT__top__DOT____Vcellinp__player_2__cannot_walk_through_i) {
+        if (vlTOPp->top__DOT__top__DOT____Vcellinp__player_1__cannot_walk_through_i) {
             if ((((0x20U == ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
                              - (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_x))) 
                   & (0x1cU > ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
@@ -3060,7 +2551,7 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__12(Vtop__Syms* __restrict vlSymsp) {
                 }
             }
         }
-        if (vlTOPp->top__DOT__top__DOT____Vcellinp__player_2__cannot_walk_through_i) {
+        if (vlTOPp->top__DOT__top__DOT____Vcellinp__player_1__cannot_walk_through_i) {
             if ((((0x20U == ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
                              - (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_y))) 
                   & (0x1cU > ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
@@ -3101,7 +2592,7 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__12(Vtop__Syms* __restrict vlSymsp) {
                 }
             }
         }
-        if (vlTOPp->top__DOT__top__DOT____Vcellinp__player_2__cannot_walk_through_i) {
+        if (vlTOPp->top__DOT__top__DOT____Vcellinp__player_1__cannot_walk_through_i) {
             if ((((1U == ((IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_y) 
                           - (IData)(vlTOPp->top__DOT__top__DOT__vpos))) 
                   & (0x1cU > ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
@@ -3136,11 +2627,12 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__13(Vtop__Syms* __restrict vlSymsp) {
         } else {
             if ((1U == (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__bullet_stage))) {
                 vlTOPp->top__DOT__top__DOT__player_2__DOT__show_bullet = 1U;
-                if ((((((IData)(vlTOPp->top__DOT__top__DOT__all_hard_block) 
-                        | (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__all_player)) 
-                       | (IData)(vlTOPp->top__DOT__top__DOT__enemy_1_tank_enable)) 
-                      | (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_bullet)) 
-                     & (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet))) {
+                if (((((((IData)(vlTOPp->top__DOT__top__DOT__all_hard_block) 
+                         | (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__all_player)) 
+                        | (IData)(vlTOPp->top__DOT__top__DOT__enemy_1_tank_enable)) 
+                       | (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_bullet)) 
+                      & (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet)) 
+                     | (IData)(vlTOPp->top__DOT__top__DOT__player_2_die))) {
                     __Vdly__top__DOT__top__DOT__player_2__DOT__bullet_stage = 2U;
                     vlTOPp->top__DOT__top__DOT__player_2__DOT__show_bullet = 0U;
                 }
@@ -3177,11 +2669,12 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__14(Vtop__Syms* __restrict vlSymsp) {
         } else {
             if ((1U == (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__bullet_stage))) {
                 vlTOPp->top__DOT__top__DOT__player_1__DOT__show_bullet = 1U;
-                if ((((((IData)(vlTOPp->top__DOT__top__DOT__all_hard_block) 
-                        | (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__all_player)) 
-                       | (IData)(vlTOPp->top__DOT__top__DOT__enemy_1_tank_enable)) 
-                      | (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_bullet)) 
-                     & (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet))) {
+                if (((((((IData)(vlTOPp->top__DOT__top__DOT__all_hard_block) 
+                         | (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__all_player)) 
+                        | (IData)(vlTOPp->top__DOT__top__DOT__enemy_1_tank_enable)) 
+                       | (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_bullet)) 
+                      & (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet)) 
+                     | (IData)(vlTOPp->top__DOT__top__DOT__player_1_die))) {
                     __Vdly__top__DOT__top__DOT__player_1__DOT__bullet_stage = 2U;
                     vlTOPp->top__DOT__top__DOT__player_1__DOT__show_bullet = 0U;
                 }
@@ -3300,163 +2793,16 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__16(Vtop__Syms* __restrict vlSymsp) {
         = __Vdly__top__DOT__top__DOT__player_1__DOT__tank_yofs;
 }
 
-VL_INLINE_OPT void Vtop::_combo__TOP__17(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_combo__TOP__17\n"); );
-    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
-    // Body
-    vlTOPp->top__DOT__top__DOT__menu__DOT__sellect_down 
-        = (1U & ((IData)(vlTOPp->player_1_move_i) & 
-                 (~ (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__sellect_down_edge_dect__DOT__sig_dly))));
-    vlTOPp->top__DOT__top__DOT__menu__DOT__sellect_up 
-        = (1U & (((IData)(vlTOPp->player_1_move_i) 
-                  >> 1U) & (~ (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__sellect_up_edge_dect__DOT__sig_dly))));
-}
-
-VL_INLINE_OPT void Vtop::_sequent__TOP__18(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__18\n"); );
-    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
-    // Body
-    vlTOPp->top__DOT__top__DOT__map_type = ((9U == (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__arrow_pos))
-                                             ? 0U : 
-                                            ((0xaU 
-                                              == (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__arrow_pos))
-                                              ? 1U : 
-                                             ((0xbU 
-                                               == (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__arrow_pos))
-                                               ? 2U
-                                               : ((0xcU 
-                                                   == (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__arrow_pos))
-                                                   ? 3U
-                                                   : 0U))));
-}
-
-VL_INLINE_OPT void Vtop::_sequent__TOP__19(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__19\n"); );
+VL_INLINE_OPT void Vtop::_sequent__TOP__17(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__17\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
     vlTOPp->top__DOT__top__DOT__enemy_1__DOT__pos_edge_detect_1__DOT__sig_dly 
         = vlTOPp->top__DOT__top__DOT__enemy_1__DOT__auto_tank_shoot;
 }
 
-VL_INLINE_OPT void Vtop::_sequent__TOP__20(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__20\n"); );
-    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
-    // Body
-    if (vlTOPp->top__DOT__top__DOT__reset) {
-        vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_stage = 0U;
-        vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_left = 0U;
-        vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_count_revive = 0U;
-        vlTOPp->top__DOT__top__DOT__enemy_1_revive = 0U;
-    } else {
-        if (vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_stage) {
-            if (vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_stage) {
-                vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_count_revive 
-                    = ((IData)(1U) + vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_count_revive);
-                vlTOPp->top__DOT__top__DOT__enemy_1_die = 1U;
-                vlTOPp->top__DOT__top__DOT__enemy_1_revive = 1U;
-                if ((0U != (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_left))) {
-                    if ((0x4c4b40U == vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_count_revive)) {
-                        vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_left 
-                            = (0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_left) 
-                                       - (IData)(1U)));
-                        vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_stage = 0U;
-                    }
-                }
-            }
-        } else {
-            vlTOPp->top__DOT__top__DOT__enemy_1_die = 0U;
-            vlTOPp->top__DOT__top__DOT__enemy_1_revive = 0U;
-            if (((IData)(vlTOPp->top__DOT__top__DOT__enemy_1_tank_enable) 
-                 & (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__all_player_bullet))) {
-                vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_count_revive = 0U;
-                vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_stage = 1U;
-            }
-        }
-    }
-    if (vlTOPp->top__DOT__top__DOT__reset) {
-        vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_stage = 0U;
-        vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_left = 2U;
-        vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_2_count_revive = 0U;
-        vlTOPp->top__DOT__top__DOT__player_2_revive = 0U;
-    } else {
-        if (vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_stage) {
-            if (vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_stage) {
-                vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_2_count_revive 
-                    = ((IData)(1U) + vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_2_count_revive);
-                vlTOPp->top__DOT__top__DOT__player_2_die = 1U;
-                vlTOPp->top__DOT__top__DOT__player_2_revive = 1U;
-                if ((0U < (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_left))) {
-                    if ((0xf4240U == vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_2_count_revive)) {
-                        vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_left 
-                            = (0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_left) 
-                                       - (IData)(1U)));
-                        vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_stage = 0U;
-                    }
-                }
-            }
-        } else {
-            vlTOPp->top__DOT__top__DOT__player_2_die = 0U;
-            vlTOPp->top__DOT__top__DOT__player_2_revive = 0U;
-            if (((IData)(vlTOPp->top__DOT__top__DOT__player_2_tank_enable) 
-                 & (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_bullet))) {
-                vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_2_count_revive = 0U;
-                vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_stage = 1U;
-            }
-        }
-    }
-    if (vlTOPp->top__DOT__top__DOT__reset) {
-        vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_stage = 0U;
-        vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_left = 2U;
-        vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_1_count_revive = 0U;
-        vlTOPp->top__DOT__top__DOT__player_1_revive = 0U;
-    } else {
-        if (vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_stage) {
-            if (vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_stage) {
-                vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_1_count_revive 
-                    = ((IData)(1U) + vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_1_count_revive);
-                vlTOPp->top__DOT__top__DOT__player_1_die = 1U;
-                vlTOPp->top__DOT__top__DOT__player_1_revive = 1U;
-                if ((0U < (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_left))) {
-                    if ((0xf4240U == vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_1_count_revive)) {
-                        vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_left 
-                            = (0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_left) 
-                                       - (IData)(1U)));
-                        vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_stage = 0U;
-                    }
-                }
-            }
-        } else {
-            vlTOPp->top__DOT__top__DOT__player_1_die = 0U;
-            vlTOPp->top__DOT__top__DOT__player_1_revive = 0U;
-            if (((IData)(vlTOPp->top__DOT__top__DOT__player_1_tank_enable) 
-                 & (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_bullet))) {
-                vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_1_count_revive = 0U;
-                vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_stage = 1U;
-            }
-        }
-    }
-    vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_stage 
-        = vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_stage;
-    vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_left 
-        = vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_left;
-    vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_count_revive 
-        = vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_count_revive;
-    vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_stage 
-        = vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_stage;
-    vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_left 
-        = vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_left;
-    vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_2_count_revive 
-        = vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_2_count_revive;
-    vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_stage 
-        = vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_stage;
-    vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_left 
-        = vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_left;
-    vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_1_count_revive 
-        = vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_1_count_revive;
-}
-
-VL_INLINE_OPT void Vtop::_sequent__TOP__21(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__21\n"); );
+VL_INLINE_OPT void Vtop::_sequent__TOP__18(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__18\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
     if (vlTOPp->top__DOT__top__DOT__enemy_1__DOT__reset_tank) {
@@ -3514,7 +2860,7 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__21(Vtop__Syms* __restrict vlSymsp) {
                 } else {
                     vlTOPp->__Vdly__top__DOT__top__DOT__enemy_1__DOT__count2 
                         = (0xffU & ((IData)(1U) + (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__count2)));
-                    if ((0xc8U == (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__count2))) {
+                    if ((0x64U == (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__count2))) {
                         vlTOPp->__Vdly__top__DOT__top__DOT__enemy_1__DOT__bot_stage = 0U;
                     }
                 }
@@ -3621,8 +2967,137 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__21(Vtop__Syms* __restrict vlSymsp) {
         = vlTOPp->__Vdly__top__DOT__top__DOT__enemy_1__DOT__tank_y;
 }
 
-VL_INLINE_OPT void Vtop::_sequent__TOP__22(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__22\n"); );
+VL_INLINE_OPT void Vtop::_sequent__TOP__19(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__19\n"); );
+    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
+    // Body
+    if (vlTOPp->top__DOT__top__DOT__reset) {
+        vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_stage = 0U;
+        vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_left = 3U;
+        vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_count_revive = 0U;
+        vlTOPp->top__DOT__top__DOT__enemy_1_revive = 0U;
+    } else {
+        if ((0U == (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_stage))) {
+            vlTOPp->top__DOT__top__DOT__enemy_1_die = 0U;
+            vlTOPp->top__DOT__top__DOT__enemy_1_revive = 0U;
+            if (((IData)(vlTOPp->top__DOT__top__DOT__enemy_1_tank_enable) 
+                 & (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__all_player_bullet))) {
+                vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_stage = 1U;
+            }
+        } else {
+            if ((1U == (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_stage))) {
+                vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_left 
+                    = (0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_left) 
+                               - (IData)(1U)));
+                vlTOPp->top__DOT__top__DOT__enemy_1_die = 1U;
+                vlTOPp->top__DOT__top__DOT__enemy_1_revive = 1U;
+                vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_count_revive = 0U;
+                vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_stage = 2U;
+            } else {
+                if ((2U == (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_stage))) {
+                    vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_count_revive 
+                        = ((IData)(1U) + vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_count_revive);
+                    if ((1U <= (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_left))) {
+                        if ((0xf4240U == vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_count_revive)) {
+                            vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_stage = 0U;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    if (vlTOPp->top__DOT__top__DOT__reset) {
+        vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_stage = 0U;
+        vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_left = 3U;
+        vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_2_count_revive = 0U;
+        vlTOPp->top__DOT__top__DOT__player_2_revive = 0U;
+    } else {
+        if ((0U == (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_stage))) {
+            vlTOPp->top__DOT__top__DOT__player_2_die = 0U;
+            vlTOPp->top__DOT__top__DOT__player_2_revive = 0U;
+            if (((IData)(vlTOPp->top__DOT__top__DOT__player_2_tank_enable) 
+                 & (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_bullet))) {
+                vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_stage = 1U;
+            }
+        } else {
+            if ((1U == (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_stage))) {
+                vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_left 
+                    = (0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_left) 
+                               - (IData)(1U)));
+                vlTOPp->top__DOT__top__DOT__player_2_die = 1U;
+                vlTOPp->top__DOT__top__DOT__player_2_revive = 1U;
+                vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_2_count_revive = 0U;
+                vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_stage = 2U;
+            } else {
+                if ((2U == (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_stage))) {
+                    vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_2_count_revive 
+                        = ((IData)(1U) + vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_2_count_revive);
+                    if ((1U <= (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_left))) {
+                        if ((0xf4240U == vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_2_count_revive)) {
+                            vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_stage = 0U;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    if (vlTOPp->top__DOT__top__DOT__reset) {
+        vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_stage = 0U;
+        vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_left = 3U;
+        vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_1_count_revive = 0U;
+        vlTOPp->top__DOT__top__DOT__player_1_revive = 0U;
+    } else {
+        if ((0U == (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_stage))) {
+            vlTOPp->top__DOT__top__DOT__player_1_die = 0U;
+            vlTOPp->top__DOT__top__DOT__player_1_revive = 0U;
+            if (((IData)(vlTOPp->top__DOT__top__DOT__player_1_tank_enable) 
+                 & (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_bullet))) {
+                vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_stage = 1U;
+            }
+        } else {
+            if ((1U == (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_stage))) {
+                vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_left 
+                    = (0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_left) 
+                               - (IData)(1U)));
+                vlTOPp->top__DOT__top__DOT__player_1_die = 1U;
+                vlTOPp->top__DOT__top__DOT__player_1_revive = 1U;
+                vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_1_count_revive = 0U;
+                vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_stage = 2U;
+            } else {
+                if ((2U == (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_stage))) {
+                    vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_1_count_revive 
+                        = ((IData)(1U) + vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_1_count_revive);
+                    if ((1U <= (IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_left))) {
+                        if ((0xf4240U == vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_1_count_revive)) {
+                            vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_stage = 0U;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_stage 
+        = vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_stage;
+    vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_left 
+        = vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_left;
+    vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_count_revive 
+        = vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_count_revive;
+    vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_stage 
+        = vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_stage;
+    vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_2_count_revive 
+        = vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_2_count_revive;
+    vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_left 
+        = vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_left;
+    vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_stage 
+        = vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_stage;
+    vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_1_count_revive 
+        = vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_1_count_revive;
+    vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_left 
+        = vlTOPp->__Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_left;
+}
+
+VL_INLINE_OPT void Vtop::_sequent__TOP__20(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__20\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
     if (vlTOPp->top__DOT__top__DOT__player_2__DOT__reset_tank) {
@@ -3669,8 +3144,8 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__22(Vtop__Syms* __restrict vlSymsp) {
     }
 }
 
-VL_INLINE_OPT void Vtop::_sequent__TOP__23(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__23\n"); );
+VL_INLINE_OPT void Vtop::_sequent__TOP__21(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__21\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
     if (vlTOPp->top__DOT__top__DOT__player_1__DOT__reset_tank) {
@@ -3717,8 +3192,8 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__23(Vtop__Syms* __restrict vlSymsp) {
     }
 }
 
-VL_INLINE_OPT void Vtop::_sequent__TOP__24(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__24\n"); );
+VL_INLINE_OPT void Vtop::_sequent__TOP__22(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__22\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
     if (vlTOPp->top__DOT__top__DOT__enemy_1__DOT__reset_tank) {
@@ -3755,8 +3230,24 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__24(Vtop__Syms* __restrict vlSymsp) {
                   >> 3U)));
 }
 
-VL_INLINE_OPT void Vtop::_sequent__TOP__25(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__25\n"); );
+VL_INLINE_OPT void Vtop::_sequent__TOP__23(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__23\n"); );
+    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
+    // Body
+    vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_collide_with_wall_bottom 
+        = vlTOPp->__Vdly__top__DOT__top__DOT__enemy_1__DOT__tank_collide_with_wall_bottom;
+    vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_collide_with_wall_top 
+        = vlTOPp->__Vdly__top__DOT__top__DOT__enemy_1__DOT__tank_collide_with_wall_top;
+    vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_collide_with_wall_right 
+        = vlTOPp->__Vdly__top__DOT__top__DOT__enemy_1__DOT__tank_collide_with_wall_right;
+    vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_collide_with_wall_left 
+        = vlTOPp->__Vdly__top__DOT__top__DOT__enemy_1__DOT__tank_collide_with_wall_left;
+    vlTOPp->top__DOT__top__DOT__enemy_1__DOT__bullet_stage 
+        = vlTOPp->__Vdly__top__DOT__top__DOT__enemy_1__DOT__bullet_stage;
+}
+
+VL_INLINE_OPT void Vtop::_sequent__TOP__24(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__24\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
     if (vlTOPp->reset_i) {
@@ -3816,24 +3307,8 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__25(Vtop__Syms* __restrict vlSymsp) {
         = vlTOPp->__Vdly__top__DOT__top__DOT__game_FSM__DOT__score_player_2;
 }
 
-VL_INLINE_OPT void Vtop::_sequent__TOP__26(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__26\n"); );
-    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
-    // Body
-    vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_collide_with_wall_bottom 
-        = vlTOPp->__Vdly__top__DOT__top__DOT__enemy_1__DOT__tank_collide_with_wall_bottom;
-    vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_collide_with_wall_top 
-        = vlTOPp->__Vdly__top__DOT__top__DOT__enemy_1__DOT__tank_collide_with_wall_top;
-    vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_collide_with_wall_right 
-        = vlTOPp->__Vdly__top__DOT__top__DOT__enemy_1__DOT__tank_collide_with_wall_right;
-    vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_collide_with_wall_left 
-        = vlTOPp->__Vdly__top__DOT__top__DOT__enemy_1__DOT__tank_collide_with_wall_left;
-    vlTOPp->top__DOT__top__DOT__enemy_1__DOT__bullet_stage 
-        = vlTOPp->__Vdly__top__DOT__top__DOT__enemy_1__DOT__bullet_stage;
-}
-
-VL_INLINE_OPT void Vtop::_sequent__TOP__27(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__27\n"); );
+VL_INLINE_OPT void Vtop::_sequent__TOP__25(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__25\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
     if (vlTOPp->top__DOT__top__DOT__player_2__DOT__reset_tank) {
@@ -4004,8 +3479,8 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__27(Vtop__Syms* __restrict vlSymsp) {
     }
 }
 
-VL_INLINE_OPT void Vtop::_sequent__TOP__28(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__28\n"); );
+VL_INLINE_OPT void Vtop::_sequent__TOP__26(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__26\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
     if (vlTOPp->top__DOT__top__DOT__player_1__DOT__reset_tank) {
@@ -4035,7 +3510,7 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__28(Vtop__Syms* __restrict vlSymsp) {
         if (vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_shoot) {
             vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_left = 0U;
         }
-        if (vlTOPp->top__DOT__top__DOT____Vcellinp__player_2__cannot_walk_through_i) {
+        if (vlTOPp->top__DOT__top__DOT____Vcellinp__player_1__cannot_walk_through_i) {
             if ((((1U == ((IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_x) 
                           - (IData)(vlTOPp->top__DOT__top__DOT__hpos))) 
                   & (0x1cU > ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
@@ -4076,7 +3551,7 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__28(Vtop__Syms* __restrict vlSymsp) {
         if (vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_shoot) {
             vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_right = 0U;
         }
-        if (vlTOPp->top__DOT__top__DOT____Vcellinp__player_2__cannot_walk_through_i) {
+        if (vlTOPp->top__DOT__top__DOT____Vcellinp__player_1__cannot_walk_through_i) {
             if ((((0x20U == ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
                              - (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_x))) 
                   & (0x1cU > ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
@@ -4120,7 +3595,7 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__28(Vtop__Syms* __restrict vlSymsp) {
         if (vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_shoot) {
             vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_top = 0U;
         }
-        if (vlTOPp->top__DOT__top__DOT____Vcellinp__player_2__cannot_walk_through_i) {
+        if (vlTOPp->top__DOT__top__DOT____Vcellinp__player_1__cannot_walk_through_i) {
             if ((((1U == ((IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_y) 
                           - (IData)(vlTOPp->top__DOT__top__DOT__vpos))) 
                   & (0x1cU > ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
@@ -4163,7 +3638,7 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__28(Vtop__Syms* __restrict vlSymsp) {
         if (vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_shoot) {
             vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_bottom = 0U;
         }
-        if (vlTOPp->top__DOT__top__DOT____Vcellinp__player_2__cannot_walk_through_i) {
+        if (vlTOPp->top__DOT__top__DOT____Vcellinp__player_1__cannot_walk_through_i) {
             if ((((0x20U == ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
                              - (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_y))) 
                   & (0x1cU > ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
@@ -4176,8 +3651,8 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__28(Vtop__Syms* __restrict vlSymsp) {
     }
 }
 
-VL_INLINE_OPT void Vtop::_combo__TOP__29(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_combo__TOP__29\n"); );
+VL_INLINE_OPT void Vtop::_combo__TOP__27(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_combo__TOP__27\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
     vlTOPp->top__DOT__top__DOT__enemy_1__DOT__reset_tank 
@@ -4195,8 +3670,8 @@ VL_INLINE_OPT void Vtop::_combo__TOP__29(Vtop__Syms* __restrict vlSymsp) {
         = ((IData)(vlTOPp->player_1_shoot_i) & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__pos_edge_detect_1__DOT__sig_dly)));
 }
 
-VL_INLINE_OPT void Vtop::_sequent__TOP__30(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__30\n"); );
+VL_INLINE_OPT void Vtop::_sequent__TOP__28(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__28\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
     vlTOPp->top__DOT__top__DOT__vpos = vlTOPp->__Vdly__top__DOT__top__DOT__vpos;
@@ -4211,6 +3686,58 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__30(Vtop__Syms* __restrict vlSymsp) {
     vlTOPp->hpos_o = vlTOPp->top__DOT__top__DOT__hpos;
     vlTOPp->top__DOT__top__DOT__hvsync_gen__DOT__h_maxxed 
         = (0x31fU == (IData)(vlTOPp->top__DOT__top__DOT__hpos));
+    vlTOPp->top__DOT__top__DOT__score_board__DOT__tank_left_dout 
+        = vlTOPp->top__DOT__top__DOT__score_board__DOT__mem_lives__DOT__mem
+        [((0xf0U & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+                    << 4U)) | (0xfU & (IData)(vlTOPp->top__DOT__top__DOT__hpos)))];
+    if (((0x160U < (IData)(vlTOPp->top__DOT__top__DOT__vpos)) 
+         & (0x180U > (IData)(vlTOPp->top__DOT__top__DOT__vpos)))) {
+        vlTOPp->top__DOT__top__DOT__score_board__DOT__player_1_tank_enable = 0U;
+        if (((0x1e0U < (IData)(vlTOPp->top__DOT__top__DOT__hpos)) 
+             & (0x200U > (IData)(vlTOPp->top__DOT__top__DOT__hpos)))) {
+            vlTOPp->top__DOT__top__DOT__score_board__DOT__player_1_tank_enable = 1U;
+        }
+    } else {
+        vlTOPp->top__DOT__top__DOT__score_board__DOT__player_1_tank_enable = 0U;
+    }
+    if (((0x160U < (IData)(vlTOPp->top__DOT__top__DOT__vpos)) 
+         & (0x180U > (IData)(vlTOPp->top__DOT__top__DOT__vpos)))) {
+        vlTOPp->top__DOT__top__DOT__score_board__DOT__player_2_tank_enable = 0U;
+        if (((0x240U < (IData)(vlTOPp->top__DOT__top__DOT__hpos)) 
+             & (0x260U > (IData)(vlTOPp->top__DOT__top__DOT__hpos)))) {
+            vlTOPp->top__DOT__top__DOT__score_board__DOT__player_2_tank_enable = 1U;
+        }
+    } else {
+        vlTOPp->top__DOT__top__DOT__score_board__DOT__player_2_tank_enable = 0U;
+    }
+    vlTOPp->top__DOT__top__DOT__score_board__DOT__player_1_bits 
+        = vlTOPp->top__DOT__top__DOT__score_board__DOT__mem_player_1__DOT__mem
+        [((0x3e0U & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                     << 5U)) | (0x1fU & (IData)(vlTOPp->top__DOT__top__DOT__vpos)))];
+    vlTOPp->top__DOT__top__DOT__score_board__DOT__player_2_bits 
+        = vlTOPp->top__DOT__top__DOT__score_board__DOT__mem_player_2__DOT__mem
+        [((0x3e0U & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                     << 5U)) | (0x1fU & (IData)(vlTOPp->top__DOT__top__DOT__vpos)))];
+    if (((0x1e0U < (IData)(vlTOPp->top__DOT__top__DOT__hpos)) 
+         & (0x1f0U > (IData)(vlTOPp->top__DOT__top__DOT__hpos)))) {
+        vlTOPp->top__DOT__top__DOT__score_board__DOT__tank_left_enable_16 = 0U;
+        if (((0x20U < (IData)(vlTOPp->top__DOT__top__DOT__vpos)) 
+             & (0x120U > (IData)(vlTOPp->top__DOT__top__DOT__vpos)))) {
+            vlTOPp->top__DOT__top__DOT__score_board__DOT__tank_left_enable_16 = 1U;
+        }
+    } else {
+        vlTOPp->top__DOT__top__DOT__score_board__DOT__tank_left_enable_16 = 0U;
+    }
+    if (((0x1f0U < (IData)(vlTOPp->top__DOT__top__DOT__hpos)) 
+         & (0x200U > (IData)(vlTOPp->top__DOT__top__DOT__hpos)))) {
+        vlTOPp->top__DOT__top__DOT__score_board__DOT__tank_left_enable_32 = 0U;
+        if (((0x20U < (IData)(vlTOPp->top__DOT__top__DOT__vpos)) 
+             & (0x120U > (IData)(vlTOPp->top__DOT__top__DOT__vpos)))) {
+            vlTOPp->top__DOT__top__DOT__score_board__DOT__tank_left_enable_32 = 1U;
+        }
+    } else {
+        vlTOPp->top__DOT__top__DOT__score_board__DOT__tank_left_enable_32 = 0U;
+    }
     vlTOPp->top__DOT__top__DOT__menu__DOT__title_enable 
         = (((1U == (7U & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
                           >> 7U))) & (4U < (0x1fU & 
@@ -4218,196 +3745,69 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__30(Vtop__Syms* __restrict vlSymsp) {
                                              >> 5U)))) 
            & (0x10U > (0x1fU & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
                                 >> 5U))));
-    vlTOPp->top__DOT__top__DOT__menu__DOT__map1 = (
-                                                   ((9U 
-                                                     == 
-                                                     (0x1fU 
-                                                      & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                                                         >> 5U))) 
-                                                    & (0x10U 
-                                                       < 
-                                                       (0x3fU 
-                                                        & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                                                           >> 4U)))) 
-                                                   & (0x16U 
-                                                      > 
-                                                      (0x3fU 
-                                                       & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                                                          >> 4U))));
-    vlTOPp->top__DOT__top__DOT__menu__DOT__map2 = (
-                                                   ((0xaU 
-                                                     == 
-                                                     (0x1fU 
-                                                      & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                                                         >> 5U))) 
-                                                    & (0x10U 
-                                                       < 
-                                                       (0x3fU 
-                                                        & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                                                           >> 4U)))) 
-                                                   & (0x16U 
-                                                      > 
-                                                      (0x3fU 
-                                                       & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                                                          >> 4U))));
-    vlTOPp->top__DOT__top__DOT__menu__DOT__map3 = (
-                                                   ((0xbU 
-                                                     == 
-                                                     (0x1fU 
-                                                      & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                                                         >> 5U))) 
-                                                    & (0x10U 
-                                                       < 
-                                                       (0x3fU 
-                                                        & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                                                           >> 4U)))) 
-                                                   & (0x16U 
-                                                      > 
-                                                      (0x3fU 
-                                                       & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                                                          >> 4U))));
-    vlTOPp->top__DOT__top__DOT__menu__DOT__map4 = (
-                                                   ((0xcU 
-                                                     == 
-                                                     (0x1fU 
-                                                      & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                                                         >> 5U))) 
-                                                    & (0x10U 
-                                                       < 
-                                                       (0x3fU 
-                                                        & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                                                           >> 4U)))) 
-                                                   & (0x16U 
-                                                      > 
-                                                      (0x3fU 
-                                                       & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                                                          >> 4U))));
+    vlTOPp->top__DOT__top__DOT__menu__DOT__game_start_enable 
+        = (((9U == (0x1fU & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+                             >> 5U))) & (0xdU < (0x3fU 
+                                                 & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                                                    >> 4U)))) 
+           & (0x1cU > (0x3fU & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                                >> 4U))));
+    vlTOPp->top__DOT__top__DOT__score_board__DOT__level_enable 
+        = (((0xaU == (0x1fU & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+                               >> 5U))) & (0x1cU < 
+                                           (0x3fU & 
+                                            ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                                             >> 4U)))) 
+           & (0x24U > (0x3fU & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                                >> 4U))));
     vlTOPp->top__DOT__top__DOT__display_enable = ((0x280U 
                                                    > (IData)(vlTOPp->top__DOT__top__DOT__hpos)) 
                                                   & (0x1e0U 
                                                      > (IData)(vlTOPp->top__DOT__top__DOT__vpos)));
-    vlTOPp->display_enable_o = vlTOPp->top__DOT__top__DOT__display_enable;
-    vlTOPp->top__DOT__top__DOT__map_enable = (((((IData)(vlTOPp->top__DOT__top__DOT__display_enable) 
-                                                 & (0x20U 
-                                                    <= (IData)(vlTOPp->top__DOT__top__DOT__hpos))) 
-                                                & (0x1bfU 
-                                                   >= (IData)(vlTOPp->top__DOT__top__DOT__hpos))) 
-                                               & (0x20U 
-                                                  <= (IData)(vlTOPp->top__DOT__top__DOT__vpos))) 
-                                              & (0x1bfU 
-                                                 >= (IData)(vlTOPp->top__DOT__top__DOT__vpos)));
-}
-
-VL_INLINE_OPT void Vtop::_sequent__TOP__31(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__31\n"); );
-    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
-    // Body
-    vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_y 
-        = vlTOPp->__Vdly__top__DOT__top__DOT__player_2__DOT__tank_y;
-    vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_x 
-        = vlTOPp->__Vdly__top__DOT__top__DOT__player_2__DOT__tank_x;
-}
-
-VL_INLINE_OPT void Vtop::_sequent__TOP__32(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__32\n"); );
-    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
-    // Body
-    vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_y 
-        = vlTOPp->__Vdly__top__DOT__top__DOT__player_1__DOT__tank_y;
-    vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_x 
-        = vlTOPp->__Vdly__top__DOT__top__DOT__player_1__DOT__tank_x;
-}
-
-VL_INLINE_OPT void Vtop::_multiclk__TOP__33(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_multiclk__TOP__33\n"); );
-    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
-    // Body
-    vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_bullet 
-        = (((IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__show_bullet) 
-            & (5U > ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                     - (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_bullet_y)))) 
-           & (5U > ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                    - (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_bullet_x))));
-}
-
-VL_INLINE_OPT void Vtop::_multiclk__TOP__34(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_multiclk__TOP__34\n"); );
-    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
-    // Body
-    vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet 
-        = (((IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__show_bullet) 
-            & (5U > ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                     - (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet_y)))) 
-           & (5U > ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                    - (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet_x))));
-}
-
-VL_INLINE_OPT void Vtop::_multiclk__TOP__35(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_multiclk__TOP__35\n"); );
-    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
-    // Body
-    vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet 
-        = (((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__show_bullet) 
-            & (5U > ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                     - (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet_y)))) 
-           & (5U > ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                    - (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet_x))));
-}
-
-VL_INLINE_OPT void Vtop::_multiclk__TOP__36(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_multiclk__TOP__36\n"); );
-    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
-    // Body
-    vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_box 
-        = ((((0x1eU > ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                       - (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_y))) 
-             & (0U < ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                      - (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_y)))) 
-            & (0x1eU > ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                        - (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_x)))) 
-           & (0U < ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                    - (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_x))));
-}
-
-VL_INLINE_OPT void Vtop::_sequent__TOP__37(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__37\n"); );
-    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
-    // Body
-    vlTOPp->top__DOT__top__DOT__menu__DOT__arrow_en 
-        = ((((0x1fU & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                       >> 5U)) == (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__arrow_pos)) 
-            & (0xeU < (0x3fU & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                                >> 4U)))) & (0x10U 
-                                             > (0x3fU 
-                                                & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                                                   >> 4U))));
+    vlTOPp->top__DOT__top__DOT__player_tank_blue = 
+        (0xffU & ((IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__player_1_tank_enable)
+                   ? (((0xffffffU == vlTOPp->top__DOT__top__DOT__score_board__DOT__player_1_bits)
+                        ? 0U : vlTOPp->top__DOT__top__DOT__score_board__DOT__player_1_bits) 
+                      >> 0x10U) : ((IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__player_2_tank_enable)
+                                    ? (((0xffffffU 
+                                         == vlTOPp->top__DOT__top__DOT__score_board__DOT__player_2_bits)
+                                         ? 0U : vlTOPp->top__DOT__top__DOT__score_board__DOT__player_2_bits) 
+                                       >> 0x10U) : 0U)));
+    vlTOPp->top__DOT__top__DOT__player_tank_red = (0xffU 
+                                                   & ((IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__player_1_tank_enable)
+                                                       ? 
+                                                      ((0xffffffU 
+                                                        == vlTOPp->top__DOT__top__DOT__score_board__DOT__player_1_bits)
+                                                        ? 0U
+                                                        : vlTOPp->top__DOT__top__DOT__score_board__DOT__player_1_bits)
+                                                       : 
+                                                      ((IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__player_2_tank_enable)
+                                                        ? 
+                                                       ((0xffffffU 
+                                                         == vlTOPp->top__DOT__top__DOT__score_board__DOT__player_2_bits)
+                                                         ? 0U
+                                                         : vlTOPp->top__DOT__top__DOT__score_board__DOT__player_2_bits)
+                                                        : 0U)));
+    vlTOPp->top__DOT__top__DOT__player_tank_green = 
+        (0xffU & ((IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__player_1_tank_enable)
+                   ? (((0xffffffU == vlTOPp->top__DOT__top__DOT__score_board__DOT__player_1_bits)
+                        ? 0U : vlTOPp->top__DOT__top__DOT__score_board__DOT__player_1_bits) 
+                      >> 8U) : ((IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__player_2_tank_enable)
+                                 ? (((0xffffffU == vlTOPp->top__DOT__top__DOT__score_board__DOT__player_2_bits)
+                                      ? 0U : vlTOPp->top__DOT__top__DOT__score_board__DOT__player_2_bits) 
+                                    >> 8U) : 0U)));
+    vlTOPp->top__DOT__top__DOT__player_tank_enable 
+        = (((0U != vlTOPp->top__DOT__top__DOT__score_board__DOT__player_1_bits) 
+            & (IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__player_1_tank_enable)) 
+           | ((0U != vlTOPp->top__DOT__top__DOT__score_board__DOT__player_2_bits) 
+              & (IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__player_2_tank_enable)));
     vlTOPp->top__DOT__top__DOT__menu__DOT__x_ofs = 0U;
     if (vlTOPp->top__DOT__top__DOT__menu__DOT__title_enable) {
         vlTOPp->top__DOT__top__DOT__menu__DOT__x_ofs 
             = (7U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
                         >> 2U)));
     }
-    if (vlTOPp->top__DOT__top__DOT__menu__DOT__map1) {
-        vlTOPp->top__DOT__top__DOT__menu__DOT__x_ofs 
-            = (7U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                        >> 1U)));
-    }
-    if (vlTOPp->top__DOT__top__DOT__menu__DOT__map2) {
-        vlTOPp->top__DOT__top__DOT__menu__DOT__x_ofs 
-            = (7U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                        >> 1U)));
-    }
-    if (vlTOPp->top__DOT__top__DOT__menu__DOT__map3) {
-        vlTOPp->top__DOT__top__DOT__menu__DOT__x_ofs 
-            = (7U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                        >> 1U)));
-    }
-    if (vlTOPp->top__DOT__top__DOT__menu__DOT__map4) {
-        vlTOPp->top__DOT__top__DOT__menu__DOT__x_ofs 
-            = (7U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                        >> 1U)));
-    }
-    if (vlTOPp->top__DOT__top__DOT__menu__DOT__arrow_en) {
+    if (vlTOPp->top__DOT__top__DOT__menu__DOT__game_start_enable) {
         vlTOPp->top__DOT__top__DOT__menu__DOT__x_ofs 
             = (7U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
                         >> 1U)));
@@ -4424,59 +3824,51 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__37(Vtop__Syms* __restrict vlSymsp) {
                 << 4U) | (0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
                                   >> 3U)));
     }
-    if (vlTOPp->top__DOT__top__DOT__menu__DOT__map1) {
+    if (vlTOPp->top__DOT__top__DOT__menu__DOT__game_start_enable) {
         vlTOPp->top__DOT__top__DOT__menu__DOT__rom_addr 
-            = ((((4U >= (7U & ((0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                                        >> 4U)) - (IData)(1U))))
-                  ? vlTOPp->top__DOT__top__DOT__menu__DOT__map1_buffer
-                 [(7U & ((0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                                  >> 4U)) - (IData)(1U)))]
+            = ((((0xdU >= (0xfU & (((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                                    >> 4U) - (IData)(0xeU))))
+                  ? vlTOPp->top__DOT__top__DOT__menu__DOT__game_start
+                 [(0xfU & (((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                            >> 4U) - (IData)(0xeU)))]
                   : (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT____Vxrand2)) 
                 << 4U) | (0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
                                   >> 1U)));
     }
-    if (vlTOPp->top__DOT__top__DOT__menu__DOT__map2) {
-        vlTOPp->top__DOT__top__DOT__menu__DOT__rom_addr 
-            = ((((4U >= (7U & ((0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                                        >> 4U)) - (IData)(1U))))
-                  ? vlTOPp->top__DOT__top__DOT__menu__DOT__map2_buffer
+    vlTOPp->top__DOT__top__DOT__score_board__DOT__x_ofs = 0U;
+    if (vlTOPp->top__DOT__top__DOT__score_board__DOT__level_enable) {
+        vlTOPp->top__DOT__top__DOT__score_board__DOT__x_ofs 
+            = (7U & (~ ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                        >> 1U)));
+    }
+    vlTOPp->top__DOT__top__DOT__score_board__DOT__rom_addr = 0U;
+    if (vlTOPp->top__DOT__top__DOT__score_board__DOT__level_enable) {
+        vlTOPp->top__DOT__top__DOT__score_board__DOT__rom_addr 
+            = ((((6U >= (7U & ((0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                                        >> 4U)) - (IData)(5U))))
+                  ? vlTOPp->top__DOT__top__DOT__score_board__DOT__game_start
                  [(7U & ((0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                                  >> 4U)) - (IData)(1U)))]
-                  : (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT____Vxrand3)) 
+                                  >> 4U)) - (IData)(5U)))]
+                  : (IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT____Vxrand1)) 
                 << 4U) | (0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
                                   >> 1U)));
     }
-    if (vlTOPp->top__DOT__top__DOT__menu__DOT__map3) {
-        vlTOPp->top__DOT__top__DOT__menu__DOT__rom_addr 
-            = ((((4U >= (7U & ((0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                                        >> 4U)) - (IData)(1U))))
-                  ? vlTOPp->top__DOT__top__DOT__menu__DOT__map3_buffer
-                 [(7U & ((0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                                  >> 4U)) - (IData)(1U)))]
-                  : (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT____Vxrand4)) 
-                << 4U) | (0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                                  >> 1U)));
-    }
-    if (vlTOPp->top__DOT__top__DOT__menu__DOT__map4) {
-        vlTOPp->top__DOT__top__DOT__menu__DOT__rom_addr 
-            = ((((4U >= (7U & ((0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                                        >> 4U)) - (IData)(1U))))
-                  ? vlTOPp->top__DOT__top__DOT__menu__DOT__map4_buffer
-                 [(7U & ((0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
-                                  >> 4U)) - (IData)(1U)))]
-                  : (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT____Vxrand5)) 
-                << 4U) | (0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                                  >> 1U)));
-    }
-    if (vlTOPp->top__DOT__top__DOT__menu__DOT__arrow_en) {
-        vlTOPp->top__DOT__top__DOT__menu__DOT__rom_addr 
-            = (((IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__arrow) 
-                << 4U) | (0xfU & ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
-                                  >> 1U)));
-    }
+    vlTOPp->display_enable_o = vlTOPp->top__DOT__top__DOT__display_enable;
+    vlTOPp->top__DOT__top__DOT__map_enable = (((((IData)(vlTOPp->top__DOT__top__DOT__display_enable) 
+                                                 & (0x20U 
+                                                    <= (IData)(vlTOPp->top__DOT__top__DOT__hpos))) 
+                                                & (0x1bfU 
+                                                   >= (IData)(vlTOPp->top__DOT__top__DOT__hpos))) 
+                                               & (0x20U 
+                                                  <= (IData)(vlTOPp->top__DOT__top__DOT__vpos))) 
+                                              & (0x1bfU 
+                                                 >= (IData)(vlTOPp->top__DOT__top__DOT__vpos)));
     vlTOPp->top__DOT__top__DOT__menu__DOT__bit_number 
         = vlTOPp->top__DOT__top__DOT__menu__DOT__ascii_rom__DOT__mem
         [vlTOPp->top__DOT__top__DOT__menu__DOT__rom_addr];
+    vlTOPp->top__DOT__top__DOT__score_board__DOT__bit_number 
+        = vlTOPp->top__DOT__top__DOT__score_board__DOT__ascii_rom__DOT__mem
+        [vlTOPp->top__DOT__top__DOT__score_board__DOT__rom_addr];
     vlTOPp->top__DOT__top__DOT__menu_blue = ((1U & 
                                               ((IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__bit_number) 
                                                >> (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__x_ofs)))
@@ -4489,12 +3881,124 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__37(Vtop__Syms* __restrict vlSymsp) {
     vlTOPp->top__DOT__top__DOT__menu_red = ((1U & ((IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__bit_number) 
                                                    >> (IData)(vlTOPp->top__DOT__top__DOT__menu__DOT__x_ofs)))
                                              ? 0U : 0xe0U);
+    vlTOPp->top__DOT__top__DOT__level_blue = ((1U & 
+                                               ((IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__bit_number) 
+                                                >> (IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__x_ofs)))
+                                               ? 0U
+                                               : 0xe0U);
+    vlTOPp->top__DOT__top__DOT__level_green = ((1U 
+                                                & ((IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__bit_number) 
+                                                   >> (IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__x_ofs)))
+                                                ? 0U
+                                                : 0xe0U);
+    vlTOPp->top__DOT__top__DOT__level_red = ((1U & 
+                                              ((IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__bit_number) 
+                                               >> (IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__x_ofs)))
+                                              ? 0U : 0xe0U);
 }
 
-VL_INLINE_OPT void Vtop::_sequent__TOP__38(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__38\n"); );
+VL_INLINE_OPT void Vtop::_sequent__TOP__29(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__29\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
+    vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_y 
+        = vlTOPp->__Vdly__top__DOT__top__DOT__player_2__DOT__tank_y;
+    vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_x 
+        = vlTOPp->__Vdly__top__DOT__top__DOT__player_2__DOT__tank_x;
+}
+
+VL_INLINE_OPT void Vtop::_sequent__TOP__30(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__30\n"); );
+    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
+    // Body
+    vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_y 
+        = vlTOPp->__Vdly__top__DOT__top__DOT__player_1__DOT__tank_y;
+    vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_x 
+        = vlTOPp->__Vdly__top__DOT__top__DOT__player_1__DOT__tank_x;
+}
+
+VL_INLINE_OPT void Vtop::_multiclk__TOP__31(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_multiclk__TOP__31\n"); );
+    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
+    // Body
+    vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_bullet 
+        = ((((~ (IData)(vlTOPp->top__DOT__top__DOT__enemy_1_die)) 
+             & (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__show_bullet)) 
+            & (5U > ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+                     - (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_bullet_y)))) 
+           & (5U > ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                    - (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_bullet_x))));
+}
+
+VL_INLINE_OPT void Vtop::_multiclk__TOP__32(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_multiclk__TOP__32\n"); );
+    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
+    // Body
+    vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet 
+        = ((((~ (IData)(vlTOPp->top__DOT__top__DOT__player_1_die)) 
+             & (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__show_bullet)) 
+            & (5U > ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+                     - (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet_y)))) 
+           & (5U > ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                    - (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet_x))));
+}
+
+VL_INLINE_OPT void Vtop::_multiclk__TOP__33(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_multiclk__TOP__33\n"); );
+    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
+    // Body
+    vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet 
+        = ((((~ (IData)(vlTOPp->top__DOT__top__DOT__player_2_die)) 
+             & (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__show_bullet)) 
+            & (5U > ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+                     - (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet_y)))) 
+           & (5U > ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                    - (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet_x))));
+}
+
+VL_INLINE_OPT void Vtop::_multiclk__TOP__34(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_multiclk__TOP__34\n"); );
+    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
+    // Body
+    vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_box 
+        = ((((0x1eU > ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+                       - (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_y))) 
+             & (0U < ((IData)(vlTOPp->top__DOT__top__DOT__vpos) 
+                      - (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_y)))) 
+            & (0x1eU > ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                        - (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_x)))) 
+           & (0U < ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                    - (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_x))));
+}
+
+VL_INLINE_OPT void Vtop::_sequent__TOP__35(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_sequent__TOP__35\n"); );
+    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
+    // Body
+    if (((0x180U < (IData)(vlTOPp->top__DOT__top__DOT__vpos)) 
+         & (0x190U > (IData)(vlTOPp->top__DOT__top__DOT__vpos)))) {
+        vlTOPp->top__DOT__top__DOT__score_board__DOT__player_1_enable = 0U;
+        if (((0x1d0U < (IData)(vlTOPp->top__DOT__top__DOT__hpos)) 
+             & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                < (0x3ffU & ((IData)(0x1d0U) + ((IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_left) 
+                                                << 4U)))))) {
+            vlTOPp->top__DOT__top__DOT__score_board__DOT__player_1_enable = 1U;
+        }
+    } else {
+        vlTOPp->top__DOT__top__DOT__score_board__DOT__player_1_enable = 0U;
+    }
+    if (((0x180U < (IData)(vlTOPp->top__DOT__top__DOT__vpos)) 
+         & (0x190U > (IData)(vlTOPp->top__DOT__top__DOT__vpos)))) {
+        vlTOPp->top__DOT__top__DOT__score_board__DOT__player_2_enable = 0U;
+        if (((0x240U < (IData)(vlTOPp->top__DOT__top__DOT__hpos)) 
+             & ((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
+                < (0x3ffU & ((IData)(0x240U) + ((IData)(vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_left) 
+                                                << 4U)))))) {
+            vlTOPp->top__DOT__top__DOT__score_board__DOT__player_2_enable = 1U;
+        }
+    } else {
+        vlTOPp->top__DOT__top__DOT__score_board__DOT__player_2_enable = 0U;
+    }
     vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type 
         = ((IData)(vlTOPp->top__DOT__top__DOT__map_enable)
             ? (7U & (((0xcU >= (0xfU & (((IData)(vlTOPp->top__DOT__top__DOT__hpos) 
@@ -4522,6 +4026,11 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__38(Vtop__Syms* __restrict vlSymsp) {
                                            >> 5U) - (IData)(1U)))]
                         : (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT____Vxrand2)))
             : 0U);
+    vlTOPp->top__DOT__top__DOT__score_board__DOT__tank_left_enable 
+        = ((((IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__tank_left_enable_16) 
+             | (IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__tank_left_enable_32)) 
+            | (IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__player_1_enable)) 
+           | (IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__player_2_enable));
     vlTOPp->top__DOT__top__DOT__map_rgb__DOT__dout 
         = vlTOPp->top__DOT__top__DOT__map_rgb__DOT__tile__DOT__mem
         [(((IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type) 
@@ -4547,6 +4056,23 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__38(Vtop__Syms* __restrict vlSymsp) {
           & (0x10U <= (0x1fU & (IData)(vlTOPp->top__DOT__top__DOT__vpos)))) 
          & ((IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_state) 
             >> 3U));
+    vlTOPp->top__DOT__top__DOT__tank_left_blue = ((IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__tank_left_enable)
+                                                   ? 
+                                                  (0xffU 
+                                                   & (vlTOPp->top__DOT__top__DOT__score_board__DOT__tank_left_dout 
+                                                      >> 0x10U))
+                                                   : 0U);
+    vlTOPp->top__DOT__top__DOT__tank_left_red = ((IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__tank_left_enable)
+                                                  ? 
+                                                 (0xffU 
+                                                  & vlTOPp->top__DOT__top__DOT__score_board__DOT__tank_left_dout)
+                                                  : 0U);
+    vlTOPp->top__DOT__top__DOT__tank_left_green = ((IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__tank_left_enable)
+                                                    ? 
+                                                   (0xffU 
+                                                    & (vlTOPp->top__DOT__top__DOT__score_board__DOT__tank_left_dout 
+                                                       >> 8U))
+                                                    : 0U);
     vlTOPp->top__DOT__top__DOT__all_hard_block = ((
                                                    (((((((((IData)(vlTOPp->top__DOT__top__DOT__display_enable) 
                                                            & (~ (IData)(vlTOPp->top__DOT__top__DOT__map_enable))) 
@@ -4577,32 +4103,26 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__38(Vtop__Syms* __restrict vlSymsp) {
                                                   | (4U 
                                                      == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)));
     vlTOPp->top__DOT__top__DOT__cannot_walk_through 
-        = (((((((((((IData)(vlTOPp->top__DOT__top__DOT__display_enable) 
-                    & (~ (IData)(vlTOPp->top__DOT__top__DOT__map_enable))) 
-                   | (3U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type))) 
+        = ((((((((((((IData)(vlTOPp->top__DOT__top__DOT__display_enable) 
+                     & (~ (IData)(vlTOPp->top__DOT__top__DOT__map_enable))) 
+                    | (3U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type))) 
+                   | ((0U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
+                      & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UL))) 
                   | ((0U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
-                     & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UL))) 
+                     & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UR))) 
                  | ((0U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
-                    & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UR))) 
+                    & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LR))) 
                 | ((0U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
-                   & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LR))) 
-               | ((0U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
-                  & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LL))) 
+                   & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LL))) 
+               | ((1U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
+                  & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UL))) 
               | ((1U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
-                 & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UL))) 
+                 & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UR))) 
              | ((1U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
-                & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UR))) 
+                & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LR))) 
             | ((1U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
-               & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LR))) 
-           | ((1U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)) 
-              & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LL)));
-    vlTOPp->top__DOT__top__DOT__map_red = (((((IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UL) 
-                                              | (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UR)) 
-                                             | (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LR)) 
-                                            | (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LL))
-                                            ? (0xffU 
-                                               & vlTOPp->top__DOT__top__DOT__map_rgb__DOT__dout)
-                                            : 0U);
+               & (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LL))) 
+           | (4U == (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__block_type)));
     vlTOPp->top__DOT__top__DOT__map_blue = (((((IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UL) 
                                                | (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UR)) 
                                               | (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LR)) 
@@ -4611,6 +4131,13 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__38(Vtop__Syms* __restrict vlSymsp) {
                                                 & (vlTOPp->top__DOT__top__DOT__map_rgb__DOT__dout 
                                                    >> 0x10U))
                                              : 0U);
+    vlTOPp->top__DOT__top__DOT__map_red = (((((IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UL) 
+                                              | (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UR)) 
+                                             | (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LR)) 
+                                            | (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LL))
+                                            ? (0xffU 
+                                               & vlTOPp->top__DOT__top__DOT__map_rgb__DOT__dout)
+                                            : 0U);
     vlTOPp->top__DOT__top__DOT__map_green = (((((IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UL) 
                                                 | (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__UR)) 
                                                | (IData)(vlTOPp->top__DOT__top__DOT__map_rgb__DOT__LR)) 
@@ -4619,14 +4146,10 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__38(Vtop__Syms* __restrict vlSymsp) {
                                                  & (vlTOPp->top__DOT__top__DOT__map_rgb__DOT__dout 
                                                     >> 8U))
                                               : 0U);
-    vlTOPp->top__DOT__top__DOT__rgb_render__DOT__map_enable 
-        = (((0U != (IData)(vlTOPp->top__DOT__top__DOT__map_blue)) 
-            | (0U != (IData)(vlTOPp->top__DOT__top__DOT__map_green))) 
-           | (0U != (IData)(vlTOPp->top__DOT__top__DOT__map_green)));
 }
 
-VL_INLINE_OPT void Vtop::_multiclk__TOP__39(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_multiclk__TOP__39\n"); );
+VL_INLINE_OPT void Vtop::_multiclk__TOP__36(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_multiclk__TOP__36\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
     vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_box 
@@ -4640,8 +4163,8 @@ VL_INLINE_OPT void Vtop::_multiclk__TOP__39(Vtop__Syms* __restrict vlSymsp) {
                     - (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_x))));
 }
 
-VL_INLINE_OPT void Vtop::_multiclk__TOP__40(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_multiclk__TOP__40\n"); );
+VL_INLINE_OPT void Vtop::_multiclk__TOP__37(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_multiclk__TOP__37\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
     vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_box 
@@ -4655,8 +4178,8 @@ VL_INLINE_OPT void Vtop::_multiclk__TOP__40(Vtop__Syms* __restrict vlSymsp) {
                     - (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_x))));
 }
 
-VL_INLINE_OPT void Vtop::_multiclk__TOP__41(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_multiclk__TOP__41\n"); );
+VL_INLINE_OPT void Vtop::_multiclk__TOP__38(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_multiclk__TOP__38\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
     vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__all_player_bullet 
@@ -4664,13 +4187,10 @@ VL_INLINE_OPT void Vtop::_multiclk__TOP__41(Vtop__Syms* __restrict vlSymsp) {
            | (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet));
 }
 
-VL_INLINE_OPT void Vtop::_multiclk__TOP__42(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_multiclk__TOP__42\n"); );
+VL_INLINE_OPT void Vtop::_multiclk__TOP__39(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_multiclk__TOP__39\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
-    vlTOPp->top__DOT__top__DOT__enemy_1_tank_enable 
-        = ((IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_box) 
-           & (~ (IData)(vlTOPp->top__DOT__top__DOT__enemy_1_die)));
     vlTOPp->top__DOT__top__DOT__enemy_1_blue = (((~ (IData)(vlTOPp->top__DOT__top__DOT__enemy_1_die)) 
                                                  & (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_box))
                                                  ? 
@@ -4690,15 +4210,15 @@ VL_INLINE_OPT void Vtop::_multiclk__TOP__42(Vtop__Syms* __restrict vlSymsp) {
                                                   & (vlTOPp->top__DOT__top__DOT__enemy_1_bits 
                                                      >> 8U))
                                                   : 0U);
+    vlTOPp->top__DOT__top__DOT__enemy_1_tank_enable 
+        = ((IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_box) 
+           & (~ (IData)(vlTOPp->top__DOT__top__DOT__enemy_1_die)));
 }
 
-VL_INLINE_OPT void Vtop::_multiclk__TOP__43(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_multiclk__TOP__43\n"); );
+VL_INLINE_OPT void Vtop::_multiclk__TOP__40(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_multiclk__TOP__40\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
-    vlTOPp->top__DOT__top__DOT__player_2_tank_enable 
-        = ((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_box) 
-           & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_2_die)));
     vlTOPp->top__DOT__top__DOT__player_2_blue = (((~ (IData)(vlTOPp->top__DOT__top__DOT__player_2_die)) 
                                                   & (IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_box))
                                                   ? 
@@ -4720,15 +4240,15 @@ VL_INLINE_OPT void Vtop::_multiclk__TOP__43(Vtop__Syms* __restrict vlSymsp) {
                                                    & (vlTOPp->top__DOT__top__DOT__player_2_bits 
                                                       >> 8U))
                                                    : 0U);
+    vlTOPp->top__DOT__top__DOT__player_2_tank_enable 
+        = ((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_box) 
+           & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_2_die)));
 }
 
-VL_INLINE_OPT void Vtop::_multiclk__TOP__44(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_multiclk__TOP__44\n"); );
+VL_INLINE_OPT void Vtop::_multiclk__TOP__41(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_multiclk__TOP__41\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
-    vlTOPp->top__DOT__top__DOT__player_1_tank_enable 
-        = ((IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_box) 
-           & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_1_die)));
     vlTOPp->top__DOT__top__DOT__player_1_blue = (((~ (IData)(vlTOPp->top__DOT__top__DOT__player_1_die)) 
                                                   & (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_box))
                                                   ? 
@@ -4750,10 +4270,13 @@ VL_INLINE_OPT void Vtop::_multiclk__TOP__44(Vtop__Syms* __restrict vlSymsp) {
                                                    & (vlTOPp->top__DOT__top__DOT__player_1_bits 
                                                       >> 8U))
                                                    : 0U);
+    vlTOPp->top__DOT__top__DOT__player_1_tank_enable 
+        = ((IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_box) 
+           & (~ (IData)(vlTOPp->top__DOT__top__DOT__player_1_die)));
 }
 
-VL_INLINE_OPT void Vtop::_multiclk__TOP__45(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_multiclk__TOP__45\n"); );
+VL_INLINE_OPT void Vtop::_multiclk__TOP__42(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_multiclk__TOP__42\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
     vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__all_bullet 
@@ -4761,30 +4284,8 @@ VL_INLINE_OPT void Vtop::_multiclk__TOP__45(Vtop__Syms* __restrict vlSymsp) {
            | (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_bullet));
 }
 
-VL_INLINE_OPT void Vtop::_multiclk__TOP__46(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_multiclk__TOP__46\n"); );
-    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
-    // Body
-    vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__all_player 
-        = ((IData)(vlTOPp->top__DOT__top__DOT__player_1_tank_enable) 
-           | (IData)(vlTOPp->top__DOT__top__DOT__player_2_tank_enable));
-}
-
-VL_INLINE_OPT void Vtop::_multiclk__TOP__47(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_multiclk__TOP__47\n"); );
-    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
-    // Body
-    vlTOPp->top__DOT__top__DOT__player_box = ((((IData)(vlTOPp->top__DOT__top__DOT__player_1_tank_enable) 
-                                                | (IData)(vlTOPp->top__DOT__top__DOT__player_2_tank_enable)) 
-                                               | (IData)(vlTOPp->top__DOT__top__DOT__enemy_1_tank_enable)) 
-                                              | (IData)(vlTOPp->top__DOT__top__DOT__enemy_2_tank_enable));
-    vlTOPp->top__DOT__top__DOT____Vcellinp__player_2__cannot_walk_through_i 
-        = ((IData)(vlTOPp->top__DOT__top__DOT__cannot_walk_through) 
-           | (IData)(vlTOPp->top__DOT__top__DOT__player_box));
-}
-
-VL_INLINE_OPT void Vtop::_multiclk__TOP__48(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_multiclk__TOP__48\n"); );
+VL_INLINE_OPT void Vtop::_multiclk__TOP__43(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_multiclk__TOP__43\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
     vlTOPp->blue_o = 0U;
@@ -4795,13 +4296,10 @@ VL_INLINE_OPT void Vtop::_multiclk__TOP__48(Vtop__Syms* __restrict vlSymsp) {
             if (vlTOPp->top__DOT__top__DOT__is_playing) {
                 vlTOPp->blue_o = (0xffU & ((IData)(vlTOPp->top__DOT__top__DOT__map_enable)
                                             ? (((IData)(vlTOPp->top__DOT__top__DOT__map_blue) 
-                                                | ((IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__map_enable)
-                                                    ? 0U
-                                                    : 
-                                                   ((((IData)(vlTOPp->top__DOT__top__DOT__player_1_blue) 
-                                                      | (IData)(vlTOPp->top__DOT__top__DOT__player_2_blue)) 
-                                                     | (IData)(vlTOPp->top__DOT__top__DOT__enemy_1_blue)) 
-                                                    | (IData)(vlTOPp->top__DOT__top__DOT__enemy_2_blue)))) 
+                                                | ((((IData)(vlTOPp->top__DOT__top__DOT__player_1_blue) 
+                                                     | (IData)(vlTOPp->top__DOT__top__DOT__player_2_blue)) 
+                                                    | (IData)(vlTOPp->top__DOT__top__DOT__enemy_1_blue)) 
+                                                   | (IData)(vlTOPp->top__DOT__top__DOT__enemy_2_blue))) 
                                                | ((((((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet) 
                                                       | (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet)) 
                                                      | (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_bullet)) 
@@ -4809,11 +4307,14 @@ VL_INLINE_OPT void Vtop::_multiclk__TOP__48(Vtop__Syms* __restrict vlSymsp) {
                                                     ? 0xffffffU
                                                     : 0U) 
                                                   >> 0x10U))
-                                            : ((IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__number_enable_i)
-                                                ? (IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__number_blue_i)
-                                                : ((IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__tank_enable_i)
-                                                    ? (IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__tank_blue_i)
-                                                    : 0xe0U))));
+                                            : ((IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__tank_left_enable)
+                                                ? (IData)(vlTOPp->top__DOT__top__DOT__tank_left_blue)
+                                                : ((IData)(vlTOPp->top__DOT__top__DOT__player_tank_enable)
+                                                    ? (IData)(vlTOPp->top__DOT__top__DOT__player_tank_blue)
+                                                    : 
+                                                   ((IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__level_enable)
+                                                     ? (IData)(vlTOPp->top__DOT__top__DOT__level_blue)
+                                                     : 0xe0U)))));
             } else {
                 if (vlTOPp->top__DOT__top__DOT__is_continue) {
                     vlTOPp->blue_o = 0xe0U;
@@ -4835,24 +4336,24 @@ VL_INLINE_OPT void Vtop::_multiclk__TOP__48(Vtop__Syms* __restrict vlSymsp) {
             if (vlTOPp->top__DOT__top__DOT__is_playing) {
                 vlTOPp->red_o = (0xffU & ((IData)(vlTOPp->top__DOT__top__DOT__map_enable)
                                            ? (((IData)(vlTOPp->top__DOT__top__DOT__map_red) 
-                                               | ((IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__map_enable)
-                                                   ? 0U
-                                                   : 
-                                                  ((((IData)(vlTOPp->top__DOT__top__DOT__player_1_red) 
-                                                     | (IData)(vlTOPp->top__DOT__top__DOT__player_2_red)) 
-                                                    | (IData)(vlTOPp->top__DOT__top__DOT__enemy_1_red)) 
-                                                   | (IData)(vlTOPp->top__DOT__top__DOT__enemy_2_red)))) 
+                                               | ((((IData)(vlTOPp->top__DOT__top__DOT__player_1_red) 
+                                                    | (IData)(vlTOPp->top__DOT__top__DOT__player_2_red)) 
+                                                   | (IData)(vlTOPp->top__DOT__top__DOT__enemy_1_red)) 
+                                                  | (IData)(vlTOPp->top__DOT__top__DOT__enemy_2_red))) 
                                               | (((((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet) 
                                                     | (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet)) 
                                                    | (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_bullet)) 
                                                   | (IData)(vlTOPp->top__DOT__top__DOT__enemy_2_bullet))
                                                   ? 0xffffffU
                                                   : 0U))
-                                           : ((IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__number_enable_i)
-                                               ? (IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__number_red_i)
-                                               : ((IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__tank_enable_i)
-                                                   ? (IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__tank_red_i)
-                                                   : 0xe0U))));
+                                           : ((IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__tank_left_enable)
+                                               ? (IData)(vlTOPp->top__DOT__top__DOT__tank_left_red)
+                                               : ((IData)(vlTOPp->top__DOT__top__DOT__player_tank_enable)
+                                                   ? (IData)(vlTOPp->top__DOT__top__DOT__player_tank_red)
+                                                   : 
+                                                  ((IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__level_enable)
+                                                    ? (IData)(vlTOPp->top__DOT__top__DOT__level_red)
+                                                    : 0xe0U)))));
             } else {
                 if (vlTOPp->top__DOT__top__DOT__is_continue) {
                     vlTOPp->red_o = 0xe0U;
@@ -4874,13 +4375,10 @@ VL_INLINE_OPT void Vtop::_multiclk__TOP__48(Vtop__Syms* __restrict vlSymsp) {
             if (vlTOPp->top__DOT__top__DOT__is_playing) {
                 vlTOPp->green_o = (0xffU & ((IData)(vlTOPp->top__DOT__top__DOT__map_enable)
                                              ? (((IData)(vlTOPp->top__DOT__top__DOT__map_green) 
-                                                 | ((IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__map_enable)
-                                                     ? 0U
-                                                     : 
-                                                    ((((IData)(vlTOPp->top__DOT__top__DOT__player_1_green) 
-                                                       | (IData)(vlTOPp->top__DOT__top__DOT__player_2_green)) 
-                                                      | (IData)(vlTOPp->top__DOT__top__DOT__enemy_1_green)) 
-                                                     | (IData)(vlTOPp->top__DOT__top__DOT__enemy_2_green)))) 
+                                                 | ((((IData)(vlTOPp->top__DOT__top__DOT__player_1_green) 
+                                                      | (IData)(vlTOPp->top__DOT__top__DOT__player_2_green)) 
+                                                     | (IData)(vlTOPp->top__DOT__top__DOT__enemy_1_green)) 
+                                                    | (IData)(vlTOPp->top__DOT__top__DOT__enemy_2_green))) 
                                                 | ((((((IData)(vlTOPp->top__DOT__top__DOT__player_2__DOT__tank_bullet) 
                                                        | (IData)(vlTOPp->top__DOT__top__DOT__player_1__DOT__tank_bullet)) 
                                                       | (IData)(vlTOPp->top__DOT__top__DOT__enemy_1__DOT__tank_bullet)) 
@@ -4888,12 +4386,15 @@ VL_INLINE_OPT void Vtop::_multiclk__TOP__48(Vtop__Syms* __restrict vlSymsp) {
                                                      ? 0xffffffU
                                                      : 0U) 
                                                    >> 8U))
-                                             : ((IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__number_enable_i)
-                                                 ? (IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__number_green_i)
+                                             : ((IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__tank_left_enable)
+                                                 ? (IData)(vlTOPp->top__DOT__top__DOT__tank_left_green)
                                                  : 
-                                                ((IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__tank_enable_i)
-                                                  ? (IData)(vlTOPp->top__DOT__top__DOT__rgb_render__DOT__tank_green_i)
-                                                  : 0xe0U))));
+                                                ((IData)(vlTOPp->top__DOT__top__DOT__player_tank_enable)
+                                                  ? (IData)(vlTOPp->top__DOT__top__DOT__player_tank_green)
+                                                  : 
+                                                 ((IData)(vlTOPp->top__DOT__top__DOT__score_board__DOT__level_enable)
+                                                   ? (IData)(vlTOPp->top__DOT__top__DOT__level_green)
+                                                   : 0xe0U)))));
             } else {
                 if (vlTOPp->top__DOT__top__DOT__is_continue) {
                     vlTOPp->green_o = 0xe0U;
@@ -4909,12 +4410,37 @@ VL_INLINE_OPT void Vtop::_multiclk__TOP__48(Vtop__Syms* __restrict vlSymsp) {
     }
 }
 
+VL_INLINE_OPT void Vtop::_multiclk__TOP__44(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_multiclk__TOP__44\n"); );
+    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
+    // Body
+    vlTOPp->top__DOT__top__DOT__bullet_collide_1__DOT__all_player 
+        = ((IData)(vlTOPp->top__DOT__top__DOT__player_1_tank_enable) 
+           | (IData)(vlTOPp->top__DOT__top__DOT__player_2_tank_enable));
+}
+
+VL_INLINE_OPT void Vtop::_multiclk__TOP__45(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_multiclk__TOP__45\n"); );
+    Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
+    // Body
+    vlTOPp->top__DOT__top__DOT__player_box = ((((IData)(vlTOPp->top__DOT__top__DOT__player_1_tank_enable) 
+                                                | (IData)(vlTOPp->top__DOT__top__DOT__player_2_tank_enable)) 
+                                               | (IData)(vlTOPp->top__DOT__top__DOT__enemy_1_tank_enable)) 
+                                              | (IData)(vlTOPp->top__DOT__top__DOT__enemy_2_tank_enable));
+    vlTOPp->top__DOT__top__DOT____Vcellinp__player_1__cannot_walk_through_i 
+        = ((IData)(vlTOPp->top__DOT__top__DOT__cannot_walk_through) 
+           | (IData)(vlTOPp->top__DOT__top__DOT__player_box));
+    vlTOPp->top__DOT__top__DOT____Vcellinp__player_2__cannot_walk_through_i 
+        = ((IData)(vlTOPp->top__DOT__top__DOT__cannot_walk_through) 
+           | (IData)(vlTOPp->top__DOT__top__DOT__player_box));
+}
+
 void Vtop::_eval(Vtop__Syms* __restrict vlSymsp) {
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_eval\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
     if (((IData)(vlTOPp->clk_i) & (~ (IData)(vlTOPp->__Vclklast__TOP__clk_i)))) {
-        vlTOPp->_sequent__TOP__2(vlSymsp);
+        vlTOPp->_sequent__TOP__3(vlSymsp);
     }
     if ((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__clk_player) 
           & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__clk_player))) 
@@ -4981,144 +4507,89 @@ void Vtop::_eval(Vtop__Syms* __restrict vlSymsp) {
     if (((IData)(vlTOPp->hsync_no) & (~ (IData)(vlTOPp->__Vclklast__TOP__hsync_no)))) {
         vlTOPp->_sequent__TOP__16(vlSymsp);
     }
-    vlTOPp->_combo__TOP__17(vlSymsp);
-    if ((((IData)(vlTOPp->reset_i) & (~ (IData)(vlTOPp->__Vclklast__TOP__reset_i))) 
-         | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
-            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))))) {
-        vlTOPp->_sequent__TOP__18(vlSymsp);
-    }
     if (((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
          & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk)))) {
-        vlTOPp->_sequent__TOP__19(vlSymsp);
-    }
-    if ((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
-          & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))) 
-         | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__reset) 
-            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__reset))))) {
-        vlTOPp->_sequent__TOP__20(vlSymsp);
+        vlTOPp->_sequent__TOP__17(vlSymsp);
     }
     if ((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__clk_player) 
           & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__clk_player))) 
          | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__enemy_1__DOT__reset_tank) 
             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__enemy_1__DOT__reset_tank))))) {
-        vlTOPp->_sequent__TOP__21(vlSymsp);
+        vlTOPp->_sequent__TOP__18(vlSymsp);
+    }
+    if ((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
+          & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))) 
+         | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__reset) 
+            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__reset))))) {
+        vlTOPp->_sequent__TOP__19(vlSymsp);
     }
     if ((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__clk_player) 
           & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__clk_player))) 
          | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__player_2__DOT__reset_tank) 
             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__player_2__DOT__reset_tank))))) {
-        vlTOPp->_sequent__TOP__22(vlSymsp);
+        vlTOPp->_sequent__TOP__20(vlSymsp);
     }
     if ((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__clk_player) 
           & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__clk_player))) 
          | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__player_1__DOT__reset_tank) 
             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__player_1__DOT__reset_tank))))) {
-        vlTOPp->_sequent__TOP__23(vlSymsp);
+        vlTOPp->_sequent__TOP__21(vlSymsp);
     }
     if ((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__enemy_1__DOT__pulse_gen__DOT__clk_div) 
           & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__enemy_1__DOT__pulse_gen__DOT__clk_div))) 
          | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__enemy_1__DOT__reset_tank) 
             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__enemy_1__DOT__reset_tank))))) {
-        vlTOPp->_sequent__TOP__24(vlSymsp);
+        vlTOPp->_sequent__TOP__22(vlSymsp);
+    }
+    if ((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
+          & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))) 
+         | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__enemy_1__DOT__reset_tank) 
+            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__enemy_1__DOT__reset_tank))))) {
+        vlTOPp->_sequent__TOP__23(vlSymsp);
     }
     if ((((IData)(vlTOPp->reset_i) & (~ (IData)(vlTOPp->__Vclklast__TOP__reset_i))) 
          | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))))) {
+        vlTOPp->_sequent__TOP__24(vlSymsp);
+    }
+    if ((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
+          & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))) 
+         | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__player_2__DOT__reset_tank) 
+            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__player_2__DOT__reset_tank))))) {
         vlTOPp->_sequent__TOP__25(vlSymsp);
     }
     if ((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
           & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))) 
-         | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__enemy_1__DOT__reset_tank) 
-            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__enemy_1__DOT__reset_tank))))) {
+         | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__player_1__DOT__reset_tank) 
+            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__player_1__DOT__reset_tank))))) {
         vlTOPp->_sequent__TOP__26(vlSymsp);
     }
-    if ((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
-          & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))) 
-         | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__player_2__DOT__reset_tank) 
-            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__player_2__DOT__reset_tank))))) {
-        vlTOPp->_sequent__TOP__27(vlSymsp);
-    }
-    if ((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
-          & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))) 
-         | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__player_1__DOT__reset_tank) 
-            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__player_1__DOT__reset_tank))))) {
-        vlTOPp->_sequent__TOP__28(vlSymsp);
-    }
-    vlTOPp->_combo__TOP__29(vlSymsp);
+    vlTOPp->_combo__TOP__27(vlSymsp);
     if (((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
          & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk)))) {
+        vlTOPp->_sequent__TOP__28(vlSymsp);
+    }
+    if ((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__clk_player) 
+          & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__clk_player))) 
+         | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__player_2__DOT__reset_tank) 
+            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__player_2__DOT__reset_tank))))) {
+        vlTOPp->_sequent__TOP__29(vlSymsp);
+    }
+    if ((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__clk_player) 
+          & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__clk_player))) 
+         | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__player_1__DOT__reset_tank) 
+            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__player_1__DOT__reset_tank))))) {
         vlTOPp->_sequent__TOP__30(vlSymsp);
     }
-    if ((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__clk_player) 
-          & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__clk_player))) 
-         | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__player_2__DOT__reset_tank) 
-            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__player_2__DOT__reset_tank))))) {
-        vlTOPp->_sequent__TOP__31(vlSymsp);
-    }
-    if ((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__clk_player) 
-          & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__clk_player))) 
-         | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__player_1__DOT__reset_tank) 
-            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__player_1__DOT__reset_tank))))) {
-        vlTOPp->_sequent__TOP__32(vlSymsp);
-    }
-    if (((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
-           & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))) 
-          | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__clk_bullet) 
-             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__clk_bullet)))) 
-         | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__enemy_1__DOT__reset_tank) 
-            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__enemy_1__DOT__reset_tank))))) {
-        vlTOPp->_multiclk__TOP__33(vlSymsp);
-    }
-    if (((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
-           & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))) 
-          | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__clk_bullet) 
-             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__clk_bullet)))) 
-         | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__player_1__DOT__reset_tank) 
-            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__player_1__DOT__reset_tank))))) {
-        vlTOPp->_multiclk__TOP__34(vlSymsp);
-    }
-    if (((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
-           & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))) 
-          | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__clk_bullet) 
-             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__clk_bullet)))) 
-         | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__player_2__DOT__reset_tank) 
-            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__player_2__DOT__reset_tank))))) {
-        vlTOPp->_multiclk__TOP__35(vlSymsp);
-    }
-    if (((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
-           & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))) 
-          | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__clk_player) 
-             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__clk_player)))) 
-         | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__enemy_1__DOT__reset_tank) 
-            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__enemy_1__DOT__reset_tank))))) {
-        vlTOPp->_multiclk__TOP__36(vlSymsp);
-    }
-    if ((((IData)(vlTOPp->reset_i) & (~ (IData)(vlTOPp->__Vclklast__TOP__reset_i))) 
-         | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
-            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))))) {
-        vlTOPp->_sequent__TOP__37(vlSymsp);
-    }
-    if ((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
-          & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))) 
+    if ((((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
+            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))) 
+           | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__clk_bullet) 
+              & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__clk_bullet)))) 
+          | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__enemy_1__DOT__reset_tank) 
+             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__enemy_1__DOT__reset_tank)))) 
          | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__reset) 
             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__reset))))) {
-        vlTOPp->_sequent__TOP__38(vlSymsp);
-    }
-    if (((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
-           & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))) 
-          | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__clk_player) 
-             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__clk_player)))) 
-         | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__player_2__DOT__reset_tank) 
-            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__player_2__DOT__reset_tank))))) {
-        vlTOPp->_multiclk__TOP__39(vlSymsp);
-    }
-    if (((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
-           & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))) 
-          | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__clk_player) 
-             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__clk_player)))) 
-         | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__player_1__DOT__reset_tank) 
-            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__player_1__DOT__reset_tank))))) {
-        vlTOPp->_multiclk__TOP__40(vlSymsp);
+        vlTOPp->_multiclk__TOP__31(vlSymsp);
     }
     if ((((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))) 
@@ -5126,9 +4597,61 @@ void Vtop::_eval(Vtop__Syms* __restrict vlSymsp) {
               & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__clk_bullet)))) 
           | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__player_1__DOT__reset_tank) 
              & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__player_1__DOT__reset_tank)))) 
+         | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__reset) 
+            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__reset))))) {
+        vlTOPp->_multiclk__TOP__32(vlSymsp);
+    }
+    if ((((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
+            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))) 
+           | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__clk_bullet) 
+              & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__clk_bullet)))) 
+          | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__player_2__DOT__reset_tank) 
+             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__player_2__DOT__reset_tank)))) 
+         | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__reset) 
+            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__reset))))) {
+        vlTOPp->_multiclk__TOP__33(vlSymsp);
+    }
+    if (((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
+           & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))) 
+          | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__clk_player) 
+             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__clk_player)))) 
+         | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__enemy_1__DOT__reset_tank) 
+            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__enemy_1__DOT__reset_tank))))) {
+        vlTOPp->_multiclk__TOP__34(vlSymsp);
+    }
+    if ((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
+          & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))) 
+         | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__reset) 
+            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__reset))))) {
+        vlTOPp->_sequent__TOP__35(vlSymsp);
+    }
+    if (((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
+           & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))) 
+          | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__clk_player) 
+             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__clk_player)))) 
          | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__player_2__DOT__reset_tank) 
             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__player_2__DOT__reset_tank))))) {
-        vlTOPp->_multiclk__TOP__41(vlSymsp);
+        vlTOPp->_multiclk__TOP__36(vlSymsp);
+    }
+    if (((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
+           & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))) 
+          | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__clk_player) 
+             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__clk_player)))) 
+         | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__player_1__DOT__reset_tank) 
+            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__player_1__DOT__reset_tank))))) {
+        vlTOPp->_multiclk__TOP__37(vlSymsp);
+    }
+    if (((((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
+             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))) 
+            | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__clk_bullet) 
+               & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__clk_bullet)))) 
+           | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__player_1__DOT__reset_tank) 
+              & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__player_1__DOT__reset_tank)))) 
+          | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__player_2__DOT__reset_tank) 
+             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__player_2__DOT__reset_tank)))) 
+         | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__reset) 
+            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__reset))))) {
+        vlTOPp->_multiclk__TOP__38(vlSymsp);
     }
     if ((((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))) 
@@ -5138,7 +4661,7 @@ void Vtop::_eval(Vtop__Syms* __restrict vlSymsp) {
              & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__enemy_1__DOT__reset_tank)))) 
          | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__reset) 
             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__reset))))) {
-        vlTOPp->_multiclk__TOP__42(vlSymsp);
+        vlTOPp->_multiclk__TOP__39(vlSymsp);
     }
     if ((((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))) 
@@ -5148,7 +4671,7 @@ void Vtop::_eval(Vtop__Syms* __restrict vlSymsp) {
              & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__player_2__DOT__reset_tank)))) 
          | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__reset) 
             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__reset))))) {
-        vlTOPp->_multiclk__TOP__43(vlSymsp);
+        vlTOPp->_multiclk__TOP__40(vlSymsp);
     }
     if ((((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))) 
@@ -5158,36 +4681,12 @@ void Vtop::_eval(Vtop__Syms* __restrict vlSymsp) {
              & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__player_1__DOT__reset_tank)))) 
          | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__reset) 
             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__reset))))) {
-        vlTOPp->_multiclk__TOP__44(vlSymsp);
-    }
-    if (((((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
-             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))) 
-            | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__clk_bullet) 
-               & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__clk_bullet)))) 
-           | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__enemy_1__DOT__reset_tank) 
-              & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__enemy_1__DOT__reset_tank)))) 
-          | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__player_1__DOT__reset_tank) 
-             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__player_1__DOT__reset_tank)))) 
-         | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__player_2__DOT__reset_tank) 
-            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__player_2__DOT__reset_tank))))) {
-        vlTOPp->_multiclk__TOP__45(vlSymsp);
-    }
-    if (((((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
-             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))) 
-            | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__clk_player) 
-               & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__clk_player)))) 
-           | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__player_1__DOT__reset_tank) 
-              & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__player_1__DOT__reset_tank)))) 
-          | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__player_2__DOT__reset_tank) 
-             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__player_2__DOT__reset_tank)))) 
-         | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__reset) 
-            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__reset))))) {
-        vlTOPp->_multiclk__TOP__46(vlSymsp);
+        vlTOPp->_multiclk__TOP__41(vlSymsp);
     }
     if ((((((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
               & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))) 
-             | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__clk_player) 
-                & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__clk_player)))) 
+             | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__clk_bullet) 
+                & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__clk_bullet)))) 
             | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__enemy_1__DOT__reset_tank) 
                & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__enemy_1__DOT__reset_tank)))) 
            | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__player_1__DOT__reset_tank) 
@@ -5196,7 +4695,7 @@ void Vtop::_eval(Vtop__Syms* __restrict vlSymsp) {
              & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__player_2__DOT__reset_tank)))) 
          | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__reset) 
             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__reset))))) {
-        vlTOPp->_multiclk__TOP__47(vlSymsp);
+        vlTOPp->_multiclk__TOP__42(vlSymsp);
     }
     if ((((((((((IData)(vlTOPp->reset_i) & (~ (IData)(vlTOPp->__Vclklast__TOP__reset_i))) 
                | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
@@ -5213,7 +4712,33 @@ void Vtop::_eval(Vtop__Syms* __restrict vlSymsp) {
              & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__player_2__DOT__reset_tank)))) 
          | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__reset) 
             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__reset))))) {
-        vlTOPp->_multiclk__TOP__48(vlSymsp);
+        vlTOPp->_multiclk__TOP__43(vlSymsp);
+    }
+    if (((((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
+             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))) 
+            | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__clk_player) 
+               & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__clk_player)))) 
+           | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__player_1__DOT__reset_tank) 
+              & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__player_1__DOT__reset_tank)))) 
+          | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__player_2__DOT__reset_tank) 
+             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__player_2__DOT__reset_tank)))) 
+         | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__reset) 
+            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__reset))))) {
+        vlTOPp->_multiclk__TOP__44(vlSymsp);
+    }
+    if ((((((((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__VGA_clk) 
+              & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__VGA_clk))) 
+             | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__clk_player) 
+                & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__clk_player)))) 
+            | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__enemy_1__DOT__reset_tank) 
+               & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__enemy_1__DOT__reset_tank)))) 
+           | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__player_1__DOT__reset_tank) 
+              & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__player_1__DOT__reset_tank)))) 
+          | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__player_2__DOT__reset_tank) 
+             & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__player_2__DOT__reset_tank)))) 
+         | ((IData)(vlTOPp->__VinpClk__TOP__top__DOT__top__DOT__reset) 
+            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__top__DOT__top__DOT__reset))))) {
+        vlTOPp->_multiclk__TOP__45(vlSymsp);
     }
     // Final
     vlTOPp->__Vclklast__TOP__clk_i = vlTOPp->clk_i;
@@ -5290,7 +4815,7 @@ void Vtop::_eval_settle(Vtop__Syms* __restrict vlSymsp) {
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop::_eval_settle\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
-    vlTOPp->_settle__TOP__3(vlSymsp);
+    vlTOPp->_settle__TOP__2(vlSymsp);
 }
 
 VL_INLINE_OPT QData Vtop::_change_request(Vtop__Syms* __restrict vlSymsp) {
@@ -5309,8 +4834,8 @@ VL_INLINE_OPT QData Vtop::_change_request(Vtop__Syms* __restrict vlSymsp) {
          | (vlTOPp->top__DOT__top__DOT__enemy_1__DOT__pulse_gen__DOT__clk_div ^ vlTOPp->__Vchglast__TOP__top__DOT__top__DOT__enemy_1__DOT__pulse_gen__DOT__clk_div));
     VL_DEBUG_IF( if(__req && ((vlTOPp->top__DOT__top__DOT__clk_player ^ vlTOPp->__Vchglast__TOP__top__DOT__top__DOT__clk_player))) VL_DBG_MSGF("        CHANGE: src/game_top.sv:28: top.top.clk_player\n"); );
     VL_DEBUG_IF( if(__req && ((vlTOPp->top__DOT__top__DOT__clk_bullet ^ vlTOPp->__Vchglast__TOP__top__DOT__top__DOT__clk_bullet))) VL_DBG_MSGF("        CHANGE: src/game_top.sv:28: top.top.clk_bullet\n"); );
-    VL_DEBUG_IF( if(__req && ((vlTOPp->top__DOT__top__DOT__VGA_clk ^ vlTOPp->__Vchglast__TOP__top__DOT__top__DOT__VGA_clk))) VL_DBG_MSGF("        CHANGE: src/game_top.sv:34: top.top.VGA_clk\n"); );
-    VL_DEBUG_IF( if(__req && ((vlTOPp->top__DOT__top__DOT__reset ^ vlTOPp->__Vchglast__TOP__top__DOT__top__DOT__reset))) VL_DBG_MSGF("        CHANGE: src/game_top.sv:172: top.top.reset\n"); );
+    VL_DEBUG_IF( if(__req && ((vlTOPp->top__DOT__top__DOT__VGA_clk ^ vlTOPp->__Vchglast__TOP__top__DOT__top__DOT__VGA_clk))) VL_DBG_MSGF("        CHANGE: src/game_top.sv:37: top.top.VGA_clk\n"); );
+    VL_DEBUG_IF( if(__req && ((vlTOPp->top__DOT__top__DOT__reset ^ vlTOPp->__Vchglast__TOP__top__DOT__top__DOT__reset))) VL_DBG_MSGF("        CHANGE: src/game_top.sv:179: top.top.reset\n"); );
     VL_DEBUG_IF( if(__req && ((vlTOPp->top__DOT__top__DOT__player_1__DOT__reset_tank ^ vlTOPp->__Vchglast__TOP__top__DOT__top__DOT__player_1__DOT__reset_tank))) VL_DBG_MSGF("        CHANGE: src/tank.sv:54: top.top.player_1.reset_tank\n"); );
     VL_DEBUG_IF( if(__req && ((vlTOPp->top__DOT__top__DOT__player_2__DOT__reset_tank ^ vlTOPp->__Vchglast__TOP__top__DOT__top__DOT__player_2__DOT__reset_tank))) VL_DBG_MSGF("        CHANGE: src/tank.sv:54: top.top.player_2.reset_tank\n"); );
     VL_DEBUG_IF( if(__req && ((vlTOPp->top__DOT__top__DOT__enemy_1__DOT__reset_tank ^ vlTOPp->__Vchglast__TOP__top__DOT__top__DOT__enemy_1__DOT__reset_tank))) VL_DBG_MSGF("        CHANGE: src/tank_bot.sv:51: top.top.enemy_1.reset_tank\n"); );
@@ -5377,15 +4902,24 @@ void Vtop::_ctor_var_reset() {
     top__DOT__top__DOT__clk_bullet = VL_RAND_RESET_I(1);
     top__DOT__top__DOT__cannot_walk_through = VL_RAND_RESET_I(1);
     top__DOT__top__DOT__all_hard_block = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__player_tank_enable = VL_RAND_RESET_I(1);
     top__DOT__top__DOT__map_blue = VL_RAND_RESET_I(8);
     top__DOT__top__DOT__map_green = VL_RAND_RESET_I(8);
     top__DOT__top__DOT__map_red = VL_RAND_RESET_I(8);
     top__DOT__top__DOT__menu_blue = VL_RAND_RESET_I(8);
     top__DOT__top__DOT__menu_green = VL_RAND_RESET_I(8);
     top__DOT__top__DOT__menu_red = VL_RAND_RESET_I(8);
+    top__DOT__top__DOT__tank_left_blue = VL_RAND_RESET_I(8);
+    top__DOT__top__DOT__tank_left_green = VL_RAND_RESET_I(8);
+    top__DOT__top__DOT__tank_left_red = VL_RAND_RESET_I(8);
+    top__DOT__top__DOT__player_tank_blue = VL_RAND_RESET_I(8);
+    top__DOT__top__DOT__player_tank_green = VL_RAND_RESET_I(8);
+    top__DOT__top__DOT__player_tank_red = VL_RAND_RESET_I(8);
+    top__DOT__top__DOT__level_blue = VL_RAND_RESET_I(8);
+    top__DOT__top__DOT__level_green = VL_RAND_RESET_I(8);
+    top__DOT__top__DOT__level_red = VL_RAND_RESET_I(8);
     top__DOT__top__DOT__hpos = VL_RAND_RESET_I(10);
     top__DOT__top__DOT__vpos = VL_RAND_RESET_I(10);
-    top__DOT__top__DOT__map_type = VL_RAND_RESET_I(2);
     top__DOT__top__DOT__display_enable = VL_RAND_RESET_I(1);
     top__DOT__top__DOT__VGA_clk = VL_RAND_RESET_I(1);
     top__DOT__top__DOT__player_box = VL_RAND_RESET_I(1);
@@ -5402,6 +4936,7 @@ void Vtop::_ctor_var_reset() {
     top__DOT__top__DOT__player_1_revive = VL_RAND_RESET_I(1);
     top__DOT__top__DOT__player_1_bits = VL_RAND_RESET_I(24);
     top__DOT__top__DOT__player_1_addr = VL_RAND_RESET_I(10);
+    top__DOT__top__DOT____Vcellinp__player_1__cannot_walk_through_i = VL_RAND_RESET_I(1);
     top__DOT__top__DOT__player_2_blue = VL_RAND_RESET_I(8);
     top__DOT__top__DOT__player_2_green = VL_RAND_RESET_I(8);
     top__DOT__top__DOT__player_2_red = VL_RAND_RESET_I(8);
@@ -5450,66 +4985,35 @@ void Vtop::_ctor_var_reset() {
     { int __Vi0=0; for (; __Vi0<8192; ++__Vi0) {
             top__DOT__top__DOT__map_rgb__DOT__tile__DOT__mem[__Vi0] = VL_RAND_RESET_I(24);
     }}
-    top__DOT__top__DOT__menu__DOT____Vxrand5 = VL_RAND_RESET_I(6);
-    top__DOT__top__DOT__menu__DOT____Vxrand4 = VL_RAND_RESET_I(6);
-    top__DOT__top__DOT__menu__DOT____Vxrand3 = VL_RAND_RESET_I(6);
     top__DOT__top__DOT__menu__DOT____Vxrand2 = VL_RAND_RESET_I(6);
     top__DOT__top__DOT__menu__DOT____Vxrand1 = VL_RAND_RESET_I(6);
     top__DOT__top__DOT__menu__DOT__bit_number = VL_RAND_RESET_I(8);
     { int __Vi0=0; for (; __Vi0<11; ++__Vi0) {
             top__DOT__top__DOT__menu__DOT__title_buffer[__Vi0] = VL_RAND_RESET_I(6);
     }}
-    { int __Vi0=0; for (; __Vi0<5; ++__Vi0) {
-            top__DOT__top__DOT__menu__DOT__map1_buffer[__Vi0] = VL_RAND_RESET_I(6);
+    { int __Vi0=0; for (; __Vi0<14; ++__Vi0) {
+            top__DOT__top__DOT__menu__DOT__game_start[__Vi0] = VL_RAND_RESET_I(6);
     }}
-    { int __Vi0=0; for (; __Vi0<5; ++__Vi0) {
-            top__DOT__top__DOT__menu__DOT__map2_buffer[__Vi0] = VL_RAND_RESET_I(6);
-    }}
-    { int __Vi0=0; for (; __Vi0<5; ++__Vi0) {
-            top__DOT__top__DOT__menu__DOT__map3_buffer[__Vi0] = VL_RAND_RESET_I(6);
-    }}
-    { int __Vi0=0; for (; __Vi0<5; ++__Vi0) {
-            top__DOT__top__DOT__menu__DOT__map4_buffer[__Vi0] = VL_RAND_RESET_I(6);
-    }}
-    top__DOT__top__DOT__menu__DOT__arrow = VL_RAND_RESET_I(6);
     top__DOT__top__DOT__menu__DOT__rom_addr = VL_RAND_RESET_I(10);
     top__DOT__top__DOT__menu__DOT__x_ofs = VL_RAND_RESET_I(3);
     top__DOT__top__DOT__menu__DOT__title_enable = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__menu__DOT__map1 = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__menu__DOT__map2 = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__menu__DOT__map3 = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__menu__DOT__map4 = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__menu__DOT__arrow_en = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__menu__DOT__sellect_up = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__menu__DOT__sellect_down = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__menu__DOT__arrow_pos = VL_RAND_RESET_I(5);
+    top__DOT__top__DOT__menu__DOT__game_start_enable = VL_RAND_RESET_I(1);
     { int __Vi0=0; for (; __Vi0<1024; ++__Vi0) {
             top__DOT__top__DOT__menu__DOT__ascii_rom__DOT__mem[__Vi0] = VL_RAND_RESET_I(8);
     }}
-    top__DOT__top__DOT__menu__DOT__sellect_up_edge_dect__DOT__sig_dly = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__menu__DOT__sellect_down_edge_dect__DOT__sig_dly = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__rgb_render__DOT__number_blue_i = VL_RAND_RESET_I(8);
-    top__DOT__top__DOT__rgb_render__DOT__number_green_i = VL_RAND_RESET_I(8);
-    top__DOT__top__DOT__rgb_render__DOT__number_red_i = VL_RAND_RESET_I(8);
-    top__DOT__top__DOT__rgb_render__DOT__number_enable_i = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__rgb_render__DOT__tank_blue_i = VL_RAND_RESET_I(8);
-    top__DOT__top__DOT__rgb_render__DOT__tank_green_i = VL_RAND_RESET_I(8);
-    top__DOT__top__DOT__rgb_render__DOT__tank_red_i = VL_RAND_RESET_I(8);
-    top__DOT__top__DOT__rgb_render__DOT__tank_enable_i = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__rgb_render__DOT__map_enable = VL_RAND_RESET_I(1);
     top__DOT__top__DOT__speed_control__DOT__count = VL_RAND_RESET_I(24);
     top__DOT__top__DOT__speed_control__DOT__count2 = VL_RAND_RESET_I(24);
     top__DOT__top__DOT__speed_control__DOT__a = VL_RAND_RESET_I(1);
     top__DOT__top__DOT__bullet_collide_1__DOT__all_player = VL_RAND_RESET_I(1);
     top__DOT__top__DOT__bullet_collide_1__DOT__all_player_bullet = VL_RAND_RESET_I(1);
     top__DOT__top__DOT__bullet_collide_1__DOT__all_bullet = VL_RAND_RESET_I(1);
-    top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_stage = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_stage = VL_RAND_RESET_I(2);
     top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_left = VL_RAND_RESET_I(4);
     top__DOT__top__DOT__bullet_collide_1__DOT__player_1_count_revive = VL_RAND_RESET_I(32);
-    top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_stage = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_stage = VL_RAND_RESET_I(2);
     top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_left = VL_RAND_RESET_I(4);
     top__DOT__top__DOT__bullet_collide_1__DOT__player_2_count_revive = VL_RAND_RESET_I(32);
-    top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_stage = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_stage = VL_RAND_RESET_I(2);
     top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_left = VL_RAND_RESET_I(4);
     top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_count_revive = VL_RAND_RESET_I(32);
     top__DOT__top__DOT__game_FSM__DOT__bullet_collide_player_1_i = VL_RAND_RESET_I(1);
@@ -5519,11 +5023,35 @@ void Vtop::_ctor_var_reset() {
     top__DOT__top__DOT__game_FSM__DOT__score_player_2 = VL_RAND_RESET_I(6);
     top__DOT__top__DOT__game_FSM__DOT__pos_edge_detect_bullet_1__DOT__sig_dly = VL_RAND_RESET_I(1);
     top__DOT__top__DOT__game_FSM__DOT__pos_edge_detect_bullet_2__DOT__sig_dly = VL_RAND_RESET_I(1);
-    { int __Vi0=0; for (; __Vi0<1024; ++__Vi0) {
-            top__DOT__top__DOT__score__DOT__tank_player_1__DOT__mem[__Vi0] = VL_RAND_RESET_I(24);
+    top__DOT__top__DOT__score_board__DOT____Vxrand1 = VL_RAND_RESET_I(6);
+    top__DOT__top__DOT__score_board__DOT__tank_left_enable = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__score_board__DOT__tank_left_enable_16 = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__score_board__DOT__tank_left_enable_32 = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__score_board__DOT__player_1_enable = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__score_board__DOT__player_2_enable = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__score_board__DOT__tank_left_dout = VL_RAND_RESET_I(24);
+    top__DOT__top__DOT__score_board__DOT__player_1_tank_enable = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__score_board__DOT__player_1_bits = VL_RAND_RESET_I(24);
+    top__DOT__top__DOT__score_board__DOT__player_2_tank_enable = VL_RAND_RESET_I(1);
+    top__DOT__top__DOT__score_board__DOT__player_2_bits = VL_RAND_RESET_I(24);
+    top__DOT__top__DOT__score_board__DOT__bit_number = VL_RAND_RESET_I(8);
+    { int __Vi0=0; for (; __Vi0<7; ++__Vi0) {
+            top__DOT__top__DOT__score_board__DOT__game_start[__Vi0] = VL_RAND_RESET_I(6);
+    }}
+    top__DOT__top__DOT__score_board__DOT__rom_addr = VL_RAND_RESET_I(10);
+    top__DOT__top__DOT__score_board__DOT__x_ofs = VL_RAND_RESET_I(3);
+    top__DOT__top__DOT__score_board__DOT__level_enable = VL_RAND_RESET_I(1);
+    { int __Vi0=0; for (; __Vi0<256; ++__Vi0) {
+            top__DOT__top__DOT__score_board__DOT__mem_lives__DOT__mem[__Vi0] = VL_RAND_RESET_I(24);
     }}
     { int __Vi0=0; for (; __Vi0<1024; ++__Vi0) {
-            top__DOT__top__DOT__score__DOT__tank_player_2__DOT__mem[__Vi0] = VL_RAND_RESET_I(24);
+            top__DOT__top__DOT__score_board__DOT__mem_player_1__DOT__mem[__Vi0] = VL_RAND_RESET_I(24);
+    }}
+    { int __Vi0=0; for (; __Vi0<1024; ++__Vi0) {
+            top__DOT__top__DOT__score_board__DOT__mem_player_2__DOT__mem[__Vi0] = VL_RAND_RESET_I(24);
+    }}
+    { int __Vi0=0; for (; __Vi0<1024; ++__Vi0) {
+            top__DOT__top__DOT__score_board__DOT__ascii_rom__DOT__mem[__Vi0] = VL_RAND_RESET_I(8);
     }}
     top__DOT__top__DOT__player_1__DOT__tank_x = VL_RAND_RESET_I(10);
     top__DOT__top__DOT__player_1__DOT__tank_y = VL_RAND_RESET_I(10);
@@ -5610,13 +5138,13 @@ void Vtop::_ctor_var_reset() {
     }}
     __Vdly__top__DOT__top__DOT__hpos = VL_RAND_RESET_I(10);
     __Vdly__top__DOT__top__DOT__vpos = VL_RAND_RESET_I(10);
-    __Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_stage = VL_RAND_RESET_I(1);
+    __Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_stage = VL_RAND_RESET_I(2);
     __Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_left = VL_RAND_RESET_I(4);
     __Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_1_count_revive = VL_RAND_RESET_I(32);
-    __Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_stage = VL_RAND_RESET_I(1);
+    __Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_stage = VL_RAND_RESET_I(2);
     __Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_left = VL_RAND_RESET_I(4);
     __Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_2_count_revive = VL_RAND_RESET_I(32);
-    __Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_stage = VL_RAND_RESET_I(1);
+    __Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_stage = VL_RAND_RESET_I(2);
     __Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_left = VL_RAND_RESET_I(4);
     __Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_count_revive = VL_RAND_RESET_I(32);
     __Vdly__top__DOT__top__DOT__game_FSM__DOT__game_state = VL_RAND_RESET_I(2);

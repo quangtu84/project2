@@ -46,7 +46,7 @@ module tank_bot #(
     logic auto_tank_shoot, tank_shoot2;
 
     assign tank_move = auto_tank_move;
-    assign tank_shoot2 = auto_tank_shoot; 
+    assign tank_shoot2 = auto_tank_shoot;
 
     logic reset_tank;
     assign reset_tank = reset_i || tank_revive_i;
@@ -144,7 +144,6 @@ module tank_bot #(
     //              tank GFX
     ///////////////////////////////////////////
     
-    
     logic [4:0] tank_yofs_backward, tank_xofs_backward;
     logic [4:0] tank_xofs, tank_yofs;
     always @(posedge hsync_i) begin
@@ -216,13 +215,13 @@ module tank_bot #(
                 NOT_SHOOT: begin
                     show_bullet <= 0;
                     bullet_dir <= tank_prev_direct;
-                    if (tank_shoot && !tank_die_i ) begin
+                    if (tank_shoot && !tank_die_i) begin
                         bullet_stage <= SHOOT;
                     end
                 end
                 SHOOT: begin
                     show_bullet <= 1;
-                    if (bullet_collide_i) begin
+                    if (bullet_collide_i || tank_die_i) begin
                         bullet_stage <= COLLIDE;
                         show_bullet <= 0;
                     end
@@ -230,7 +229,6 @@ module tank_bot #(
                 COLLIDE: begin
                     bullet_stage <= NOT_SHOOT;
                 end
-            
                 default: ;
             endcase
         end
@@ -277,7 +275,7 @@ module tank_bot #(
         end
     end
 
-    assign tank_bullet = show_bullet && ((vpos_i - tank_bullet_y) < BULLET_BOUND)  && ((hpos_i - tank_bullet_x) < BULLET_BOUND);
+    assign tank_bullet = !tank_die_i && show_bullet && ((vpos_i - tank_bullet_y) < BULLET_BOUND)  && ((hpos_i - tank_bullet_x) < BULLET_BOUND);
     assign bullet_enable_o = tank_bullet;
 
     //////////////////////////////////////////////
@@ -412,7 +410,7 @@ always_ff @(posedge player_clk_i or posedge reset_tank) begin
                         bot_stage <= IDLE;
                     end else begin
                         count2 <= count2 + 1;
-                        if (count2 == 200) bot_stage <= IDLE;
+                        if (count2 == 100) bot_stage <= IDLE;
                     end
                 end
                 default: ;

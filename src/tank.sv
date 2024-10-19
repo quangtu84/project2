@@ -219,13 +219,13 @@ module tank #(
                 NOT_SHOOT: begin
                     show_bullet <= 0;
                     bullet_dir <= tank_prev_direct;
-                    if (tank_shoot && !tank_die_i ) begin
+                    if (tank_shoot && !tank_die_i) begin
                         bullet_stage <= SHOOT;
                     end
                 end
                 SHOOT: begin
                     show_bullet <= 1;
-                    if (bullet_collide_i) begin
+                    if (bullet_collide_i || tank_die_i) begin
                         bullet_stage <= COLLIDE;
                         show_bullet <= 0;
                     end
@@ -280,7 +280,7 @@ module tank #(
         end
     end
 
-    assign tank_bullet = show_bullet && ((vpos_i - tank_bullet_y) < BULLET_BOUND)  && ((hpos_i - tank_bullet_x) < BULLET_BOUND);
+    assign tank_bullet = !tank_die_i && show_bullet && ((vpos_i - tank_bullet_y) < BULLET_BOUND)  && ((hpos_i - tank_bullet_x) < BULLET_BOUND);
     assign bullet_enable_o = tank_bullet;
 
 endmodule

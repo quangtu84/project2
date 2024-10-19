@@ -8,6 +8,7 @@ src/mem_enemy_1.sv
 src/mem_enemy_2.sv
 src/mem_enemy_3.sv
 src/mem_enemy_4.sv
+src/mem_lives.sv
 src/mem_player_1.sv
 src/mem_player_2.sv
 src/mem_tile.sv
@@ -18,5 +19,5 @@ src/tank.sv
 src/pos_edge_detect.sv
 src/pulse_gen.sv
 src/rgb_render.sv
-src/score.sv
+src/score_board.sv
 src/speed_control.sv

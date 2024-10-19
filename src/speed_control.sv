@@ -21,7 +21,7 @@ module speed_control (
 
   always @(posedge clk_i) begin
     count2 <= count2 + 1;
-    if (count2 == 75000) begin
+    if (count2 == 25000) begin
       bullet_update_o <= ~bullet_update_o;
       count2  <= 0;
     end

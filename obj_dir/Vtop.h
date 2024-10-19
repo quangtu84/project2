@@ -53,13 +53,22 @@ VL_MODULE(Vtop) {
         CData/*0:0*/ top__DOT__top__DOT__map_enable;
         CData/*0:0*/ top__DOT__top__DOT__cannot_walk_through;
         CData/*0:0*/ top__DOT__top__DOT__all_hard_block;
+        CData/*0:0*/ top__DOT__top__DOT__player_tank_enable;
         CData/*7:0*/ top__DOT__top__DOT__map_blue;
         CData/*7:0*/ top__DOT__top__DOT__map_green;
         CData/*7:0*/ top__DOT__top__DOT__map_red;
         CData/*7:0*/ top__DOT__top__DOT__menu_blue;
         CData/*7:0*/ top__DOT__top__DOT__menu_green;
         CData/*7:0*/ top__DOT__top__DOT__menu_red;
-        CData/*1:0*/ top__DOT__top__DOT__map_type;
+        CData/*7:0*/ top__DOT__top__DOT__tank_left_blue;
+        CData/*7:0*/ top__DOT__top__DOT__tank_left_green;
+        CData/*7:0*/ top__DOT__top__DOT__tank_left_red;
+        CData/*7:0*/ top__DOT__top__DOT__player_tank_blue;
+        CData/*7:0*/ top__DOT__top__DOT__player_tank_green;
+        CData/*7:0*/ top__DOT__top__DOT__player_tank_red;
+        CData/*7:0*/ top__DOT__top__DOT__level_blue;
+        CData/*7:0*/ top__DOT__top__DOT__level_green;
+        CData/*7:0*/ top__DOT__top__DOT__level_red;
         CData/*0:0*/ top__DOT__top__DOT__display_enable;
         CData/*0:0*/ top__DOT__top__DOT__player_box;
         CData/*0:0*/ top__DOT__top__DOT__is_menu;
@@ -97,42 +106,23 @@ VL_MODULE(Vtop) {
         CData/*3:0*/ top__DOT__top__DOT__map_rgb__DOT__block_state;
         CData/*0:0*/ top__DOT__top__DOT__map_rgb__DOT__UL;
         CData/*0:0*/ top__DOT__top__DOT__map_rgb__DOT__UR;
+    };
+    struct {
         CData/*0:0*/ top__DOT__top__DOT__map_rgb__DOT__LR;
         CData/*0:0*/ top__DOT__top__DOT__map_rgb__DOT__LL;
         CData/*7:0*/ top__DOT__top__DOT__menu__DOT__bit_number;
-        CData/*5:0*/ top__DOT__top__DOT__menu__DOT__arrow;
         CData/*2:0*/ top__DOT__top__DOT__menu__DOT__x_ofs;
         CData/*0:0*/ top__DOT__top__DOT__menu__DOT__title_enable;
-        CData/*0:0*/ top__DOT__top__DOT__menu__DOT__map1;
-        CData/*0:0*/ top__DOT__top__DOT__menu__DOT__map2;
-        CData/*0:0*/ top__DOT__top__DOT__menu__DOT__map3;
-    };
-    struct {
-        CData/*0:0*/ top__DOT__top__DOT__menu__DOT__map4;
-        CData/*0:0*/ top__DOT__top__DOT__menu__DOT__arrow_en;
-        CData/*0:0*/ top__DOT__top__DOT__menu__DOT__sellect_up;
-        CData/*0:0*/ top__DOT__top__DOT__menu__DOT__sellect_down;
-        CData/*4:0*/ top__DOT__top__DOT__menu__DOT__arrow_pos;
-        CData/*0:0*/ top__DOT__top__DOT__menu__DOT__sellect_up_edge_dect__DOT__sig_dly;
-        CData/*0:0*/ top__DOT__top__DOT__menu__DOT__sellect_down_edge_dect__DOT__sig_dly;
-        CData/*7:0*/ top__DOT__top__DOT__rgb_render__DOT__number_blue_i;
-        CData/*7:0*/ top__DOT__top__DOT__rgb_render__DOT__number_green_i;
-        CData/*7:0*/ top__DOT__top__DOT__rgb_render__DOT__number_red_i;
-        CData/*0:0*/ top__DOT__top__DOT__rgb_render__DOT__number_enable_i;
-        CData/*7:0*/ top__DOT__top__DOT__rgb_render__DOT__tank_blue_i;
-        CData/*7:0*/ top__DOT__top__DOT__rgb_render__DOT__tank_green_i;
-        CData/*7:0*/ top__DOT__top__DOT__rgb_render__DOT__tank_red_i;
-        CData/*0:0*/ top__DOT__top__DOT__rgb_render__DOT__tank_enable_i;
-        CData/*0:0*/ top__DOT__top__DOT__rgb_render__DOT__map_enable;
+        CData/*0:0*/ top__DOT__top__DOT__menu__DOT__game_start_enable;
         CData/*0:0*/ top__DOT__top__DOT__speed_control__DOT__a;
         CData/*0:0*/ top__DOT__top__DOT__bullet_collide_1__DOT__all_player;
         CData/*0:0*/ top__DOT__top__DOT__bullet_collide_1__DOT__all_player_bullet;
         CData/*0:0*/ top__DOT__top__DOT__bullet_collide_1__DOT__all_bullet;
-        CData/*0:0*/ top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_stage;
+        CData/*1:0*/ top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_stage;
         CData/*3:0*/ top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_left;
-        CData/*0:0*/ top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_stage;
+        CData/*1:0*/ top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_stage;
         CData/*3:0*/ top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_left;
-        CData/*0:0*/ top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_stage;
+        CData/*1:0*/ top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_stage;
         CData/*3:0*/ top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_left;
         CData/*0:0*/ top__DOT__top__DOT__game_FSM__DOT__bullet_collide_player_1_i;
         CData/*0:0*/ top__DOT__top__DOT__game_FSM__DOT__bullet_collide_player_2_i;
@@ -141,6 +131,16 @@ VL_MODULE(Vtop) {
         CData/*5:0*/ top__DOT__top__DOT__game_FSM__DOT__score_player_2;
         CData/*0:0*/ top__DOT__top__DOT__game_FSM__DOT__pos_edge_detect_bullet_1__DOT__sig_dly;
         CData/*0:0*/ top__DOT__top__DOT__game_FSM__DOT__pos_edge_detect_bullet_2__DOT__sig_dly;
+        CData/*0:0*/ top__DOT__top__DOT__score_board__DOT__tank_left_enable;
+        CData/*0:0*/ top__DOT__top__DOT__score_board__DOT__tank_left_enable_16;
+        CData/*0:0*/ top__DOT__top__DOT__score_board__DOT__tank_left_enable_32;
+        CData/*0:0*/ top__DOT__top__DOT__score_board__DOT__player_1_enable;
+        CData/*0:0*/ top__DOT__top__DOT__score_board__DOT__player_2_enable;
+        CData/*0:0*/ top__DOT__top__DOT__score_board__DOT__player_1_tank_enable;
+        CData/*0:0*/ top__DOT__top__DOT__score_board__DOT__player_2_tank_enable;
+        CData/*7:0*/ top__DOT__top__DOT__score_board__DOT__bit_number;
+        CData/*2:0*/ top__DOT__top__DOT__score_board__DOT__x_ofs;
+        CData/*0:0*/ top__DOT__top__DOT__score_board__DOT__level_enable;
         CData/*0:0*/ top__DOT__top__DOT__player_1__DOT__tank_box;
         CData/*0:0*/ top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_top;
         CData/*0:0*/ top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_bottom;
@@ -206,6 +206,7 @@ VL_MODULE(Vtop) {
         SData/*9:0*/ top__DOT__top__DOT__player_2_addr;
         SData/*9:0*/ top__DOT__top__DOT__enemy_1_addr;
         SData/*9:0*/ top__DOT__top__DOT__menu__DOT__rom_addr;
+        SData/*9:0*/ top__DOT__top__DOT__score_board__DOT__rom_addr;
         SData/*9:0*/ top__DOT__top__DOT__player_1__DOT__tank_x;
         SData/*9:0*/ top__DOT__top__DOT__player_1__DOT__tank_y;
         SData/*9:0*/ top__DOT__top__DOT__player_1__DOT__tank_bullet_x;
@@ -227,19 +228,22 @@ VL_MODULE(Vtop) {
         IData/*31:0*/ top__DOT__top__DOT__bullet_collide_1__DOT__player_1_count_revive;
         IData/*31:0*/ top__DOT__top__DOT__bullet_collide_1__DOT__player_2_count_revive;
         IData/*31:0*/ top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_count_revive;
+        IData/*23:0*/ top__DOT__top__DOT__score_board__DOT__tank_left_dout;
+        IData/*23:0*/ top__DOT__top__DOT__score_board__DOT__player_1_bits;
+        IData/*23:0*/ top__DOT__top__DOT__score_board__DOT__player_2_bits;
         IData/*31:0*/ top__DOT__top__DOT__enemy_1__DOT__pulse_gen__DOT__counter;
         CData/*6:0*/ top__DOT__top__DOT__map_rgb__DOT__map_tiles[13][13];
         IData/*23:0*/ top__DOT__top__DOT__map_rgb__DOT__tile__DOT__mem[8192];
         CData/*5:0*/ top__DOT__top__DOT__menu__DOT__title_buffer[11];
-        CData/*5:0*/ top__DOT__top__DOT__menu__DOT__map1_buffer[5];
-        CData/*5:0*/ top__DOT__top__DOT__menu__DOT__map2_buffer[5];
-        CData/*5:0*/ top__DOT__top__DOT__menu__DOT__map3_buffer[5];
-        CData/*5:0*/ top__DOT__top__DOT__menu__DOT__map4_buffer[5];
+        CData/*5:0*/ top__DOT__top__DOT__menu__DOT__game_start[14];
         CData/*7:0*/ top__DOT__top__DOT__menu__DOT__ascii_rom__DOT__mem[1024];
-        IData/*23:0*/ top__DOT__top__DOT__score__DOT__tank_player_1__DOT__mem[1024];
-        IData/*23:0*/ top__DOT__top__DOT__score__DOT__tank_player_2__DOT__mem[1024];
+        CData/*5:0*/ top__DOT__top__DOT__score_board__DOT__game_start[7];
     };
     struct {
+        IData/*23:0*/ top__DOT__top__DOT__score_board__DOT__mem_lives__DOT__mem[256];
+        IData/*23:0*/ top__DOT__top__DOT__score_board__DOT__mem_player_1__DOT__mem[1024];
+        IData/*23:0*/ top__DOT__top__DOT__score_board__DOT__mem_player_2__DOT__mem[1024];
+        CData/*7:0*/ top__DOT__top__DOT__score_board__DOT__ascii_rom__DOT__mem[1024];
         IData/*23:0*/ top__DOT__top__DOT__mem_player_1__DOT__mem[1024];
         IData/*23:0*/ top__DOT__top__DOT__mem_player_2__DOT__mem[1024];
         IData/*23:0*/ top__DOT__top__DOT__mem_enemy_1__DOT__mem[1024];
@@ -249,6 +253,7 @@ VL_MODULE(Vtop) {
     // Internals; generally not touched by application code
     // Anonymous structures to workaround compiler member-count bugs
     struct {
+        CData/*0:0*/ top__DOT__top__DOT____Vcellinp__player_1__cannot_walk_through_i;
         CData/*0:0*/ top__DOT__top__DOT____Vcellinp__player_2__cannot_walk_through_i;
         CData/*6:0*/ top__DOT__top__DOT__map_rgb__DOT____Vxrand2;
         CData/*6:0*/ top__DOT__top__DOT__map_rgb__DOT____Vxrand1;
@@ -257,16 +262,14 @@ VL_MODULE(Vtop) {
         CData/*0:0*/ top__DOT__top__DOT__map_rgb__DOT____Vlvbound5;
         CData/*0:0*/ top__DOT__top__DOT__map_rgb__DOT____Vlvbound6;
         CData/*6:0*/ top__DOT__top__DOT__map_rgb__DOT____Vlvbound7;
-        CData/*5:0*/ top__DOT__top__DOT__menu__DOT____Vxrand5;
-        CData/*5:0*/ top__DOT__top__DOT__menu__DOT____Vxrand4;
-        CData/*5:0*/ top__DOT__top__DOT__menu__DOT____Vxrand3;
         CData/*5:0*/ top__DOT__top__DOT__menu__DOT____Vxrand2;
         CData/*5:0*/ top__DOT__top__DOT__menu__DOT____Vxrand1;
-        CData/*0:0*/ __Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_stage;
+        CData/*5:0*/ top__DOT__top__DOT__score_board__DOT____Vxrand1;
+        CData/*1:0*/ __Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_stage;
         CData/*3:0*/ __Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_left;
-        CData/*0:0*/ __Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_stage;
+        CData/*1:0*/ __Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_stage;
         CData/*3:0*/ __Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_2_live_left;
-        CData/*0:0*/ __Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_stage;
+        CData/*1:0*/ __Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_stage;
         CData/*3:0*/ __Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__enemy_1_live_left;
         CData/*1:0*/ __Vdly__top__DOT__top__DOT__game_FSM__DOT__game_state;
         CData/*5:0*/ __Vdly__top__DOT__top__DOT__game_FSM__DOT__score_player_1;
@@ -313,9 +316,9 @@ VL_MODULE(Vtop) {
         SData/*9:0*/ __Vdly__top__DOT__top__DOT__hpos;
         SData/*9:0*/ __Vdly__top__DOT__top__DOT__vpos;
         SData/*9:0*/ __Vdly__top__DOT__top__DOT__player_1__DOT__tank_x;
+        SData/*9:0*/ __Vdly__top__DOT__top__DOT__player_1__DOT__tank_y;
     };
     struct {
-        SData/*9:0*/ __Vdly__top__DOT__top__DOT__player_1__DOT__tank_y;
         SData/*9:0*/ __Vdly__top__DOT__top__DOT__player_2__DOT__tank_x;
         SData/*9:0*/ __Vdly__top__DOT__top__DOT__player_2__DOT__tank_y;
         SData/*9:0*/ __Vdly__top__DOT__top__DOT__enemy_1__DOT__tank_x;
@@ -354,8 +357,7 @@ VL_MODULE(Vtop) {
   private:
     static QData _change_request(Vtop__Syms* __restrict vlSymsp);
   public:
-    static void _combo__TOP__17(Vtop__Syms* __restrict vlSymsp);
-    static void _combo__TOP__29(Vtop__Syms* __restrict vlSymsp);
+    static void _combo__TOP__27(Vtop__Syms* __restrict vlSymsp);
     static void _combo__TOP__8(Vtop__Syms* __restrict vlSymsp);
   private:
     void _ctor_var_reset() VL_ATTR_COLD;
@@ -369,10 +371,13 @@ VL_MODULE(Vtop) {
     static void _eval_initial(Vtop__Syms* __restrict vlSymsp) VL_ATTR_COLD;
     static void _eval_settle(Vtop__Syms* __restrict vlSymsp) VL_ATTR_COLD;
     static void _initial__TOP__1(Vtop__Syms* __restrict vlSymsp) VL_ATTR_COLD;
+    static void _multiclk__TOP__31(Vtop__Syms* __restrict vlSymsp);
+    static void _multiclk__TOP__32(Vtop__Syms* __restrict vlSymsp);
     static void _multiclk__TOP__33(Vtop__Syms* __restrict vlSymsp);
     static void _multiclk__TOP__34(Vtop__Syms* __restrict vlSymsp);
-    static void _multiclk__TOP__35(Vtop__Syms* __restrict vlSymsp);
     static void _multiclk__TOP__36(Vtop__Syms* __restrict vlSymsp);
+    static void _multiclk__TOP__37(Vtop__Syms* __restrict vlSymsp);
+    static void _multiclk__TOP__38(Vtop__Syms* __restrict vlSymsp);
     static void _multiclk__TOP__39(Vtop__Syms* __restrict vlSymsp);
     static void _multiclk__TOP__40(Vtop__Syms* __restrict vlSymsp);
     static void _multiclk__TOP__41(Vtop__Syms* __restrict vlSymsp);
@@ -380,9 +385,6 @@ VL_MODULE(Vtop) {
     static void _multiclk__TOP__43(Vtop__Syms* __restrict vlSymsp);
     static void _multiclk__TOP__44(Vtop__Syms* __restrict vlSymsp);
     static void _multiclk__TOP__45(Vtop__Syms* __restrict vlSymsp);
-    static void _multiclk__TOP__46(Vtop__Syms* __restrict vlSymsp);
-    static void _multiclk__TOP__47(Vtop__Syms* __restrict vlSymsp);
-    static void _multiclk__TOP__48(Vtop__Syms* __restrict vlSymsp);
     static void _sequent__TOP__10(Vtop__Syms* __restrict vlSymsp);
     static void _sequent__TOP__11(Vtop__Syms* __restrict vlSymsp);
     static void _sequent__TOP__12(Vtop__Syms* __restrict vlSymsp);
@@ -390,9 +392,9 @@ VL_MODULE(Vtop) {
     static void _sequent__TOP__14(Vtop__Syms* __restrict vlSymsp);
     static void _sequent__TOP__15(Vtop__Syms* __restrict vlSymsp);
     static void _sequent__TOP__16(Vtop__Syms* __restrict vlSymsp);
+    static void _sequent__TOP__17(Vtop__Syms* __restrict vlSymsp);
     static void _sequent__TOP__18(Vtop__Syms* __restrict vlSymsp);
     static void _sequent__TOP__19(Vtop__Syms* __restrict vlSymsp);
-    static void _sequent__TOP__2(Vtop__Syms* __restrict vlSymsp);
     static void _sequent__TOP__20(Vtop__Syms* __restrict vlSymsp);
     static void _sequent__TOP__21(Vtop__Syms* __restrict vlSymsp);
     static void _sequent__TOP__22(Vtop__Syms* __restrict vlSymsp);
@@ -400,19 +402,17 @@ VL_MODULE(Vtop) {
     static void _sequent__TOP__24(Vtop__Syms* __restrict vlSymsp);
     static void _sequent__TOP__25(Vtop__Syms* __restrict vlSymsp);
     static void _sequent__TOP__26(Vtop__Syms* __restrict vlSymsp);
-    static void _sequent__TOP__27(Vtop__Syms* __restrict vlSymsp);
     static void _sequent__TOP__28(Vtop__Syms* __restrict vlSymsp);
+    static void _sequent__TOP__29(Vtop__Syms* __restrict vlSymsp);
+    static void _sequent__TOP__3(Vtop__Syms* __restrict vlSymsp);
     static void _sequent__TOP__30(Vtop__Syms* __restrict vlSymsp);
-    static void _sequent__TOP__31(Vtop__Syms* __restrict vlSymsp);
-    static void _sequent__TOP__32(Vtop__Syms* __restrict vlSymsp);
-    static void _sequent__TOP__37(Vtop__Syms* __restrict vlSymsp);
-    static void _sequent__TOP__38(Vtop__Syms* __restrict vlSymsp);
+    static void _sequent__TOP__35(Vtop__Syms* __restrict vlSymsp);
     static void _sequent__TOP__4(Vtop__Syms* __restrict vlSymsp);
     static void _sequent__TOP__5(Vtop__Syms* __restrict vlSymsp);
     static void _sequent__TOP__6(Vtop__Syms* __restrict vlSymsp);
     static void _sequent__TOP__7(Vtop__Syms* __restrict vlSymsp);
     static void _sequent__TOP__9(Vtop__Syms* __restrict vlSymsp);
-    static void _settle__TOP__3(Vtop__Syms* __restrict vlSymsp) VL_ATTR_COLD;
+    static void _settle__TOP__2(Vtop__Syms* __restrict vlSymsp) VL_ATTR_COLD;
 } VL_ATTR_ALIGNED(VL_CACHE_LINE_BYTES);
 
 //----------
