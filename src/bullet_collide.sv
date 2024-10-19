@@ -31,6 +31,8 @@ module bullet_collide (
     output logic bullet_collide_eagle_o,
 
     output logic [5:0] enemy_left_o,
+    output logic [10:0] player_1_score_o,
+    output logic [10:0] player_2_score_o,
     input logic clk_i,
     input logic reset_i
 );
@@ -53,6 +55,40 @@ module bullet_collide (
     assign enemy_left_o = {2'b0, enemy_1_live_left} ;
     assign player_1_live_left_o = player_1_live_left;
     assign player_2_live_left_o = player_2_live_left;
+
+/////////////////////////////////
+//      PLAYER 1 SCORE         //
+/////////////////////////////////
+
+    always_ff @(posedge clk_i or posedge reset_i) begin
+        if (reset_i) begin
+            player_1_score_o <= 0;
+        end else begin
+            if (player_1_bullet_i && all_enemy) begin
+                player_1_score_o <= player_1_score_o + 10;
+            end
+            if (player_1_bullet_i && destroyable_block_i) begin
+                player_1_score_o <= player_1_score_o + 1;
+            end
+        end
+    end
+
+/////////////////////////////////
+//      PLAYER 2 SCORE         //
+/////////////////////////////////
+
+    always_ff @(posedge clk_i or posedge reset_i) begin
+        if (reset_i) begin
+            player_2_score_o <= 0;
+        end else begin
+            if (player_2_bullet_i && all_enemy) begin
+                player_2_score_o <= player_2_score_o + 10;
+            end
+            if (player_2_bullet_i && destroyable_block_i) begin
+                player_2_score_o <= player_2_score_o + 1;
+            end
+        end
+    end
 
     localparam LIVING = 2'b00;
     localparam DEAD = 2'b01;

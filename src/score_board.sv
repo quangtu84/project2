@@ -4,6 +4,8 @@ module score_board #(
 ) (
     input logic [5:0] tank_left_i,
     input logic [3:0] level_i,
+    input logic [10:0] player_1_score_i,
+    input logic [10:0] player_2_score_i,
     input logic [3:0] player_1_live_left_i,
     input logic [3:0] player_2_live_left_i,
     input logic [9:0] hpos_i,
@@ -66,7 +68,7 @@ module score_board #(
 
     always_comb begin
         player_1_compare = 10'd464 + {6'b0,player_1_live_left_i} * 10'd16;
-        player_2_compare = 10'd576 + {6'b0,player_2_live_left_i} * 10'd16;
+        player_2_compare = 10'd560 + {6'b0,player_2_live_left_i} * 10'd16;
     end
     
     always_comb begin
@@ -83,7 +85,7 @@ module score_board #(
     always_comb begin
         if (vpos_i > 384 && vpos_i < 400) begin
             player_2_enable = 0;
-            if (hpos_i > 576 && hpos_i < player_2_compare) begin
+            if (hpos_i > 560 && hpos_i < player_2_compare) begin
                 player_2_enable = 1;
             end
         end else begin
@@ -161,16 +163,26 @@ module score_board #(
     end
 
     logic [7:0] bit_number;
-    logic [5:0] game_start [6:0];
+    logic [5:0] level [6:0];
+    logic [5:0] player_score [9:0];
     always_comb begin
-        game_start[0]    = 6'd22; // L
-        game_start[1]    = 6'd15; // E
-        game_start[2]    = 6'd32; // V
-        game_start[3]    = 6'd15; // E
-        game_start[4]    = 6'd22; // L
-        game_start[5]    = 6'd37; // 
-        game_start[6]    = 6'd1 + {2'b0, level_i}; // O
-
+        level[0]    = 6'd22; // L
+        level[1]    = 6'd15; // E
+        level[2]    = 6'd32; // V
+        level[3]    = 6'd15; // E
+        level[4]    = 6'd22; // L
+        level[5]    = 6'd37; // 
+        level[6]    = 6'd1 + {2'b0, level_i}; // O
+        player_score[0]     = 6'd1 + player_1_score_n[5:0];
+        player_score[1]     = 6'd1 + player_1_score_t[5:0];
+        player_score[2]     = 6'd1 + player_1_score_c[5:0];
+        player_score[3]     = 6'd1 + player_1_score_dv[5:0];
+        player_score[4]     = 6'd37;
+        player_score[5]     = 6'd37;
+        player_score[6]     = 6'd1 + player_2_score_n[5:0];
+        player_score[7]     = 6'd1 + player_2_score_t[5:0];
+        player_score[8]     = 6'd1 + player_2_score_c[5:0];
+        player_score[9]     = 6'd1 + player_2_score_dv[5:0];
     end
 
     logic [9:0] rom_addr;
@@ -181,15 +193,20 @@ module score_board #(
         .data_o(bit_number)
     );
 
-    logic level_enable;
+    logic level_enable, score_enable;
 
     assign level_enable = (vpos_i[9:5] == 10) && (hpos_i[9:4] > 28) && (hpos_i[9:4] < 36);
-    assign level_enable_o = level_enable;
+    assign score_enable = (vpos_i[9:5] == 13) && (hpos_i[9:4] > 28) && (hpos_i[9:4] < 39);
+    assign level_enable_o = level_enable || score_enable;
     always_comb begin
         rom_addr = 0;
         x_ofs = 0;
         if (level_enable) begin
-            rom_addr = {game_start[hpos_i[7:4]-29],vpos_i[4:1]};
+            rom_addr = {level[hpos_i[7:4]-29],vpos_i[4:1]};
+            x_ofs = ~hpos_i[3:1];
+        end
+        if (score_enable) begin
+            rom_addr = {player_score[hpos_i[7:4]-29],vpos_i[4:1]};
             x_ofs = ~hpos_i[3:1];
         end
     end
@@ -201,6 +218,18 @@ module score_board #(
             {level_blue_o, level_green_o, level_red_o} = 24'hE0E0E0;
         end
     end
+
+    logic [10:0] player_1_score_dv, player_1_score_c, player_1_score_t, player_1_score_n;
+    assign player_1_score_n = player_1_score_i / 11'd1000;
+    assign player_1_score_t = (player_1_score_i / 11'd100) % 11'd10;
+    assign player_1_score_c = (player_1_score_i / 11'd10) % 11'd10;
+    assign player_1_score_dv = player_1_score_i % 11'd10;
+
+    logic [10:0] player_2_score_dv, player_2_score_c, player_2_score_t, player_2_score_n;
+    assign player_2_score_n = player_2_score_i / 11'd1000;
+    assign player_2_score_t = (player_2_score_i / 11'd100) % 11'd10;
+    assign player_2_score_c = (player_2_score_i / 11'd10) % 11'd10;
+    assign player_2_score_dv = player_2_score_i % 11'd10;
 
 endmodule
 /* verilator lint_off UNUSED */

@@ -30,6 +30,6 @@ module ascii_rom(
     assign data_o = mem[addr_i]; // read memory to dout (async)
 
     initial begin
-    $readmemb("pixel/ascii_text_mod.bin", mem);
+    $readmemb("24bit_rgb/ascii_text_mod.bin", mem);
     end
 endmodule

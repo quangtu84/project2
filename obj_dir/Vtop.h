@@ -52,8 +52,10 @@ VL_MODULE(Vtop) {
         CData/*0:0*/ top__DOT__top__DOT__enemy_1__DOT__pulse_gen__DOT__clk_div;
         CData/*0:0*/ top__DOT__top__DOT__map_enable;
         CData/*0:0*/ top__DOT__top__DOT__cannot_walk_through;
+        CData/*0:0*/ top__DOT__top__DOT__destroyable_block;
         CData/*0:0*/ top__DOT__top__DOT__all_hard_block;
         CData/*0:0*/ top__DOT__top__DOT__player_tank_enable;
+        CData/*0:0*/ top__DOT__top__DOT__level_enable;
         CData/*7:0*/ top__DOT__top__DOT__map_blue;
         CData/*7:0*/ top__DOT__top__DOT__map_green;
         CData/*7:0*/ top__DOT__top__DOT__map_red;
@@ -104,10 +106,10 @@ VL_MODULE(Vtop) {
         CData/*0:0*/ top__DOT__top__DOT__hvsync_gen__DOT__v_maxxed;
         CData/*2:0*/ top__DOT__top__DOT__map_rgb__DOT__block_type;
         CData/*3:0*/ top__DOT__top__DOT__map_rgb__DOT__block_state;
-        CData/*0:0*/ top__DOT__top__DOT__map_rgb__DOT__UL;
-        CData/*0:0*/ top__DOT__top__DOT__map_rgb__DOT__UR;
     };
     struct {
+        CData/*0:0*/ top__DOT__top__DOT__map_rgb__DOT__UL;
+        CData/*0:0*/ top__DOT__top__DOT__map_rgb__DOT__UR;
         CData/*0:0*/ top__DOT__top__DOT__map_rgb__DOT__LR;
         CData/*0:0*/ top__DOT__top__DOT__map_rgb__DOT__LL;
         CData/*7:0*/ top__DOT__top__DOT__menu__DOT__bit_number;
@@ -141,6 +143,7 @@ VL_MODULE(Vtop) {
         CData/*7:0*/ top__DOT__top__DOT__score_board__DOT__bit_number;
         CData/*2:0*/ top__DOT__top__DOT__score_board__DOT__x_ofs;
         CData/*0:0*/ top__DOT__top__DOT__score_board__DOT__level_enable;
+        CData/*0:0*/ top__DOT__top__DOT__score_board__DOT__score_enable;
         CData/*0:0*/ top__DOT__top__DOT__player_1__DOT__tank_box;
         CData/*0:0*/ top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_top;
         CData/*0:0*/ top__DOT__top__DOT__player_1__DOT__tank_collide_with_wall_bottom;
@@ -169,11 +172,11 @@ VL_MODULE(Vtop) {
         CData/*4:0*/ top__DOT__top__DOT__player_2__DOT__tank_yofs;
         CData/*1:0*/ top__DOT__top__DOT__player_2__DOT__bullet_stage;
         CData/*3:0*/ top__DOT__top__DOT__player_2__DOT__bullet_dir;
+    };
+    struct {
         CData/*0:0*/ top__DOT__top__DOT__player_2__DOT__show_bullet;
         CData/*0:0*/ top__DOT__top__DOT__player_2__DOT__tank_bullet;
         CData/*0:0*/ top__DOT__top__DOT__player_2__DOT__tank_shoot;
-    };
-    struct {
         CData/*0:0*/ top__DOT__top__DOT__player_2__DOT__pos_edge_detect_1__DOT__sig_dly;
         CData/*0:0*/ top__DOT__top__DOT__enemy_1__DOT__tank_box;
         CData/*0:0*/ top__DOT__top__DOT__enemy_1__DOT__tank_collide_with_wall_top;
@@ -202,6 +205,8 @@ VL_MODULE(Vtop) {
         CData/*0:0*/ top__DOT__top__DOT__enemy_1__DOT__pulse_gen__DOT__continue_gen;
         SData/*9:0*/ top__DOT__top__DOT__hpos;
         SData/*9:0*/ top__DOT__top__DOT__vpos;
+        SData/*10:0*/ top__DOT__top__DOT__player_1_score;
+        SData/*10:0*/ top__DOT__top__DOT__player_2_score;
         SData/*9:0*/ top__DOT__top__DOT__player_1_addr;
         SData/*9:0*/ top__DOT__top__DOT__player_2_addr;
         SData/*9:0*/ top__DOT__top__DOT__enemy_1_addr;
@@ -233,13 +238,14 @@ VL_MODULE(Vtop) {
         IData/*23:0*/ top__DOT__top__DOT__score_board__DOT__player_2_bits;
         IData/*31:0*/ top__DOT__top__DOT__enemy_1__DOT__pulse_gen__DOT__counter;
         CData/*6:0*/ top__DOT__top__DOT__map_rgb__DOT__map_tiles[13][13];
+    };
+    struct {
         IData/*23:0*/ top__DOT__top__DOT__map_rgb__DOT__tile__DOT__mem[8192];
         CData/*5:0*/ top__DOT__top__DOT__menu__DOT__title_buffer[11];
         CData/*5:0*/ top__DOT__top__DOT__menu__DOT__game_start[14];
         CData/*7:0*/ top__DOT__top__DOT__menu__DOT__ascii_rom__DOT__mem[1024];
-        CData/*5:0*/ top__DOT__top__DOT__score_board__DOT__game_start[7];
-    };
-    struct {
+        CData/*5:0*/ top__DOT__top__DOT__score_board__DOT__level[7];
+        CData/*5:0*/ top__DOT__top__DOT__score_board__DOT__player_score[10];
         IData/*23:0*/ top__DOT__top__DOT__score_board__DOT__mem_lives__DOT__mem[256];
         IData/*23:0*/ top__DOT__top__DOT__score_board__DOT__mem_player_1__DOT__mem[1024];
         IData/*23:0*/ top__DOT__top__DOT__score_board__DOT__mem_player_2__DOT__mem[1024];
@@ -264,6 +270,7 @@ VL_MODULE(Vtop) {
         CData/*6:0*/ top__DOT__top__DOT__map_rgb__DOT____Vlvbound7;
         CData/*5:0*/ top__DOT__top__DOT__menu__DOT____Vxrand2;
         CData/*5:0*/ top__DOT__top__DOT__menu__DOT____Vxrand1;
+        CData/*5:0*/ top__DOT__top__DOT__score_board__DOT____Vxrand2;
         CData/*5:0*/ top__DOT__top__DOT__score_board__DOT____Vxrand1;
         CData/*1:0*/ __Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_stage;
         CData/*3:0*/ __Vdly__top__DOT__top__DOT__bullet_collide_1__DOT__player_1_live_left;
@@ -316,9 +323,9 @@ VL_MODULE(Vtop) {
         SData/*9:0*/ __Vdly__top__DOT__top__DOT__hpos;
         SData/*9:0*/ __Vdly__top__DOT__top__DOT__vpos;
         SData/*9:0*/ __Vdly__top__DOT__top__DOT__player_1__DOT__tank_x;
-        SData/*9:0*/ __Vdly__top__DOT__top__DOT__player_1__DOT__tank_y;
     };
     struct {
+        SData/*9:0*/ __Vdly__top__DOT__top__DOT__player_1__DOT__tank_y;
         SData/*9:0*/ __Vdly__top__DOT__top__DOT__player_2__DOT__tank_x;
         SData/*9:0*/ __Vdly__top__DOT__top__DOT__player_2__DOT__tank_y;
         SData/*9:0*/ __Vdly__top__DOT__top__DOT__enemy_1__DOT__tank_x;

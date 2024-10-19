@@ -261,18 +261,18 @@ module tank #(
             case (tank_prev_direct)
                 4'b0001: begin //down
                     tank_bullet_x <= tank_x + 14;
-                    tank_bullet_y <= tank_y + 32;
+                    tank_bullet_y <= tank_y + 31;
                 end
                 4'b0010: begin //up
                     tank_bullet_x <= tank_x + 14;
-                    tank_bullet_y <= tank_y - 4;
+                    tank_bullet_y <= tank_y;
                 end
                 4'b0100: begin //right
-                    tank_bullet_x <= tank_x + 32;
+                    tank_bullet_x <= tank_x + 31;
                     tank_bullet_y <= tank_y + 14;
                 end
                 4'b1000: begin //left
-                    tank_bullet_x <= tank_x - 4;
+                    tank_bullet_x <= tank_x;
                     tank_bullet_y <= tank_y + 14;
                 end
                 default:;
