@@ -1,0 +1,13 @@
+AIR	    AIR	    AIR	    AIR	    AIR	    AIR	    AIR	    AIR	    AIR	    AIR	    AIR	    AIR	    AIR
+AIR	    BRICK4	    BRICK1	    BRICK	    AIR	    AIR	    AIR	    AIR	    AIR	    AIR	    BRICK	    BRICK1	    BRICK3
+BRICK4	    BRICK1	    AIR	    AIR	    BRICK	    AIR	    TREE	    TREE	    AIR	    BRICK	    AIR	    AIR	    BRICK4
+BRICK	    AIR	    AIR	    AIR	    BRICK	    TREE	    TREE	    TREE	    TREE	    BRICK	    AIR	    AIR	    BRICK4
+BRICK	    AIR	    AIR	    BRICK4	    BRICK	    TREE	    WALL	    WALL	    TREE	    BRICK	    BRICK3	    AIR	    BRICK
+BRICK4	    BRICK2	    BRICK2	    BRICK	    WATER	    WATER	    WATER	    WATER	    WATER	    WATER	    BRICK	    BRICK	    BRICK
+AIR	    BRICK	    BRICK	    BRICK	    WALL	    WALL	    BRICK	    WALL	    WALL	    BRICK	    BRICK	    BRICK	    BRICK3
+AIR	    AIR	    BRICK	    BRICK	    WALL	    AIR	    BRICK	    AIR	    WALL	    BRICK	    BRICK	    BRICK3	    AIR
+AIR	    AIR	    BRICK	    BRICK	    BRICK	    BRICK	    BRICK	    BRICK	    BRICK	    BRICK	    BRICK	    BRICK3	    AIR
+BRICK	    TREE	    BRICK1	    BRICK1	    BRICK1	    WALL	    WALL	    BRICK1	    BRICK1	    BRICK1	    BRICK1	    TREE	    BRICK
+BRICK	    TREE	    TREE	    TREE	    TREE	    TREE	    TREE	    TREE	    TREE	    TREE	    TREE	    TREE	    BRICK
+AIR	    AIR	    TREE	    TREE	    TREE	    BRICK8	    BRICK2	    BRICK7	    TREE	    TREE	    TREE	    TREE	    AIR
+AIR	    AIR	    AIR	    BRICK3	    AIR	    BRICK4	    EAGLE	    BRICK3	    AIR	    BRICK4	    AIR	    AIR	    AIR

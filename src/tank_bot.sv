@@ -418,12 +418,12 @@ always_ff @(posedge player_clk_i or posedge reset_tank) begin
         end
     end
 
-    pulse_gen pulse_gen (
-        .clk(player_clk_i),
-        .reset(reset_tank),
-        .enable(bullet_stage == NOT_SHOOT),
-        .random_pulse(auto_tank_shoot)
-    );
+    // pulse_gen pulse_gen (
+    //     .clk(player_clk_i),
+    //     .reset(reset_tank),
+    //     .enable(bullet_stage == NOT_SHOOT),
+    //     .random_pulse(auto_tank_shoot)
+    // );
 
 endmodule
 /* verilator lint_off UNUSED */

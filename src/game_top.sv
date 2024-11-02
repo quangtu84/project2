@@ -26,13 +26,14 @@ module game_top #(
 );
 
     logic map_enable, clk_player, clk_bullet, one_sec_clk, cannot_walk_through, destroyable_block, all_hard_block, bullet_collide_wall, eagle_block, bullet_collide_eagle;
-    logic tank_left_enable, player_tank_enable, level_enable;
+    logic tank_left_enable, player_tank_enable, level_enable, menu_enable;
     logic [(COLOR_BITS/3)-1 :0] map_blue, map_green, map_red, player_red, player_green, player_blue, bullet_blue, bullet_green, bullet_red, menu_blue, menu_green, menu_red;
     logic [(COLOR_BITS/3)-1 :0] tank_left_blue, tank_left_green, tank_left_red, player_tank_blue, player_tank_green, player_tank_red, level_blue, level_green, level_red;
-    logic [5:0] score_player_1, score_player_2, enemy_left;
+    logic [5:0] enemy_left;
     logic [9:0] hpos, vpos;
     logic [10:0] player_1_score, player_2_score;
     logic [3:0] player_1_live_left, player_2_live_left;
+    logic [3:0] level;
     logic [1:0] map_type;
     logic display_enable;
     logic VGA_clk;
@@ -54,7 +55,8 @@ module game_top #(
     map_rgb  #(
         .COLOR_BITS(COLOR_BITS)
     ) map_rgb(
-        .map_type_i(0),
+        .map_type_i(level - 4'b1),
+        // .map_type_i(4'd9),
         .bullet_collide_eagle_i(bullet_collide_eagle),
         .bullet_collide_i(bullet_collide_wall),
         .display_enable_i(display_enable),
@@ -78,9 +80,16 @@ module game_top #(
         .hpos_i(hpos),
         .vpos_i(vpos),
 
+        .is_menu_i(is_menu),
+        .is_playing_i(is_playing),
+        .is_level_done_i(is_level_done),
+        .is_game_over_i(is_game_over),
+        .is_game_win_i(is_game_win),
+
         .menu_blue_o(menu_blue),
         .menu_green_o(menu_green),
         .menu_red_o(menu_red),
+        .menu_enable_o(menu_enable),
 
         .clk_i(VGA_clk),
         .reset_i(reset_i)
@@ -115,11 +124,13 @@ module game_top #(
         .menu_blue_i(menu_blue),
         .menu_green_i(menu_green),
         .menu_red_i(menu_red),
+        .menu_enable_i(menu_enable),
 
         .is_menu_i(is_menu),
         .is_playing_i(is_playing),
-        .is_continue_i(is_continue),
-        .is_final_i(is_final),
+        .is_level_done_i(is_level_done),
+        .is_game_over_i(is_game_over),
+        .is_game_win_i(is_game_win),
 
         .blue_o(blue_o),
         .green_o(green_o),
@@ -155,7 +166,7 @@ module game_top #(
         .player_2_revive_o(player_2_revive),
         .player_2_live_left_o(player_2_live_left),
 
-        .enemy_1_lives_i(4'd3),
+        .enemy_1_lives_i(4'd1),
         .enemy_1_box_i(enemy_1_tank_enable),
         .enemy_1_bullet_i(enemy_1_bullet),
         .enemy_1_bullet_explose_o(enemy_1_bullet_explose),
@@ -172,37 +183,35 @@ module game_top #(
         .player_1_score_o(player_1_score),
         .player_2_score_o(player_2_score),
         .clk_i(VGA_clk),
-        .reset_i(reset)
+        .reset_i(reset),
+        .reset_all_i(reset_i)
     );
 
     logic player_box;
     assign player_box = player_1_tank_enable || player_2_tank_enable || enemy_1_tank_enable || enemy_2_tank_enable;
     assign {bullet_blue, bullet_green, bullet_red} = (player_2_bullet || player_1_bullet || enemy_1_bullet || enemy_2_bullet) ? 24'hFFFFFF : 0;
 
-    logic is_menu, is_playing, is_continue, is_final, reset;
+    logic is_menu, is_playing, is_level_done, is_game_over, is_game_win, reset;
     FSM game_FSM (
-        .space_i(player_1_shoot_i),
-        .sellect_up_i(player_1_move_i[1]),
-        .sellect_down_i(player_1_move_i[0]),
-        .bullet_collide_player_1_i(),
-        .bullet_collide_player_2_i(),
-
-        .score_player_1_o(score_player_1),
-        .score_player_2_o(score_player_2),
+        .space_i(player_1_shoot_i | player_2_shoot_i),
+        .bullet_collide_eagle_i(bullet_collide_eagle),
+        .enemy_left_i(enemy_left),
 
         .is_menu_o(is_menu),
         .is_playing_o(is_playing),
-        .is_continue_o(is_continue),
-        .is_final_o(is_final),
-        .reset_o(reset),
+        .is_level_done_o(is_level_done),
+        .is_game_over_o(is_game_over),
+        .is_game_win_o(is_game_win),
+        .reset_game_o(reset),
+        .level_o(level),
 
         .reset_i(reset_i),
-        .clk_i(VGA_clk)
+        .clk_i(clk_i)
     );
 
     score_board score_board (
         .tank_left_i(enemy_left),
-        .level_i(4'd5),
+        .level_i(level),
         .player_1_score_i(player_1_score),
         .player_2_score_i(player_2_score),
         .player_1_live_left_i(player_1_live_left),
@@ -289,10 +298,10 @@ module game_top #(
 
     tank #(
         .COLOR_BITS(COLOR_BITS),
-        .TANK_X_INIT(10'd160),
-        .TANK_Y_INIT(10'd416),
-        // .TANK_X_INIT(10'd32),
-        // .TANK_Y_INIT(10'd180),
+        // .TANK_X_INIT(10'd160),
+        // .TANK_Y_INIT(10'd416),
+        .TANK_X_INIT(10'd32),
+        .TANK_Y_INIT(10'd180),
         .TANK_DIR_INIT(4'b0010),
         .TANK_MOVE_SPEED(10'd1),
         .BULLET_MOVE_SPEED(10'd1)

@@ -2,84 +2,107 @@
 
 module FSM (
     input logic space_i,
-    input logic sellect_up_i,
-    input logic sellect_down_i,
-    input logic bullet_collide_player_1_i,
-    input logic bullet_collide_player_2_i,
-
-    output logic [5:0] score_player_1_o,
-    output logic [5:0] score_player_2_o,
+    input logic bullet_collide_eagle_i,
+    input logic [5:0] enemy_left_i,
 
     output logic is_menu_o,
     output logic is_playing_o,
-    output logic is_continue_o,
-    output logic is_final_o,
-    output logic reset_o,
+    output logic is_level_done_o,
+    output logic is_game_over_o,
+    output logic is_game_win_o,
+    output logic reset_game_o,
+    output logic [3:0] level_o,
 
     input logic reset_i,
     input logic clk_i
 );
 
-logic [1:0] game_state;
+logic [2:0] game_state;
 localparam MENU        = 0;
-localparam START       = 1;
-localparam CONTINUE    = 2;
-localparam FINAL_SCORE = 3;
+localparam PLAYING     = 1;
+localparam LEVEL_DONE  = 2;
+localparam GAMEOVER    = 3;
+localparam WAIT_1_CYCLE    = 4;
+localparam WAIT_AFTER_LEVEL_DONE  = 5;
+localparam WAIT_AFTER_GAME_OVER  = 6;
+localparam GAME_WIN  = 7;
 
-logic [5:0] score_player_1, score_player_2;
-logic bullet_collide_player_1, bullet_collide_player_2;
-
-assign score_player_1_o = score_player_1;
-assign score_player_2_o = score_player_2;
-
-pos_edge_detect pos_edge_detect_bullet_1 (
-    .sig(bullet_collide_player_1_i),           
-    .clk(clk_i),            
-    .pe(bullet_collide_player_1)
-);
-
-pos_edge_detect pos_edge_detect_bullet_2 (
-    .sig(bullet_collide_player_2_i),           
-    .clk(clk_i),            
-    .pe(bullet_collide_player_2)
-);
+    logic [23:0] counter, counter2;
 
 always_ff @(posedge clk_i or posedge reset_i) begin
     if(reset_i) begin
         game_state <= MENU;
-        score_player_1 <= 0;
-        score_player_2 <= 0;
+        is_menu_o <= 0;
+        is_playing_o <= 0;
+        is_level_done_o <= 0;
+        is_game_over_o <= 0;
+        is_game_win_o <= 0;
+        reset_game_o <= 1;
+        level_o <= 1;
+        counter <= 0;
+        counter2 <=0;
     end else begin
         is_menu_o <= 0;
         is_playing_o <= 0;
-        is_continue_o <= 0;
-        is_final_o <= 0;
-        reset_o <= 1;
+        is_level_done_o <= 0;
+        is_game_over_o <= 0;
+        is_game_win_o <= 0;
+        reset_game_o <= 1;
         case (game_state)
             MENU: begin
+                level_o <= 1;
                 is_menu_o <= 1;
-                reset_o <= 1;
-                if(space_i) game_state <= START;
+                reset_game_o <= 1;
+                if (space_i) game_state <= PLAYING;
             end
-            START: begin
-                reset_o <= 0;
+            PLAYING: begin
+                reset_game_o <= 0;
                 is_playing_o <= 1;
-                if(bullet_collide_player_1) begin
-                    score_player_2 <= score_player_2 + 1;
-                    game_state <= MENU;
+                if (bullet_collide_eagle_i) begin
+                    game_state <= WAIT_AFTER_GAME_OVER;
+                    counter2 <= 0;
                 end
-                if(bullet_collide_player_2) begin
-                    score_player_1 <= score_player_1 + 1;
-                    game_state <= MENU;
+                if (enemy_left_i == 0) begin
+                    game_state <= LEVEL_DONE;
+                    counter <= 0;
                 end
             end
-            CONTINUE: begin
-                is_continue_o <= 1;
-                reset_o <= 1;
-                if(space_i) game_state <= START;
+            LEVEL_DONE: begin
+                is_level_done_o <= 1;
+                reset_game_o <= 1;
+                counter <= counter + 1;
+                if (counter == 12500000) begin
+                    game_state <= WAIT_AFTER_LEVEL_DONE;
+                    if (level_o == 10) begin
+                        game_state <= GAME_WIN;
+                    end
+                end
             end
-            FINAL_SCORE: begin
-                is_final_o <= 1;
+            WAIT_AFTER_LEVEL_DONE: begin
+                is_level_done_o <= 1;
+                if(space_i) begin 
+                    game_state <= WAIT_1_CYCLE;
+                    level_o <= level_o + 1;
+                end
+            end
+            WAIT_1_CYCLE: begin
+                game_state <= PLAYING;
+            end
+            WAIT_AFTER_GAME_OVER: begin
+                is_game_over_o <= 1;
+                counter2 <= counter2 + 1;
+                if (counter2 == 12500000) begin
+                    game_state <= GAMEOVER;
+                end
+            end
+            GAMEOVER: begin
+                is_game_over_o <= 1;
+                reset_game_o <= 1;
+                if(space_i) game_state <= MENU;
+            end
+            GAME_WIN: begin
+                is_game_win_o <= 1;
+                if(space_i) game_state <= MENU;
             end
             default: game_state <= MENU;
         endcase

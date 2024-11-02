@@ -34,7 +34,8 @@ module bullet_collide (
     output logic [10:0] player_1_score_o,
     output logic [10:0] player_2_score_o,
     input logic clk_i,
-    input logic reset_i
+    input logic reset_i,
+    input logic reset_all_i
 );
     logic all_player, all_enemy, all_player_bullet, all_enemy_bullet, all_bullet;
 
@@ -60,8 +61,8 @@ module bullet_collide (
 //      PLAYER 1 SCORE         //
 /////////////////////////////////
 
-    always_ff @(posedge clk_i or posedge reset_i) begin
-        if (reset_i) begin
+    always_ff @(posedge clk_i or posedge reset_all_i) begin
+        if (reset_all_i) begin
             player_1_score_o <= 0;
         end else begin
             if (player_1_bullet_i && all_enemy) begin
@@ -77,8 +78,8 @@ module bullet_collide (
 //      PLAYER 2 SCORE         //
 /////////////////////////////////
 
-    always_ff @(posedge clk_i or posedge reset_i) begin
-        if (reset_i) begin
+    always_ff @(posedge clk_i or posedge reset_all_i) begin
+        if (reset_all_i) begin
             player_2_score_o <= 0;
         end else begin
             if (player_2_bullet_i && all_enemy) begin

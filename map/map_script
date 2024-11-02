@@ -1,3 +1,40 @@
 #!/usr/bin/bash -f
 
-awk '{for (i = 1; i <= 13; i++) print "map_tiles["NR-1"]["i-1"] <= {"$i",4\x27b1111};"}' $1
+awk '{ \
+for (i = 1; i <= 13; i++) \
+    if ($i == "AIR" || $i == "TREE" || $i == "BRICK" || $i == "WALL" || $i == "WATER" || $i == "EAGLE") { \
+        print "map_tiles["NR-1"]["i-1"] <= {"$i",4\x27b1111};" \
+    } else \
+    if ($i == "TREE1" || $i == "BRICK1" || $i == "WALL1" || $i == "WATER1") { \
+        gsub(/[0-9]/,"",$i) ; \
+        print "map_tiles["NR-1"]["i-1"] <= {"$i",4\x27b0011};" \
+    } else \
+    if ($i == "TREE2" || $i == "BRICK2" || $i == "WALL2" || $i == "WATER2") { \
+        gsub(/[0-9]/,"",$i) ; \
+        print "map_tiles["NR-1"]["i-1"] <= {"$i",4\x27b1100};" \
+    } else \
+    if ($i == "TREE3" || $i == "BRICK3" || $i == "WALL3" || $i == "WATER3") { \
+        gsub(/[0-9]/,"",$i) ; \
+        print "map_tiles["NR-1"]["i-1"] <= {"$i",4\x27b0101};" \
+    } else \
+    if ($i == "TREE4" || $i == "BRICK4" || $i == "WALL4" || $i == "WATER4") { \
+        gsub(/[0-9]/,"",$i) ; \
+        print "map_tiles["NR-1"]["i-1"] <= {"$i",4\x27b1010};" \
+    } else \
+    if ($i == "TREE5" || $i == "BRICK5" || $i == "WALL5" || $i == "WATER5") { \
+        gsub(/[0-9]/,"",$i) ; \
+        print "map_tiles["NR-1"]["i-1"] <= {"$i",4\x27b0001};" \
+    } else \
+    if ($i == "TREE6" || $i == "BRICK6" || $i == "WALL6" || $i == "WATER6") { \
+        gsub(/[0-9]/,"",$i) ; \
+        print "map_tiles["NR-1"]["i-1"] <= {"$i",4\x27b0010};" \
+    } else \
+    if ($i == "TREE7" || $i == "BRICK7" || $i == "WALL7" || $i == "WATER7") { \
+        gsub(/[0-9]/,"",$i) ; \
+        print "map_tiles["NR-1"]["i-1"] <= {"$i",4\x27b0100};" \
+    } else \
+    if ($i == "TREE8" || $i == "BRICK8" || $i == "WALL8" || $i == "WATER8") { \
+        gsub(/[0-9]/,"",$i) ; \
+        print "map_tiles["NR-1"]["i-1"] <= {"$i",4\x27b1000};" \
+    } \
+}' $1
